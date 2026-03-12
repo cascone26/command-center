@@ -1,69 +1,63 @@
+"use client";
+import { useState } from "react";
+
 interface Agent {
-  label: string;
-  name: string;
-  schedule: string;
-  loaded: boolean;
-  pid: number | null;
-  lastExitStatus: number | null;
-  healthy?: boolean;
+  label: string; name: string; schedule: string;
+  loaded: boolean; pid: number | null; lastExitStatus: number | null; healthy?: boolean;
+  recentLog: string | null;
 }
 
 export function AgentPanel({ agents }: { agents: Agent[] }) {
-  const healthyCount = agents.filter((a) => a.healthy !== false).length;
+  const [openLog, setOpenLog] = useState<string | null>(null);
+  const healthy = agents.filter(a => a.healthy !== false).length;
 
   return (
-    <div
-      className="rounded-lg p-4 fade-in"
-      style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
-    >
-      <div className="flex items-center justify-between mb-3">
-        <h2 className="text-lg font-semibold">LaunchAgents</h2>
+    <div className="panel fade-up">
+      <div className="panel-header">
+        <span className="panel-title">LaunchAgents</span>
         <span
-          className="text-xs font-mono px-2 py-0.5 rounded"
+          className="stat-pill"
           style={{
-            background: healthyCount === agents.length ? "rgba(34,197,94,0.15)" : "rgba(249,115,22,0.15)",
-            color: healthyCount === agents.length ? "var(--green)" : "var(--orange)",
+            background: healthy === agents.length ? "var(--green-dim)" : "var(--yellow-dim)",
+            color: healthy === agents.length ? "var(--green)" : "var(--yellow)",
           }}
         >
-          {healthyCount}/{agents.length}
+          {healthy}/{agents.length} healthy
         </span>
       </div>
 
-      <div className="space-y-2">
-        {agents.map((agent) => {
-          const isHealthy = agent.healthy !== false;
+      <div className="space-y-1">
+        {agents.map(a => {
+          const isHealthy = a.healthy !== false;
+          const isOpen = openLog === a.label;
           return (
-            <div
-              key={agent.label}
-              className="flex items-center justify-between py-1.5 px-2 rounded text-sm"
-              style={{ background: "var(--surface-2)" }}
-            >
-              <div className="flex items-center gap-2">
-                <div
-                  className="w-1.5 h-1.5 rounded-full"
-                  style={{
-                    background: !agent.loaded
-                      ? "var(--text-dim)"
-                      : isHealthy
-                      ? "var(--green)"
-                      : "var(--red)",
-                  }}
-                />
-                <span className="text-xs font-medium">{agent.name}</span>
+            <div key={a.label}>
+              <div
+                className="flex items-center justify-between py-1.5 px-2 rounded text-xs cursor-pointer transition-colors"
+                style={{ background: "var(--surface-2)" }}
+                onClick={() => setOpenLog(isOpen ? null : a.label)}
+              >
+                <div className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full" style={{
+                    background: !a.loaded ? "var(--text-dim)" : isHealthy ? "var(--green)" : "var(--red)",
+                  }} />
+                  <span className="font-medium">{a.name}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span style={{ color: "var(--text-dim)", fontSize: "10px" }}>{a.schedule}</span>
+                  {a.pid && (
+                    <span className="font-mono px-1 py-0 rounded" style={{ background: "var(--bg)", color: "var(--green)", fontSize: "10px" }}>
+                      {a.pid}
+                    </span>
+                  )}
+                  {a.recentLog && (
+                    <span style={{ color: "var(--text-dim)", fontSize: "10px" }}>{isOpen ? "^" : "v"}</span>
+                  )}
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-xs" style={{ color: "var(--text-dim)" }}>
-                  {agent.schedule}
-                </span>
-                {agent.pid && (
-                  <span
-                    className="text-xs font-mono px-1.5 py-0.5 rounded"
-                    style={{ background: "var(--bg)", color: "var(--green)" }}
-                  >
-                    PID {agent.pid}
-                  </span>
-                )}
-              </div>
+              {isOpen && a.recentLog && (
+                <div className="log-viewer mt-1 mb-1">{a.recentLog}</div>
+              )}
             </div>
           );
         })}

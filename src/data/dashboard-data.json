@@ -1,12 +1,13 @@
 {
-  "generatedAt": "2026-03-12T00:30:02.574Z",
+  "generatedAt": "2026-03-12T00:31:27.706Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
     "activeAutomations": 6,
-    "healthyAgents": 8,
-    "totalAgents": 9,
-    "ideasCount": 12
+    "healthyAgents": 9,
+    "totalAgents": 10,
+    "ideasCount": 12,
+    "avgHealthScore": 92
   },
   "projects": [
     {
@@ -28,7 +29,8 @@
       "gitStats": {
         "totalCommits": 107
       },
-      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed and live at `lessondraft.vercel.app`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (3/day) → Pro ($12/mo) → Max ($24/mo)\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Test Suite + Security Audit (2026-03-04):**\n  - Added Jest + React Testing Library: 131 tests across 24 test files covering API routes, lib utilities, and hooks\n  - XSS fix: added escapeHtml to all email templates (sendWelcome"
+      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed and live at `lessondraft.vercel.app`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (3/day) → Pro ($12/mo) → Max ($24/mo)\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Test Suite + Security Audit (2026-03-04):**\n  - Added Jest + React Testing Library: 131 tests across 24 test files covering API routes, lib utilities, and hooks\n  - XSS fix: added escapeHtml to all email templates (sendWelcomeEmail, sendFeedbackAlert, sendDayThreeEmail, sendDaySevenEmail)\n  - Added missing auth check on revi",
+      "healthScore": 100
     },
     {
       "id": 2,
@@ -49,7 +51,8 @@
       "gitStats": {
         "totalCommits": 51
       },
-      "statusSummary": "# Portfolio — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed at `https://builtsimple.dev`\n- GitHub: `https://github.com/cascone26/portfolio`\n- Vercel project: `cascone26s-projects/builtsimple`\n- Custom domain: `builtsimple.dev` (live)\n\n## Site Structure (31 routes)\n- `/` — Home (hero with code mockup, featured LessonDraft section, highlight cards)\n- `/services` — Services & pricing (6 services + how it works)\n- `/work` — Portfolio grid (LessonDraft, Social Autoposter, placeholde"
+      "statusSummary": "# Portfolio — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed at `https://builtsimple.dev`\n- GitHub: `https://github.com/cascone26/portfolio`\n- Vercel project: `cascone26s-projects/builtsimple`\n- Custom domain: `builtsimple.dev` (live)\n\n## Site Structure (31 routes)\n- `/` — Home (hero with code mockup, featured LessonDraft section, highlight cards)\n- `/services` — Services & pricing (6 services + how it works)\n- `/work` — Portfolio grid (LessonDraft, Social Autoposter, placeholder)\n- `/work/lessondraft` — LessonDraft case study with screenshot\n- `/work/lessondraft-social` — Aut",
+      "healthScore": 100
     },
     {
       "id": 3,
@@ -69,7 +72,8 @@
       "gitStats": {
         "totalCommits": 2
       },
-      "statusSummary": "# Lead Scraper — Status\n\n## Overview\nLead-gen engine for BuiltSimple. Finds local businesses without websites (or with bad ones), enriches contact info, and automates personalized outreach via email and text.\n\n## Current State (Mar 7, 2026)\n- **6,875 leads** in SQLite DB across 50-mile KC metro radius\n- **1,294 without websites** (prime targets)\n- **187 with verified email addresses**\n- **130 Gmail drafts ready** to send (filtered for sites that actually need help)\n- **1,037 phone-only businesse"
+      "statusSummary": "# Lead Scraper — Status\n\n## Overview\nLead-gen engine for BuiltSimple. Finds local businesses without websites (or with bad ones), enriches contact info, and automates personalized outreach via email and text.\n\n## Current State (Mar 7, 2026)\n- **6,875 leads** in SQLite DB across 50-mile KC metro radius\n- **1,294 without websites** (prime targets)\n- **187 with verified email addresses**\n- **130 Gmail drafts ready** to send (filtered for sites that actually need help)\n- **1,037 phone-only businesses** exported to CSV for text outreach\n- Not deployed (runs locally — SQLite won't work on Vercel)\n\n#",
+      "healthScore": 75
     },
     {
       "id": 4,
@@ -89,7 +93,8 @@
       "gitStats": {
         "totalCommits": 8
       },
-      "statusSummary": "# LessonDraft Social Autoposter — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- GitHub: `https://github.com/cascone26/lessondraft-social.git`\n- Runs via GitHub Actions (3x daily: 7:30am, 12pm, 5:30pm CT)\n- Also has local LaunchAgent (`com.lessondraft.social.plist`) for macOS\n- Platforms: Twitter/X, Pinterest, Facebook, LinkedIn, TikTok (Instagram skipped in CI due to private API detection)\n\n## What It Is\nPython autoposter that generates educational social media content for LessonDraft u"
+      "statusSummary": "# LessonDraft Social Autoposter — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- GitHub: `https://github.com/cascone26/lessondraft-social.git`\n- Runs via GitHub Actions (3x daily: 7:30am, 12pm, 5:30pm CT)\n- Also has local LaunchAgent (`com.lessondraft.social.plist`) for macOS\n- Platforms: Twitter/X, Pinterest, Facebook, LinkedIn, TikTok (Instagram skipped in CI due to private API detection)\n\n## What It Is\nPython autoposter that generates educational social media content for LessonDraft using Claude API, renders images with Pillow, and posts to multiple platforms.\n\n## Architecture\n```\nr",
+      "healthScore": 100
     },
     {
       "id": 5,
@@ -109,7 +114,8 @@
       "gitStats": {
         "totalCommits": 1
       },
-      "statusSummary": "# Scholarship System — STATUS\n\n**Created:** 2026-02-24\n**Updated:** 2026-03-11\n**Phase:** Full automation active — scraping + auto-apply operational\n\n## Current Stats\n- **256 scholarships** tracked in SQLite DB\n- **$540K+ pipeline value**\n- **0 applied yet** — auto-apply system just built, ready to run\n- **Daily autopilot**: LaunchAgent runs at 8 AM (scrape + score + apply + essays + status + followup + briefing)\n\n## Platform Breakdown\n| Platform | Count | Total Value |\n|---|---|---|\n| Fastweb |"
+      "statusSummary": "# Scholarship System — STATUS\n\n**Created:** 2026-02-24\n**Updated:** 2026-03-11\n**Phase:** Full automation active — scraping + auto-apply operational\n\n## Current Stats\n- **256 scholarships** tracked in SQLite DB\n- **$540K+ pipeline value**\n- **0 applied yet** — auto-apply system just built, ready to run\n- **Daily autopilot**: LaunchAgent runs at 8 AM (scrape + score + apply + essays + status + followup + briefing)\n\n## Platform Breakdown\n| Platform | Count | Total Value |\n|---|---|---|\n| Fastweb | 110 | $101K |\n| Bold.org | 88 | $201K |\n| Scholarships360 | 27 | $147K |\n| Niche | 2 | $27K |\n| Oth",
+      "healthScore": 95
     },
     {
       "id": 6,
@@ -125,7 +131,8 @@
       "gitStats": {
         "totalCommits": 0
       },
-      "statusSummary": "# ClassPilot — Status\n\nLast updated: 2026-03-07\n\n## System Files\n| File | Purpose |\n|------|---------|\n| `CLAUDE.md` | Auto-loaded context — full ClassPilot operating instructions |\n| `system-prompt.md` | Voice rules, assignment templates, Integrity Engine, autonomous workflows |\n| `voice-profile.md` | Jacob's academic writing style (from 5+ analyzed submissions) |\n| `voice-check.md` | Voice + AI drift detector checklist |\n| `citations.md` | APA citation library — textbooks by course + all past "
+      "statusSummary": "# ClassPilot — Status\n\nLast updated: 2026-03-07\n\n## System Files\n| File | Purpose |\n|------|---------|\n| `CLAUDE.md` | Auto-loaded context — full ClassPilot operating instructions |\n| `system-prompt.md` | Voice rules, assignment templates, Integrity Engine, autonomous workflows |\n| `voice-profile.md` | Jacob's academic writing style (from 5+ analyzed submissions) |\n| `voice-check.md` | Voice + AI drift detector checklist |\n| `citations.md` | APA citation library — textbooks by course + all past sources used |\n| `rubric-patterns.md` | GCU grading criteria patterns by assignment type |\n| `course",
+      "healthScore": 90
     },
     {
       "id": 7,
@@ -146,7 +153,8 @@
       "gitStats": {
         "totalCommits": 23
       },
-      "statusSummary": "# Meta Tutor — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://meta-tutor.vercel.app`\n- GitHub: `https://github.com/cascone26/meta-tutor.git`\n- Built for Cris's Thomistic Metaphysics course\n- Google login required for all routes\n- Uses Claude Haiku (via `CLAUDE_MODEL` env var) with rate limiting (75/day) and prompt caching\n\n## What It Is\nStudy app with a strict no-cheat constraint — all features force active recall. No passive reading or answer lookup.\n\n## Pages (15 route"
+      "statusSummary": "# Meta Tutor — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://meta-tutor.vercel.app`\n- GitHub: `https://github.com/cascone26/meta-tutor.git`\n- Built for Cris's Thomistic Metaphysics course\n- Google login required for all routes\n- Uses Claude Haiku (via `CLAUDE_MODEL` env var) with rate limiting (75/day) and prompt caching\n\n## What It Is\nStudy app with a strict no-cheat constraint — all features force active recall. No passive reading or answer lookup.\n\n## Pages (15 routes)\n- `/` — Landing/home\n- `/login` — Google OAuth login\n- `/dashboard` — Main hub\n- `/study` — Activ",
+      "healthScore": 100
     },
     {
       "id": 8,
@@ -167,7 +175,8 @@
       "gitStats": {
         "totalCommits": 107
       },
-      "statusSummary": "# AtlasBox — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://atlasbox.vercel.app`\n- GitHub: `https://github.com/cascone26/mini-games.git`\n- Vercel: `cascone26s-projects/atlasbox` (auto-deploys from GitHub)\n- Single file: `index.html` (~9,986 lines, all HTML/CSS/JS inline)\n- Cloud sync via Supabase (profiles, leaderboard, cross-device save)\n\n## What It Is\n\"Shut the Box\" / \"Close the Box\" dice game built for Atlas, Jacob's 5-year-old nephew. Designed for a kid who can't rea"
+      "statusSummary": "# AtlasBox — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://atlasbox.vercel.app`\n- GitHub: `https://github.com/cascone26/mini-games.git`\n- Vercel: `cascone26s-projects/atlasbox` (auto-deploys from GitHub)\n- Single file: `index.html` (~9,986 lines, all HTML/CSS/JS inline)\n- Cloud sync via Supabase (profiles, leaderboard, cross-device save)\n\n## What It Is\n\"Shut the Box\" / \"Close the Box\" dice game built for Atlas, Jacob's 5-year-old nephew. Designed for a kid who can't read, knows numbers but not math well. Educational goal: subtly teach letters, numbers, and basic math.",
+      "healthScore": 100
     },
     {
       "id": 9,
@@ -188,7 +197,8 @@
       "gitStats": {
         "totalCommits": 4
       },
-      "statusSummary": "# For Abby (Abby Wonderland) — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://abbywonderland.vercel.app`\n- Single file: `index.html` (~5,916 lines, all HTML/CSS/JS inline)\n- PWA: installable on iOS and Android via manifest.json + service worker\n- No git remote hosting (local git only)\n\n## What It Is\nA personalized interactive experience built for Abby. Features a dreamy night-sky/aurora aesthetic with snowfall effects, ambient sound, and multiple interactive activities.\n"
+      "statusSummary": "# For Abby (Abby Wonderland) — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://abbywonderland.vercel.app`\n- Single file: `index.html` (~5,916 lines, all HTML/CSS/JS inline)\n- PWA: installable on iOS and Android via manifest.json + service worker\n- No git remote hosting (local git only)\n\n## What It Is\nA personalized interactive experience built for Abby. Features a dreamy night-sky/aurora aesthetic with snowfall effects, ambient sound, and multiple interactive activities.\n\n## Design\n- Dark navy/space palette with aurora gradients\n- Fonts: Cinzel Decorative (headings), Qu",
+      "healthScore": 100
     },
     {
       "id": 10,
@@ -209,7 +219,8 @@
       "gitStats": {
         "totalCommits": 5
       },
-      "statusSummary": "# Cascone Family App — STATUS\n\n## Live\n- **URL:** https://cascone-app.vercel.app\n- **GitHub:** https://github.com/cascone26/cascone-app\n- **Vercel:** cascone26s-projects/cascone-app (auto-deploys from GitHub)\n\n## Stack\n- Next.js 16 (App Router) + TypeScript + Tailwind CSS v4\n- PWA with manifest.json + service worker (offline support)\n- No database — all content in code files\n\n## Structure\n- `/` — Home page with family grid + daily rotating quote\n- `/jacob` `/abby` `/mom` `/dad` `/atlas` — Indivi"
+      "statusSummary": "# Cascone Family App — STATUS\n\n## Live\n- **URL:** https://cascone-app.vercel.app\n- **GitHub:** https://github.com/cascone26/cascone-app\n- **Vercel:** cascone26s-projects/cascone-app (auto-deploys from GitHub)\n\n## Stack\n- Next.js 16 (App Router) + TypeScript + Tailwind CSS v4\n- PWA with manifest.json + service worker (offline support)\n- No database — all content in code files\n\n## Structure\n- `/` — Home page with family grid + daily rotating quote\n- `/jacob` `/abby` `/mom` `/dad` `/atlas` — Individual member pages\n- `/family` — Shared family space (quotes, events, memories placeholder)\n- Dynamic",
+      "healthScore": 100
     },
     {
       "id": 12,
@@ -229,7 +240,8 @@
       "gitStats": {
         "totalCommits": 7
       },
-      "statusSummary": "# Roblox UGC Clothing Bot\n\n## Status: v4.3 — Movie-Quality Character Rendering\n\n## v4.3 Changes (Mar 5)\n\n### Per-Face AI Generation (Flux Schnell)\n- **Per-face AI textures** — generates separate AI images for each body-part UV face (torso front/back, arms, legs)\n- **Asset cache** (`rendering/asset_cache.py`) — PNG cache at `assets/characters/<slug>/`, ~$0.02 per character first time, $0.00 from cache\n- **Face prompt engine** (`rendering/face_prompts.py`) — body-part-specific Flux prompts with co"
+      "statusSummary": "# Roblox UGC Clothing Bot\n\n## Status: v4.3 — Movie-Quality Character Rendering\n\n## v4.3 Changes (Mar 5)\n\n### Per-Face AI Generation (Flux Schnell)\n- **Per-face AI textures** — generates separate AI images for each body-part UV face (torso front/back, arms, legs)\n- **Asset cache** (`rendering/asset_cache.py`) — PNG cache at `assets/characters/<slug>/`, ~$0.02 per character first time, $0.00 from cache\n- **Face prompt engine** (`rendering/face_prompts.py`) — body-part-specific Flux prompts with consistency strategy (shared style suffix + color hex codes)\n- **AI orchestrator** (`rendering/ai_face",
+      "healthScore": 90
     },
     {
       "id": 13,
@@ -245,7 +257,8 @@
       "gitStats": {
         "totalCommits": 0
       },
-      "statusSummary": "# Forgemaster — Status\n\n## What It Is\nRoblox game factory engine. Builds complete, playable games in Roblox Studio via the MCP bridge plugin, or generates .rbxlx files offline.\n\n## Quick Start\n```bash\ncd ~/projects/forgemaster\n\n# Check Studio connection\nnode forge.js status\n\n# Build a tycoon in Studio\nnode forge.js build tycoon --theme medieval --name \"Dragon Castle Tycoon\"\n\n# Build an obby\nnode forge.js build obby --theme candy --name \"Sugar Rush Obby\"\n\n# Build a simulator\nnode forge.js build s"
+      "statusSummary": "# Forgemaster — Status\n\n## What It Is\nRoblox game factory engine. Builds complete, playable games in Roblox Studio via the MCP bridge plugin, or generates .rbxlx files offline.\n\n## Quick Start\n```bash\ncd ~/projects/forgemaster\n\n# Check Studio connection\nnode forge.js status\n\n# Build a tycoon in Studio\nnode forge.js build tycoon --theme medieval --name \"Dragon Castle Tycoon\"\n\n# Build an obby\nnode forge.js build obby --theme candy --name \"Sugar Rush Obby\"\n\n# Build a simulator\nnode forge.js build simulator --theme scifi --name \"Galaxy Clicker\"\n\n# Generate offline .rbxlx file (no Studio needed)\nno",
+      "healthScore": 90
     },
     {
       "id": 14,
@@ -262,7 +275,8 @@
       "gitStats": {
         "totalCommits": 0
       },
-      "statusSummary": "# tradovate-mcp — Status\n\n## Last Updated\n2026-02-22\n\n## Current State\n- MCP server for TradingView trading automation\n- Risk/reward analysis tools\n- No git repo initialized\n\n## Known Issues / Next Up\n- (update this when starting/ending sessions)\n"
+      "statusSummary": "# tradovate-mcp — Status\n\n## Last Updated\n2026-02-22\n\n## Current State\n- MCP server for TradingView trading automation\n- Risk/reward analysis tools\n- No git repo initialized\n\n## Known Issues / Next Up\n- (update this when starting/ending sessions)\n",
+      "healthScore": 80
     },
     {
       "id": 15,
@@ -278,7 +292,8 @@
       "gitStats": {
         "totalCommits": 0
       },
-      "statusSummary": null
+      "statusSummary": null,
+      "healthScore": 90
     },
     {
       "id": 16,
@@ -291,7 +306,8 @@
       "notes": "15 emails/day at 9:03 AM. Monitor deliverability.",
       "lastCommit": null,
       "gitStats": null,
-      "statusSummary": null
+      "statusSummary": null,
+      "healthScore": 70
     },
     {
       "id": 17,
@@ -304,7 +320,8 @@
       "notes": "Follow-up emails at 2:07 PM after 5 days.",
       "lastCommit": null,
       "gitStats": null,
-      "statusSummary": null
+      "statusSummary": null,
+      "healthScore": 70
     },
     {
       "id": 18,
@@ -317,7 +334,8 @@
       "notes": "Deadline alerts LaunchAgent.",
       "lastCommit": null,
       "gitStats": null,
-      "statusSummary": null
+      "statusSummary": null,
+      "healthScore": 90
     },
     {
       "id": 19,
@@ -330,7 +348,8 @@
       "notes": "Automated SEO health check.",
       "lastCommit": null,
       "gitStats": null,
-      "statusSummary": null
+      "statusSummary": null,
+      "healthScore": 90
     },
     {
       "id": 20,
@@ -349,7 +368,8 @@
       "gitStats": {
         "totalCommits": 0
       },
-      "statusSummary": "# The Faithful Minute — YouTube Shorts Channel\n\n## Overview\nFaceless Catholic YouTube Shorts channel. AI-narrated, real art visuals, fully automated pipeline.\n\n**Channel name:** The Faithful Minute\n**Format:** 60-90 second Shorts (start short-form, add long-form later)\n**Voice:** Edge-tts (free, unlimited) — en-US-AndrewMultilingualNeural (warm, confident)\n**Visuals:** Public domain religious masterpieces from Wikimedia Commons\n**Cost:** $0/month\n\n## Style Rules (IMPORTANT)\n- **Images:** Real hi"
+      "statusSummary": "# The Faithful Minute — YouTube Shorts Channel\n\n## Overview\nFaceless Catholic YouTube Shorts channel. AI-narrated, real art visuals, fully automated pipeline.\n\n**Channel name:** The Faithful Minute\n**Format:** 60-90 second Shorts (start short-form, add long-form later)\n**Voice:** Edge-tts (free, unlimited) — en-US-AndrewMultilingualNeural (warm, confident)\n**Visuals:** Public domain religious masterpieces from Wikimedia Commons\n**Cost:** $0/month\n\n## Style Rules (IMPORTANT)\n- **Images:** Real high-quality paintings/art ONLY. No AI text-on-dark-background frames. Blurred-background technique (f",
+      "healthScore": 90
     },
     {
       "id": 21,
@@ -372,7 +392,8 @@
       "gitStats": {
         "totalCommits": 14
       },
-      "statusSummary": "# Vinnie's Treasure Tracker\n\n## Overview\nResearch hub for brother Vinnie to find the Forrest Fenn Box from \"There's Treasure Inside\" by Jon Collins-Black.\n\n## Stack\n- Next.js + TypeScript + Tailwind\n- Supabase (planned for persistent data, notes, auto-updates)\n- Mapbox (planned for interactive map)\n\n## Current State (March 8, 2026)\n- [x] Project scaffolded\n- [x] Data layer: poem (24 lines), clues (16), research (15 entries), boxes (5)\n- [x] Dashboard page\n- [x] Poem Analyzer page (interactive li"
+      "statusSummary": "# Vinnie's Treasure Tracker\n\n## Overview\nResearch hub for brother Vinnie to find the Forrest Fenn Box from \"There's Treasure Inside\" by Jon Collins-Black.\n\n## Stack\n- Next.js + TypeScript + Tailwind\n- Supabase (planned for persistent data, notes, auto-updates)\n- Mapbox (planned for interactive map)\n\n## Current State (March 8, 2026)\n- [x] Project scaffolded\n- [x] Data layer: poem (24 lines), clues (16), research (15 entries), boxes (5)\n- [x] Dashboard page\n- [x] Poem Analyzer page (interactive line-by-line with Fenn parallels)\n- [x] Clue Database page (filterable, searchable)\n- [x] Research Vau",
+      "healthScore": 100
     }
   ],
   "agents": [
@@ -380,84 +401,440 @@
       "label": "com.lessondraft.social",
       "name": "LessonDraft Social",
       "schedule": "8am, 1:30pm, 6pm",
+      "logPath": "/Users/scones/projects/lessondraft-social/logs/launchd_stdout.log",
       "loaded": true,
       "pid": null,
       "lastExitStatus": 0,
-      "healthy": true
+      "healthy": true,
+      "recentLog": ""
     },
     {
       "label": "com.jacobcascone.scholarship-alerts",
       "name": "Scholarship Alerts",
       "schedule": "9am daily",
+      "logPath": "/Users/scones/scholarships/logs/alerts.log",
       "loaded": true,
       "pid": null,
       "lastExitStatus": 0,
-      "healthy": true
+      "healthy": true,
+      "recentLog": "[2026-02-28T15:49:28.649Z] Alert: WayUp Unlock Your Potential (Bold.org) — $1,000 — due Feb 28 (TODAY)\n[2026-02-28T15:49:28.730Z] Alert: Survey Rewards (Bold.org) — $500 — due Feb 28 (TODAY)\n[2026-03-01T07:30:59.315Z] Check: no deadlines in next 7 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-01T15:01:18.617Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-02T15:01:29.860Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-03T15:00:05.412Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-04T15:00:01.877Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-05T15:00:01.522Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-06T15:28:50.614Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-07T15:00:05.728Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-08T14:00:02.585Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-09T14:00:05.872Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-10T14:00:04.370Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-11T14:00:02.948Z] Check: no deadlines in next 3 days."
     },
     {
       "label": "com.tradovate.bot",
       "name": "Tradovate Bot",
-      "schedule": "Always running",
+      "schedule": "Always on",
+      "logPath": "/Users/scones/projects/tradovate-mcp/logs/bot_stdout.log",
       "loaded": false,
       "pid": null,
       "lastExitStatus": null,
-      "healthy": false
+      "healthy": false,
+      "recentLog": "- locator resolved to <button tabindex=\"-1\" title=\"Trade with your broker\" class=\"button-AoI2iZaK roundButton-FujgyDpN roundButtonColor-xCeOT7of black-xCeOT7of secondary-xCeOT7of xsmall-FujgyDpN apply-common-tooltip\">…</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"backdrop-aRAWUDhF\"></div> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"wrapper-SiBYNi_V\">…</div> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    3 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"wrapper-SiBYNi_V\">…</div> from <div id=\"overlap-manager-root\" data-qa-id=\"overlap-manager-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n\n[2026-03-10T04:14:48.020Z] Browser opened → TradingView"
     },
     {
       "label": "com.atlas.recorder",
       "name": "Atlas Recorder",
-      "schedule": "Always running",
+      "schedule": "Always on",
+      "logPath": "/tmp/atlas-recorder.log",
       "loaded": true,
       "pid": 1699,
       "lastExitStatus": 0,
-      "healthy": true
+      "healthy": true,
+      "recentLog": ""
     },
     {
       "label": "com.builtsimple.email-sender",
       "name": "Email Sender",
-      "schedule": "9:03am daily",
+      "schedule": "9:03am",
+      "logPath": "/Users/scones/projects/lead-scraper/logs/send.log",
       "loaded": true,
       "pid": 18174,
       "lastExitStatus": 0,
-      "healthy": true
+      "healthy": true,
+      "recentLog": "Sent! (19cdd3a43637b115)\n  Waiting 54s before next...\n\n[10/15] Tomorrow's Promise Today <info@tptleaders.com>\n  Subject: Local web guy in Lee's Summit\n  Sent! (19cdd3b18666152e)\n  Waiting 42s before next...\n\n[11/15] Delphinium Hair Salon <delphiniumsalon@gmail.com>\n  Subject: Hey from Kansas City\n  Sent! (19cdd3bc0b9571c3)\n  Waiting 51s before next...\n\n[12/15] Ruff Ranch KC <pets@ruffranchkc.com>\n  Subject: Hey from Shawnee\n  Sent! (19cdd3c89b7c483d)\n  Waiting 47s before next...\n\n[13/15] D & S Sanitation <dandssanitationllc@gmail.com>\n  Subject: Saw D & S Sanitation on Google\n  Sent! (19cdd3d404a54add)\n  Waiting 35s before next...\n\n[14/15] Rod's Sports and Apparel <info@rodssports.com>\n  Subject: Quick question for Rod's Sports and Apparel"
     },
     {
       "label": "com.builtsimple.follow-up",
-      "name": "Follow-Up Sender",
-      "schedule": "2:07pm daily",
+      "name": "Follow-Up",
+      "schedule": "2:07pm",
+      "logPath": "/Users/scones/projects/lead-scraper/logs/follow-up.log",
       "loaded": true,
       "pid": null,
       "lastExitStatus": 0,
-      "healthy": true
+      "healthy": true,
+      "recentLog": "Found 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---\nFound 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---\nFound 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---"
     },
     {
       "label": "com.lessondraft.gsc-check",
-      "name": "GSC Daily Check",
+      "name": "GSC Check",
       "schedule": "9am daily",
+      "logPath": "/Users/scones/tools/gsc/logs/launchd-stdout.log",
       "loaded": true,
       "pid": 61114,
       "lastExitStatus": 0,
-      "healthy": true
+      "healthy": true,
+      "recentLog": "OK: Homepage 200\n  OK: No dev-browser-missing header\n  OK: Sitemap accessible\n  OK: RSS feed accessible\n\n--- Search Performance ---\n\n=== LessonDraft — Last 15 Days ===\n\n  Clicks:       1\n  Impressions:  7\n  Avg CTR:      1.1%\n  Avg Position: 2.3\n  Clicks/day:   0.1\n\n  Daily (last 7 days):\n    2026-03-03      0 clicks       0 imp  █\n    2026-03-04      0 clicks       0 imp  █\n    2026-03-05      0 clicks       0 imp  █\n    2026-03-06      0 clicks       0 imp  █\n    2026-03-07      0 clicks       0 imp  █\n    2026-03-08      0 clicks       0 imp  █\n    2026-03-09      1 clicks       6 imp  █████\n\n--- Indexing Status ---"
     },
     {
       "label": "com.lessondraft.weekly-health",
-      "name": "SEO Health Check",
-      "schedule": "Mondays 10am",
+      "name": "SEO Health",
+      "schedule": "Mon 10am",
+      "logPath": "/Users/scones/tools/gsc/logs/launchd-health-stdout.log",
       "loaded": true,
       "pid": null,
       "lastExitStatus": 0,
-      "healthy": true
+      "healthy": true,
+      "recentLog": "\u001b[32m  PASS: https://lessondraft.com/lesson-plan → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/quiz → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/rubric → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/blog → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/how-it-works → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/for → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/guides → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/resources → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/free-tools → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/glossary → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/examples → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/printables → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/compare → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/feed.xml → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/sitemap.xml → 200\u001b[0m\n\n--- Structured Data ---\n\u001b[32m  PASS: Homepage has JSON-LD structured data\u001b[0m\n\u001b[32m  PASS: Homepage has WebSite schema\u001b[0m\n\u001b[32m  PASS: Homepage has Organization schema\u001b[0m\n\u001b[32m  PASS: Homepage has og:image meta tag\u001b[0m\n\u001b[32m  PASS: Homepage has canonical URL\u001b[0m\n\n\u001b[32mALL CHECKS PASSED\u001b[0m\nLog: /Users/scones/tools/gsc/logs/health-2026-03-09_1000.log"
     },
     {
       "label": "com.tracker.digest",
       "name": "Tracker Digest",
       "schedule": "7am daily",
+      "logPath": null,
       "loaded": true,
       "pid": null,
       "lastExitStatus": 0,
-      "healthy": true
+      "healthy": true,
+      "recentLog": null
+    },
+    {
+      "label": "com.commandcenter.update",
+      "name": "Dashboard Update",
+      "schedule": "7:30am, 7:30pm",
+      "logPath": "/Users/scones/projects/command-center/logs/update.log",
+      "loaded": true,
+      "pid": null,
+      "lastExitStatus": 0,
+      "healthy": true,
+      "recentLog": "Regenerating dashboard data...\nDashboard data generated at /Users/scones/projects/command-center/src/data/dashboard-data.json\n  12 active projects, 6 automations, 8/9 agents healthy\nData changed, committing and pushing...\n[main 50cf01a] Update dashboard data 2026-03-11_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 1 insertion(+), 1 deletion(-)\nDeploying to Vercel...\n\u001b[2K\u001b[1A\u001b[2K\u001b[GProduction: https://command-center-djysupwtl-cascone26s-projects.vercel.app [45s]\nCompleting...\nAliased: https://command-center-liart-three.vercel.app [45s]\nDone."
     }
   ],
+  "heatmap": {
+    "2026-03-06": 14,
+    "2026-03-04": 37,
+    "2026-03-03": 47,
+    "2026-03-02": 26,
+    "2026-02-24": 33,
+    "2026-02-23": 31,
+    "2026-02-22": 8,
+    "2026-02-21": 4,
+    "2026-02-20": 11,
+    "2026-02-19": 27,
+    "2026-02-18": 3,
+    "2026-02-26": 16,
+    "2026-02-25": 1,
+    "2026-02-28": 3,
+    "2026-03-01": 19,
+    "2026-03-09": 10,
+    "2026-03-08": 15,
+    "2026-03-07": 1,
+    "2026-03-05": 23
+  },
+  "scholarships": {
+    "statusCounts": {
+      "applied": {
+        "count": 7,
+        "amount": 6000
+      },
+      "discovered": {
+        "count": 220,
+        "amount": 443580
+      },
+      "expired": {
+        "count": 10,
+        "amount": 24000
+      },
+      "skipped": {
+        "count": 1,
+        "amount": 2500
+      },
+      "todo": {
+        "count": 20,
+        "amount": 91080
+      }
+    },
+    "upcoming": [
+      {
+        "name": "Get Educated Online",
+        "amount": 1000,
+        "deadline": "2026-03-15",
+        "status": "todo"
+      },
+      {
+        "name": "Brian C Jensen",
+        "amount": 1000,
+        "deadline": "2026-03-20",
+        "status": "todo"
+      },
+      {
+        "name": "Jim Maxwell Memorial",
+        "amount": 5000,
+        "deadline": "2026-03-28",
+        "status": "todo"
+      },
+      {
+        "name": "Niche $25K No Essay",
+        "amount": 25000,
+        "deadline": "2026-03-31",
+        "status": "todo"
+      },
+      {
+        "name": "Finance Your Education (Bold.org)",
+        "amount": 1000,
+        "deadline": "2026-03-31",
+        "status": "todo"
+      },
+      {
+        "name": "Jump for Joy InstaScholarship",
+        "amount": 500,
+        "deadline": "2026-03-31",
+        "status": "todo"
+      },
+      {
+        "name": "Niche $2K Monthly",
+        "amount": 2000,
+        "deadline": "2026-03-31",
+        "status": "todo"
+      },
+      {
+        "name": "Redefining Victory",
+        "amount": 2500,
+        "deadline": "2026-04-01",
+        "status": "todo"
+      },
+      {
+        "name": "Kerry Damiano/Oasis (if eligible)",
+        "amount": 24000,
+        "deadline": "2026-04-06",
+        "status": "todo"
+      },
+      {
+        "name": "Haiti Rising Love Wins Scholarship",
+        "amount": 2500,
+        "deadline": "2026-04-14",
+        "status": "applied"
+      },
+      {
+        "name": "Robert F. Lawson Fund",
+        "amount": 1000,
+        "deadline": "2026-04-15",
+        "status": "todo"
+      },
+      {
+        "name": "NEA Jack Kinnaman",
+        "amount": 3500,
+        "deadline": "2026-04-15",
+        "status": "todo"
+      },
+      {
+        "name": "Smith & Moore Uplift",
+        "amount": 7580,
+        "deadline": "2026-04-26",
+        "status": "todo"
+      },
+      {
+        "name": "Forever90 Scholarship",
+        "amount": 1000,
+        "deadline": "2026-05-27",
+        "status": "applied"
+      },
+      {
+        "name": "Pastor Thomas Rorie Jr. Christian Values Scholarship",
+        "amount": 2000,
+        "deadline": "2026-05-30",
+        "status": "applied"
+      },
+      {
+        "name": "Pastor Thomas Rorie Jr.",
+        "amount": 2000,
+        "deadline": "2026-05-30",
+        "status": "todo"
+      },
+      {
+        "name": "Patricia Lindsey Jackson Foundation - Eva Mae Jackson Scholarship of Education",
+        "amount": 500,
+        "deadline": "2026-06-02",
+        "status": "applied"
+      },
+      {
+        "name": "Arthur & Elana Panos",
+        "amount": 1000,
+        "deadline": "2026-08-19",
+        "status": "todo"
+      },
+      {
+        "name": "Discover",
+        "amount": 5000,
+        "deadline": "2026-08-2026",
+        "status": "todo"
+      },
+      {
+        "name": "Outstanding Undergraduate",
+        "amount": 1000,
+        "deadline": "2026-11-30",
+        "status": "todo"
+      }
+    ],
+    "totalPipeline": 567160,
+    "totalCount": 258,
+    "applied": {
+      "count": 7,
+      "amount": 6000
+    },
+    "todo": {
+      "count": 20,
+      "amount": 91080
+    },
+    "won": {
+      "count": 0,
+      "amount": 0
+    }
+  },
+  "emailCampaign": {
+    "totalLeads": 6875,
+    "withEmail": 179,
+    "emailed": 43,
+    "followedUp": 0,
+    "sent": 30,
+    "errors": 0,
+    "recentSends": [
+      {
+        "id": 8704,
+        "name": "Aqua Pro Irrigation and Landscaping",
+        "email": "tim.michel13@gmail.com",
+        "messageId": "19cd8191a37cf63f",
+        "sentAt": "2026-03-10T14:14:10.330Z"
+      },
+      {
+        "id": 8798,
+        "name": "Uncle Huck Sewer & Septic",
+        "email": "webmaster@unclehuck.com",
+        "messageId": "19cd8183676fdd5a",
+        "sentAt": "2026-03-10T14:13:11.634Z"
+      },
+      {
+        "id": 10431,
+        "name": "858 Hair",
+        "email": "salon.858hair@gmail.com",
+        "messageId": "19cd8179716ee3f8",
+        "sentAt": "2026-03-10T14:12:30.746Z"
+      },
+      {
+        "id": 7830,
+        "name": "Fetchers Play & Stay",
+        "email": "info@fetchersplaystay.com",
+        "messageId": "19cd816e44963f8b",
+        "sentAt": "2026-03-10T14:11:45.633Z"
+      },
+      {
+        "id": 12107,
+        "name": "Skweeky Kleen Windows",
+        "email": "skweekykleenwindows@gmail.com",
+        "messageId": "19cd816005927292",
+        "sentAt": "2026-03-10T14:10:47.030Z"
+      },
+      {
+        "id": 9521,
+        "name": "KC Rock Chips",
+        "email": "jake@kcrockchips.com",
+        "messageId": "19cd8155aa2c316a",
+        "sentAt": "2026-03-10T14:10:04.629Z"
+      },
+      {
+        "id": 1970,
+        "name": "Above & Beyond Dyslexia",
+        "email": "abovedyslexia@gmail.com",
+        "messageId": "19cd814b7f97ba39",
+        "sentAt": "2026-03-10T14:09:22.358Z"
+      },
+      {
+        "id": 12816,
+        "name": "Iconic Apparel",
+        "email": "paul@iconicapparelkc.com",
+        "messageId": "19cd813ceb1c6640",
+        "sentAt": "2026-03-10T14:08:23.038Z"
+      },
+      {
+        "id": 12901,
+        "name": "Hank's Portables & Septic Service",
+        "email": "hanksportablesllc@yahoo.com",
+        "messageId": "19cd81300894c6c5",
+        "sentAt": "2026-03-10T14:07:30.188Z"
+      },
+      {
+        "id": 12143,
+        "name": "Metro Wide Junk Removal",
+        "email": "info@metrowidejunk.com",
+        "messageId": "19cd81282834452a",
+        "sentAt": "2026-03-10T14:06:58.142Z"
+      }
+    ]
+  },
+  "gsc": {
+    "tracker": {
+      "first_indexed": "None",
+      "first_impression": "None",
+      "first_click": "None",
+      "last_indexed_count": 0,
+      "last_impressions": 1,
+      "consecutive_blocked": 0,
+      "last_check": "2026-03-11T14:01:18Z"
+    },
+    "clicks": 1,
+    "impressions": 7,
+    "ctr": "1.1%",
+    "position": "2.3",
+    "dailyData": [
+      {
+        "date": "2026-03-03",
+        "clicks": 0,
+        "impressions": 0
+      },
+      {
+        "date": "2026-03-04",
+        "clicks": 0,
+        "impressions": 0
+      },
+      {
+        "date": "2026-03-05",
+        "clicks": 0,
+        "impressions": 0
+      },
+      {
+        "date": "2026-03-06",
+        "clicks": 0,
+        "impressions": 0
+      },
+      {
+        "date": "2026-03-07",
+        "clicks": 0,
+        "impressions": 0
+      },
+      {
+        "date": "2026-03-08",
+        "clicks": 0,
+        "impressions": 0
+      },
+      {
+        "date": "2026-03-09",
+        "clicks": 1,
+        "impressions": 6
+      }
+    ],
+    "healthStatus": "PASS"
+  },
+  "school": {
+    "completedCourses": 14,
+    "totalEstimated": 40,
+    "currentCourse": {
+      "code": "ELM-470",
+      "name": "Mathematics Education",
+      "currentTopic": 6,
+      "totalTopics": 7
+    },
+    "graduationDate": "2027-04-30",
+    "daysUntilGrad": 414,
+    "gpa": "3.87"
+  },
   "ideas": [
     {
       "name": "Sophia's Resident Evil Fan Page",
@@ -518,6 +895,36 @@
       "name": "Personal life API",
       "description": "one unified API layer over Git, Stripe, Gmail, school system, calendar. Query anything about your digital life from anywhere. Foundation layer that everything else plugs into.",
       "section": "Niche / \"Nobody Else Has This\" Ideas"
+    }
+  ],
+  "activity": [
+    {
+      "date": "2026-03-11T23:49:07.577Z",
+      "action": "PAUSE",
+      "id": 14,
+      "title": "Tradovate Bot",
+      "note": null
+    },
+    {
+      "date": "2026-03-11T23:49:07.549Z",
+      "action": "REMOVE",
+      "id": 11,
+      "title": "Upwork",
+      "note": null
+    },
+    {
+      "date": "2026-03-08T13:49:29.331Z",
+      "action": "ADD",
+      "id": 21,
+      "title": "Vinnie Treasure Site",
+      "note": null
+    },
+    {
+      "date": "2026-03-08T11:26:13.310Z",
+      "action": "ADD",
+      "id": 20,
+      "title": "The Faithful Minute",
+      "note": null
     }
   ],
   "tasks": []

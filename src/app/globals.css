@@ -1,45 +1,151 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0a0a0f;
-  --surface: #12121a;
-  --surface-2: #1a1a25;
-  --border: #2a2a3a;
-  --text: #e4e4ef;
-  --text-dim: #8888a0;
+  --bg: #06080d;
+  --surface: #0d1117;
+  --surface-2: #151b25;
+  --surface-3: #1c2333;
+  --border: #21283b;
+  --border-bright: #30394d;
+  --text: #e0e6f0;
+  --text-dim: #6b7894;
+  --text-mid: #8b95ad;
   --accent: #6366f1;
-  --accent-glow: rgba(99, 102, 241, 0.15);
-  --green: #22c55e;
-  --yellow: #eab308;
+  --accent-dim: rgba(99, 102, 241, 0.12);
+  --green: #10b981;
+  --green-dim: rgba(16, 185, 129, 0.12);
+  --yellow: #f59e0b;
+  --yellow-dim: rgba(245, 158, 11, 0.12);
   --red: #ef4444;
+  --red-dim: rgba(239, 68, 68, 0.12);
   --orange: #f97316;
+  --cyan: #06b6d4;
+  --cyan-dim: rgba(6, 182, 212, 0.12);
+  --purple: #a855f7;
+  --purple-dim: rgba(168, 85, 247, 0.12);
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
-}
+* { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
 
 body {
   background: var(--bg);
   color: var(--text);
   font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-.fade-in {
-  animation: fadeIn 0.3s ease-out forwards;
-}
-
-@keyframes pulse-dot {
+@keyframes pulse-soft {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+  50% { opacity: 0.5; }
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 4px rgba(99,102,241,0.2); }
+  50% { box-shadow: 0 0 12px rgba(99,102,241,0.4); }
 }
 
-.pulse-dot {
-  animation: pulse-dot 2s ease-in-out infinite;
+.fade-up { animation: fadeUp 0.35s ease-out both; }
+.pulse-soft { animation: pulse-soft 2.5s ease-in-out infinite; }
+.glow { animation: glow 3s ease-in-out infinite; }
+
+/* Panel base */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.panel-title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+}
+
+/* Stat pill */
+.stat-pill {
+  font-size: 11px;
+  font-family: "JetBrains Mono", monospace;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+/* Progress bar */
+.progress-track {
+  height: 4px;
+  background: var(--surface-3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.6s ease;
+}
+
+/* Scrollable */
+.scroll-y {
+  overflow-y: auto;
+  max-height: 320px;
+}
+.scroll-y::-webkit-scrollbar { width: 4px; }
+.scroll-y::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* Health badge */
+.health-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-family: "JetBrains Mono", monospace;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+/* Heatmap cell */
+.heatmap-cell {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+/* Log viewer */
+.log-viewer {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
+  color: var(--text-dim);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Mini bar chart */
+.mini-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 40px;
+}
+.mini-bar-col {
+  flex: 1;
+  border-radius: 1px 1px 0 0;
+  min-width: 4px;
+  transition: height 0.3s ease;
 }
