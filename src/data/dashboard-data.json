@@ -1,0 +1,524 @@
+{
+  "generatedAt": "2026-03-12T00:00:15.638Z",
+  "stats": {
+    "activeProjects": 12,
+    "pausedProjects": 2,
+    "activeAutomations": 6,
+    "healthyAgents": 8,
+    "totalAgents": 9,
+    "ideasCount": 12
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "LessonDraft",
+      "type": "project",
+      "category": "business",
+      "path": "~/projects/LessonDraft",
+      "url": "lessondraft.com",
+      "status": "active",
+      "checkIn": "weekly",
+      "nextCheckIn": "2026-03-14",
+      "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
+      "lastCommit": {
+        "hash": "df80d84cda86b83f672de903c304c38b4bcd5c25",
+        "message": "Fix 537 orphan SEO pages + optimize blog page size",
+        "date": "2026-03-06 22:28:23 -0600"
+      },
+      "gitStats": {
+        "totalCommits": 107
+      },
+      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed and live at `lessondraft.vercel.app`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (3/day) → Pro ($12/mo) → Max ($24/mo)\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Test Suite + Security Audit (2026-03-04):**\n  - Added Jest + React Testing Library: 131 tests across 24 test files covering API routes, lib utilities, and hooks\n  - XSS fix: added escapeHtml to all email templates (sendWelcome"
+    },
+    {
+      "id": 2,
+      "title": "BuiltSimple",
+      "type": "project",
+      "category": "business",
+      "path": "~/projects/portfolio",
+      "url": "builtsimple.dev",
+      "status": "active",
+      "checkIn": "weekly",
+      "nextCheckIn": "2026-03-14",
+      "notes": "Portfolio site. Check blog traffic, lead responses.",
+      "lastCommit": {
+        "hash": "f497aa5c7bbc7b73838640036a249f9e01904b74",
+        "message": "Add pagination to blog list and strip content from client payload",
+        "date": "2026-03-04 15:40:04 -0600"
+      },
+      "gitStats": {
+        "totalCommits": 51
+      },
+      "statusSummary": "# Portfolio — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed at `https://builtsimple.dev`\n- GitHub: `https://github.com/cascone26/portfolio`\n- Vercel project: `cascone26s-projects/builtsimple`\n- Custom domain: `builtsimple.dev` (live)\n\n## Site Structure (31 routes)\n- `/` — Home (hero with code mockup, featured LessonDraft section, highlight cards)\n- `/services` — Services & pricing (6 services + how it works)\n- `/work` — Portfolio grid (LessonDraft, Social Autoposter, placeholde"
+    },
+    {
+      "id": 3,
+      "title": "Lead Scraper / Outreach",
+      "type": "project",
+      "category": "business",
+      "path": "~/projects/lead-scraper",
+      "status": "active",
+      "checkIn": "daily",
+      "nextCheckIn": "2026-03-08",
+      "notes": "Monitor email sends, check replies, manual texting. 130 drafts ready.",
+      "lastCommit": {
+        "hash": "fe516189087529d3ada353d69ad7b098d4ae0711",
+        "message": "Initial build: lead scraper for BuiltSimple local business prospecting",
+        "date": "2026-02-28 10:08:58 -0600"
+      },
+      "gitStats": {
+        "totalCommits": 2
+      },
+      "statusSummary": "# Lead Scraper — Status\n\n## Overview\nLead-gen engine for BuiltSimple. Finds local businesses without websites (or with bad ones), enriches contact info, and automates personalized outreach via email and text.\n\n## Current State (Mar 7, 2026)\n- **6,875 leads** in SQLite DB across 50-mile KC metro radius\n- **1,294 without websites** (prime targets)\n- **187 with verified email addresses**\n- **130 Gmail drafts ready** to send (filtered for sites that actually need help)\n- **1,037 phone-only businesse"
+    },
+    {
+      "id": 4,
+      "title": "LessonDraft Social Autoposter",
+      "type": "automation",
+      "category": "business",
+      "path": "~/projects/lessondraft-social",
+      "status": "active",
+      "checkIn": "weekly",
+      "nextCheckIn": "2026-03-14",
+      "notes": "3x daily posts. Watch for Instagram API flags.",
+      "lastCommit": {
+        "hash": "22eac9193ff59ab1cecec2a854392d5d34001d20",
+        "message": "Add STATUS.md documenting autoposter architecture, platforms, and GitHub Actions setup",
+        "date": "2026-03-04 14:57:05 -0600"
+      },
+      "gitStats": {
+        "totalCommits": 8
+      },
+      "statusSummary": "# LessonDraft Social Autoposter — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- GitHub: `https://github.com/cascone26/lessondraft-social.git`\n- Runs via GitHub Actions (3x daily: 7:30am, 12pm, 5:30pm CT)\n- Also has local LaunchAgent (`com.lessondraft.social.plist`) for macOS\n- Platforms: Twitter/X, Pinterest, Facebook, LinkedIn, TikTok (Instagram skipped in CI due to private API detection)\n\n## What It Is\nPython autoposter that generates educational social media content for LessonDraft u"
+    },
+    {
+      "id": 5,
+      "title": "Scholarship System",
+      "type": "project",
+      "category": "school",
+      "path": "~/scholarships",
+      "status": "active",
+      "checkIn": "weekly",
+      "nextCheckIn": "2026-03-14",
+      "notes": "Check deadlines, submit applications. $88K+ pipeline.",
+      "lastCommit": {
+        "hash": "8d211fc444deb3cd4a548e41d4a23557afdaebe8",
+        "message": "Scholarship bot system — full autopilot with audit logging",
+        "date": "2026-02-26 09:38:33 -0600"
+      },
+      "gitStats": {
+        "totalCommits": 1
+      },
+      "statusSummary": "# Scholarship System — STATUS\n\n**Created:** 2026-02-24\n**Updated:** 2026-03-11\n**Phase:** Full automation active — scraping + auto-apply operational\n\n## Current Stats\n- **256 scholarships** tracked in SQLite DB\n- **$540K+ pipeline value**\n- **0 applied yet** — auto-apply system just built, ready to run\n- **Daily autopilot**: LaunchAgent runs at 8 AM (scrape + score + apply + essays + status + followup + briefing)\n\n## Platform Breakdown\n| Platform | Count | Total Value |\n|---|---|---|\n| Fastweb |"
+    },
+    {
+      "id": 6,
+      "title": "ClassPilot",
+      "type": "project",
+      "category": "school",
+      "path": "~/classpilot",
+      "status": "active",
+      "checkIn": "as-needed",
+      "nextCheckIn": null,
+      "notes": "Coursework engine. Update when new course block starts.",
+      "lastCommit": null,
+      "gitStats": {
+        "totalCommits": 0
+      },
+      "statusSummary": "# ClassPilot — Status\n\nLast updated: 2026-03-07\n\n## System Files\n| File | Purpose |\n|------|---------|\n| `CLAUDE.md` | Auto-loaded context — full ClassPilot operating instructions |\n| `system-prompt.md` | Voice rules, assignment templates, Integrity Engine, autonomous workflows |\n| `voice-profile.md` | Jacob's academic writing style (from 5+ analyzed submissions) |\n| `voice-check.md` | Voice + AI drift detector checklist |\n| `citations.md` | APA citation library — textbooks by course + all past "
+    },
+    {
+      "id": 7,
+      "title": "Meta Tutor",
+      "type": "project",
+      "category": "family",
+      "path": "~/projects/meta-tutor",
+      "url": "meta-tutor.vercel.app",
+      "status": "active",
+      "checkIn": "monthly",
+      "nextCheckIn": "2026-04-07",
+      "notes": "For Cris. Check usage/costs. Haiku + rate limiting in place.",
+      "lastCommit": {
+        "hash": "a53715b4411cbc0e8a08b951644a27935e2f0b2e",
+        "message": "Add STATUS.md and replace boilerplate README with project-specific documentation",
+        "date": "2026-03-04 14:57:06 -0600"
+      },
+      "gitStats": {
+        "totalCommits": 23
+      },
+      "statusSummary": "# Meta Tutor — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://meta-tutor.vercel.app`\n- GitHub: `https://github.com/cascone26/meta-tutor.git`\n- Built for Cris's Thomistic Metaphysics course\n- Google login required for all routes\n- Uses Claude Haiku (via `CLAUDE_MODEL` env var) with rate limiting (75/day) and prompt caching\n\n## What It Is\nStudy app with a strict no-cheat constraint — all features force active recall. No passive reading or answer lookup.\n\n## Pages (15 route"
+    },
+    {
+      "id": 8,
+      "title": "AtlasBox",
+      "type": "project",
+      "category": "family",
+      "path": "~/projects/mini-games",
+      "url": "atlasbox.vercel.app",
+      "status": "active",
+      "checkIn": "monthly",
+      "nextCheckIn": "2026-04-07",
+      "notes": "For Atlas. Add features when inspired.",
+      "lastCommit": {
+        "hash": "e937c5ac3026f6d70116b33a7daceddd612e3545",
+        "message": "Fix admin panel: sides format, remove non-persisting modifier/boolean fields, normalize cloud state on admin override",
+        "date": "2026-03-09 20:20:56 -0500"
+      },
+      "gitStats": {
+        "totalCommits": 107
+      },
+      "statusSummary": "# AtlasBox — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://atlasbox.vercel.app`\n- GitHub: `https://github.com/cascone26/mini-games.git`\n- Vercel: `cascone26s-projects/atlasbox` (auto-deploys from GitHub)\n- Single file: `index.html` (~9,986 lines, all HTML/CSS/JS inline)\n- Cloud sync via Supabase (profiles, leaderboard, cross-device save)\n\n## What It Is\n\"Shut the Box\" / \"Close the Box\" dice game built for Atlas, Jacob's 5-year-old nephew. Designed for a kid who can't rea"
+    },
+    {
+      "id": 9,
+      "title": "For Abby",
+      "type": "project",
+      "category": "family",
+      "path": "~/projects/for-abby",
+      "url": "abbywonderland.vercel.app",
+      "status": "active",
+      "checkIn": "monthly",
+      "nextCheckIn": "2026-04-07",
+      "notes": "Single HTML file. Update for events/holidays.",
+      "lastCommit": {
+        "hash": "1d3e0be1443b86e66574855da414dbc1bdf76295",
+        "message": "Add STATUS.md and README.md documenting Abby Wonderland features and deployment",
+        "date": "2026-03-04 14:57:04 -0600"
+      },
+      "gitStats": {
+        "totalCommits": 4
+      },
+      "statusSummary": "# For Abby (Abby Wonderland) — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://abbywonderland.vercel.app`\n- Single file: `index.html` (~5,916 lines, all HTML/CSS/JS inline)\n- PWA: installable on iOS and Android via manifest.json + service worker\n- No git remote hosting (local git only)\n\n## What It Is\nA personalized interactive experience built for Abby. Features a dreamy night-sky/aurora aesthetic with snowfall effects, ambient sound, and multiple interactive activities.\n"
+    },
+    {
+      "id": 10,
+      "title": "Cascone Family App",
+      "type": "project",
+      "category": "family",
+      "path": "~/projects/cascone-app",
+      "url": "cascone-app.vercel.app",
+      "status": "active",
+      "checkIn": "monthly",
+      "nextCheckIn": "2026-04-07",
+      "notes": "Family PWA. Update pages as needed.",
+      "lastCommit": {
+        "hash": "6995bec47a42c28f7ff7507ce80535d986ac1771",
+        "message": "Remove notepad from Jacob's page",
+        "date": "2026-03-05 18:03:07 -0600"
+      },
+      "gitStats": {
+        "totalCommits": 5
+      },
+      "statusSummary": "# Cascone Family App — STATUS\n\n## Live\n- **URL:** https://cascone-app.vercel.app\n- **GitHub:** https://github.com/cascone26/cascone-app\n- **Vercel:** cascone26s-projects/cascone-app (auto-deploys from GitHub)\n\n## Stack\n- Next.js 16 (App Router) + TypeScript + Tailwind CSS v4\n- PWA with manifest.json + service worker (offline support)\n- No database — all content in code files\n\n## Structure\n- `/` — Home page with family grid + daily rotating quote\n- `/jacob` `/abby` `/mom` `/dad` `/atlas` — Indivi"
+    },
+    {
+      "id": 12,
+      "title": "Roblox UGC",
+      "type": "project",
+      "category": "business",
+      "path": "~/projects/roblox-ugc",
+      "status": "paused",
+      "checkIn": "monthly",
+      "nextCheckIn": "2026-04-07",
+      "notes": "Paused due to Premium 1000 requirement. Check back when Premium 450 expires.",
+      "lastCommit": {
+        "hash": "7afee2675a612eae1eb6a9e069ba6686fb6ee847",
+        "message": "Gallery: auto-sort by trending, remove prices, add settings gear",
+        "date": "2026-03-04 10:25:42 -0600"
+      },
+      "gitStats": {
+        "totalCommits": 7
+      },
+      "statusSummary": "# Roblox UGC Clothing Bot\n\n## Status: v4.3 — Movie-Quality Character Rendering\n\n## v4.3 Changes (Mar 5)\n\n### Per-Face AI Generation (Flux Schnell)\n- **Per-face AI textures** — generates separate AI images for each body-part UV face (torso front/back, arms, legs)\n- **Asset cache** (`rendering/asset_cache.py`) — PNG cache at `assets/characters/<slug>/`, ~$0.02 per character first time, $0.00 from cache\n- **Face prompt engine** (`rendering/face_prompts.py`) — body-part-specific Flux prompts with co"
+    },
+    {
+      "id": 13,
+      "title": "Forgemaster / Roblox MCP",
+      "type": "project",
+      "category": "business",
+      "path": "~/projects/forgemaster",
+      "status": "active",
+      "checkIn": "monthly",
+      "nextCheckIn": "2026-04-07",
+      "notes": "Roblox Studio integration.",
+      "lastCommit": null,
+      "gitStats": {
+        "totalCommits": 0
+      },
+      "statusSummary": "# Forgemaster — Status\n\n## What It Is\nRoblox game factory engine. Builds complete, playable games in Roblox Studio via the MCP bridge plugin, or generates .rbxlx files offline.\n\n## Quick Start\n```bash\ncd ~/projects/forgemaster\n\n# Check Studio connection\nnode forge.js status\n\n# Build a tycoon in Studio\nnode forge.js build tycoon --theme medieval --name \"Dragon Castle Tycoon\"\n\n# Build an obby\nnode forge.js build obby --theme candy --name \"Sugar Rush Obby\"\n\n# Build a simulator\nnode forge.js build s"
+    },
+    {
+      "id": 14,
+      "title": "Tradovate Bot",
+      "type": "automation",
+      "category": "business",
+      "path": "~/projects/tradovate-mcp",
+      "status": "paused",
+      "checkIn": "daily",
+      "nextCheckIn": null,
+      "notes": "Trading bot. Monitor performance daily.",
+      "streakCount": 0,
+      "lastCommit": null,
+      "gitStats": {
+        "totalCommits": 0
+      },
+      "statusSummary": "# tradovate-mcp — Status\n\n## Last Updated\n2026-02-22\n\n## Current State\n- MCP server for TradingView trading automation\n- Risk/reward analysis tools\n- No git repo initialized\n\n## Known Issues / Next Up\n- (update this when starting/ending sessions)\n"
+    },
+    {
+      "id": 15,
+      "title": "GSC Daily Check",
+      "type": "automation",
+      "category": "business",
+      "path": "~/tools/gsc",
+      "status": "active",
+      "checkIn": "weekly",
+      "nextCheckIn": "2026-03-14",
+      "notes": "Google Search Console monitoring for lessondraft.com.",
+      "lastCommit": null,
+      "gitStats": {
+        "totalCommits": 0
+      },
+      "statusSummary": null
+    },
+    {
+      "id": 16,
+      "title": "BuiltSimple Email Sender",
+      "type": "automation",
+      "category": "business",
+      "status": "active",
+      "checkIn": "daily",
+      "nextCheckIn": "2026-03-08",
+      "notes": "15 emails/day at 9:03 AM. Monitor deliverability.",
+      "lastCommit": null,
+      "gitStats": null,
+      "statusSummary": null
+    },
+    {
+      "id": 17,
+      "title": "BuiltSimple Follow-Up",
+      "type": "automation",
+      "category": "business",
+      "status": "active",
+      "checkIn": "daily",
+      "nextCheckIn": "2026-03-08",
+      "notes": "Follow-up emails at 2:07 PM after 5 days.",
+      "lastCommit": null,
+      "gitStats": null,
+      "statusSummary": null
+    },
+    {
+      "id": 18,
+      "title": "Scholarship Alerts",
+      "type": "automation",
+      "category": "school",
+      "status": "active",
+      "checkIn": "weekly",
+      "nextCheckIn": "2026-03-14",
+      "notes": "Deadline alerts LaunchAgent.",
+      "lastCommit": null,
+      "gitStats": null,
+      "statusSummary": null
+    },
+    {
+      "id": 19,
+      "title": "Weekly SEO Health Check",
+      "type": "automation",
+      "category": "business",
+      "status": "active",
+      "checkIn": "weekly",
+      "nextCheckIn": "2026-03-14",
+      "notes": "Automated SEO health check.",
+      "lastCommit": null,
+      "gitStats": null,
+      "statusSummary": null
+    },
+    {
+      "id": 20,
+      "title": "The Faithful Minute",
+      "type": "project",
+      "category": "business",
+      "status": "active",
+      "checkIn": "weekly",
+      "nextCheckIn": "2026-03-15",
+      "notes": "YouTube Shorts. Edge-tts + ffmpeg pipeline.",
+      "tags": [],
+      "streakCount": 0,
+      "longestStreak": 0,
+      "path": "~/projects/faithful-minute",
+      "lastCommit": null,
+      "gitStats": {
+        "totalCommits": 0
+      },
+      "statusSummary": "# The Faithful Minute — YouTube Shorts Channel\n\n## Overview\nFaceless Catholic YouTube Shorts channel. AI-narrated, real art visuals, fully automated pipeline.\n\n**Channel name:** The Faithful Minute\n**Format:** 60-90 second Shorts (start short-form, add long-form later)\n**Voice:** Edge-tts (free, unlimited) — en-US-AndrewMultilingualNeural (warm, confident)\n**Visuals:** Public domain religious masterpieces from Wikimedia Commons\n**Cost:** $0/month\n\n## Style Rules (IMPORTANT)\n- **Images:** Real hi"
+    },
+    {
+      "id": 21,
+      "title": "Vinnie Treasure Site",
+      "type": "project",
+      "category": "family",
+      "status": "active",
+      "checkIn": "weekly",
+      "nextCheckIn": "2026-03-15",
+      "notes": "Treasure hunt research site for Vinnie. Forrest Fenn Box.",
+      "tags": [],
+      "streakCount": 0,
+      "longestStreak": 0,
+      "path": "~/projects/vinnie-treasure",
+      "lastCommit": {
+        "hash": "efcb88c42d607503472f64f1b9836d1b6de7787a",
+        "message": "Deep audit round 2: fix runtime bugs across 8 files",
+        "date": "2026-03-08 22:50:36 -0500"
+      },
+      "gitStats": {
+        "totalCommits": 14
+      },
+      "statusSummary": "# Vinnie's Treasure Tracker\n\n## Overview\nResearch hub for brother Vinnie to find the Forrest Fenn Box from \"There's Treasure Inside\" by Jon Collins-Black.\n\n## Stack\n- Next.js + TypeScript + Tailwind\n- Supabase (planned for persistent data, notes, auto-updates)\n- Mapbox (planned for interactive map)\n\n## Current State (March 8, 2026)\n- [x] Project scaffolded\n- [x] Data layer: poem (24 lines), clues (16), research (15 entries), boxes (5)\n- [x] Dashboard page\n- [x] Poem Analyzer page (interactive li"
+    }
+  ],
+  "agents": [
+    {
+      "label": "com.lessondraft.social",
+      "name": "LessonDraft Social",
+      "schedule": "8am, 1:30pm, 6pm",
+      "loaded": true,
+      "pid": null,
+      "lastExitStatus": 0,
+      "healthy": true
+    },
+    {
+      "label": "com.jacobcascone.scholarship-alerts",
+      "name": "Scholarship Alerts",
+      "schedule": "9am daily",
+      "loaded": true,
+      "pid": null,
+      "lastExitStatus": 0,
+      "healthy": true
+    },
+    {
+      "label": "com.tradovate.bot",
+      "name": "Tradovate Bot",
+      "schedule": "Always running",
+      "loaded": false,
+      "pid": null,
+      "lastExitStatus": null,
+      "healthy": false
+    },
+    {
+      "label": "com.atlas.recorder",
+      "name": "Atlas Recorder",
+      "schedule": "Always running",
+      "loaded": true,
+      "pid": 1699,
+      "lastExitStatus": 0,
+      "healthy": true
+    },
+    {
+      "label": "com.builtsimple.email-sender",
+      "name": "Email Sender",
+      "schedule": "9:03am daily",
+      "loaded": true,
+      "pid": 18174,
+      "lastExitStatus": 0,
+      "healthy": true
+    },
+    {
+      "label": "com.builtsimple.follow-up",
+      "name": "Follow-Up Sender",
+      "schedule": "2:07pm daily",
+      "loaded": true,
+      "pid": null,
+      "lastExitStatus": 0,
+      "healthy": true
+    },
+    {
+      "label": "com.lessondraft.gsc-check",
+      "name": "GSC Daily Check",
+      "schedule": "9am daily",
+      "loaded": true,
+      "pid": 61114,
+      "lastExitStatus": 0,
+      "healthy": true
+    },
+    {
+      "label": "com.lessondraft.weekly-health",
+      "name": "SEO Health Check",
+      "schedule": "Mondays 10am",
+      "loaded": true,
+      "pid": null,
+      "lastExitStatus": 0,
+      "healthy": true
+    },
+    {
+      "label": "com.tracker.digest",
+      "name": "Tracker Digest",
+      "schedule": "7am daily",
+      "loaded": true,
+      "pid": null,
+      "lastExitStatus": 0,
+      "healthy": true
+    }
+  ],
+  "ideas": [
+    {
+      "name": "Sophia's Resident Evil Fan Page",
+      "description": "RE-themed fan page / site for friend Sophia. Details TBD.",
+      "section": "Want to Build (Ready Now)"
+    },
+    {
+      "name": "Menubar LessonDraft MRR display",
+      "description": "live monthly recurring revenue in the menu bar. (Wait until there are actual subscribers.)",
+      "section": "Want to Build (Ready Now)"
+    },
+    {
+      "name": "Future-self email system",
+      "description": "write emails to yourself that deliver on a specific date. Cron + Gmail MCP. Free, no hardware.",
+      "section": "Want to Build (Ready Now)"
+    },
+    {
+      "name": "Price watcher",
+      "description": "monitor product URLs, alert when price drops. Script + cron. Free.",
+      "section": "Want to Build (Ready Now)"
+    },
+    {
+      "name": "Teach-me-back study tool",
+      "description": "Feynman technique quizzer that makes you explain concepts back and evaluates understanding. Claude API. Basically free.",
+      "section": "Want to Build (Ready Now)"
+    },
+    {
+      "name": "Link dump with brains",
+      "description": "throw URLs at it, it reads/summarizes/tags them. Search later by concept, not bookmark title. Free.",
+      "section": "Want to Build (Ready Now)"
+    },
+    {
+      "name": "Dead man's switch for projects",
+      "description": "nudges you if you haven't committed to a project in X days. Cron + git + email. Free.",
+      "section": "Want to Build (Ready Now)"
+    },
+    {
+      "name": "Context switcher",
+      "description": "`ctx lessondraft` / `ctx school` opens everything for that project in one command. Free.",
+      "section": "Want to Build (Ready Now)"
+    },
+    {
+      "name": "Smart file router",
+      "description": "background daemon that auto-sorts Downloads by type/project. Free.",
+      "section": "Want to Build (Ready Now)"
+    },
+    {
+      "name": "Pi dashboard display",
+      "description": "physical always-on screen showing LessonDraft metrics, school deadlines, weather. ~$50-80 for Pi + screen.",
+      "section": "Want to Build (Need Hardware / Budget)"
+    },
+    {
+      "name": "AI voice assistant on a speaker",
+      "description": "custom voice assistant connected to your own systems/data. Needs hardware.",
+      "section": "Want to Build (Need Hardware / Budget)"
+    },
+    {
+      "name": "Personal life API",
+      "description": "one unified API layer over Git, Stripe, Gmail, school system, calendar. Query anything about your digital life from anywhere. Foundation layer that everything else plugs into.",
+      "section": "Niche / \"Nobody Else Has This\" Ideas"
+    }
+  ],
+  "tasks": []
+}
