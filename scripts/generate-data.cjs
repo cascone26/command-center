@@ -368,6 +368,7 @@ const agents = [
   { label: "com.builtsimple.follow-up", name: "Follow-Up", schedule: "2:07pm", logPath: `${HOME}/projects/lead-scraper/logs/follow-up.log` },
   { label: "com.lessondraft.gsc-check", name: "GSC Check", schedule: "9am daily", logPath: `${HOME}/tools/gsc/logs/launchd-stdout.log` },
   { label: "com.lessondraft.weekly-health", name: "SEO Health", schedule: "Mon 10am", logPath: `${HOME}/tools/gsc/logs/launchd-health-stdout.log` },
+  { label: "com.lessondraft.watchdog", name: "Watchdog", schedule: "11am daily", logPath: `${HOME}/tools/watchdog.log` },
   { label: "com.lessondraft.rank-tracker", name: "Rank Tracker", schedule: "8am daily", logPath: `${HOME}/tools/gsc/logs/rank-tracker.log` },
   { label: "com.lessondraft.sitemap-health", name: "Sitemap Health", schedule: "Wed 10:30am", logPath: `${HOME}/tools/gsc/logs/sitemap-health.log` },
   { label: "com.tracker.digest", name: "Tracker Digest", schedule: "7am daily", logPath: null },
