@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-12T01:04:21.737Z",
+  "generatedAt": "2026-03-12T01:05:33.416Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
     "activeAutomations": 6,
-    "healthyAgents": 9,
-    "totalAgents": 10,
+    "healthyAgents": 11,
+    "totalAgents": 12,
     "ideasCount": 12,
     "avgHealthScore": 92
   },
@@ -484,6 +484,28 @@
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": "\u001b[32m  PASS: https://lessondraft.com/lesson-plan → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/quiz → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/rubric → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/blog → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/how-it-works → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/for → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/guides → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/resources → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/free-tools → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/glossary → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/examples → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/printables → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/compare → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/feed.xml → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/sitemap.xml → 200\u001b[0m\n\n--- Structured Data ---\n\u001b[32m  PASS: Homepage has JSON-LD structured data\u001b[0m\n\u001b[32m  PASS: Homepage has WebSite schema\u001b[0m\n\u001b[32m  PASS: Homepage has Organization schema\u001b[0m\n\u001b[32m  PASS: Homepage has og:image meta tag\u001b[0m\n\u001b[32m  PASS: Homepage has canonical URL\u001b[0m\n\n\u001b[32mALL CHECKS PASSED\u001b[0m\nLog: /Users/scones/tools/gsc/logs/health-2026-03-09_1000.log"
+    },
+    {
+      "label": "com.lessondraft.rank-tracker",
+      "name": "Rank Tracker",
+      "schedule": "8am daily",
+      "logPath": "/Users/scones/tools/gsc/logs/rank-tracker.log",
+      "loaded": true,
+      "pid": null,
+      "lastExitStatus": 0,
+      "healthy": true,
+      "recentLog": null
+    },
+    {
+      "label": "com.lessondraft.sitemap-health",
+      "name": "Sitemap Health",
+      "schedule": "Wed 10:30am",
+      "logPath": "/Users/scones/tools/gsc/logs/sitemap-health.log",
+      "loaded": true,
+      "pid": null,
+      "lastExitStatus": 0,
+      "healthy": true,
+      "recentLog": null
     },
     {
       "label": "com.tracker.digest",
