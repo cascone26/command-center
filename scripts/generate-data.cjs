@@ -196,26 +196,76 @@ function getGSCData() {
 
 function getSchoolData() {
   const grad = readFile(path.join(HOME, "classpilot/graduation.md"));
-  const completedMatch = grad ? grad.match(/## Completed Courses \((\d+)\)/) : null;
-  const completedCount = completedMatch ? parseInt(completedMatch[1]) : 0;
-  const currentMatch = grad ? grad.match(/\*\*(\w+-\d+)\*\*\s*—\s*(.+?)\s*\(Topic (\d+) of (\d+)\)/) : null;
 
-  const totalEstimated = 40;
-  const graduationDate = "2027-04-30";
+  // Parse completed count
+  const completedMatch = grad ? grad.match(/## Completed Courses \((\d+)\)/) : null;
+  const completedCount = completedMatch ? parseInt(completedMatch[1]) : 12;
+
+  // Parse scheduled count
+  const scheduledMatch = grad ? grad.match(/## Scheduled \((\d+)/) : null;
+  const scheduledCount = scheduledMatch ? parseInt(scheduledMatch[1]) : 10;
+
+  // Parse current course — format: **CODE** — Name | ... | **X topics** | Topic Y of Z
+  const currentMatch = grad ? grad.match(/\*\*(\w+-\w+)\*\*\s*—\s*(.+?)\s*\|[^|]*\|[^|]*\|[^|]*\|\s*\*\*(\d+)\s*topics\*\*\s*\|\s*Topic\s*(\d+)\s*of\s*(\d+)/) : null;
+
+  // Parse credits and GPA
+  const creditsMatch = grad ? grad.match(/Credits Completed:\*\*\s*(\d+)/) : null;
+  const gpaMatch = grad ? grad.match(/GPA:\*\*\s*([\d.]+)/) : null;
+  const completionMatch = grad ? grad.match(/Completion:\*\*\s*(\d+)%/) : null;
+
+  const totalCourses = completedCount + 1 + scheduledCount; // completed + current + scheduled
+  const credits = creditsMatch ? parseInt(creditsMatch[1]) : 48;
+  const gpa = gpaMatch ? gpaMatch[1] : "3.87";
+  const completion = completionMatch ? parseInt(completionMatch[1]) : 63;
+
+  const graduationDate = "2027-04-18";
   const daysUntilGrad = Math.ceil((new Date(graduationDate) - new Date()) / 86400000);
+
+  // Calculate current topic from course dates if not parsed from file
+  let currentCourse = null;
+  if (currentMatch) {
+    currentCourse = {
+      code: currentMatch[1],
+      name: currentMatch[2].trim(),
+      currentTopic: parseInt(currentMatch[4]),
+      totalTopics: parseInt(currentMatch[5]),
+    };
+  } else {
+    // Fallback: ELM-470, 1/26-3/22/2026, 8 topics, calculate from date
+    const start = new Date("2026-01-26");
+    const now = new Date();
+    const weekNum = Math.min(8, Math.max(1, Math.ceil((now - start) / (7 * 86400000))));
+    currentCourse = {
+      code: "ELM-470",
+      name: "Methods and Strategies for Teaching Mathematics",
+      currentTopic: weekNum,
+      totalTopics: 8,
+    };
+  }
+
+  // Upcoming scheduled courses
+  const scheduled = [];
+  const schedBlock = grad ? grad.match(/## Scheduled[\s\S]*?(?=##|$)/) : null;
+  if (schedBlock) {
+    const lines = schedBlock[0].split("\n");
+    for (const line of lines) {
+      const m = line.match(/^\d+\.\s*(\w+-\w+)\s*—\s*(.+?)\s*\|\s*(\d+\/\d+[\/-]\d+\/\d+\/\d+)\s*\|\s*(\d+)cr/);
+      if (m) {
+        scheduled.push({ code: m[1], name: m[2].trim(), dates: m[3], credits: parseInt(m[4]), doubled: line.includes("doubled") || line.includes("overlaps") });
+      }
+    }
+  }
 
   return {
     completedCourses: completedCount,
-    totalEstimated,
-    currentCourse: currentMatch ? {
-      code: currentMatch[1],
-      name: currentMatch[2],
-      currentTopic: parseInt(currentMatch[3]),
-      totalTopics: parseInt(currentMatch[4]),
-    } : null,
+    totalCourses,
+    credits,
+    completion,
+    currentCourse,
+    scheduled,
     graduationDate,
     daysUntilGrad,
-    gpa: "3.87",
+    gpa,
   };
 }
 

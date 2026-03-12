@@ -49,7 +49,7 @@ export function StatsRow({
   gsc,
 }: {
   stats: Stats;
-  school: { completedCourses: number; totalEstimated: number; gpa: string };
+  school: { completedCourses: number; totalCourses: number; credits: number; completion: number; gpa: string };
   scholarships: { totalCount: number; totalPipeline: number; applied: { count: number }; won: { count: number; amount: number } };
   emailCampaign: { sent: number; emailed: number };
   gsc: { clicks: number; impressions: number };

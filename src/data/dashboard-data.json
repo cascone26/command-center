@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-12T01:21:49.914Z",
+  "generatedAt": "2026-03-12T01:25:08.675Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -857,16 +857,76 @@
     "healthStatus": "PASS"
   },
   "school": {
-    "completedCourses": 14,
-    "totalEstimated": 40,
+    "completedCourses": 12,
+    "totalCourses": 23,
+    "credits": 48,
+    "completion": 63,
     "currentCourse": {
       "code": "ELM-470",
-      "name": "Mathematics Education",
-      "currentTopic": 6,
-      "totalTopics": 7
+      "name": "Methods and Strategies for Teaching Mathematics",
+      "currentTopic": 7,
+      "totalTopics": 8
     },
-    "graduationDate": "2027-04-30",
-    "daysUntilGrad": 414,
+    "scheduled": [
+      {
+        "code": "EDU-330",
+        "name": "Ethics and Advocacy in Education",
+        "dates": "3/23-5/17/2026",
+        "credits": 4,
+        "doubled": true
+      },
+      {
+        "code": "HTH-330",
+        "name": "Christian Ethics",
+        "dates": "3/23-5/17/2026",
+        "credits": 4,
+        "doubled": true
+      },
+      {
+        "code": "ESL-440N",
+        "name": "Methods of Structured English Immersion",
+        "dates": "5/18-7/12/2026",
+        "credits": 3,
+        "doubled": true
+      },
+      {
+        "code": "GOV-260",
+        "name": "Arizona Constitution & Government",
+        "dates": "5/18-5/31/2026",
+        "credits": 1,
+        "doubled": false
+      },
+      {
+        "code": "ELM-361",
+        "name": "Instructional Methods: Integrating Science and Health",
+        "dates": "7/13-9/6/2026",
+        "credits": 4,
+        "doubled": true
+      },
+      {
+        "code": "MIN-320",
+        "name": "Christian Character Formation",
+        "dates": "7/13-9/6/2026",
+        "credits": 4,
+        "doubled": true
+      },
+      {
+        "code": "ELM-351",
+        "name": "Methods: Integrating Social Studies and the Arts",
+        "dates": "9/7-11/1/2026",
+        "credits": 4,
+        "doubled": false
+      },
+      {
+        "code": "ELM-490",
+        "name": "Student Teaching",
+        "dates": "1/4-4/18/2027",
+        "credits": 8,
+        "doubled": false
+      }
+    ],
+    "graduationDate": "2027-04-18",
+    "daysUntilGrad": 402,
     "gpa": "3.87"
   },
   "ideas": [
