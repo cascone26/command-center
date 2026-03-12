@@ -31,17 +31,17 @@ export function Notepad() {
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Quick notes..."
-        className="w-full resize-none outline-none text-xs"
+        className="w-full resize-none outline-none"
         rows={10}
         style={{
           background: "var(--surface-2)",
           border: "1px solid var(--border)",
           borderRadius: "6px",
-          padding: "8px",
+          padding: "10px",
           color: "var(--text)",
           fontFamily: "'JetBrains Mono', monospace",
           fontSize: "11px",
-          lineHeight: "1.5",
+          lineHeight: "1.6",
         }}
       />
       <p style={{ fontSize: "9px", color: "var(--text-dim)", marginTop: "4px" }}>

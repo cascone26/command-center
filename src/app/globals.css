@@ -25,6 +25,8 @@
   --purple-dim: rgba(168, 85, 247, 0.12);
 }
 
+html { scroll-behavior: smooth; }
+
 * { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
 
 body {
@@ -58,6 +60,10 @@ body {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 16px;
+  transition: border-color 0.2s ease;
+}
+.panel:hover {
+  border-color: var(--border-bright);
 }
 .panel-header {
   display: flex;
@@ -66,10 +72,10 @@ body {
   margin-bottom: 12px;
 }
 .panel-title {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: var(--text-dim);
 }
 
@@ -148,4 +154,183 @@ body {
   border-radius: 1px 1px 0 0;
   min-width: 4px;
   transition: height 0.3s ease;
+}
+
+/* Section nav tabs */
+.nav-tabs {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+.nav-tab {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-dim);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  border: none;
+  background: transparent;
+}
+.nav-tab:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+.nav-tab.active {
+  color: var(--text);
+  background: var(--surface-3);
+}
+
+/* Search input */
+.search-input {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px 8px 36px;
+  font-size: 13px;
+  color: var(--text);
+  outline: none;
+  width: 100%;
+  max-width: 320px;
+  transition: border-color 0.15s ease;
+}
+.search-input:focus {
+  border-color: var(--accent);
+}
+.search-input::placeholder {
+  color: var(--text-dim);
+}
+
+/* Stat card clickable */
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.stat-card:hover {
+  border-color: var(--border-bright);
+  background: var(--surface-2);
+}
+
+/* Editable field */
+.editable-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.editable-row:last-child {
+  border-bottom: none;
+}
+.edit-btn {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 2px 4px;
+  font-size: 11px;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+}
+.edit-btn:hover {
+  color: var(--text);
+}
+.inline-input {
+  background: var(--surface-2);
+  border: 1px solid var(--border-bright);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  color: var(--text);
+  outline: none;
+  font-family: "JetBrains Mono", monospace;
+}
+.inline-input:focus {
+  border-color: var(--accent);
+}
+
+/* Mono numbers */
+.mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Subtle link */
+.subtle-link {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.subtle-link:hover {
+  color: var(--accent);
+}
+
+/* Goal checkbox */
+.goal-check {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--border-bright);
+  border-radius: 3px;
+  background: var(--surface-2);
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.goal-check:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.goal-check:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+/* Section anchor offset for nav */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Search results overlay */
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border: 1px solid var(--border-bright);
+  border-radius: 8px;
+  margin-top: 4px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 50;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+.search-result-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+  border-bottom: 1px solid var(--border);
+}
+.search-result-item:last-child {
+  border-bottom: none;
+}
+.search-result-item:hover {
+  background: var(--surface-2);
 }

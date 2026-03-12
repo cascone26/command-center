@@ -5,7 +5,6 @@ interface Props {
 }
 
 export function Heatmap({ data }: Props) {
-  // Last 90 days
   const days: { date: string; count: number; dayOfWeek: number }[] = [];
   const today = new Date();
   for (let i = 89; i >= 0; i--) {
@@ -15,12 +14,11 @@ export function Heatmap({ data }: Props) {
     days.push({ date: dateStr, count: data[dateStr] || 0, dayOfWeek: d.getDay() });
   }
 
-  const maxCount = Math.max(...days.map(d => d.count), 1);
+  const maxCount = Math.max(...days.map((d) => d.count), 1);
   const totalCommits = days.reduce((s, d) => s + d.count, 0);
-  const activeDays = days.filter(d => d.count > 0).length;
+  const activeDays = days.filter((d) => d.count > 0).length;
 
-  // Group by week
-  const weeks: typeof days[] = [];
+  const weeks: (typeof days)[] = [];
   let currentWeek: typeof days = [];
   days.forEach((d, i) => {
     currentWeek.push(d);
@@ -44,18 +42,22 @@ export function Heatmap({ data }: Props) {
       <div className="panel-header">
         <span className="panel-title">Activity (90 days)</span>
         <div className="flex gap-3">
-          <span className="text-xs font-mono" style={{ color: "var(--green)" }}>{totalCommits} commits</span>
-          <span className="text-xs font-mono" style={{ color: "var(--text-dim)" }}>{activeDays} active days</span>
+          <span className="text-xs mono" style={{ color: "var(--green)" }}>
+            {totalCommits} commits
+          </span>
+          <span className="text-xs mono" style={{ color: "var(--text-dim)" }}>
+            {activeDays} active days
+          </span>
         </div>
       </div>
 
       <div className="flex gap-0.5 overflow-x-auto pb-1">
         {weeks.map((week, wi) => (
           <div key={wi} className="flex flex-col gap-0.5">
-            {/* Pad first week */}
-            {wi === 0 && Array.from({ length: week[0]?.dayOfWeek || 0 }).map((_, i) => (
-              <div key={`pad-${i}`} className="heatmap-cell" style={{ background: "transparent" }} />
-            ))}
+            {wi === 0 &&
+              Array.from({ length: week[0]?.dayOfWeek || 0 }).map((_, i) => (
+                <div key={`pad-${i}`} className="heatmap-cell" style={{ background: "transparent" }} />
+              ))}
             {week.map((day) => (
               <div
                 key={day.date}
@@ -68,7 +70,6 @@ export function Heatmap({ data }: Props) {
         ))}
       </div>
 
-      {/* Legend */}
       <div className="flex items-center gap-1 mt-2 justify-end">
         <span style={{ fontSize: "9px", color: "var(--text-dim)" }}>Less</span>
         {["var(--surface-3)", "#166534", "#15803d", "#16a34a", "#22c55e"].map((c, i) => (

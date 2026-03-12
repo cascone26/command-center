@@ -1,6 +1,13 @@
 interface Props {
   gsc: {
-    tracker: { first_indexed: string; first_impression: string; first_click: string; last_indexed_count: number; last_impressions: number; last_check: string } | null;
+    tracker: {
+      first_indexed: string;
+      first_impression: string;
+      first_click: string;
+      last_indexed_count: number;
+      last_impressions: number;
+      last_check: string;
+    } | null;
     clicks: number;
     impressions: number;
     ctr: string;
@@ -11,7 +18,7 @@ interface Props {
 }
 
 export function SEOPanel({ gsc }: Props) {
-  const maxImp = Math.max(...gsc.dailyData.map(d => d.impressions), 1);
+  const maxImp = Math.max(...gsc.dailyData.map((d) => d.impressions), 1);
 
   return (
     <div className="panel fade-up">
@@ -28,7 +35,6 @@ export function SEOPanel({ gsc }: Props) {
         </span>
       </div>
 
-      {/* Key metrics */}
       <div className="grid grid-cols-4 gap-2 mb-3">
         <MetricBox label="Clicks" value={String(gsc.clicks)} color="var(--green)" />
         <MetricBox label="Impressions" value={String(gsc.impressions)} color="var(--cyan)" />
@@ -36,10 +42,11 @@ export function SEOPanel({ gsc }: Props) {
         <MetricBox label="Position" value={gsc.position} color="var(--accent)" />
       </div>
 
-      {/* Daily chart */}
       {gsc.dailyData.length > 0 && (
         <div className="mb-3">
-          <div className="text-xs mb-2" style={{ color: "var(--text-dim)" }}>Last 7 Days</div>
+          <div className="text-xs mb-2" style={{ color: "var(--text-dim)" }}>
+            Last 7 Days
+          </div>
           <div className="mini-bar">
             {gsc.dailyData.map((d, i) => (
               <div key={i} className="flex flex-col items-center flex-1 gap-0.5">
@@ -52,7 +59,7 @@ export function SEOPanel({ gsc }: Props) {
                   }}
                 />
                 <span style={{ fontSize: "8px", color: "var(--text-dim)" }}>
-                  {new Date(d.date).getDate()}
+                  {new Date(d.date + "T12:00:00").getDate()}
                 </span>
               </div>
             ))}
@@ -60,8 +67,9 @@ export function SEOPanel({ gsc }: Props) {
         </div>
       )}
 
-      {/* Milestones */}
-      <div className="text-xs font-medium mb-1.5" style={{ color: "var(--text-dim)" }}>Milestones</div>
+      <div className="text-xs font-medium mb-1.5" style={{ color: "var(--text-dim)" }}>
+        Milestones
+      </div>
       <div className="space-y-1">
         <Milestone label="First Indexed" value={gsc.tracker?.first_indexed || "None"} />
         <Milestone label="First Impression" value={gsc.tracker?.first_impression || "None"} />
@@ -70,8 +78,14 @@ export function SEOPanel({ gsc }: Props) {
       </div>
 
       {gsc.tracker?.last_check && (
-        <div className="text-xs mt-2 font-mono" style={{ color: "var(--text-dim)", fontSize: "10px" }}>
-          Last check: {new Date(gsc.tracker.last_check).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}
+        <div className="text-xs mt-2 mono" style={{ color: "var(--text-dim)", fontSize: "10px" }}>
+          Last check:{" "}
+          {new Date(gsc.tracker.last_check).toLocaleString("en-US", {
+            month: "short",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+          })}
         </div>
       )}
     </div>
@@ -81,7 +95,9 @@ export function SEOPanel({ gsc }: Props) {
 function MetricBox({ label, value, color }: { label: string; value: string; color: string }) {
   return (
     <div className="text-center p-1.5 rounded" style={{ background: "var(--surface-2)" }}>
-      <div className="text-base font-bold font-mono" style={{ color }}>{value}</div>
+      <div className="text-base font-bold mono" style={{ color }}>
+        {value}
+      </div>
       <div style={{ fontSize: "9px", color: "var(--text-dim)" }}>{label}</div>
     </div>
   );
@@ -90,9 +106,12 @@ function MetricBox({ label, value, color }: { label: string; value: string; colo
 function Milestone({ label, value }: { label: string; value: string }) {
   const achieved = value !== "None" && value !== "0";
   return (
-    <div className="flex items-center justify-between text-xs py-1 px-2 rounded" style={{ background: "var(--surface-2)" }}>
+    <div
+      className="flex items-center justify-between text-xs py-1 px-2 rounded"
+      style={{ background: "var(--surface-2)" }}
+    >
       <span style={{ color: "var(--text-dim)" }}>{label}</span>
-      <span className="font-mono" style={{ color: achieved ? "var(--green)" : "var(--text-dim)" }}>
+      <span className="mono" style={{ color: achieved ? "var(--green)" : "var(--text-dim)" }}>
         {achieved ? value : "--"}
       </span>
     </div>

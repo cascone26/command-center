@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-12T00:31:27.706Z",
+  "generatedAt": "2026-03-12T00:52:21.026Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -22,12 +22,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "df80d84cda86b83f672de903c304c38b4bcd5c25",
-        "message": "Fix 537 orphan SEO pages + optimize blog page size",
-        "date": "2026-03-06 22:28:23 -0600"
+        "hash": "c372f52592b240668a766636ab6948fdb98d2fd1",
+        "message": "Add missing lib/seo/topics.ts — fixes broken Vercel build",
+        "date": "2026-03-11 19:51:56 -0500"
       },
       "gitStats": {
-        "totalCommits": 107
+        "totalCommits": 110
       },
       "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed and live at `lessondraft.vercel.app`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (3/day) → Pro ($12/mo) → Max ($24/mo)\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Test Suite + Security Audit (2026-03-04):**\n  - Added Jest + React Testing Library: 131 tests across 24 test files covering API routes, lib utilities, and hooks\n  - XSS fix: added escapeHtml to all email templates (sendWelcomeEmail, sendFeedbackAlert, sendDayThreeEmail, sendDaySevenEmail)\n  - Added missing auth check on revi",
       "healthScore": 100
@@ -509,6 +509,7 @@
     }
   ],
   "heatmap": {
+    "2026-03-11": 3,
     "2026-03-06": 14,
     "2026-03-04": 37,
     "2026-03-03": 47,
@@ -532,7 +533,7 @@
   "scholarships": {
     "statusCounts": {
       "applied": {
-        "count": 7,
+        "count": 14,
         "amount": 6000
       },
       "discovered": {
@@ -675,9 +676,9 @@
       }
     ],
     "totalPipeline": 567160,
-    "totalCount": 258,
+    "totalCount": 265,
     "applied": {
-      "count": 7,
+      "count": 14,
       "amount": 6000
     },
     "todo": {
@@ -927,5 +928,55 @@
       "note": null
     }
   ],
-  "tasks": []
+  "tasks": [],
+  "blogStats": [
+    {
+      "site": "LessonDraft",
+      "url": "lessondraft.com",
+      "count": 580
+    },
+    {
+      "site": "BuiltSimple",
+      "url": "builtsimple.dev",
+      "count": 157
+    }
+  ],
+  "monthlyCosts": [
+    {
+      "name": "Vercel Pro",
+      "amount": 20
+    },
+    {
+      "name": "Supabase",
+      "amount": 0
+    },
+    {
+      "name": "Clerk",
+      "amount": 0
+    },
+    {
+      "name": "Anthropic API",
+      "amount": 10
+    },
+    {
+      "name": "Domain: lessondraft.com",
+      "amount": 1.5
+    },
+    {
+      "name": "Domain: builtsimple.dev",
+      "amount": 1
+    }
+  ],
+  "weeklySummary": {
+    "commitsThisWeek": 66,
+    "emailsSentThisWeek": 10,
+    "deadlinesThisWeek": [
+      {
+        "name": "Get Educated Online",
+        "amount": 1000,
+        "deadline": "2026-03-15",
+        "status": "todo"
+      }
+    ]
+  }
 }

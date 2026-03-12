@@ -252,6 +252,73 @@ function calcHealthScore(project) {
   return Math.max(0, Math.min(100, score));
 }
 
+function getBlogStats() {
+  const stats = [];
+  // LessonDraft blog posts
+  try {
+    const ldBlog = readFile(path.join(HOME, "projects/LessonDraft/lib/blog.ts"));
+    if (ldBlog) {
+      const slugMatches = ldBlog.match(/slug:/g);
+      stats.push({ site: "LessonDraft", url: "lessondraft.com", count: slugMatches ? slugMatches.length : 0 });
+    } else {
+      stats.push({ site: "LessonDraft", url: "lessondraft.com", count: 578 });
+    }
+  } catch { stats.push({ site: "LessonDraft", url: "lessondraft.com", count: 578 }); }
+  // BuiltSimple blog posts
+  try {
+    const bsBlog = readFile(path.join(HOME, "projects/portfolio/app/blog/posts.ts"));
+    if (bsBlog) {
+      const slugMatches = bsBlog.match(/slug:/g);
+      stats.push({ site: "BuiltSimple", url: "builtsimple.dev", count: slugMatches ? slugMatches.length : 0 });
+    } else {
+      stats.push({ site: "BuiltSimple", url: "builtsimple.dev", count: 156 });
+    }
+  } catch { stats.push({ site: "BuiltSimple", url: "builtsimple.dev", count: 156 }); }
+  return stats;
+}
+
+function getWeeklySummary(heatmap, emailCampaign, scholarships) {
+  const now = new Date();
+  const weekAgo = new Date(now);
+  weekAgo.setDate(weekAgo.getDate() - 7);
+  const weekEnd = new Date(now);
+
+  // Commits this week from heatmap
+  let commitsThisWeek = 0;
+  Object.entries(heatmap).forEach(([date, count]) => {
+    const d = new Date(date + "T12:00:00");
+    if (d >= weekAgo && d <= weekEnd) commitsThisWeek += count;
+  });
+
+  // Emails sent this week
+  const emailsSentThisWeek = (emailCampaign.recentSends || []).filter((s) => {
+    const d = new Date(s.sentAt);
+    return d >= weekAgo && d <= weekEnd;
+  }).length;
+
+  // Scholarships with deadlines this week
+  const deadlinesThisWeek = (scholarships.upcoming || []).filter((s) => {
+    const d = new Date(s.deadline + "T12:00:00");
+    const nextWeek = new Date(now);
+    nextWeek.setDate(nextWeek.getDate() + 7);
+    return d >= now && d <= nextWeek;
+  });
+
+  return { commitsThisWeek, emailsSentThisWeek, deadlinesThisWeek };
+}
+
+function getMonthlyCosts() {
+  // Default costs — user can override in localStorage on the frontend
+  return [
+    { name: "Vercel Pro", amount: 20 },
+    { name: "Supabase", amount: 0 },
+    { name: "Clerk", amount: 0 },
+    { name: "Anthropic API", amount: 10 },
+    { name: "Domain: lessondraft.com", amount: 1.50 },
+    { name: "Domain: builtsimple.dev", amount: 1 },
+  ];
+}
+
 // ── Main ──
 const trackerData = readJSON(path.join(HOME, "tools/tracker/data.json"));
 const ideasContent = readFile(path.join(HOME, "ideas/IDEAS.md"));
@@ -292,6 +359,9 @@ const gsc = getGSCData();
 const school = getSchoolData();
 const ideas = parseIdeas(ideasContent);
 const activity = parseActivityLog(activityContent);
+const blogStats = getBlogStats();
+const monthlyCosts = getMonthlyCosts();
+const weeklySummary = getWeeklySummary(heatmap, emailCampaign, scholarships);
 
 const activeProjects = projects.filter((p) => p.status === "active" && p.type === "project").length;
 const pausedProjects = projects.filter((p) => p.status === "paused").length;
@@ -312,6 +382,9 @@ const dashboard = {
   ideas,
   activity,
   tasks: trackerData?.tasks || [],
+  blogStats,
+  monthlyCosts,
+  weeklySummary,
 };
 
 const outPath = path.join(__dirname, "..", "src", "data", "dashboard-data.json");
