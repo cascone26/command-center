@@ -17,7 +17,10 @@ const defaultEntries: IncomeEntry[] = [
 
 export function Income() {
   const [entries, setEntries] = useState<IncomeEntry[]>(defaultEntries);
-  const [editing, setEditing] = useState<number | null>(null);
+  const [editIdx, setEditIdx] = useState<number | null>(null);
+  const [editSource, setEditSource] = useState("");
+  const [editAmount, setEditAmount] = useState("");
+  const [editType, setEditType] = useState<"one-time" | "recurring">("one-time");
   const [adding, setAdding] = useState(false);
   const [newSource, setNewSource] = useState("");
   const [newAmount, setNewAmount] = useState("");
@@ -26,9 +29,7 @@ export function Income() {
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
-      try {
-        setEntries(JSON.parse(stored));
-      } catch {}
+      try { setEntries(JSON.parse(stored)); } catch {}
     }
   }, []);
 
@@ -37,18 +38,24 @@ export function Income() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
   }
 
-  function updateEntry(index: number, field: string, value: string) {
-    const next = [...entries];
-    if (field === "amount") {
-      next[index] = { ...next[index], amount: parseFloat(value) || 0 };
-    } else if (field === "source") {
-      next[index] = { ...next[index], source: value };
-    }
-    save(next);
+  function startEdit(i: number) {
+    setEditIdx(i);
+    setEditSource(entries[i].source);
+    setEditAmount(String(entries[i].amount));
+    setEditType(entries[i].type);
   }
 
-  function removeEntry(index: number) {
-    save(entries.filter((_, i) => i !== index));
+  function confirmEdit() {
+    if (editIdx === null) return;
+    const next = [...entries];
+    next[editIdx] = { source: editSource.trim() || next[editIdx].source, amount: parseFloat(editAmount) || 0, type: editType };
+    save(next);
+    setEditIdx(null);
+  }
+
+  function removeEntry(i: number) {
+    save(entries.filter((_, idx) => idx !== i));
+    setEditIdx(null);
   }
 
   function addEntry() {
@@ -73,44 +80,24 @@ export function Income() {
 
       <div className="space-y-0">
         {entries.map((entry, i) => (
-          <div key={i} className="editable-row">
-            {editing === i ? (
-              <div className="flex items-center gap-2 flex-1">
-                <input
-                  className="inline-input flex-1"
-                  value={entry.source}
-                  onChange={(e) => updateEntry(i, "source", e.target.value)}
-                  autoFocus
-                />
-                <input
-                  className="inline-input w-16 text-right"
-                  value={entry.amount}
-                  onChange={(e) => updateEntry(i, "amount", e.target.value)}
-                  type="number"
-                />
-                <button className="edit-btn" style={{ color: "var(--red)" }} onClick={() => removeEntry(i)}>
-                  x
-                </button>
-                <button className="edit-btn" onClick={() => setEditing(null)}>
-                  done
-                </button>
+          <div key={`${entry.source}-${i}`} className="editable-row">
+            {editIdx === i ? (
+              <div className="flex items-center gap-2 flex-1 flex-wrap">
+                <input className="inline-input flex-1" value={editSource} onChange={(e) => setEditSource(e.target.value)} onKeyDown={(e) => e.key === "Enter" && confirmEdit()} autoFocus />
+                <input className="inline-input w-20 text-right" value={editAmount} onChange={(e) => setEditAmount(e.target.value)} onKeyDown={(e) => e.key === "Enter" && confirmEdit()} type="number" />
+                <select className="inline-input" value={editType} onChange={(e) => setEditType(e.target.value as "one-time" | "recurring")} style={{ fontSize: "10px" }}>
+                  <option value="one-time">1x</option>
+                  <option value="recurring">MRR</option>
+                </select>
+                <button className="edit-btn" style={{ color: "var(--green)" }} onClick={confirmEdit}>save</button>
+                <button className="edit-btn" style={{ color: "var(--red)" }} onClick={() => removeEntry(i)}>delete</button>
+                <button className="edit-btn" onClick={() => setEditIdx(null)}>cancel</button>
               </div>
             ) : (
               <>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs" style={{ color: "var(--text-mid)" }}>
-                    {entry.source}
-                  </span>
-                  <span
-                    className="mono"
-                    style={{
-                      fontSize: "9px",
-                      padding: "0 4px",
-                      borderRadius: "3px",
-                      background: entry.type === "recurring" ? "var(--green-dim)" : "var(--surface-3)",
-                      color: entry.type === "recurring" ? "var(--green)" : "var(--text-dim)",
-                    }}
-                  >
+                  <span className="text-xs" style={{ color: "var(--text-mid)" }}>{entry.source}</span>
+                  <span className="mono" style={{ fontSize: "9px", padding: "0 4px", borderRadius: "3px", background: entry.type === "recurring" ? "var(--green-dim)" : "var(--surface-3)", color: entry.type === "recurring" ? "var(--green)" : "var(--text-dim)" }}>
                     {entry.type === "recurring" ? "MRR" : "1x"}
                   </span>
                 </div>
@@ -118,9 +105,7 @@ export function Income() {
                   <span className="mono text-xs" style={{ color: entry.amount > 0 ? "var(--green)" : "var(--text-dim)" }}>
                     ${entry.amount.toFixed(0)}
                   </span>
-                  <button className="edit-btn" onClick={() => setEditing(i)}>
-                    edit
-                  </button>
+                  <button className="edit-btn" onClick={() => startEdit(i)}>edit</button>
                 </div>
               </>
             )}
@@ -129,41 +114,18 @@ export function Income() {
       </div>
 
       {adding ? (
-        <div className="flex items-center gap-2 mt-2">
-          <input
-            className="inline-input flex-1"
-            placeholder="Source"
-            value={newSource}
-            onChange={(e) => setNewSource(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && addEntry()}
-            autoFocus
-          />
-          <input
-            className="inline-input w-16 text-right"
-            placeholder="0"
-            value={newAmount}
-            onChange={(e) => setNewAmount(e.target.value)}
-            type="number"
-          />
-          <select
-            className="inline-input"
-            value={newType}
-            onChange={(e) => setNewType(e.target.value as "one-time" | "recurring")}
-            style={{ fontSize: "10px" }}
-          >
+        <div className="flex items-center gap-2 mt-2 flex-wrap">
+          <input className="inline-input flex-1" placeholder="Source" value={newSource} onChange={(e) => setNewSource(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addEntry()} autoFocus />
+          <input className="inline-input w-20 text-right" placeholder="0" value={newAmount} onChange={(e) => setNewAmount(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addEntry()} type="number" />
+          <select className="inline-input" value={newType} onChange={(e) => setNewType(e.target.value as "one-time" | "recurring")} style={{ fontSize: "10px" }}>
             <option value="one-time">1x</option>
             <option value="recurring">MRR</option>
           </select>
-          <button className="edit-btn" style={{ color: "var(--green)" }} onClick={addEntry}>
-            add
-          </button>
+          <button className="edit-btn" style={{ color: "var(--green)" }} onClick={addEntry}>add</button>
+          <button className="edit-btn" onClick={() => { setAdding(false); setNewSource(""); setNewAmount(""); }}>cancel</button>
         </div>
       ) : (
-        <button
-          className="text-xs mt-2 cursor-pointer hover:underline"
-          style={{ color: "var(--accent)", background: "none", border: "none" }}
-          onClick={() => setAdding(true)}
-        >
+        <button className="text-xs mt-2 cursor-pointer hover:underline" style={{ color: "var(--accent)", background: "none", border: "none" }} onClick={() => setAdding(true)}>
           + Add income
         </button>
       )}
@@ -175,9 +137,7 @@ export function Income() {
         </div>
         <div>
           <div style={{ fontSize: "10px", color: "var(--text-dim)" }}>Recurring</div>
-          <div className="mono text-sm font-bold" style={{ color: "var(--green)" }}>
-            ${totalRecurring.toFixed(0)}/mo
-          </div>
+          <div className="mono text-sm font-bold" style={{ color: "var(--green)" }}>${totalRecurring.toFixed(0)}/mo</div>
         </div>
       </div>
     </div>

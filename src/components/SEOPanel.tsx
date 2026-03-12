@@ -1,3 +1,21 @@
+interface KeywordEntry {
+  position: number | null;
+  clicks: number;
+  impressions: number;
+  ctr: number;
+}
+
+interface SitemapHealth {
+  lastRun: string;
+  totalSitemapUrls: number;
+  summary: { indexed: number; notIndexed: number; blocked: number; totalChecked: number } | null;
+}
+
+interface AIRecEntry {
+  date: string;
+  results: { model: string; prompt: string; mentioned: boolean; position: number | null; error?: string }[];
+}
+
 interface Props {
   gsc: {
     tracker: {
@@ -15,9 +33,14 @@ interface Props {
     dailyData: { date: string; clicks: number; impressions: number }[];
     healthStatus: string | null;
   };
+  seoTools?: {
+    rankTracker: { date: string; keywords: Record<string, KeywordEntry> } | null;
+    sitemapHealth: SitemapHealth | null;
+    aiRecommendations: AIRecEntry | null;
+  };
 }
 
-export function SEOPanel({ gsc }: Props) {
+export function SEOPanel({ gsc, seoTools }: Props) {
   const maxImp = Math.max(...gsc.dailyData.map((d) => d.impressions), 1);
 
   return (
@@ -87,6 +110,65 @@ export function SEOPanel({ gsc }: Props) {
             minute: "2-digit",
           })}
         </div>
+      )}
+
+      {seoTools?.sitemapHealth?.summary && (
+        <>
+          <div className="text-xs font-medium mt-3 mb-1.5" style={{ color: "var(--text-dim)" }}>
+            Sitemap Health
+          </div>
+          <div className="grid grid-cols-4 gap-2">
+            <MetricBox label="Indexed" value={String(seoTools.sitemapHealth.summary.indexed)} color="var(--green)" />
+            <MetricBox label="Not Indexed" value={String(seoTools.sitemapHealth.summary.notIndexed)} color="var(--yellow)" />
+            <MetricBox label="Blocked" value={String(seoTools.sitemapHealth.summary.blocked)} color="var(--red, #f87171)" />
+            <MetricBox label="Total URLs" value={String(seoTools.sitemapHealth.totalSitemapUrls)} color="var(--text-dim)" />
+          </div>
+        </>
+      )}
+
+      {seoTools?.rankTracker?.keywords && (
+        <>
+          <div className="text-xs font-medium mt-3 mb-1.5" style={{ color: "var(--text-dim)" }}>
+            Keyword Rankings{" "}
+            <span className="mono" style={{ fontSize: "9px" }}>({seoTools.rankTracker.date})</span>
+          </div>
+          <div className="space-y-1">
+            {Object.entries(seoTools.rankTracker.keywords).slice(0, 6).map(([kw, data]) => (
+              <div
+                key={kw}
+                className="flex items-center justify-between text-xs py-1 px-2 rounded"
+                style={{ background: "var(--surface-2)" }}
+              >
+                <span style={{ color: "var(--text-dim)", maxWidth: "70%", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{kw}</span>
+                <span className="mono" style={{ color: data.position ? "var(--green)" : "var(--text-dim)" }}>
+                  {data.position ? `#${data.position}` : "--"}
+                </span>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      {seoTools?.aiRecommendations && (
+        <>
+          <div className="text-xs font-medium mt-3 mb-1.5" style={{ color: "var(--text-dim)" }}>
+            AI Recommendations{" "}
+            <span className="mono" style={{ fontSize: "9px" }}>({seoTools.aiRecommendations.date})</span>
+          </div>
+          {(() => {
+            const results = seoTools.aiRecommendations.results;
+            const mentioned = results.filter((r) => r.mentioned).length;
+            const errored = results.filter((r) => r.error).length;
+            const total = results.length;
+            return (
+              <div className="grid grid-cols-3 gap-2">
+                <MetricBox label="Mentioned" value={String(mentioned)} color={mentioned > 0 ? "var(--green)" : "var(--text-dim)"} />
+                <MetricBox label="Tested" value={String(total)} color="var(--cyan)" />
+                <MetricBox label="Errors" value={String(errored)} color={errored > 0 ? "var(--red, #f87171)" : "var(--text-dim)"} />
+              </div>
+            );
+          })()}
+        </>
       )}
     </div>
   );

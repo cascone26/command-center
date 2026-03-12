@@ -19,6 +19,7 @@ import { AgentPanel } from "@/components/AgentPanel";
 import { NotificationsLog } from "@/components/NotificationsLog";
 import { IdeasPanel } from "@/components/IdeasPanel";
 import { Notepad } from "@/components/Notepad";
+import { Alerts } from "@/components/Alerts";
 
 export default function Home() {
   const d = dashboardData;
@@ -48,9 +49,20 @@ export default function Home() {
         gsc={d.gsc}
       />
 
-      {/* Weekly Summary */}
-      <section id="weekly" className="mb-3">
-        <WeeklySummary summary={d.weeklySummary} />
+      {/* Alerts + Weekly Summary */}
+      <section id="alerts" className="grid grid-cols-1 lg:grid-cols-12 gap-3 mb-3">
+        <div className="lg:col-span-5">
+          <Alerts
+            projects={d.projects as Parameters<typeof Alerts>[0]["projects"]}
+            agents={d.agents as Parameters<typeof Alerts>[0]["agents"]}
+            scholarships={d.scholarships}
+            gsc={d.gsc}
+            emailCampaign={d.emailCampaign}
+          />
+        </div>
+        <div className="lg:col-span-7">
+          <WeeklySummary summary={d.weeklySummary} />
+        </div>
       </section>
 
       {/* ── PROJECTS ── */}
@@ -80,7 +92,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           <EmailCampaign data={d.emailCampaign} />
-          <SEOPanel gsc={d.gsc} />
+          <SEOPanel gsc={d.gsc} seoTools={d.seoTools} />
           <BlogStats stats={d.blogStats} />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

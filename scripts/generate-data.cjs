@@ -307,6 +307,32 @@ function getWeeklySummary(heatmap, emailCampaign, scholarships) {
   return { commitsThisWeek, emailsSentThisWeek, deadlinesThisWeek };
 }
 
+function getSEOToolsData() {
+  // Rank tracker — latest entry from rank-history.json
+  const rankHistory = readJSON(path.join(HOME, "tools/gsc/rank-history.json"));
+  const rankTracker = rankHistory?.history?.length
+    ? rankHistory.history[rankHistory.history.length - 1]
+    : null;
+
+  // Sitemap health — summary from sitemap-health.json
+  const sitemapRaw = readJSON(path.join(HOME, "tools/gsc/sitemap-health.json"));
+  const sitemapHealth = sitemapRaw
+    ? {
+        lastRun: sitemapRaw.lastRun,
+        totalSitemapUrls: sitemapRaw.totalSitemapUrls,
+        summary: sitemapRaw.summary || null,
+      }
+    : null;
+
+  // AI recommendation tracking — latest entry from ai-rec-history.json
+  const aiRecHistory = readJSON(path.join(HOME, "tools/ai-rec-history.json"));
+  const aiRecommendations = aiRecHistory?.history?.length
+    ? aiRecHistory.history[aiRecHistory.history.length - 1]
+    : null;
+
+  return { rankTracker, sitemapHealth, aiRecommendations };
+}
+
 function getMonthlyCosts() {
   // Default costs — user can override in localStorage on the frontend
   return [
@@ -361,6 +387,7 @@ const ideas = parseIdeas(ideasContent);
 const activity = parseActivityLog(activityContent);
 const blogStats = getBlogStats();
 const monthlyCosts = getMonthlyCosts();
+const seoTools = getSEOToolsData();
 const weeklySummary = getWeeklySummary(heatmap, emailCampaign, scholarships);
 
 const activeProjects = projects.filter((p) => p.status === "active" && p.type === "project").length;
@@ -384,6 +411,7 @@ const dashboard = {
   tasks: trackerData?.tasks || [],
   blogStats,
   monthlyCosts,
+  seoTools,
   weeklySummary,
 };
 

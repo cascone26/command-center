@@ -2,6 +2,7 @@
 
 const sections = [
   { id: "overview", label: "Overview" },
+  { id: "alerts", label: "Alerts" },
   { id: "projects", label: "Projects" },
   { id: "business", label: "Business" },
   { id: "school", label: "School" },

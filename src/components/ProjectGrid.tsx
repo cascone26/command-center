@@ -46,6 +46,7 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
   const [filter, setFilter] = useState("all");
   const [expanded, setExpanded] = useState<number | null>(null);
   const [editing, setEditing] = useState<number | null>(null);
+  const [editText, setEditText] = useState("");
   const [overrides, setOverrides] = useState<Record<number, { notes?: string }>>({});
 
   useEffect(() => {
@@ -185,28 +186,34 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
                             fontSize: "11px",
                           }}
                           rows={3}
-                          defaultValue={displayNotes}
-                          onBlur={(e) => saveOverride(p.id, e.target.value)}
+                          value={editText}
+                          onChange={(e) => setEditText(e.target.value)}
                           onKeyDown={(e) => {
                             if (e.key === "Enter" && !e.shiftKey) {
                               e.preventDefault();
-                              saveOverride(p.id, (e.target as HTMLTextAreaElement).value);
+                              saveOverride(p.id, editText);
                             }
                           }}
                           autoFocus
                         />
+                        <div className="flex gap-2 mt-1">
+                          <button className="edit-btn" style={{ color: "var(--green)" }} onClick={() => saveOverride(p.id, editText)}>save</button>
+                          <button className="edit-btn" onClick={() => setEditing(null)}>cancel</button>
+                        </div>
                       </div>
                     ) : (
                       <p className="text-xs flex-1" style={{ color: "var(--text-mid)" }}>
                         {displayNotes}
                       </p>
                     )}
-                    <button
-                      className="edit-btn shrink-0"
-                      onClick={() => setEditing(editing === p.id ? null : p.id)}
-                    >
-                      {editing === p.id ? "cancel" : "edit"}
-                    </button>
+                    {editing !== p.id && (
+                      <button
+                        className="edit-btn shrink-0"
+                        onClick={() => { setEditing(p.id); setEditText(displayNotes); }}
+                      >
+                        edit
+                      </button>
+                    )}
                   </div>
                   {p.path && (
                     <p className="text-xs mono" style={{ color: "var(--text-dim)", fontSize: "10px" }}>
