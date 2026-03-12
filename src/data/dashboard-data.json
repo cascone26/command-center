@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-12T00:52:21.026Z",
+  "generatedAt": "2026-03-12T01:03:59.229Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -22,12 +22,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "c372f52592b240668a766636ab6948fdb98d2fd1",
-        "message": "Add missing lib/seo/topics.ts — fixes broken Vercel build",
-        "date": "2026-03-11 19:51:56 -0500"
+        "hash": "ab1904664ed2b740b3aeff9cd53184e1dcfc56fd",
+        "message": "Add 537 internal links across 337 blog posts + auto-linker script",
+        "date": "2026-03-11 20:02:13 -0500"
       },
       "gitStats": {
-        "totalCommits": 110
+        "totalCommits": 111
       },
       "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed and live at `lessondraft.vercel.app`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (3/day) → Pro ($12/mo) → Max ($24/mo)\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Test Suite + Security Audit (2026-03-04):**\n  - Added Jest + React Testing Library: 131 tests across 24 test files covering API routes, lib utilities, and hooks\n  - XSS fix: added escapeHtml to all email templates (sendWelcomeEmail, sendFeedbackAlert, sendDayThreeEmail, sendDaySevenEmail)\n  - Added missing auth check on revi",
       "healthScore": 100
@@ -509,7 +509,7 @@
     }
   ],
   "heatmap": {
-    "2026-03-11": 3,
+    "2026-03-11": 4,
     "2026-03-06": 14,
     "2026-03-04": 37,
     "2026-03-03": 47,
@@ -967,8 +967,122 @@
       "amount": 1
     }
   ],
+  "seoTools": {
+    "rankTracker": {
+      "date": "2026-03-12",
+      "keywords": {
+        "AI lesson plan generator": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        },
+        "free lesson plan maker": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        },
+        "lesson plan generator": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        },
+        "AI teacher tools": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        },
+        "rubric maker": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        },
+        "report card comment generator": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        },
+        "IEP goal generator": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        },
+        "quiz generator for teachers": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        },
+        "lesson plan template": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        },
+        "AI tools for teachers": {
+          "position": null,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0
+        }
+      }
+    },
+    "sitemapHealth": {
+      "lastRun": "2026-03-12T01:01:52.245Z",
+      "totalSitemapUrls": 1045,
+      "summary": {
+        "indexed": 2,
+        "notIndexed": 48,
+        "blocked": 0,
+        "totalChecked": 50
+      }
+    },
+    "aiRecommendations": {
+      "date": "2026-03-12",
+      "results": [
+        {
+          "model": "claude-haiku",
+          "prompt": "What are the best free AI tools for teachers to create lesson plans? List specific tool names and websites.",
+          "mentioned": false,
+          "context": null,
+          "position": null,
+          "error": "API error 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYxGrhELtGgMFn9SEgzan\"}"
+        },
+        {
+          "model": "claude-haiku",
+          "prompt": "Recommend some free AI-powered education tools for K-12 teachers.",
+          "mentioned": false,
+          "context": null,
+          "position": null,
+          "error": "API error 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYxGrirLAKjuiDHnTKXV9\"}"
+        },
+        {
+          "model": "claude-haiku",
+          "prompt": "Recommend some free AI-powered education tools for K-12 teachers.",
+          "mentioned": false,
+          "context": null,
+          "position": null,
+          "error": "API error 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYxHDmqkJCe6CY9suJjz1\"}"
+        },
+        {
+          "model": "claude-haiku",
+          "prompt": "I'm a teacher looking for an AI lesson plan generator. What would you recommend?",
+          "mentioned": false,
+          "context": null,
+          "position": null,
+          "error": "API error 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYxHDnAbF3sVGB1JVAzdC\"}"
+        }
+      ]
+    }
+  },
   "weeklySummary": {
-    "commitsThisWeek": 66,
+    "commitsThisWeek": 67,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
