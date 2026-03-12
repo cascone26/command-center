@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-12T01:25:08.675Z",
+  "generatedAt": "2026-03-12T12:30:05.692Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -7,7 +7,7 @@
     "healthyAgents": 12,
     "totalAgents": 13,
     "ideasCount": 12,
-    "avgHealthScore": 92
+    "avgHealthScore": 95
   },
   "projects": [
     {
@@ -22,14 +22,14 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "ab1904664ed2b740b3aeff9cd53184e1dcfc56fd",
-        "message": "Add 537 internal links across 337 blog posts + auto-linker script",
-        "date": "2026-03-11 20:02:13 -0500"
+        "hash": "f537015da3001aae2795b2e1316678a1c87a8547",
+        "message": "Update STATUS.md with full site audit results and known issues",
+        "date": "2026-03-12 04:38:58 -0500"
       },
       "gitStats": {
-        "totalCommits": 111
+        "totalCommits": 114
       },
-      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed and live at `lessondraft.vercel.app`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (3/day) → Pro ($12/mo) → Max ($24/mo)\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Test Suite + Security Audit (2026-03-04):**\n  - Added Jest + React Testing Library: 131 tests across 24 test files covering API routes, lib utilities, and hooks\n  - XSS fix: added escapeHtml to all email templates (sendWelcomeEmail, sendFeedbackAlert, sendDayThreeEmail, sendDaySevenEmail)\n  - Added missing auth check on revi",
+      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-12\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Full Site Audit & Consistency Pass (2026-03-12):**\n  - **Max → Team rebrand cleanup:** Fixed 16+ user-facing \"Max\" references across dashboard, pricing, FAQs, blog posts, generation-guard, tool badges, terms of service, admin labels, test expectations. Inter",
       "healthScore": 100
     },
     {
@@ -62,7 +62,7 @@
       "path": "~/projects/lead-scraper",
       "status": "active",
       "checkIn": "daily",
-      "nextCheckIn": "2026-03-08",
+      "nextCheckIn": "2026-03-13",
       "notes": "Monitor email sends, check replies, manual texting. 130 drafts ready.",
       "lastCommit": {
         "hash": "fe516189087529d3ada353d69ad7b098d4ae0711",
@@ -73,7 +73,7 @@
         "totalCommits": 2
       },
       "statusSummary": "# Lead Scraper — Status\n\n## Overview\nLead-gen engine for BuiltSimple. Finds local businesses without websites (or with bad ones), enriches contact info, and automates personalized outreach via email and text.\n\n## Current State (Mar 7, 2026)\n- **6,875 leads** in SQLite DB across 50-mile KC metro radius\n- **1,294 without websites** (prime targets)\n- **187 with verified email addresses**\n- **130 Gmail drafts ready** to send (filtered for sites that actually need help)\n- **1,037 phone-only businesses** exported to CSV for text outreach\n- Not deployed (runs locally — SQLite won't work on Vercel)\n\n#",
-      "healthScore": 75
+      "healthScore": 95
     },
     {
       "id": 4,
@@ -302,12 +302,12 @@
       "category": "business",
       "status": "active",
       "checkIn": "daily",
-      "nextCheckIn": "2026-03-08",
+      "nextCheckIn": "2026-03-13",
       "notes": "15 emails/day at 9:03 AM. Monitor deliverability.",
       "lastCommit": null,
       "gitStats": null,
       "statusSummary": null,
-      "healthScore": 70
+      "healthScore": 90
     },
     {
       "id": 17,
@@ -316,12 +316,12 @@
       "category": "business",
       "status": "active",
       "checkIn": "daily",
-      "nextCheckIn": "2026-03-08",
+      "nextCheckIn": "2026-03-13",
       "notes": "Follow-up emails at 2:07 PM after 5 days.",
       "lastCommit": null,
       "gitStats": null,
       "statusSummary": null,
-      "healthScore": 70
+      "healthScore": 90
     },
     {
       "id": 18,
@@ -535,14 +535,15 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": null,
+      "pid": 97574,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Regenerating dashboard data...\nDashboard data generated at /Users/scones/projects/command-center/src/data/dashboard-data.json\n  12 active projects, 6 automations, 8/9 agents healthy\nData changed, committing and pushing...\n[main 50cf01a] Update dashboard data 2026-03-11_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 1 insertion(+), 1 deletion(-)\nDeploying to Vercel...\n\u001b[2K\u001b[1A\u001b[2K\u001b[GProduction: https://command-center-djysupwtl-cascone26s-projects.vercel.app [45s]\nCompleting...\nAliased: https://command-center-liart-three.vercel.app [45s]\nDone."
+      "recentLog": "Regenerating dashboard data...\nDashboard data generated at /Users/scones/projects/command-center/src/data/dashboard-data.json\n  12 active projects, 6 automations, 8/9 agents healthy\nData changed, committing and pushing...\n[main 50cf01a] Update dashboard data 2026-03-11_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 1 insertion(+), 1 deletion(-)\nDeploying to Vercel...\n\u001b[2K\u001b[1A\u001b[2K\u001b[GProduction: https://command-center-djysupwtl-cascone26s-projects.vercel.app [45s]\nCompleting...\nAliased: https://command-center-liart-three.vercel.app [45s]\nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
-    "2026-03-11": 4,
+    "2026-03-12": 1,
+    "2026-03-11": 6,
     "2026-03-06": 14,
     "2026-03-04": 37,
     "2026-03-03": 47,
@@ -1175,7 +1176,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 67,
+    "commitsThisWeek": 69,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
