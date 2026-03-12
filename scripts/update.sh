@@ -17,6 +17,12 @@ git commit -m "Update dashboard data $(date +%Y-%m-%d_%H:%M)"
 git push origin main
 
 echo "Deploying to Vercel..."
-~/.npm-global/bin/vercel --prod --yes 2>&1 | tail -3
+DEPLOY_URL=$(~/.npm-global/bin/vercel --prod --yes 2>&1 | grep -oP 'https://command-center-[a-z0-9]+-cascone26s-projects\.vercel\.app')
+echo "Deployed: $DEPLOY_URL"
+
+if [ -n "$DEPLOY_URL" ]; then
+  echo "Aliasing to commandcenter-jc.vercel.app..."
+  ~/.npm-global/bin/vercel alias set "$DEPLOY_URL" commandcenter-jc.vercel.app 2>&1 | tail -1
+fi
 
 echo "Done."
