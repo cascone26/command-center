@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-13T00:30:06.805Z",
+  "generatedAt": "2026-03-13T12:30:01.325Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -535,10 +535,10 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 17339,
+      "pid": 20983,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 12/13 agents\n  265 scholarships ($567K) | 30 emails | 12 courses\nData changed, committing and pushing...\n[main 85a9d87] Update dashboard data 2026-03-12_07:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 18 insertions(+), 17 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 12/13 agents\n  272 scholarships ($573K) | 59 emails | 12 courses\nData changed, committing and pushing...\n[main 9126b52] Update dashboard data 2026-03-12_19:30\n Committer: Jacob Cascone <scones@Jacobs-MacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 163 insertions(+), 163 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
@@ -567,8 +567,8 @@
   "scholarships": {
     "statusCounts": {
       "applied": {
-        "count": 48,
-        "amount": 132678
+        "count": 50,
+        "amount": 133678
       },
       "discovered": {
         "count": 75,
@@ -583,8 +583,8 @@
         "amount": 48755
       },
       "todo": {
-        "count": 33,
-        "amount": 213340
+        "count": 32,
+        "amount": 212340
       }
     },
     "upcoming": [
@@ -598,7 +598,7 @@
         "name": "Brian C Jensen",
         "amount": 1000,
         "deadline": "2026-03-20",
-        "status": "todo"
+        "status": "applied"
       },
       {
         "name": "Jim Maxwell Memorial",
@@ -710,14 +710,14 @@
       }
     ],
     "totalPipeline": 572660,
-    "totalCount": 272,
+    "totalCount": 273,
     "applied": {
-      "count": 48,
-      "amount": 132678
+      "count": 50,
+      "amount": 133678
     },
     "todo": {
-      "count": 33,
-      "amount": 213340
+      "count": 32,
+      "amount": 212340
     },
     "won": {
       "count": 0,
