@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-12T12:30:05.692Z",
+  "generatedAt": "2026-03-13T00:30:06.805Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -7,7 +7,7 @@
     "healthyAgents": 12,
     "totalAgents": 13,
     "ideasCount": 12,
-    "avgHealthScore": 95
+    "avgHealthScore": 94
   },
   "projects": [
     {
@@ -22,12 +22,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "f537015da3001aae2795b2e1316678a1c87a8547",
-        "message": "Update STATUS.md with full site audit results and known issues",
-        "date": "2026-03-12 04:38:58 -0500"
+        "hash": "908a0d61bd71f31261a456383afa95227a47cbde",
+        "message": "Add blog post: 5 Time-Saving Strategies for Creating Engaging Lesson Plans",
+        "date": "2026-03-12 19:05:16 -0500"
       },
       "gitStats": {
-        "totalCommits": 114
+        "totalCommits": 117
       },
       "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-12\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Full Site Audit & Consistency Pass (2026-03-12):**\n  - **Max → Team rebrand cleanup:** Fixed 16+ user-facing \"Max\" references across dashboard, pricing, FAQs, blog posts, generation-guard, tool badges, terms of service, admin labels, test expectations. Inter",
       "healthScore": 100
@@ -44,12 +44,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Portfolio site. Check blog traffic, lead responses.",
       "lastCommit": {
-        "hash": "f497aa5c7bbc7b73838640036a249f9e01904b74",
-        "message": "Add pagination to blog list and strip content from client payload",
-        "date": "2026-03-04 15:40:04 -0600"
+        "hash": "71bc0fbe25734edd2848561ad7adaf4915bc6045",
+        "message": "Add blog post: Why Your Small Business Website Needs to Load Fast (And How to Make It Happen)",
+        "date": "2026-03-12 18:58:46 -0500"
       },
       "gitStats": {
-        "totalCommits": 51
+        "totalCommits": 58
       },
       "statusSummary": "# Portfolio — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed at `https://builtsimple.dev`\n- GitHub: `https://github.com/cascone26/portfolio`\n- Vercel project: `cascone26s-projects/builtsimple`\n- Custom domain: `builtsimple.dev` (live)\n\n## Site Structure (31 routes)\n- `/` — Home (hero with code mockup, featured LessonDraft section, highlight cards)\n- `/services` — Services & pricing (6 services + how it works)\n- `/work` — Portfolio grid (LessonDraft, Social Autoposter, placeholder)\n- `/work/lessondraft` — LessonDraft case study with screenshot\n- `/work/lessondraft-social` — Aut",
       "healthScore": 100
@@ -94,7 +94,7 @@
         "totalCommits": 8
       },
       "statusSummary": "# LessonDraft Social Autoposter — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- GitHub: `https://github.com/cascone26/lessondraft-social.git`\n- Runs via GitHub Actions (3x daily: 7:30am, 12pm, 5:30pm CT)\n- Also has local LaunchAgent (`com.lessondraft.social.plist`) for macOS\n- Platforms: Twitter/X, Pinterest, Facebook, LinkedIn, TikTok (Instagram skipped in CI due to private API detection)\n\n## What It Is\nPython autoposter that generates educational social media content for LessonDraft using Claude API, renders images with Pillow, and posts to multiple platforms.\n\n## Architecture\n```\nr",
-      "healthScore": 100
+      "healthScore": 95
     },
     {
       "id": 5,
@@ -154,7 +154,7 @@
         "totalCommits": 23
       },
       "statusSummary": "# Meta Tutor — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://meta-tutor.vercel.app`\n- GitHub: `https://github.com/cascone26/meta-tutor.git`\n- Built for Cris's Thomistic Metaphysics course\n- Google login required for all routes\n- Uses Claude Haiku (via `CLAUDE_MODEL` env var) with rate limiting (75/day) and prompt caching\n\n## What It Is\nStudy app with a strict no-cheat constraint — all features force active recall. No passive reading or answer lookup.\n\n## Pages (15 routes)\n- `/` — Landing/home\n- `/login` — Google OAuth login\n- `/dashboard` — Main hub\n- `/study` — Activ",
-      "healthScore": 100
+      "healthScore": 95
     },
     {
       "id": 8,
@@ -198,7 +198,7 @@
         "totalCommits": 4
       },
       "statusSummary": "# For Abby (Abby Wonderland) — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Live at `https://abbywonderland.vercel.app`\n- Single file: `index.html` (~5,916 lines, all HTML/CSS/JS inline)\n- PWA: installable on iOS and Android via manifest.json + service worker\n- No git remote hosting (local git only)\n\n## What It Is\nA personalized interactive experience built for Abby. Features a dreamy night-sky/aurora aesthetic with snowfall effects, ambient sound, and multiple interactive activities.\n\n## Design\n- Dark navy/space palette with aurora gradients\n- Fonts: Cinzel Decorative (headings), Qu",
-      "healthScore": 100
+      "healthScore": 95
     },
     {
       "id": 10,
@@ -241,7 +241,7 @@
         "totalCommits": 7
       },
       "statusSummary": "# Roblox UGC Clothing Bot\n\n## Status: v4.3 — Movie-Quality Character Rendering\n\n## v4.3 Changes (Mar 5)\n\n### Per-Face AI Generation (Flux Schnell)\n- **Per-face AI textures** — generates separate AI images for each body-part UV face (torso front/back, arms, legs)\n- **Asset cache** (`rendering/asset_cache.py`) — PNG cache at `assets/characters/<slug>/`, ~$0.02 per character first time, $0.00 from cache\n- **Face prompt engine** (`rendering/face_prompts.py`) — body-part-specific Flux prompts with consistency strategy (shared style suffix + color hex codes)\n- **AI orchestrator** (`rendering/ai_face",
-      "healthScore": 90
+      "healthScore": 85
     },
     {
       "id": 13,
@@ -385,12 +385,12 @@
       "longestStreak": 0,
       "path": "~/projects/vinnie-treasure",
       "lastCommit": {
-        "hash": "efcb88c42d607503472f64f1b9836d1b6de7787a",
-        "message": "Deep audit round 2: fix runtime bugs across 8 files",
-        "date": "2026-03-08 22:50:36 -0500"
+        "hash": "34b173d16d373882324cd6b9710532e93411ea3c",
+        "message": "Use Haiku for regular chat, Sonnet for deep think only — save costs",
+        "date": "2026-03-12 12:30:52 -0500"
       },
       "gitStats": {
-        "totalCommits": 14
+        "totalCommits": 16
       },
       "statusSummary": "# Vinnie's Treasure Tracker\n\n## Overview\nResearch hub for brother Vinnie to find the Forrest Fenn Box from \"There's Treasure Inside\" by Jon Collins-Black.\n\n## Stack\n- Next.js + TypeScript + Tailwind\n- Supabase (planned for persistent data, notes, auto-updates)\n- Mapbox (planned for interactive map)\n\n## Current State (March 8, 2026)\n- [x] Project scaffolded\n- [x] Data layer: poem (24 lines), clues (16), research (15 entries), boxes (5)\n- [x] Dashboard page\n- [x] Poem Analyzer page (interactive line-by-line with Fenn parallels)\n- [x] Clue Database page (filterable, searchable)\n- [x] Research Vau",
       "healthScore": 100
@@ -417,7 +417,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-02-28T15:49:28.649Z] Alert: WayUp Unlock Your Potential (Bold.org) — $1,000 — due Feb 28 (TODAY)\n[2026-02-28T15:49:28.730Z] Alert: Survey Rewards (Bold.org) — $500 — due Feb 28 (TODAY)\n[2026-03-01T07:30:59.315Z] Check: no deadlines in next 7 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-01T15:01:18.617Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-02T15:01:29.860Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-03T15:00:05.412Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-04T15:00:01.877Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-05T15:00:01.522Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-06T15:28:50.614Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-07T15:00:05.728Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-08T14:00:02.585Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-09T14:00:05.872Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-10T14:00:04.370Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-11T14:00:02.948Z] Check: no deadlines in next 3 days."
+      "recentLog": "No unapplied deadlines in the next 3 day(s).\n[2026-03-04T15:00:01.877Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-05T15:00:01.522Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-06T15:28:50.614Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-07T15:00:05.728Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-08T14:00:02.585Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-09T14:00:05.872Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-10T14:00:04.370Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-11T14:00:02.948Z] Check: no deadlines in next 3 days.\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [3 days] Get Educated Online — $1,000 (Mar 15)\n[2026-03-12T14:00:05.489Z] Alert: Get Educated Online — $1,000 — due Mar 15 (3 days)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js"
     },
     {
       "label": "com.tradovate.bot",
@@ -447,10 +447,10 @@
       "schedule": "9:03am",
       "logPath": "/Users/scones/projects/lead-scraper/logs/send.log",
       "loaded": true,
-      "pid": 18174,
+      "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Sent! (19cdd3a43637b115)\n  Waiting 54s before next...\n\n[10/15] Tomorrow's Promise Today <info@tptleaders.com>\n  Subject: Local web guy in Lee's Summit\n  Sent! (19cdd3b18666152e)\n  Waiting 42s before next...\n\n[11/15] Delphinium Hair Salon <delphiniumsalon@gmail.com>\n  Subject: Hey from Kansas City\n  Sent! (19cdd3bc0b9571c3)\n  Waiting 51s before next...\n\n[12/15] Ruff Ranch KC <pets@ruffranchkc.com>\n  Subject: Hey from Shawnee\n  Sent! (19cdd3c89b7c483d)\n  Waiting 47s before next...\n\n[13/15] D & S Sanitation <dandssanitationllc@gmail.com>\n  Subject: Saw D & S Sanitation on Google\n  Sent! (19cdd3d404a54add)\n  Waiting 35s before next...\n\n[14/15] Rod's Sports and Apparel <info@rodssports.com>\n  Subject: Quick question for Rod's Sports and Apparel"
+      "recentLog": "Sent! (19ce2625abcb77be)\n  Waiting 57s before next...\n\n[12/15] Fourway Service Company Plumbing <webmaster@fourway.net>\n  Subject: Fourway Service Company Plumbing — thought of you\n  Sent! (19ce2633c1810cb1)\n  Waiting 31s before next...\n\n[13/15] Dan's Barber Shop and Shave Parlor <danpros@dan.org>\n  Subject: Dan's Barber Shop and Shave Parlor — thought of you\n  Sent! (19ce263bae9f6284)\n  Waiting 32s before next...\n\n[14/15] Premier Plumbing of Kansas City inc <help@premier.one>\n  Subject: Saw Premier Plumbing of Kansas City inc on Google\n  Sent! (19ce26439ab4c4cf)\n  Waiting 31s before next...\n\n[15/15] KCK Upholstery <nitrao@gamerbiz.com.br>\n  Subject: KCK Upholstery — thought of you\n  Sent! (19ce264b61d072a3)\n\n--- Done ---\nSent: 15, Errors: 0\nLog saved to /Users/scones/projects/lead-scraper/db/email-log.json"
     },
     {
       "label": "com.builtsimple.follow-up",
@@ -461,7 +461,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Found 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---\nFound 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---\nFound 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---"
+      "recentLog": "Found 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---\nFound 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---\nFound 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---\nFound 0 leads due for follow-up\n\n\n--- Done: 0 follow-ups sent ---"
     },
     {
       "label": "com.lessondraft.gsc-check",
@@ -469,10 +469,10 @@
       "schedule": "9am daily",
       "logPath": "/Users/scones/tools/gsc/logs/launchd-stdout.log",
       "loaded": true,
-      "pid": 61114,
+      "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "OK: Homepage 200\n  OK: No dev-browser-missing header\n  OK: Sitemap accessible\n  OK: RSS feed accessible\n\n--- Search Performance ---\n\n=== LessonDraft — Last 15 Days ===\n\n  Clicks:       1\n  Impressions:  7\n  Avg CTR:      1.1%\n  Avg Position: 2.3\n  Clicks/day:   0.1\n\n  Daily (last 7 days):\n    2026-03-03      0 clicks       0 imp  █\n    2026-03-04      0 clicks       0 imp  █\n    2026-03-05      0 clicks       0 imp  █\n    2026-03-06      0 clicks       0 imp  █\n    2026-03-07      0 clicks       0 imp  █\n    2026-03-08      0 clicks       0 imp  █\n    2026-03-09      1 clicks       6 imp  █████\n\n--- Indexing Status ---"
+      "recentLog": "Referring URLs: https://lessondraft.com/resources/what-is-udl\n\n  Summary: 1 indexed, 6 blocked out of 10 checked\n\n--- Sitemap Status ---\n\nSitemap submitted: https://lessondraft.com/sitemap.xml\n\nRegistered sitemaps:\n  https://lessondraft.com/sitemap.xml  (2026-03-12T23:01:14.308Z)  PENDING  web: 1839 submitted, 0 indexed\n\n--- Rising Queries ---\n\n=== Rising Queries (last 14d vs prev 14d) ===\n\n  +3 imp  \"report comments\" (0 -> 3 imp, 0 clicks)\n  +2 imp  \"report card comments\" (0 -> 2 imp, 0 clicks)\n  +1 imp  \"comments on the report card\" (0 -> 1 imp, 0 clicks)\n  +1 imp  \"comments report cards\" (0 -> 1 imp, 0 clicks)\n  +1 imp  \"sixth grade phonics lessons\" (0 -> 1 imp, 0 clicks)\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-03-12-1800.log"
     },
     {
       "label": "com.lessondraft.weekly-health",
@@ -494,7 +494,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-03-12T01:16:48.254Z] Checking LaunchAgents...\n[2026-03-12T01:16:48.346Z] Checking site health...\n[2026-03-12T01:16:51.945Z] Checking sitemap index coverage...\n[2026-03-12T01:16:51.949Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-12T01:18:39.520Z] Checking GSC token...\n[2026-03-12T01:18:39.522Z] Checking Gmail token...\n[2026-03-12T01:18:39.523Z] Checking rank tracker...\n[2026-03-12T01:18:39.523Z] Checking SEO health logs...\n[2026-03-12T01:18:39.524Z] Found 3 issues: 1 auto-fixed, 2 for Claude, 0 for you, 0 warnings\n[2026-03-12T01:18:40.122Z] Email sent: [Watchdog CRITICAL] LessonDraft — 3 issues\n[2026-03-12T01:18:40.123Z] === Watchdog complete ===\n\n[2026-03-12T01:19:31.748Z] === Watchdog starting ===\n[2026-03-12T01:19:31.750Z] Checking LaunchAgents...\n[2026-03-12T01:19:31.843Z] Checking site health...\n[2026-03-12T01:19:32.774Z] Checking sitemap index coverage...\n[2026-03-12T01:19:32.775Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-12T01:21:21.152Z] Checking GSC token...\n[2026-03-12T01:21:21.156Z] Checking Gmail token...\n[2026-03-12T01:21:21.156Z] Checking rank tracker...\n[2026-03-12T01:21:21.157Z] Checking SEO health logs...\n[2026-03-12T01:21:21.158Z] Found 2 issues: 1 auto-fixed, 0 for Claude, 0 for you, 1 warnings\n[2026-03-12T01:21:21.664Z] Email sent: [Watchdog Auto-Fixed] LessonDraft — 2 issues\n[2026-03-12T01:21:21.664Z] === Watchdog complete ==="
+      "recentLog": "[2026-03-12T01:19:31.750Z] Checking LaunchAgents...\n[2026-03-12T01:19:31.843Z] Checking site health...\n[2026-03-12T01:19:32.774Z] Checking sitemap index coverage...\n[2026-03-12T01:19:32.775Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-12T01:21:21.152Z] Checking GSC token...\n[2026-03-12T01:21:21.156Z] Checking Gmail token...\n[2026-03-12T01:21:21.156Z] Checking rank tracker...\n[2026-03-12T01:21:21.157Z] Checking SEO health logs...\n[2026-03-12T01:21:21.158Z] Found 2 issues: 1 auto-fixed, 0 for Claude, 0 for you, 1 warnings\n[2026-03-12T01:21:21.664Z] Email sent: [Watchdog Auto-Fixed] LessonDraft — 2 issues\n[2026-03-12T01:21:21.664Z] === Watchdog complete ===\n\n[2026-03-12T16:00:02.054Z] === Watchdog starting ===\n[2026-03-12T16:00:02.056Z] Checking LaunchAgents...\n[2026-03-12T16:00:02.133Z] Checking site health...\n[2026-03-12T16:00:05.298Z] Checking sitemap index coverage...\n[2026-03-12T16:00:05.302Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-12T16:01:53.693Z] Checking GSC token...\n[2026-03-12T16:01:53.700Z] Checking Gmail token...\n[2026-03-12T16:01:53.701Z] Checking rank tracker...\n[2026-03-12T16:01:53.703Z] Checking SEO health logs...\n[2026-03-12T16:01:53.705Z] Found 2 issues: 1 auto-fixed, 0 for Claude, 0 for you, 1 warnings\n[2026-03-12T16:01:54.791Z] Email sent: [Watchdog Auto-Fixed] LessonDraft — 2 issues\n[2026-03-12T16:01:54.791Z] === Watchdog complete ==="
     },
     {
       "label": "com.lessondraft.rank-tracker",
@@ -505,7 +505,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": null
+      "recentLog": "Fetching keyword data from Google Search Console...\n\n=== LessonDraft Rank Tracker — 2026-03-12 ===\n\n  Keyword                                   Pos     Chg  Clicks     Imp     CTR\n  -----------------------------------------------------------------------------\n  AI lesson plan generator                   --       -       0       0    0.0%\n  free lesson plan maker                     --       -       0       0    0.0%\n  lesson plan generator                      --       -       0       0    0.0%\n  AI teacher tools                           --       -       0       0    0.0%\n  rubric maker                               --       -       0       0    0.0%\n  report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json"
     },
     {
       "label": "com.lessondraft.sitemap-health",
@@ -535,14 +535,14 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 97574,
+      "pid": 17339,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Regenerating dashboard data...\nDashboard data generated at /Users/scones/projects/command-center/src/data/dashboard-data.json\n  12 active projects, 6 automations, 8/9 agents healthy\nData changed, committing and pushing...\n[main 50cf01a] Update dashboard data 2026-03-11_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 1 insertion(+), 1 deletion(-)\nDeploying to Vercel...\n\u001b[2K\u001b[1A\u001b[2K\u001b[GProduction: https://command-center-djysupwtl-cascone26s-projects.vercel.app [45s]\nCompleting...\nAliased: https://command-center-liart-three.vercel.app [45s]\nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 12/13 agents\n  265 scholarships ($567K) | 30 emails | 12 courses\nData changed, committing and pushing...\n[main 85a9d87] Update dashboard data 2026-03-12_07:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 18 insertions(+), 17 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
-    "2026-03-12": 1,
+    "2026-03-12": 13,
     "2026-03-11": 6,
     "2026-03-06": 14,
     "2026-03-04": 37,
@@ -567,24 +567,24 @@
   "scholarships": {
     "statusCounts": {
       "applied": {
-        "count": 14,
-        "amount": 6000
+        "count": 48,
+        "amount": 132678
       },
       "discovered": {
-        "count": 220,
-        "amount": 443580
+        "count": 75,
+        "amount": 154387
       },
       "expired": {
-        "count": 10,
-        "amount": 24000
+        "count": 9,
+        "amount": 23500
       },
       "skipped": {
-        "count": 1,
-        "amount": 2500
+        "count": 107,
+        "amount": 48755
       },
       "todo": {
-        "count": 20,
-        "amount": 91080
+        "count": 33,
+        "amount": 213340
       }
     },
     "upcoming": [
@@ -605,6 +605,24 @@
         "amount": 5000,
         "deadline": "2026-03-28",
         "status": "todo"
+      },
+      {
+        "name": "Love Island Fan Scholarship",
+        "amount": 500,
+        "deadline": "2026-03-31",
+        "status": "applied"
+      },
+      {
+        "name": "Post Malone Fan No-Essay Scholarship",
+        "amount": 500,
+        "deadline": "2026-03-31",
+        "status": "applied"
+      },
+      {
+        "name": "100 Bold Points No-Essay Scholarship",
+        "amount": 1000,
+        "deadline": "2026-03-31",
+        "status": "applied"
       },
       {
         "name": "Niche $25K No Essay",
@@ -631,6 +649,36 @@
         "status": "todo"
       },
       {
+        "name": "Top easy scholarships overall",
+        "amount": 10000,
+        "deadline": "2026-03-31",
+        "status": "todo"
+      },
+      {
+        "name": "Scholarships360’s $10,000 No Essay Scholarship",
+        "amount": 10000,
+        "deadline": "2026-03-31",
+        "status": "todo"
+      },
+      {
+        "name": "$40,000 BigFuture Class of 2027 Scholarship",
+        "amount": 40000,
+        "deadline": "2026-03-31",
+        "status": "todo"
+      },
+      {
+        "name": "$10,000 Scholly Easy Apply Scholarships",
+        "amount": 10000,
+        "deadline": "2026-03-31",
+        "status": "todo"
+      },
+      {
+        "name": "Niche $25,000 “No Essay” Scholarship",
+        "amount": 25000,
+        "deadline": "2026-03-31",
+        "status": "todo"
+      },
+      {
         "name": "Redefining Victory",
         "amount": 2500,
         "deadline": "2026-04-01",
@@ -643,81 +691,33 @@
         "status": "todo"
       },
       {
+        "name": "Lane Nicholls Trueblood Memorial Scholarship",
+        "amount": 3000,
+        "deadline": "2026-04-10",
+        "status": "todo"
+      },
+      {
+        "name": "Linda Kay Monroe Whelan Memorial Education Scholarship",
+        "amount": 1000,
+        "deadline": "2026-04-13",
+        "status": "todo"
+      },
+      {
         "name": "Haiti Rising Love Wins Scholarship",
         "amount": 2500,
         "deadline": "2026-04-14",
         "status": "applied"
-      },
-      {
-        "name": "Robert F. Lawson Fund",
-        "amount": 1000,
-        "deadline": "2026-04-15",
-        "status": "todo"
-      },
-      {
-        "name": "NEA Jack Kinnaman",
-        "amount": 3500,
-        "deadline": "2026-04-15",
-        "status": "todo"
-      },
-      {
-        "name": "Smith & Moore Uplift",
-        "amount": 7580,
-        "deadline": "2026-04-26",
-        "status": "todo"
-      },
-      {
-        "name": "Forever90 Scholarship",
-        "amount": 1000,
-        "deadline": "2026-05-27",
-        "status": "applied"
-      },
-      {
-        "name": "Pastor Thomas Rorie Jr. Christian Values Scholarship",
-        "amount": 2000,
-        "deadline": "2026-05-30",
-        "status": "applied"
-      },
-      {
-        "name": "Pastor Thomas Rorie Jr.",
-        "amount": 2000,
-        "deadline": "2026-05-30",
-        "status": "todo"
-      },
-      {
-        "name": "Patricia Lindsey Jackson Foundation - Eva Mae Jackson Scholarship of Education",
-        "amount": 500,
-        "deadline": "2026-06-02",
-        "status": "applied"
-      },
-      {
-        "name": "Arthur & Elana Panos",
-        "amount": 1000,
-        "deadline": "2026-08-19",
-        "status": "todo"
-      },
-      {
-        "name": "Discover",
-        "amount": 5000,
-        "deadline": "2026-08-2026",
-        "status": "todo"
-      },
-      {
-        "name": "Outstanding Undergraduate",
-        "amount": 1000,
-        "deadline": "2026-11-30",
-        "status": "todo"
       }
     ],
-    "totalPipeline": 567160,
-    "totalCount": 265,
+    "totalPipeline": 572660,
+    "totalCount": 272,
     "applied": {
-      "count": 14,
-      "amount": 6000
+      "count": 48,
+      "amount": 132678
     },
     "todo": {
-      "count": 20,
-      "amount": 91080
+      "count": 33,
+      "amount": 213340
     },
     "won": {
       "count": 0,
@@ -726,81 +726,81 @@
   },
   "emailCampaign": {
     "totalLeads": 6875,
-    "withEmail": 179,
-    "emailed": 43,
+    "withEmail": 217,
+    "emailed": 59,
     "followedUp": 0,
-    "sent": 30,
-    "errors": 0,
+    "sent": 59,
+    "errors": 1,
     "recentSends": [
       {
-        "id": 8704,
-        "name": "Aqua Pro Irrigation and Landscaping",
-        "email": "tim.michel13@gmail.com",
-        "messageId": "19cd8191a37cf63f",
-        "sentAt": "2026-03-10T14:14:10.330Z"
+        "id": 7546,
+        "name": "KCK Upholstery",
+        "email": "nitrao@gamerbiz.com.br",
+        "messageId": "19ce264b61d072a3",
+        "sentAt": "2026-03-12T14:12:57.348Z"
       },
       {
-        "id": 8798,
-        "name": "Uncle Huck Sewer & Septic",
-        "email": "webmaster@unclehuck.com",
-        "messageId": "19cd8183676fdd5a",
-        "sentAt": "2026-03-10T14:13:11.634Z"
+        "id": 5998,
+        "name": "Premier Plumbing of Kansas City inc",
+        "email": "help@premier.one",
+        "messageId": "19ce26439ab4c4cf",
+        "sentAt": "2026-03-12T14:12:25.366Z"
       },
       {
-        "id": 10431,
-        "name": "858 Hair",
-        "email": "salon.858hair@gmail.com",
-        "messageId": "19cd8179716ee3f8",
-        "sentAt": "2026-03-10T14:12:30.746Z"
+        "id": 711,
+        "name": "Dan's Barber Shop and Shave Parlor",
+        "email": "danpros@dan.org",
+        "messageId": "19ce263bae9f6284",
+        "sentAt": "2026-03-12T14:11:52.760Z"
       },
       {
-        "id": 7830,
-        "name": "Fetchers Play & Stay",
-        "email": "info@fetchersplaystay.com",
-        "messageId": "19cd816e44963f8b",
-        "sentAt": "2026-03-10T14:11:45.633Z"
+        "id": 6166,
+        "name": "Fourway Service Company Plumbing",
+        "email": "webmaster@fourway.net",
+        "messageId": "19ce2633c1810cb1",
+        "sentAt": "2026-03-12T14:11:20.889Z"
       },
       {
-        "id": 12107,
-        "name": "Skweeky Kleen Windows",
-        "email": "skweekykleenwindows@gmail.com",
-        "messageId": "19cd816005927292",
-        "sentAt": "2026-03-10T14:10:47.030Z"
+        "id": 11683,
+        "name": "Kathy's Alterations",
+        "email": "court@cityofkaty.com",
+        "messageId": "19ce2625abcb77be",
+        "sentAt": "2026-03-12T14:10:22.942Z"
       },
       {
-        "id": 9521,
-        "name": "KC Rock Chips",
-        "email": "jake@kcrockchips.com",
-        "messageId": "19cd8155aa2c316a",
-        "sentAt": "2026-03-10T14:10:04.629Z"
+        "id": 8664,
+        "name": "Vern's Help U Do-it Sprinklers",
+        "email": "info@vern.de",
+        "messageId": "19ce261e070a8641",
+        "sentAt": "2026-03-12T14:09:51.510Z"
       },
       {
-        "id": 1970,
-        "name": "Above & Beyond Dyslexia",
-        "email": "abovedyslexia@gmail.com",
-        "messageId": "19cd814b7f97ba39",
-        "sentAt": "2026-03-10T14:09:22.358Z"
+        "id": 235,
+        "name": "Roberts mobile detailing",
+        "email": "servicio@roberts.com.mx",
+        "messageId": "19ce2614fd5395a0",
+        "sentAt": "2026-03-12T14:09:14.562Z"
       },
       {
-        "id": 12816,
-        "name": "Iconic Apparel",
-        "email": "paul@iconicapparelkc.com",
-        "messageId": "19cd813ceb1c6640",
-        "sentAt": "2026-03-10T14:08:23.038Z"
+        "id": 6422,
+        "name": "Excalibur Garage Door Repair",
+        "email": "service@excaliburcrossbow.com",
+        "messageId": "19ce26072d932117",
+        "sentAt": "2026-03-12T14:08:17.839Z"
       },
       {
-        "id": 12901,
-        "name": "Hank's Portables & Septic Service",
-        "email": "hanksportablesllc@yahoo.com",
-        "messageId": "19cd81300894c6c5",
-        "sentAt": "2026-03-10T14:07:30.188Z"
+        "id": 7321,
+        "name": "SAME DAY CARPET CLEANING MO",
+        "email": "support@machine-guard.com",
+        "messageId": "19ce25fd5e49b263",
+        "sentAt": "2026-03-12T14:07:37.780Z"
       },
       {
-        "id": 12143,
-        "name": "Metro Wide Junk Removal",
-        "email": "info@metrowidejunk.com",
-        "messageId": "19cd81282834452a",
-        "sentAt": "2026-03-10T14:06:58.142Z"
+        "id": 5116,
+        "name": "Taylors All Car Services",
+        "email": "campuscentral@taylors.edu.my",
+        "messageId": "19ce25efd4be0a04",
+        "sentAt": "2026-03-12T14:06:42.382Z"
       }
     ]
   },
@@ -810,20 +810,15 @@
       "first_impression": "None",
       "first_click": "None",
       "last_indexed_count": 0,
-      "last_impressions": 1,
+      "last_impressions": 46,
       "consecutive_blocked": 0,
-      "last_check": "2026-03-11T14:01:18Z"
+      "last_check": "2026-03-12T23:01:15Z"
     },
-    "clicks": 1,
-    "impressions": 7,
-    "ctr": "1.1%",
-    "position": "2.3",
+    "clicks": 3,
+    "impressions": 46,
+    "ctr": "1.4%",
+    "position": "3.0",
     "dailyData": [
-      {
-        "date": "2026-03-03",
-        "clicks": 0,
-        "impressions": 0
-      },
       {
         "date": "2026-03-04",
         "clicks": 0,
@@ -853,6 +848,11 @@
         "date": "2026-03-09",
         "clicks": 1,
         "impressions": 6
+      },
+      {
+        "date": "2026-03-10",
+        "clicks": 2,
+        "impressions": 39
       }
     ],
     "healthStatus": "PASS"
@@ -927,7 +927,7 @@
       }
     ],
     "graduationDate": "2027-04-18",
-    "daysUntilGrad": 402,
+    "daysUntilGrad": 401,
     "gpa": "3.87"
   },
   "ideas": [
@@ -1032,7 +1032,7 @@
     {
       "site": "BuiltSimple",
       "url": "builtsimple.dev",
-      "count": 157
+      "count": 164
     }
   ],
   "monthlyCosts": [
@@ -1176,7 +1176,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 69,
+    "commitsThisWeek": 59,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
