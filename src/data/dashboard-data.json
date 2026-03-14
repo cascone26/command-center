@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-14T00:30:02.223Z",
+  "generatedAt": "2026-03-14T12:30:05.920Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -22,14 +22,14 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "481e242a83f2f8ad62563aff1da95a16892f36ba",
-        "message": "Fix auth redirect: protected routes now redirect to sign-in instead of 404",
-        "date": "2026-03-13 19:11:51 -0500"
+        "hash": "7e3524ccc3a9fb53c58ac3510fbe3fde4524dd38",
+        "message": "Upgrade Next.js to v16 and update project configuration",
+        "date": "2026-03-13 21:16:33 -0500"
       },
       "gitStats": {
-        "totalCommits": 120
+        "totalCommits": 125
       },
-      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-12\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Full Site Audit & Consistency Pass (2026-03-12):**\n  - **Max → Team rebrand cleanup:** Fixed 16+ user-facing \"Max\" references across dashboard, pricing, FAQs, blog posts, generation-guard, tool badges, terms of service, admin labels, test expectations. Inter",
+      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-13\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Security Audit & Conversion Upgrades (2026-03-13):**\n  - **Auth redirect fix:** Protected routes (dashboard, settings, history, admin, content-blocks, bulk-report-card) now redirect to /sign-in instead of showing 404. Switched from auth.protect() to redirect",
       "healthScore": 100
     },
     {
@@ -44,12 +44,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Portfolio site. Check blog traffic, lead responses.",
       "lastCommit": {
-        "hash": "7ea4f5579fb22e58769aa39f2385c455787f603d",
-        "message": "Add blog post: Why Your Small Business Website Looks Outdated (And How to Fix It)",
-        "date": "2026-03-13 07:34:47 -0500"
+        "hash": "fc49ddcbbf245519c0902ef2d2d1acffec2781b4",
+        "message": "Add blog post: Website Security Essentials Every Small Business Owner Should Know",
+        "date": "2026-03-13 23:02:16 -0500"
       },
       "gitStats": {
-        "totalCommits": 60
+        "totalCommits": 77
       },
       "statusSummary": "# Portfolio — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed at `https://builtsimple.dev`\n- GitHub: `https://github.com/cascone26/portfolio`\n- Vercel project: `cascone26s-projects/builtsimple`\n- Custom domain: `builtsimple.dev` (live)\n\n## Site Structure (31 routes)\n- `/` — Home (hero with code mockup, featured LessonDraft section, highlight cards)\n- `/services` — Services & pricing (6 services + how it works)\n- `/work` — Portfolio grid (LessonDraft, Social Autoposter, placeholder)\n- `/work/lessondraft` — LessonDraft case study with screenshot\n- `/work/lessondraft-social` — Aut",
       "healthScore": 100
@@ -385,14 +385,14 @@
       "longestStreak": 0,
       "path": "~/projects/vinnie-treasure",
       "lastCommit": {
-        "hash": "34b173d16d373882324cd6b9710532e93411ea3c",
-        "message": "Use Haiku for regular chat, Sonnet for deep think only — save costs",
-        "date": "2026-03-12 12:30:52 -0500"
+        "hash": "9e76b0b19c53220f5b7d444fb73fb3eea1783101",
+        "message": "Add .vercelignore to exclude audio files from deploy",
+        "date": "2026-03-14 00:13:15 -0500"
       },
       "gitStats": {
-        "totalCommits": 16
+        "totalCommits": 47
       },
-      "statusSummary": "# Vinnie's Treasure Tracker\n\n## Overview\nResearch hub for brother Vinnie to find the Forrest Fenn Box from \"There's Treasure Inside\" by Jon Collins-Black.\n\n## Stack\n- Next.js + TypeScript + Tailwind\n- Supabase (planned for persistent data, notes, auto-updates)\n- Mapbox (planned for interactive map)\n\n## Current State (March 8, 2026)\n- [x] Project scaffolded\n- [x] Data layer: poem (24 lines), clues (16), research (15 entries), boxes (5)\n- [x] Dashboard page\n- [x] Poem Analyzer page (interactive line-by-line with Fenn parallels)\n- [x] Clue Database page (filterable, searchable)\n- [x] Research Vau",
+      "statusSummary": "# Vinnie's Treasure Tracker\n\n## Overview\nResearch hub for brother Vinnie to find the Forrest Fenn Box from \"There's Treasure Inside\" by Jon Collins-Black.\n\n## Stack\n- Next.js + TypeScript + Tailwind\n- Vercel deployment (live)\n\n## Current State (March 14, 2026)\n- [x] Full website with Dashboard, Poem Analyzer, Clue Database, Research Vault, Hunt Status, Book Encyclopedia, Map, Claude AI page\n- [x] 146 research entries in data layer\n- [x] Leading theory: Combined River Route — Pool Creek (score: 86.0/100, 9 clues at 9-10)\n- [x] 3 podcast transcriptions (EP22 Bruce, American Treasure Ep3 JCB, His",
       "healthScore": 100
     }
   ],
@@ -439,7 +439,7 @@
       "pid": 1699,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": ""
+      "recentLog": null
     },
     {
       "label": "com.builtsimple.email-sender",
@@ -535,14 +535,14 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 39958,
+      "pid": 60862,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 12/13 agents\n  273 scholarships ($573K) | 59 emails | 12 courses\nData changed, committing and pushing...\n[main 0caa7e3] Update dashboard data 2026-03-13_07:30\n Committer: Jacob Cascone <scones@macbookpro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 13 insertions(+), 13 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 12/13 agents\n  275 scholarships ($577K) | 84 emails | 12 courses\nData changed, committing and pushing...\n[main 3a32641] Update dashboard data 2026-03-13_19:30\n Committer: Jacob Cascone <scones@Jacobs-MacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 204 insertions(+), 127 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
-    "2026-03-13": 5,
+    "2026-03-13": 53,
     "2026-03-12": 13,
     "2026-03-11": 6,
     "2026-03-06": 14,
@@ -563,7 +563,8 @@
     "2026-03-09": 10,
     "2026-03-08": 15,
     "2026-03-07": 1,
-    "2026-03-05": 23
+    "2026-03-05": 23,
+    "2026-03-14": 5
   },
   "scholarships": {
     "statusCounts": {
@@ -933,13 +934,13 @@
   },
   "ideas": [
     {
-      "name": "Auto STATUS.md",
-      "description": "automatically update STATUS.md files based on git commits and file changes. Free.",
+      "name": "COBO Phase 9",
+      "description": "self-improving autonomous agent. Always maximizing, always learning, builds its own tools when it identifies repetitive patterns. DONE = never done, always evolving.",
       "section": "Active Ideas"
     },
     {
-      "name": "Overnight autonomous agent",
-      "description": "an always-running agent with judgment, priorities, and full stack access. Works while Jacob sleeps/works. Not a task queue — it thinks for itself about what needs doing, executes, learns from results, and compounds over time. The \"install your brain into the computer\" vision.",
+      "name": "Voice conversation mode (NEXT PRIORITY)",
+      "description": "talk to COBO naturally like ChatGPT voice mode. Full two-way voice PWA: mic button records, transcribes, sends to COBO, plays back response via TTS. Foundation for all hardware (AirPods, car Bluetooth, smart glasses). Phone is the bridge for everything.",
       "section": "Active Ideas"
     },
     {
@@ -1103,7 +1104,7 @@
     {
       "site": "BuiltSimple",
       "url": "builtsimple.dev",
-      "count": 166
+      "count": 183
     }
   ],
   "monthlyCosts": [
@@ -1247,7 +1248,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 50,
+    "commitsThisWeek": 98,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
