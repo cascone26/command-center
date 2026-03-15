@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-15T00:30:36.963Z",
+  "generatedAt": "2026-03-15T12:30:06.584Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -7,7 +7,7 @@
     "healthyAgents": 12,
     "totalAgents": 13,
     "ideasCount": 26,
-    "avgHealthScore": 90
+    "avgHealthScore": 91
   },
   "projects": [
     {
@@ -65,15 +65,15 @@
       "nextCheckIn": "2026-03-13",
       "notes": "Monitor email sends, check replies, manual texting. 130 drafts ready.",
       "lastCommit": {
-        "hash": "fe516189087529d3ada353d69ad7b098d4ae0711",
-        "message": "Initial build: lead scraper for BuiltSimple local business prospecting",
-        "date": "2026-02-28 10:08:58 -0600"
+        "hash": "7f5d2cfb0cd54e0c5551a7056dbda5d994844396",
+        "message": "Limit reply checks to last 7 days to prevent LaunchAgent timeouts",
+        "date": "2026-03-15 00:26:05 -0500"
       },
       "gitStats": {
-        "totalCommits": 2
+        "totalCommits": 3
       },
       "statusSummary": "# Lead Scraper — Status\n\n## Overview\nLead-gen engine for BuiltSimple. Finds local businesses without websites (or with bad ones), enriches contact info, and automates personalized outreach via email and text.\n\n## Current State (Mar 7, 2026)\n- **6,875 leads** in SQLite DB across 50-mile KC metro radius\n- **1,294 without websites** (prime targets)\n- **187 with verified email addresses**\n- **130 Gmail drafts ready** to send (filtered for sites that actually need help)\n- **1,037 phone-only businesses** exported to CSV for text outreach\n- Not deployed (runs locally — SQLite won't work on Vercel)\n\n#",
-      "healthScore": 85
+      "healthScore": 90
     },
     {
       "id": 4,
@@ -86,15 +86,15 @@
       "nextCheckIn": "2026-03-14",
       "notes": "3x daily posts. Watch for Instagram API flags.",
       "lastCommit": {
-        "hash": "22eac9193ff59ab1cecec2a854392d5d34001d20",
-        "message": "Add STATUS.md documenting autoposter architecture, platforms, and GitHub Actions setup",
-        "date": "2026-03-04 14:57:05 -0600"
+        "hash": "9470500429a708031448cd8684f28bcb64527264",
+        "message": "Add pre-generated content queue system",
+        "date": "2026-03-14 23:18:19 -0500"
       },
       "gitStats": {
-        "totalCommits": 8
+        "totalCommits": 12
       },
-      "statusSummary": "# LessonDraft Social Autoposter — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- GitHub: `https://github.com/cascone26/lessondraft-social.git`\n- Runs via GitHub Actions (3x daily: 7:30am, 12pm, 5:30pm CT)\n- Also has local LaunchAgent (`com.lessondraft.social.plist`) for macOS\n- Platforms: Twitter/X, Pinterest, Facebook, LinkedIn, TikTok (Instagram skipped in CI due to private API detection)\n\n## What It Is\nPython autoposter that generates educational social media content for LessonDraft using Claude API, renders images with Pillow, and posts to multiple platforms.\n\n## Architecture\n```\nr",
-      "healthScore": 90
+      "statusSummary": "# LessonDraft Social Autoposter — Status\n\n## Last Updated\n2026-03-14\n\n## Current State\n- GitHub: `https://github.com/cascone26/lessondraft-social.git`\n- Runs via GitHub Actions (3x daily: 7:30am, 12pm, 5:30pm CT)\n- Also has local LaunchAgent (`com.lessondraft.social.plist`) for macOS\n- Platforms: Twitter/X, Pinterest, Facebook, LinkedIn, TikTok (Instagram skipped in CI due to private API detection)\n\n## What It Is\nPython autoposter that generates educational social media content for LessonDraft using LLM APIs (Anthropic Claude with Groq fallback), renders images with Pillow, and posts to multip",
+      "healthScore": 95
     },
     {
       "id": 5,
@@ -107,15 +107,15 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Check deadlines, submit applications. $88K+ pipeline.",
       "lastCommit": {
-        "hash": "8d211fc444deb3cd4a548e41d4a23557afdaebe8",
-        "message": "Scholarship bot system — full autopilot with audit logging",
-        "date": "2026-02-26 09:38:33 -0600"
+        "hash": "801dc627aa105d500d93267b67a1b140dff2a119",
+        "message": "Save essay drafts to ~/scholarships/drafts/ for review",
+        "date": "2026-03-15 00:58:37 -0500"
       },
       "gitStats": {
-        "totalCommits": 1
+        "totalCommits": 2
       },
       "statusSummary": "# Scholarship System — STATUS\n\n**Created:** 2026-02-24\n**Updated:** 2026-03-11\n**Phase:** Full automation active — scraping + auto-apply operational\n\n## Current Stats\n- **256 scholarships** tracked in SQLite DB\n- **$540K+ pipeline value**\n- **0 applied yet** — auto-apply system just built, ready to run\n- **Daily autopilot**: LaunchAgent runs at 8 AM (scrape + score + apply + essays + status + followup + briefing)\n\n## Platform Breakdown\n| Platform | Count | Total Value |\n|---|---|---|\n| Fastweb | 110 | $101K |\n| Bold.org | 88 | $201K |\n| Scholarships360 | 27 | $147K |\n| Niche | 2 | $27K |\n| Oth",
-      "healthScore": 80
+      "healthScore": 95
     },
     {
       "id": 6,
@@ -385,14 +385,14 @@
       "longestStreak": 0,
       "path": "~/projects/vinnie-treasure",
       "lastCommit": {
-        "hash": "1c5cd4cf45c43df6e2ee44d15752d92b1444626d",
-        "message": "Add 3 more research entries from background agent findings",
-        "date": "2026-03-14 16:22:03 -0500"
+        "hash": "1648f5e2ae8b35e29decaeaf354cb573727e55ec",
+        "message": "Update STATUS.md for Session 7: 321 entries, compare page, competitive landscape",
+        "date": "2026-03-15 00:56:59 -0500"
       },
       "gitStats": {
-        "totalCommits": 54
+        "totalCommits": 77
       },
-      "statusSummary": "# Vinnie's Treasure Tracker\n\n## Overview\nResearch hub for brother Vinnie to find the Forrest Fenn Box from \"There's Treasure Inside\" by Jon Collins-Black.\n\n## Stack\n- Next.js + TypeScript + Tailwind\n- Vercel deployment (live)\n\n## Current State (March 14, 2026)\n- [x] Full website with Dashboard, Poem Analyzer, Clue Database, Research Vault, Hunt Status, Book Encyclopedia, Map, Claude AI page\n- [x] 166 research entries in data layer\n- [x] Leading theory: Combined River Route — Pool Creek (score: 86.0/100, 9 clues at 9-10)\n- [x] 3 podcast transcriptions (EP22 Bruce, American Treasure Ep3 JCB, His",
+      "statusSummary": "# Vinnie's Treasure Tracker\n\n## Overview\nResearch hub for brother Vinnie to find the Forrest Fenn Box from \"There's Treasure Inside\" by Jon Collins-Black.\n\n## Stack\n- Next.js + TypeScript + Tailwind\n- Vercel deployment (live at vinnie-treasure.vercel.app)\n\n## Current State (March 15, 2026 — Session 7)\n- [x] Full website with Dashboard, Poem Analyzer, Clue Database, Research Vault, Hunt Status, Book Encyclopedia, Map, Claude AI page, **Theory Compare page**\n- [x] **321 research entries** in data layer (was 300 at session start)\n- [x] Leading theory: Combined River Route — Pool Creek (score: 86.",
       "healthScore": 100
     }
   ],
@@ -535,10 +535,10 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 69958,
+      "pid": 85399,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 12/13 agents\n  275 scholarships ($577K) | 84 emails | 12 courses\nData changed, committing and pushing...\n[main 46507ce] Update dashboard data 2026-03-14_07:30\n Committer: Jacob Cascone <scones@macbookpro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 27 insertions(+), 26 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 12/13 agents\n  279 scholarships ($582K) | 109 emails | 12 courses\nData changed, committing and pushing...\n[main a09b541] Update dashboard data 2026-03-14_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 94 insertions(+), 130 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
@@ -558,13 +558,14 @@
     "2026-02-18": 3,
     "2026-02-26": 16,
     "2026-02-25": 1,
+    "2026-03-15": 7,
     "2026-02-28": 3,
+    "2026-03-14": 34,
     "2026-03-01": 19,
     "2026-03-09": 10,
     "2026-03-08": 15,
     "2026-03-07": 1,
-    "2026-03-05": 23,
-    "2026-03-14": 12
+    "2026-03-05": 23
   },
   "scholarships": {
     "statusCounts": {
@@ -1212,7 +1213,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 109,
+    "commitsThisWeek": 131,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
