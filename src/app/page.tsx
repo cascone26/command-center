@@ -20,6 +20,8 @@ import { NotificationsLog } from "@/components/NotificationsLog";
 import { IdeasPanel } from "@/components/IdeasPanel";
 import { Notepad } from "@/components/Notepad";
 import { Alerts } from "@/components/Alerts";
+import { RevenueOverview } from "@/components/RevenueOverview";
+import { ProjectHealth } from "@/components/ProjectHealth";
 
 export default function Home() {
   const d = dashboardData;
@@ -65,6 +67,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── REVENUE ── */}
+      <section id="revenue" className="space-y-3 mb-3">
+        <h2
+          className="text-xs font-semibold uppercase tracking-wider"
+          style={{ color: "var(--text-dim)", letterSpacing: "0.1em" }}
+        >
+          Revenue Overview
+        </h2>
+        <RevenueOverview data={d.revenue as Parameters<typeof RevenueOverview>[0]["data"]} />
+      </section>
+
       {/* ── PROJECTS ── */}
       <section id="projects" className="space-y-3 mb-3">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-3">
@@ -99,6 +112,17 @@ export default function Home() {
           <MonthlyCosts defaults={d.monthlyCosts} />
           <Income />
         </div>
+      </section>
+
+      {/* ── HEALTH ── */}
+      <section id="health" className="space-y-3 mb-3">
+        <h2
+          className="text-xs font-semibold uppercase tracking-wider"
+          style={{ color: "var(--text-dim)", letterSpacing: "0.1em" }}
+        >
+          Project Health
+        </h2>
+        <ProjectHealth data={d.projectHealth} />
       </section>
 
       {/* ── SCHOOL ── */}

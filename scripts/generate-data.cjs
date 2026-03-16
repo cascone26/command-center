@@ -383,6 +383,72 @@ function getSEOToolsData() {
   return { rankTracker, sitemapHealth, aiRecommendations };
 }
 
+function getRevenueStreams() {
+  const content = readFile(path.join(HOME, "REVENUE.md"));
+  const streams = [];
+  if (!content) return { streams, totalMRR: 0, totalCosts: 0, netProfit: 0, activeCount: 0 };
+
+  let currentStatus = "active"; // active | building | dormant
+  const lines = content.split("\n");
+  for (const line of lines) {
+    if (line.startsWith("## Active Streams")) currentStatus = "active";
+    else if (line.startsWith("## Building Streams")) currentStatus = "building";
+    else if (line.startsWith("## Dormant Streams")) currentStatus = "dormant";
+    else if (line.startsWith("## Cost Structure") || line.startsWith("## Monthly Snapshot") || line.startsWith("## Tracking")) currentStatus = "meta";
+    else if (line.startsWith("### ") && currentStatus !== "meta") {
+      const nameMatch = line.match(/###\s*\d+\.\s*(.+?)(?:\s*—\s*(.+))?$/);
+      if (nameMatch) {
+        streams.push({
+          name: nameMatch[1].trim(),
+          url: nameMatch[2] ? nameMatch[2].trim() : null,
+          status: currentStatus,
+          mrr: 0,
+          potential: "",
+          nextAction: "",
+        });
+      }
+    } else if (streams.length > 0 && currentStatus !== "meta") {
+      const last = streams[streams.length - 1];
+      const mrrMatch = line.match(/\*\*Current(?:\s+MRR)?:\*\*\s*\$(\d+)/);
+      const potentialMatch = line.match(/\*\*Potential:\*\*\s*(.+)/);
+      const nextMatch = line.match(/\*\*Next action:\*\*\s*(.+)/);
+      if (mrrMatch) last.mrr = parseInt(mrrMatch[1]);
+      if (potentialMatch) last.potential = potentialMatch[1].trim();
+      if (nextMatch) last.nextAction = nextMatch[1].trim();
+    }
+  }
+
+  // Parse cost structure and monthly snapshot
+  let totalCosts = 20; // default
+  const costMatch = content.match(/\| \*\*Total\*\*\s*\|\s*\*\*\$(\d+)/);
+  if (costMatch) totalCosts = parseInt(costMatch[1]);
+
+  // Parse monthly snapshot
+  let monthlyRevenue = 0;
+  const snapshotRegex = /\|\s*\w+\s+\d{4}\s*\|\s*\$(\d+)/g;
+  let sm;
+  while ((sm = snapshotRegex.exec(content)) !== null) {
+    monthlyRevenue = parseInt(sm[1]);
+  }
+
+  // Also pull from billing history.json if available
+  const history = readJSON(path.join(HOME, "tools/billing/history.json"));
+  if (history) {
+    const months = Object.keys(history).sort();
+    if (months.length > 0) {
+      const latest = history[months[months.length - 1]];
+      if (latest.revenue !== undefined) monthlyRevenue = latest.revenue;
+      if (latest.costs !== undefined) totalCosts = latest.costs;
+    }
+  }
+
+  const totalMRR = streams.reduce((s, st) => s + st.mrr, 0);
+  const netProfit = monthlyRevenue - totalCosts;
+  const activeCount = streams.filter((s) => s.status === "active").length;
+
+  return { streams, totalMRR, totalCosts, monthlyRevenue, netProfit, activeCount };
+}
+
 function getMonthlyCosts() {
   // Default costs — user can override in localStorage on the frontend
   return [
@@ -440,8 +506,10 @@ const ideas = parseIdeas(ideasContent);
 const activity = parseActivityLog(activityContent);
 const blogStats = getBlogStats();
 const monthlyCosts = getMonthlyCosts();
+const revenue = getRevenueStreams();
 const seoTools = getSEOToolsData();
 const weeklySummary = getWeeklySummary(heatmap, emailCampaign, scholarships);
+const projectHealth = readJSON(path.join(HOME, "tools/healthcheck/results.json"));
 
 const activeProjects = projects.filter((p) => p.status === "active" && p.type === "project").length;
 const pausedProjects = projects.filter((p) => p.status === "paused").length;
@@ -464,8 +532,10 @@ const dashboard = {
   tasks: trackerData?.tasks || [],
   blogStats,
   monthlyCosts,
+  revenue,
   seoTools,
   weeklySummary,
+  projectHealth,
 };
 
 const outPath = path.join(__dirname, "..", "src", "data", "dashboard-data.json");

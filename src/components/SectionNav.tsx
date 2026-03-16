@@ -3,9 +3,11 @@
 const sections = [
   { id: "overview", label: "Overview" },
   { id: "alerts", label: "Alerts" },
+  { id: "revenue", label: "Revenue" },
   { id: "projects", label: "Projects" },
   { id: "business", label: "Business" },
   { id: "school", label: "School" },
+  { id: "health", label: "Health" },
   { id: "systems", label: "Systems" },
   { id: "notes", label: "Notes" },
 ];
