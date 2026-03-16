@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-16T00:30:07.013Z",
+  "generatedAt": "2026-03-16T12:30:01.370Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
     "activeAutomations": 6,
-    "healthyAgents": 12,
+    "healthyAgents": 10,
     "totalAgents": 13,
-    "ideasCount": 26,
+    "ideasCount": 29,
     "avgHealthScore": 88
   },
   "projects": [
@@ -22,14 +22,14 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "9b35d0f18b7604698164e83faa0bdedc450cea1a",
-        "message": "Update STATUS.md with conversion optimization work",
-        "date": "2026-03-15 19:26:46 -0500"
+        "hash": "1c8d85bd53bc22580448c45e66865bd69274c60d",
+        "message": "Add blog post: writing learning objectives guide for teachers",
+        "date": "2026-03-16 06:45:05 -0500"
       },
       "gitStats": {
-        "totalCommits": 154
+        "totalCommits": 176
       },
-      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-15\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Conversion Rate Optimization (2026-03-15):**\n  - **Blog-to-signup pipeline:** Sticky bottom CTA bar appears on scroll (dismissible), inline mid-article CTA component injected at content midpoint, stronger bottom CTA with gradient design + dual buttons (signu",
+      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-15\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Aggressive Conversion Push (2026-03-15, evening):**\n  - **Goal:** First paying subscriber by March 22\n  - **Spring Sale banner:** Sitewide announcement bar \"Pro for $8/mo + 7-day free trial\" (dismissible via sessionStorage)\n  - **Exit intent popup:** Pricing",
       "healthScore": 90
     },
     {
@@ -44,12 +44,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Portfolio site. Check blog traffic, lead responses.",
       "lastCommit": {
-        "hash": "fc49ddcbbf245519c0902ef2d2d1acffec2781b4",
-        "message": "Add blog post: Website Security Essentials Every Small Business Owner Should Know",
-        "date": "2026-03-13 23:02:16 -0500"
+        "hash": "e47b504e9f6ade41a1007e610e7b84e2b99bc2c2",
+        "message": "Add blog outline: How to Use Google Search Console for Your Small Business Website",
+        "date": "2026-03-16 02:33:39 -0500"
       },
       "gitStats": {
-        "totalCommits": 77
+        "totalCommits": 80
       },
       "statusSummary": "# Portfolio — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed at `https://builtsimple.dev`\n- GitHub: `https://github.com/cascone26/portfolio`\n- Vercel project: `cascone26s-projects/builtsimple`\n- Custom domain: `builtsimple.dev` (live)\n\n## Site Structure (31 routes)\n- `/` — Home (hero with code mockup, featured LessonDraft section, highlight cards)\n- `/services` — Services & pricing (6 services + how it works)\n- `/work` — Portfolio grid (LessonDraft, Social Autoposter, placeholder)\n- `/work/lessondraft` — LessonDraft case study with screenshot\n- `/work/lessondraft-social` — Aut",
       "healthScore": 90
@@ -72,7 +72,7 @@
       "gitStats": {
         "totalCommits": 3
       },
-      "statusSummary": "# Lead Scraper — Status\n\n## Overview\nLead-gen engine for BuiltSimple. Finds local businesses without websites (or with bad ones), enriches contact info, and automates personalized outreach via email and text.\n\n## Current State (Mar 7, 2026)\n- **6,875 leads** in SQLite DB across 50-mile KC metro radius\n- **1,294 without websites** (prime targets)\n- **187 with verified email addresses**\n- **130 Gmail drafts ready** to send (filtered for sites that actually need help)\n- **1,037 phone-only businesses** exported to CSV for text outreach\n- Not deployed (runs locally — SQLite won't work on Vercel)\n\n#",
+      "statusSummary": "# Lead Scraper — Status\n\n## Overview\nLead-gen engine for BuiltSimple. Finds local businesses without websites (or with bad ones), enriches contact info, and automates personalized outreach via email and text.\n\n## Current State (Mar 15, 2026)\n- **6,875 leads** in SQLite DB across 50-mile KC metro radius\n- **1,198 leads with emails** (up from 203 — v3 finder ran 1,600 leads)\n- **1,059 in email queue** — 42 days of sends at 25/day\n- **119 emails sent** (10 categories of personalized templates)\n- **27 follow-ups sent** (5-day auto follow-up)\n- **9 replies received** (some are bounces from bad emai",
       "healthScore": 85
     },
     {
@@ -107,12 +107,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Check deadlines, submit applications. $88K+ pipeline.",
       "lastCommit": {
-        "hash": "8907d887ec08a38d07527094b13f2cb45352f812",
-        "message": "Migrate all LLM calls from Anthropic API to Claude CLI",
-        "date": "2026-03-15 18:32:20 -0500"
+        "hash": "5cd0e705823f063bebe48bfde55d50107c32c2b2",
+        "message": "Add national merit scholarship essay on tech in underserved education",
+        "date": "2026-03-15 20:22:25 -0500"
       },
       "gitStats": {
-        "totalCommits": 4
+        "totalCommits": 5
       },
       "statusSummary": "# Scholarship System — STATUS\n\n**Created:** 2026-02-24\n**Updated:** 2026-03-11\n**Phase:** Full automation active — scraping + auto-apply operational\n\n## Current Stats\n- **256 scholarships** tracked in SQLite DB\n- **$540K+ pipeline value**\n- **0 applied yet** — auto-apply system just built, ready to run\n- **Daily autopilot**: LaunchAgent runs at 8 AM (scrape + score + apply + essays + status + followup + briefing)\n\n## Platform Breakdown\n| Platform | Count | Total Value |\n|---|---|---|\n| Fastweb | 110 | $101K |\n| Bold.org | 88 | $201K |\n| Scholarships360 | 27 | $147K |\n| Niche | 2 | $27K |\n| Oth",
       "healthScore": 90
@@ -479,10 +479,10 @@
       "name": "SEO Health",
       "schedule": "Mon 10am",
       "logPath": "/Users/scones/tools/gsc/logs/launchd-health-stdout.log",
-      "loaded": true,
+      "loaded": false,
       "pid": null,
-      "lastExitStatus": 0,
-      "healthy": true,
+      "lastExitStatus": null,
+      "healthy": false,
       "recentLog": "\u001b[32m  PASS: https://lessondraft.com/lesson-plan → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/quiz → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/rubric → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/blog → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/how-it-works → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/for → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/guides → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/resources → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/free-tools → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/glossary → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/examples → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/printables → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/compare → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/feed.xml → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/sitemap.xml → 200\u001b[0m\n\n--- Structured Data ---\n\u001b[32m  PASS: Homepage has JSON-LD structured data\u001b[0m\n\u001b[32m  PASS: Homepage has WebSite schema\u001b[0m\n\u001b[32m  PASS: Homepage has Organization schema\u001b[0m\n\u001b[32m  PASS: Homepage has og:image meta tag\u001b[0m\n\u001b[32m  PASS: Homepage has canonical URL\u001b[0m\n\n\u001b[32mALL CHECKS PASSED\u001b[0m\nLog: /Users/scones/tools/gsc/logs/health-2026-03-09_1000.log"
     },
     {
@@ -490,10 +490,10 @@
       "name": "Watchdog",
       "schedule": "11am daily",
       "logPath": "/Users/scones/tools/watchdog.log",
-      "loaded": true,
+      "loaded": false,
       "pid": null,
-      "lastExitStatus": 0,
-      "healthy": true,
+      "lastExitStatus": null,
+      "healthy": false,
       "recentLog": "[2026-03-14T16:00:03.056Z] Checking LaunchAgents...\n[2026-03-14T16:00:03.133Z] Checking site health...\n[2026-03-14T16:00:05.176Z] Checking sitemap index coverage...\n[2026-03-14T16:00:05.180Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-14T16:01:55.189Z] Checking GSC token...\n[2026-03-14T16:01:55.193Z] Checking Gmail token...\n[2026-03-14T16:01:55.194Z] Checking rank tracker...\n[2026-03-14T16:01:55.197Z] Checking SEO health logs...\n[2026-03-14T16:01:55.199Z] Found 4 issues: 1 auto-fixed, 0 for Claude, 0 for you, 3 warnings\n[2026-03-14T16:01:55.875Z] Email sent: [Watchdog Auto-Fixed] LessonDraft — 4 issues\n[2026-03-14T16:01:55.877Z] === Watchdog complete ===\n\n[2026-03-15T16:00:05.624Z] === Watchdog starting ===\n[2026-03-15T16:00:05.626Z] Checking LaunchAgents...\n[2026-03-15T16:00:05.702Z] Checking site health...\n[2026-03-15T16:00:07.922Z] Checking sitemap index coverage...\n[2026-03-15T16:00:07.926Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-15T16:01:55.765Z] Checking GSC token...\n[2026-03-15T16:01:55.774Z] Checking Gmail token...\n[2026-03-15T16:01:55.775Z] Checking rank tracker...\n[2026-03-15T16:01:55.778Z] Checking SEO health logs...\n[2026-03-15T16:01:55.781Z] Found 4 issues: 1 auto-fixed, 0 for Claude, 0 for you, 3 warnings\n[2026-03-15T16:01:56.091Z] Email FAILED: invalid_grant\n[2026-03-15T16:01:56.091Z] === Watchdog complete ==="
     },
     {
@@ -535,14 +535,15 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 32446,
+      "pid": 76235,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 12/13 agents\n  279 scholarships ($582K) | 109 emails | 12 courses\nData changed, committing and pushing...\n[main bd4cac3] Update dashboard data 2026-03-15_07:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 29 insertions(+), 28 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 12/13 agents\n  279 scholarships ($582K) | 109 emails | 12 courses\nData changed, committing and pushing...\n[main 10f6778] Update dashboard data 2026-03-15_19:30\n Committer: Jacob Cascone <scones@macbookpro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 3 insertions(+), 3 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
-    "2026-03-15": 42,
+    "2026-03-16": 6,
+    "2026-03-15": 62,
     "2026-03-13": 53,
     "2026-03-12": 13,
     "2026-03-11": 6,
@@ -729,81 +730,81 @@
   },
   "emailCampaign": {
     "totalLeads": 6875,
-    "withEmail": 204,
-    "emailed": 109,
-    "followedUp": 10,
-    "sent": 109,
+    "withEmail": 1198,
+    "emailed": 124,
+    "followedUp": 28,
+    "sent": 124,
     "errors": 1,
     "recentSends": [
       {
-        "id": 1966,
-        "name": "Club Z! In-Home Tutoring",
-        "email": "jrichardson@clubztutoring.com",
-        "messageId": "19cecb90e7513de1",
-        "sentAt": "2026-03-14T14:21:17.305Z"
+        "id": 321,
+        "name": "KB Complete Plumbing, Heating, Cooling & Electrical Inc.",
+        "email": "info@kbcomplete.com",
+        "messageId": "19cf679e52380ea1",
+        "sentAt": "2026-03-16T11:48:29.673Z"
       },
       {
-        "id": 10090,
-        "name": "Music Lessons - Steve Uffman",
-        "email": "stuffmn@gmail.com",
-        "messageId": "19cecb88f6e8a04d",
-        "sentAt": "2026-03-14T14:20:44.422Z"
+        "id": 2012,
+        "name": "Jack Stack Barbecue - Freight House",
+        "email": "info@jackstackbbq.com",
+        "messageId": "19cf67917469fbc4",
+        "sentAt": "2026-03-16T11:47:37.051Z"
       },
       {
-        "id": 8766,
-        "name": "Midwest Lawn & Garden",
-        "email": "info@midwestlawnkc.com",
-        "messageId": "19cecb7f834e22da",
-        "sentAt": "2026-03-14T14:20:05.900Z"
+        "id": 349,
+        "name": "Hamilton Plumbing, Heating, A/C & Rooter",
+        "email": "info@callhamilton.com",
+        "messageId": "19cf6785a151385a",
+        "sentAt": "2026-03-16T11:46:49.129Z"
       },
       {
-        "id": 12066,
-        "name": "Patriot Cleaning Systems",
-        "email": "gary.smart@patriotcs.net",
-        "messageId": "19cecb74c9fde5bb",
-        "sentAt": "2026-03-14T14:19:21.975Z"
+        "id": 330,
+        "name": "Anthony Plumbing, Heating, Cooling & Electric",
+        "email": "info@anthonyphc.com",
+        "messageId": "19cf67797f593010",
+        "sentAt": "2026-03-16T11:45:59.593Z"
       },
       {
-        "id": 1931,
-        "name": "Fitness Journey",
-        "email": "info@fitnessjourneykc.com",
-        "messageId": "19cecb6702f15ed8",
-        "sentAt": "2026-03-14T14:18:25.628Z"
+        "id": 340,
+        "name": "A.B. May Heating, A/C, Plumbing & Electrical",
+        "email": "info@abmay.com",
+        "messageId": "19cf677050d1d4e8",
+        "sentAt": "2026-03-16T11:45:21.501Z"
       },
       {
-        "id": 12870,
-        "name": "KC Style & Sound",
-        "email": "kcstyleandsound@gmail.com",
-        "messageId": "19cecb5cb85c9e6f",
-        "sentAt": "2026-03-14T14:17:43.343Z"
+        "id": 2773,
+        "name": "PB&J Restaurants & Catering",
+        "email": "dennis@eatpbj.com",
+        "messageId": "19cf44a24ceb26ed",
+        "sentAt": "2026-03-16T01:37:06.353Z"
       },
       {
-        "id": 10135,
-        "name": "Fount Atelier Art Coaching",
-        "email": "info@fountatelier.com",
-        "messageId": "19cecb4fd7129fed",
-        "sentAt": "2026-03-14T14:16:50.672Z"
+        "id": 5368,
+        "name": "Fredem Salon Studios",
+        "email": "harrtimothy7@gmail.com",
+        "messageId": "19cf449696a4ffa5",
+        "sentAt": "2026-03-16T01:36:17.823Z"
       },
       {
-        "id": 10074,
-        "name": "Greenleaf Performing Arts Academy",
-        "email": "greenleaf@greenleafstudio.org",
-        "messageId": "19cecb43b45b13a0",
-        "sentAt": "2026-03-14T14:16:01.025Z"
+        "id": 12820,
+        "name": "K & L Printing",
+        "email": "kevinc@kandlprinting.com",
+        "messageId": "19cf44889ad825f7",
+        "sentAt": "2026-03-16T01:35:20.432Z"
       },
       {
-        "id": 10081,
-        "name": "Blues to Bach Music Center",
-        "email": "shop@bluestobach.com",
-        "messageId": "19cecb37bd97b0d3",
-        "sentAt": "2026-03-14T14:15:11.700Z"
+        "id": 1918,
+        "name": "iRISE Performance",
+        "email": "ejackson@irisehw.com",
+        "messageId": "19cf447cd12d4ed3",
+        "sentAt": "2026-03-16T01:34:32.652Z"
       },
       {
-        "id": 10117,
-        "name": "Kc Drum Shop",
-        "email": "sales@kcdrumshop.com",
-        "messageId": "19cecb2e15fc705b",
-        "sentAt": "2026-03-14T14:14:32.052Z"
+        "id": 1878,
+        "name": "Fit House 24hr",
+        "email": "fithousekc@gmail.com",
+        "messageId": "19cf446f60ec5be2",
+        "sentAt": "2026-03-16T01:33:37.549Z"
       }
     ]
   },
@@ -917,6 +918,21 @@
       "name": "Content engine that compounds",
       "description": "researches what target audience is actually searching for, creates SEO-optimized content, publishes, monitors rankings over days, doubles down on what climbs, kills what doesn't. Gets smarter over time.",
       "section": "Active Ideas"
+    },
+    {
+      "name": "Camera Intake",
+      "description": "Take a photo of anything (whiteboard, error screen, design mockup, competitor site) and COBO processes it. \"Build this UI.\" \"Fix this error.\" \"Make our landing page look like this.\" Phone camera becomes an input device for the agent — snap and delegate.",
+      "section": "COBO Phone Upgrades (Queued)"
+    },
+    {
+      "name": "Swipe Decisions",
+      "description": "Tinder-style card interface for everything needing approval. Blog drafts, deploy decisions, strategy suggestions, content review. Swipe right = approve, left = deny. 10 decisions in 30 seconds while walking between classes. Way faster than reading a feed and tapping buttons.",
+      "section": "COBO Phone Upgrades (Queued)"
+    },
+    {
+      "name": "Push Notifications with Lock Screen Actions",
+      "description": "Real iOS push notifications via service worker. \"Blog post ready\" with Approve/Edit buttons on the lock screen. \"Deploy succeeded\" with View. \"Revenue hit $X\" with details. Not batched Discord — instant, actionable, native.",
+      "section": "COBO Phone Upgrades (Queued)"
     },
     {
       "name": "Veritas",
@@ -1069,7 +1085,7 @@
     {
       "site": "BuiltSimple",
       "url": "builtsimple.dev",
-      "count": 185
+      "count": 186
     }
   ],
   "monthlyCosts": [
@@ -1106,7 +1122,7 @@
         "status": "active",
         "mrr": 0,
         "potential": "$500-2000/mo",
-        "nextAction": "CTA improvements, pricing experiment, free trial flow"
+        "nextAction": ""
       },
       {
         "name": "Affiliate Revenue",
@@ -1114,7 +1130,7 @@
         "status": "active",
         "mrr": 0,
         "potential": "$100-300/mo",
-        "nextAction": "Add links to existing posts, write affiliate-rich content"
+        "nextAction": ""
       },
       {
         "name": "BuiltSimple / Lead Scraper",
@@ -1122,7 +1138,55 @@
         "status": "active",
         "mrr": 0,
         "potential": "$7,500-15,000/mo",
-        "nextAction": "Send first outreach batch"
+        "nextAction": ""
+      },
+      {
+        "name": "ColdDraft SaaS",
+        "url": "cold-email-writer-nine.vercel.app",
+        "status": "active",
+        "mrr": 0,
+        "potential": "$200-1000/mo",
+        "nextAction": ""
+      },
+      {
+        "name": "ResumeDraft SaaS",
+        "url": "resume-writer-zeta.vercel.app",
+        "status": "active",
+        "mrr": 0,
+        "potential": "$200-1000/mo",
+        "nextAction": ""
+      },
+      {
+        "name": "TeacherPicks",
+        "url": "teacher-picks.vercel.app",
+        "status": "active",
+        "mrr": 0,
+        "potential": "$50-300/mo",
+        "nextAction": ""
+      },
+      {
+        "name": "TeacherMoney",
+        "url": "teacher-money.vercel.app",
+        "status": "active",
+        "mrr": 0,
+        "potential": "$50-200/mo",
+        "nextAction": ""
+      },
+      {
+        "name": "Gumroad Digital Products",
+        "url": "cobocastle.gumroad.com",
+        "status": "active",
+        "mrr": 0,
+        "potential": "$50-300/mo",
+        "nextAction": ""
+      },
+      {
+        "name": "TPT (Teachers Pay Teachers)",
+        "url": null,
+        "status": "active",
+        "mrr": 0,
+        "potential": "$100-500/mo (7M active teacher buyers)",
+        "nextAction": ""
       },
       {
         "name": "The Faithful Minute",
@@ -1130,7 +1194,7 @@
         "status": "building",
         "mrr": 0,
         "potential": "$200-500/mo (year 2)",
-        "nextAction": "1-2 Shorts/day cadence"
+        "nextAction": ""
       },
       {
         "name": "Roblox UGC Clothing",
@@ -1138,46 +1202,46 @@
         "status": "building",
         "mrr": 0,
         "potential": "$200-2,500/mo",
-        "nextAction": "Marketplace upload pipeline"
+        "nextAction": ""
       },
       {
         "name": "LessonDraft Chrome Extension",
-        "url": null,
+        "url": "upsell channel",
         "status": "dormant",
         "mrr": 0,
-        "potential": "Conversion channel, not direct revenue",
+        "potential": "",
         "nextAction": ""
       },
       {
         "name": "Meta-Tutor Premium",
-        "url": null,
+        "url": "$5-20/mo if marketed",
         "status": "dormant",
         "mrr": 0,
-        "potential": "$200-1,000/mo if marketed",
+        "potential": "",
         "nextAction": ""
       },
       {
         "name": "Veritas Premium",
-        "url": null,
+        "url": "$500-5K/mo if marketed",
         "status": "dormant",
         "mrr": 0,
-        "potential": "$500-5,000/mo if marketed to Catholic students",
+        "potential": "",
         "nextAction": ""
       },
       {
         "name": "BuiltSimple Blog Affiliates",
-        "url": null,
+        "url": "182 posts, no links yet",
         "status": "dormant",
         "mrr": 0,
-        "potential": "$50-200/mo",
+        "potential": "",
         "nextAction": ""
       },
       {
-        "name": "Teacher Resource Products",
-        "url": null,
+        "name": "Medium Partner Program",
+        "url": "needs account creation",
         "status": "dormant",
         "mrr": 0,
-        "potential": "$50-200/mo",
+        "potential": "",
         "nextAction": ""
       }
     ],
@@ -1185,7 +1249,7 @@
     "totalCosts": 20,
     "monthlyRevenue": 0,
     "netProfit": -20,
-    "activeCount": 3
+    "activeCount": 9
   },
   "seoTools": {
     "rankTracker": {
@@ -1302,7 +1366,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 158,
+    "commitsThisWeek": 178,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
