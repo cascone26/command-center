@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-17T00:30:07.000Z",
+  "generatedAt": "2026-03-17T12:30:05.993Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -22,12 +22,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "abca8c3a68a28df97889ec3da38cd8e933dba7de",
-        "message": "Add blog post: Close Reading Strategies That Help Students Actually Understand Complex Texts",
-        "date": "2026-03-16 19:26:46 -0500"
+        "hash": "622daac76b0ed2b94925d31cbae2f2bf54da1f09",
+        "message": "Add blog post: Digital Citizenship for Students: A Complete Guide for Teachers (With Activities & Lesson Plans)",
+        "date": "2026-03-17 07:08:35 -0500"
       },
       "gitStats": {
-        "totalCommits": 208
+        "totalCommits": 232
       },
       "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-16\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n\n## Recent Work\n- **Trial Signup Flow Fix (2026-03-16):**\n  - **Problem:** \"Try Pro Free\" CTAs sent users to /sign-up but they landed on Free plan with no trial activation path\n  - **Trial intent tracking:** All trial CTAs now append ?trial=true to signup URL; sign-up page capt",
       "healthScore": 85
@@ -44,12 +44,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Portfolio site. Check blog traffic, lead responses.",
       "lastCommit": {
-        "hash": "cf26754bab73e4c774478dee7774ad1db2711858",
-        "message": "Clean up: remove teacher consulting blog outline draft",
-        "date": "2026-03-16 19:28:46 -0500"
+        "hash": "03686e947806e8eb02f19ef0e4750fbec869c56e",
+        "message": "Add blog post: Small business online presence guide",
+        "date": "2026-03-17 07:08:28 -0500"
       },
       "gitStats": {
-        "totalCommits": 101
+        "totalCommits": 128
       },
       "statusSummary": "# Portfolio — Status\n\n## Last Updated\n2026-03-04\n\n## Current State\n- Deployed at `https://builtsimple.dev`\n- GitHub: `https://github.com/cascone26/portfolio`\n- Vercel project: `cascone26s-projects/builtsimple`\n- Custom domain: `builtsimple.dev` (live)\n\n## Site Structure (31 routes)\n- `/` — Home (hero with code mockup, featured LessonDraft section, highlight cards)\n- `/services` — Services & pricing (6 services + how it works)\n- `/work` — Portfolio grid (LessonDraft, Social Autoposter, placeholder)\n- `/work/lessondraft` — LessonDraft case study with screenshot\n- `/work/lessondraft-social` — Aut",
       "healthScore": 85
@@ -403,7 +403,7 @@
       "schedule": "8am, 1:30pm, 6pm",
       "logPath": "/Users/scones/projects/lessondraft-social/logs/launchd_stdout.log",
       "loaded": true,
-      "pid": null,
+      "pid": 78197,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -535,14 +535,15 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 41388,
+      "pid": 78540,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  279 scholarships ($582K) | 124 emails | 12 courses\nData changed, committing and pushing...\n[main de0a395] Update dashboard data 2026-03-16_07:30\n Committer: Jacob Cascone <scones@macbookpro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 163 insertions(+), 99 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  281 scholarships ($587K) | 124 emails | 12 courses\nData changed, committing and pushing...\n[main 5a037dd] Update dashboard data 2026-03-16_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 111 insertions(+), 119 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
-    "2026-03-16": 59,
+    "2026-03-17": 30,
+    "2026-03-16": 80,
     "2026-03-15": 62,
     "2026-03-13": 53,
     "2026-03-12": 13,
@@ -1077,7 +1078,7 @@
     {
       "site": "BuiltSimple",
       "url": "builtsimple.dev",
-      "count": 195
+      "count": 10
     }
   ],
   "monthlyCosts": [
@@ -1358,7 +1359,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 227,
+    "commitsThisWeek": 248,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
