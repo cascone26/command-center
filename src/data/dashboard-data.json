@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-20T00:42:17.149Z",
+  "generatedAt": "2026-03-20T12:36:59.165Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
     "activeAutomations": 6,
-    "healthyAgents": 11,
+    "healthyAgents": 10,
     "totalAgents": 13,
     "ideasCount": 29,
     "avgHealthScore": 76
@@ -22,12 +22,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "c7dbf57e80039bea5d48eddf585be210f1944c8a",
-        "message": "Merge remote-tracking branch 'origin/main'",
-        "date": "2026-03-19 16:13:15 -0500"
+        "hash": "78eeb9c961e8f816a01863bafdd5746e5e734c3a",
+        "message": "Add blog post: Generate Lesson Plans in Minutes: A Teachers Step-by-Step Guide to AI-Powered Lesson Planning",
+        "date": "2026-03-19 23:39:01 -0500"
       },
       "gitStats": {
-        "totalCommits": 273
+        "totalCommits": 274
       },
       "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-19 (evening check-in)\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n- **DEADLINE: First paying subscriber by March 22 (3 DAYS LEFT)**\n- **5 days idle on product work** — last meaningful product push was March 14-16\n- March 17-19 was all blog content (30+ posts) — good for SEO long-term but SEO won't convert in 3 days\n- **Prod",
       "healthScore": 70
@@ -403,7 +403,7 @@
       "schedule": "8am, 1:30pm, 6pm",
       "logPath": "/Users/scones/projects/lessondraft-social/logs/launchd_stdout.log",
       "loaded": true,
-      "pid": null,
+      "pid": 75524,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -413,10 +413,10 @@
       "name": "Scholarship Alerts",
       "schedule": "9am daily",
       "logPath": "/Users/scones/scholarships/logs/alerts.log",
-      "loaded": true,
+      "loaded": false,
       "pid": null,
-      "lastExitStatus": 0,
-      "healthy": true,
+      "lastExitStatus": null,
+      "healthy": false,
       "recentLog": "[3 days] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-17T14:00:04.076Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (3 days)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [2 days] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-18T14:00:04.390Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (2 days)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [TOMORROW] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-19T14:00:01.678Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (TOMORROW)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js"
     },
     {
@@ -535,14 +535,14 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 37046,
+      "pid": 75581,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  292 scholarships ($591K) | 124 emails | 12 courses\nData changed, committing and pushing...\n[main 22478a1] Update dashboard data 2026-03-19_07:30\n Committer: Jacob Cascone <scones@macbookpro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 10 insertions(+), 10 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 11/13 agents\n  302 scholarships ($591K) | 131 emails | 12 courses\nData changed, committing and pushing...\n[main ee27304] Update dashboard data 2026-03-19_19:42\n Committer: Jacob Cascone <scones@Jacobs-MacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 103 insertions(+), 102 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
-    "2026-03-19": 11,
+    "2026-03-19": 12,
     "2026-03-18": 12,
     "2026-03-17": 78,
     "2026-03-16": 80,
@@ -578,16 +578,16 @@
         "amount": 222678
       },
       "discovered": {
-        "count": 8,
-        "amount": 4000
+        "count": 24142,
+        "amount": 172921
       },
       "expired": {
-        "count": 11,
-        "amount": 25000
+        "count": 15,
+        "amount": 53200
       },
       "skipped": {
-        "count": 216,
-        "amount": 339682
+        "count": 262,
+        "amount": 2114440
       }
     },
     "upcoming": [
@@ -712,8 +712,8 @@
         "status": "applied"
       }
     ],
-    "totalPipeline": 591360,
-    "totalCount": 302,
+    "totalPipeline": 2563239,
+    "totalCount": 24486,
     "applied": {
       "count": 67,
       "amount": 222678
@@ -1184,7 +1184,7 @@
         "url": null,
         "status": "active",
         "mrr": 0,
-        "potential": "$100-500/mo (7M active teacher buyers)",
+        "potential": "",
         "nextAction": ""
       },
       {
@@ -1365,7 +1365,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 330,
+    "commitsThisWeek": 331,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
