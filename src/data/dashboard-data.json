@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-21T12:30:06.094Z",
+  "generatedAt": "2026-03-22T00:30:05.625Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -86,12 +86,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "3x daily posts. Watch for Instagram API flags.",
       "lastCommit": {
-        "hash": "9470500429a708031448cd8684f28bcb64527264",
-        "message": "Add pre-generated content queue system",
-        "date": "2026-03-14 23:18:19 -0500"
+        "hash": "e0d90bc842144a7ba8fdee070b9997d384f03930",
+        "message": "Fix IG uploads: convert PNG to JPEG for photo and story posts",
+        "date": "2026-03-19 17:16:16 -0500"
       },
       "gitStats": {
-        "totalCommits": 12
+        "totalCommits": 16
       },
       "statusSummary": "# LessonDraft Social Autoposter — Status\n\n## Last Updated\n2026-03-14\n\n## Current State\n- GitHub: `https://github.com/cascone26/lessondraft-social.git`\n- Runs via GitHub Actions (3x daily: 7:30am, 12pm, 5:30pm CT)\n- Also has local LaunchAgent (`com.lessondraft.social.plist`) for macOS\n- Platforms: Twitter/X, Pinterest, Facebook, LinkedIn, TikTok (Instagram skipped in CI due to private API detection)\n\n## What It Is\nPython autoposter that generates educational social media content for LessonDraft using LLM APIs (Anthropic Claude with Groq fallback), renders images with Pillow, and posts to multip",
       "healthScore": 70
@@ -403,7 +403,7 @@
       "schedule": "8am, 1:30pm, 6pm",
       "logPath": "/Users/scones/projects/lessondraft-social/logs/launchd_stdout.log",
       "loaded": true,
-      "pid": 55547,
+      "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -417,7 +417,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[3 days] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-17T14:00:04.076Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (3 days)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [2 days] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-18T14:00:04.390Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (2 days)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [TOMORROW] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-19T14:00:01.678Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (TOMORROW)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js"
+      "recentLog": "[2026-03-17T14:00:04.076Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (3 days)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [2 days] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-18T14:00:04.390Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (2 days)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [TOMORROW] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-19T14:00:01.678Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (TOMORROW)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-21T14:00:04.741Z] Check: no deadlines in next 3 days."
     },
     {
       "label": "com.tradovate.bot",
@@ -461,7 +461,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[3/10] Barnes Plumbing & Septic <barnesplumbingandseptic@gmail.com>\n  Sent follow-up!\n  Waiting 53s...\n[4/10] Hustle & Heart Fitness <ryan@hhfitkc.com>\n  Sent follow-up!\n  Waiting 33s...\n[5/10] Harco Fence & Deck <info@harcofenceanddeck.com>\n  Sent follow-up!\n  Waiting 42s...\n[6/10] Just-Right Guttering <justrightgutteringllc@gmail.com>\n  Sent follow-up!\n  Waiting 48s...\n[7/10] Capital Chimney Sweep <info@capitalchimney.com>\n  Sent follow-up!\n  Waiting 45s...\n[8/10] S&S Printing <art@sandsprinting.com>\n  Sent follow-up!\n  Waiting 42s...\n[9/10] Studio Plush <mystudioplush@gmail.com>\n  Sent follow-up!\n  Waiting 43s...\n[10/10] Askren Glass <askrenglass@gmail.com>\n  Sent follow-up!\n\n--- Done: 10 follow-ups sent ---"
+      "recentLog": "[3/10] Prime Training KC <info@primetrainingkc.com>\n  Sent follow-up!\n  Waiting 54s...\n[4/10] Kids with Class KC <amkryukov@gmail.com>\n  Sent follow-up!\n  Waiting 55s...\n[5/10] Dailey Septic Services <briandailey35@gmail.com>\n  Sent follow-up!\n  Waiting 43s...\n[6/10] FinishLine Graphics <info@finishline.graphics>\n  Sent follow-up!\n  Waiting 39s...\n[7/10] Mastermark Sign and Graphics <eli@mastermarksigns.com>\n  Sent follow-up!\n  Waiting 32s...\n[8/10] Larice Music Enterprises <info@jackmanmusic.com>\n  Sent follow-up!\n  Waiting 41s...\n[9/10] Cuddle Up Pup <leessummit@cuddleuppup.com>\n  Sent follow-up!\n  Waiting 56s...\n[10/10] Prime Fitness <tfisher@primefitnesskc.com>\n  Sent follow-up!\n\n--- Done: 10 follow-ups sent ---"
     },
     {
       "label": "com.lessondraft.gsc-check",
@@ -472,7 +472,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Token expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n  Summary: 0 indexed, 0 blocked out of 10 checked\n\n--- Sitemap Status ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Rising Queries ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-03-20-1800.log"
+      "recentLog": "Token expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n  Summary: 0 indexed, 0 blocked out of 10 checked\n\n--- Sitemap Status ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Rising Queries ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-03-21-1800.log"
     },
     {
       "label": "com.lessondraft.weekly-health",
@@ -494,7 +494,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-03-19T16:00:06.230Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-19T16:02:01.239Z] Checking BuiltSimple pipeline...\n[2026-03-19T16:02:01.322Z] Checking GSC token...\n[2026-03-19T16:02:01.323Z] Checking Gmail token...\n[2026-03-19T16:02:01.323Z] Checking rank tracker...\n[2026-03-19T16:02:01.324Z] Checking SEO health logs...\n[2026-03-19T16:02:01.326Z] Found 6 issues: 4 auto-fixed, 1 for Claude, 0 for you, 1 warnings\n[2026-03-19T16:02:01.827Z] Email sent: [Watchdog ACTION NEEDED] 6 issues detected\n[2026-03-19T16:02:01.828Z] === Watchdog complete ===\n\n[2026-03-20T16:00:05.910Z] === Watchdog starting ===\n[2026-03-20T16:00:05.917Z] Checking LaunchAgents...\n[2026-03-20T16:00:05.980Z] FIX: Reloading crashed agent com.jacobcascone.scholarship-alerts\n[2026-03-20T16:00:05.997Z] Checking site health...\n[2026-03-20T16:00:09.811Z] Checking sitemap index coverage...\n[2026-03-20T16:00:09.814Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-20T16:02:01.718Z] Checking BuiltSimple pipeline...\n[2026-03-20T16:02:01.803Z] Checking GSC token...\n[2026-03-20T16:02:01.804Z] Checking Gmail token...\n[2026-03-20T16:02:01.804Z] Checking rank tracker...\n[2026-03-20T16:02:01.805Z] Checking SEO health logs...\n[2026-03-20T16:02:01.808Z] Found 7 issues: 2 auto-fixed, 2 for Claude, 0 for you, 3 warnings\n[2026-03-20T16:02:02.300Z] Email sent: [Watchdog ACTION NEEDED] 7 issues detected\n[2026-03-20T16:02:02.300Z] === Watchdog complete ==="
+      "recentLog": "[2026-03-20T16:00:09.811Z] Checking sitemap index coverage...\n[2026-03-20T16:00:09.814Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-20T16:02:01.718Z] Checking BuiltSimple pipeline...\n[2026-03-20T16:02:01.803Z] Checking GSC token...\n[2026-03-20T16:02:01.804Z] Checking Gmail token...\n[2026-03-20T16:02:01.804Z] Checking rank tracker...\n[2026-03-20T16:02:01.805Z] Checking SEO health logs...\n[2026-03-20T16:02:01.808Z] Found 7 issues: 2 auto-fixed, 2 for Claude, 0 for you, 3 warnings\n[2026-03-20T16:02:02.300Z] Email sent: [Watchdog ACTION NEEDED] 7 issues detected\n[2026-03-20T16:02:02.300Z] === Watchdog complete ===\n\n[2026-03-21T16:00:05.531Z] === Watchdog starting ===\n[2026-03-21T16:00:05.533Z] Checking LaunchAgents...\n[2026-03-21T16:00:05.618Z] Checking site health...\n[2026-03-21T16:00:06.579Z] Checking sitemap index coverage...\n[2026-03-21T16:00:06.582Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-21T16:01:58.877Z] Checking BuiltSimple pipeline...\n[2026-03-21T16:01:58.987Z] Checking GSC token...\n[2026-03-21T16:01:58.988Z] Checking Gmail token...\n[2026-03-21T16:01:58.989Z] Checking rank tracker...\n[2026-03-21T16:01:58.990Z] Checking SEO health logs...\n[2026-03-21T16:01:58.992Z] Found 6 issues: 1 auto-fixed, 2 for Claude, 0 for you, 3 warnings\n[2026-03-21T16:01:59.445Z] Email sent: [Watchdog ACTION NEEDED] 6 issues detected\n[2026-03-21T16:01:59.445Z] === Watchdog complete ==="
     },
     {
       "label": "com.lessondraft.rank-tracker",
@@ -505,7 +505,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json\nFetching keyword data from Google Search Console...\n\n=== LessonDraft Rank Tracker — 2026-03-20 ===\n\n  Keyword                                   Pos     Chg  Clicks     Imp     CTR\n  -----------------------------------------------------------------------------\n  AI lesson plan generator                   --       -       0       0    0.0%\n  free lesson plan maker                     --       -       0       0    0.0%\n  lesson plan generator                      --       -       0       0    0.0%\n  AI teacher tools                           --       -       0       0    0.0%\n  rubric maker                               --       -       0       0    0.0%\n  report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json"
+      "recentLog": "report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json\nFetching keyword data from Google Search Console...\n\n=== LessonDraft Rank Tracker — 2026-03-21 ===\n\n  Keyword                                   Pos     Chg  Clicks     Imp     CTR\n  -----------------------------------------------------------------------------\n  AI lesson plan generator                   --       -       0       0    0.0%\n  free lesson plan maker                     --       -       0       0    0.0%\n  lesson plan generator                      --       -       0       0    0.0%\n  AI teacher tools                           --       -       0       0    0.0%\n  rubric maker                               --       -       0       0    0.0%\n  report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json"
     },
     {
       "label": "com.lessondraft.sitemap-health",
@@ -535,17 +535,17 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 56461,
+      "pid": 10068,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  24486 scholarships ($2563K) | 132 emails | 12 courses\nData changed, committing and pushing...\n[main ef9aefc] Update dashboard data 2026-03-20_19:30\n Committer: Jacob Cascone <scones@macbookpro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 42 insertions(+), 48 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  24486 scholarships ($2563K) | 132 emails | 12 courses\nData changed, committing and pushing...\n[main 309840d] Update dashboard data 2026-03-21_07:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 4 insertions(+), 4 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
     "2026-03-20": 2,
-    "2026-03-19": 12,
+    "2026-03-19": 13,
     "2026-03-18": 12,
-    "2026-03-17": 78,
+    "2026-03-17": 81,
     "2026-03-16": 80,
     "2026-03-15": 62,
     "2026-03-13": 53,
@@ -579,8 +579,8 @@
         "amount": 222678
       },
       "discovered": {
-        "count": 24142,
-        "amount": 172921
+        "count": 24151,
+        "amount": 174921
       },
       "expired": {
         "count": 15,
@@ -713,8 +713,8 @@
         "status": "applied"
       }
     ],
-    "totalPipeline": 2563239,
-    "totalCount": 24486,
+    "totalPipeline": 2565239,
+    "totalCount": 24495,
     "applied": {
       "count": 67,
       "amount": 222678
@@ -731,11 +731,60 @@
   "emailCampaign": {
     "totalLeads": 6875,
     "withEmail": 1185,
-    "emailed": 132,
-    "followedUp": 78,
-    "sent": 132,
+    "emailed": 139,
+    "followedUp": 88,
+    "sent": 139,
     "errors": 1,
     "recentSends": [
+      {
+        "id": 6872,
+        "name": "R & R Roofing LLC",
+        "email": "info@randrroofingtx.com",
+        "messageId": "19d109be183e2401",
+        "sentAt": "2026-03-21T13:35:45.092Z"
+      },
+      {
+        "id": 12056,
+        "name": "Prestige Power Washing",
+        "email": "info@prestigestl.com",
+        "messageId": "19d109b47882c64c",
+        "sentAt": "2026-03-21T13:35:05.110Z"
+      },
+      {
+        "id": 12109,
+        "name": "Fish Window Cleaning",
+        "email": "info@fishwindowcleaning.com",
+        "messageId": "19d109a779b65a76",
+        "sentAt": "2026-03-21T13:34:11.902Z"
+      },
+      {
+        "id": 8461,
+        "name": "Best Wash Laundromats",
+        "email": "info@bestwashlaundromats.com",
+        "messageId": "19d1099bc6c872e2",
+        "sentAt": "2026-03-21T13:33:24.620Z"
+      },
+      {
+        "id": 10262,
+        "name": "Cunninghams Journal",
+        "email": "corporate@272hospitality.com",
+        "messageId": "19d1098f6f3e5522",
+        "sentAt": "2026-03-21T13:32:33.988Z"
+      },
+      {
+        "id": 337,
+        "name": "Trevino Plumbing, Electrical & HVAC",
+        "email": "service@trevinorepairs.com",
+        "messageId": "19d109856369324b",
+        "sentAt": "2026-03-21T13:31:52.555Z"
+      },
+      {
+        "id": 291,
+        "name": "Tidal Wave Auto Spa | Car Wash",
+        "email": "info@tidalwaveautospa.com",
+        "messageId": "19d109774e6cd012",
+        "sentAt": "2026-03-21T13:30:54.981Z"
+      },
       {
         "id": 10271,
         "name": "Angus Burgers & Shakes",
@@ -756,55 +805,6 @@
         "email": "info@thetexashot.com",
         "messageId": "19d06887d8396bb7",
         "sentAt": "2026-03-19T14:38:22.038Z"
-      },
-      {
-        "id": 11184,
-        "name": "All Star Pest Control",
-        "email": "info@allstarpestcontrol.com",
-        "messageId": "19d0687f4c724fd6",
-        "sentAt": "2026-03-19T14:37:47.365Z"
-      },
-      {
-        "id": 10266,
-        "name": "Cunningham's Journal On The Lake",
-        "email": "corporate@272hospitality.com",
-        "messageId": "19d068751d45df80",
-        "sentAt": "2026-03-19T14:37:05.130Z"
-      },
-      {
-        "id": 8052,
-        "name": "The Fish Market",
-        "email": "info@libertyfishmarket.com",
-        "messageId": "19d0686764a6a1f1",
-        "sentAt": "2026-03-19T14:36:09.521Z"
-      },
-      {
-        "id": 7194,
-        "name": "Advanced Pressure & Gutter Cleaning, Inc.",
-        "email": "info@advancedpressureandgutter.com",
-        "messageId": "19d0685be05c8c25",
-        "sentAt": "2026-03-19T14:35:22.545Z"
-      },
-      {
-        "id": 11464,
-        "name": "Lawrence Service Area",
-        "email": "info@ksturnpike.com",
-        "messageId": "19d06851d5e04c89",
-        "sentAt": "2026-03-19T14:34:41.037Z"
-      },
-      {
-        "id": 321,
-        "name": "KB Complete Plumbing, Heating, Cooling & Electrical Inc.",
-        "email": "info@kbcomplete.com",
-        "messageId": "19cf679e52380ea1",
-        "sentAt": "2026-03-16T11:48:29.673Z"
-      },
-      {
-        "id": 2012,
-        "name": "Jack Stack Barbecue - Freight House",
-        "email": "info@jackstackbbq.com",
-        "messageId": "19cf67917469fbc4",
-        "sentAt": "2026-03-16T11:47:37.051Z"
       }
     ]
   },
@@ -816,7 +816,7 @@
       "last_indexed_count": 0,
       "last_impressions": 0,
       "consecutive_blocked": 0,
-      "last_check": "2026-03-20T23:00:14Z"
+      "last_check": "2026-03-21T23:00:16Z"
     },
     "clicks": 0,
     "impressions": 0,
@@ -895,7 +895,7 @@
       }
     ],
     "graduationDate": "2027-04-18",
-    "daysUntilGrad": 393,
+    "daysUntilGrad": 392,
     "gpa": "3.87"
   },
   "ideas": [
@@ -1253,7 +1253,7 @@
   },
   "seoTools": {
     "rankTracker": {
-      "date": "2026-03-20",
+      "date": "2026-03-21",
       "keywords": {
         "AI lesson plan generator": {
           "position": null,
@@ -1366,9 +1366,16 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 280,
+    "commitsThisWeek": 250,
     "emailsSentThisWeek": 10,
-    "deadlinesThisWeek": []
+    "deadlinesThisWeek": [
+      {
+        "name": "Jim Maxwell Memorial",
+        "amount": 5000,
+        "deadline": "2026-03-28",
+        "status": "applied"
+      }
+    ]
   },
   "projectHealth": {
     "checkedAt": "2026-03-16T00:07:01.751Z",
