@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-23T00:30:03.378Z",
+  "generatedAt": "2026-03-23T12:59:05.450Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -7,7 +7,7 @@
     "healthyAgents": 10,
     "totalAgents": 13,
     "ideasCount": 29,
-    "avgHealthScore": 76
+    "avgHealthScore": 75
   },
   "projects": [
     {
@@ -73,7 +73,7 @@
         "totalCommits": 3
       },
       "statusSummary": "# Lead Scraper — Status\n\n## Overview\nLead-gen engine for BuiltSimple. Finds local businesses without websites (or with bad ones), enriches contact info, and automates personalized outreach via email and text.\n\n## Current State (Mar 15, 2026)\n- **6,875 leads** in SQLite DB across 50-mile KC metro radius\n- **1,198 leads with emails** (up from 203 — v3 finder ran 1,600 leads)\n- **1,059 in email queue** — 42 days of sends at 25/day\n- **119 emails sent** (10 categories of personalized templates)\n- **27 follow-ups sent** (5-day auto follow-up)\n- **9 replies received** (some are bounces from bad emai",
-      "healthScore": 70
+      "healthScore": 65
     },
     {
       "id": 4,
@@ -403,7 +403,7 @@
       "schedule": "8am, 1:30pm, 6pm",
       "logPath": "/Users/scones/projects/lessondraft-social/logs/launchd_stdout.log",
       "loaded": true,
-      "pid": null,
+      "pid": 76741,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -535,10 +535,10 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 29776,
+      "pid": 76735,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  24495 scholarships ($2565K) | 139 emails | 12 courses\nData changed, committing and pushing...\n[main 4b76093] Update dashboard data 2026-03-22_07:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 3 insertions(+), 3 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  24495 scholarships ($2565K) | 146 emails | 12 courses\nData changed, committing and pushing...\n[main 36df2f6] Update dashboard data 2026-03-22_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 71 insertions(+), 70 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
