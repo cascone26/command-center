@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-24T02:11:50.138Z",
+  "generatedAt": "2026-03-24T12:30:11.370Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -22,12 +22,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "0911c1f1d89b75ddeca7a3fc863f8c3a66b0fb26",
-        "message": "Add blog post: Time Management Tips That Actually Work for Teachers",
-        "date": "2026-03-23 08:08:16 -0500"
+        "hash": "c132031a98a3fb70d91ad4cb629bc72bb3b1f7a3",
+        "message": "Add blog post: Cross-Curricular Planning: How to Connect Subjects Without Losing Your Mind",
+        "date": "2026-03-23 21:52:06 -0500"
       },
       "gitStats": {
-        "totalCommits": 279
+        "totalCommits": 281
       },
       "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-22\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n- **AI generation routed through Claude Max subscription** via local proxy (no API credits needed)\n- **Product is feature-complete. The bottleneck is distribution, not code.**\n\n## What's Working\n- Trial signup flow: CTAs → signup → trial activation modal → Stripe checkout (7-da",
       "healthScore": 70
@@ -403,7 +403,7 @@
       "schedule": "8am, 1:30pm, 6pm",
       "logPath": "/Users/scones/projects/lessondraft-social/logs/launchd_stdout.log",
       "loaded": true,
-      "pid": 35718,
+      "pid": 12615,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -469,10 +469,10 @@
       "schedule": "9am daily",
       "logPath": "/Users/scones/tools/gsc/logs/launchd-stdout.log",
       "loaded": true,
-      "pid": 35783,
+      "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Token expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n  Summary: 0 indexed, 0 blocked out of 10 checked\n\n--- Sitemap Status ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Rising Queries ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-03-23-0900.log\n=== LessonDraft SEO Monitor — Mon Mar 23 21:11:26 CDT 2026 ===\n\n--- Site Health ---"
+      "recentLog": "Token expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n  Summary: 0 indexed, 0 blocked out of 10 checked\n\n--- Sitemap Status ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Rising Queries ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-03-23-2111.log"
     },
     {
       "label": "com.lessondraft.weekly-health",
@@ -535,14 +535,14 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 35812,
+      "pid": 14183,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  24495 scholarships ($2565K) | 146 emails | 12 courses\nData changed, committing and pushing...\n[main cad7625] Update dashboard data 2026-03-23_07:59\n Committer: Jacob Cascone <scones@Jacobs-MacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 6 insertions(+), 6 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Regenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 11/13 agents\n  24495 scholarships ($2565K) | 146 emails | 12 courses\n  4/10 passive services running\nData changed, committing and pushing...\n[main 16b7dce] Update dashboard data 2026-03-23_21:11\n Committer: Jacob Cascone <scones@Jacobs-MacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 224 insertions(+), 26 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
-    "2026-03-23": 3,
+    "2026-03-23": 5,
     "2026-03-22": 1,
     "2026-03-20": 2,
     "2026-03-19": 13,
@@ -818,7 +818,7 @@
       "last_indexed_count": 0,
       "last_impressions": 0,
       "consecutive_blocked": 0,
-      "last_check": "2026-03-23T14:00:15Z"
+      "last_check": "2026-03-24T02:14:30Z"
     },
     "clicks": 0,
     "impressions": 0,
@@ -1368,7 +1368,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 112,
+    "commitsThisWeek": 114,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
@@ -1556,17 +1556,17 @@
         "estMonthlyLow": 10,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "native"
       },
       {
         "name": "EarnApp",
         "device": "Mac",
-        "status": "stopped",
+        "status": "running",
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "native"
       },
       {
@@ -1576,7 +1576,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "docker"
       },
       {
@@ -1586,7 +1586,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "docker"
       },
       {
@@ -1596,7 +1596,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "docker"
       },
       {
@@ -1606,7 +1606,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "docker"
       },
       {
@@ -1616,7 +1616,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "docker"
       },
       {
@@ -1626,7 +1626,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "docker"
       },
       {
@@ -1636,7 +1636,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "docker"
       },
       {
@@ -1646,7 +1646,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "lastCheck": "2026-03-24T12:30:06.797Z",
         "containerType": "docker"
       }
     ],
@@ -1688,23 +1688,23 @@
     "dailyTrend": [
       {
         "date": "2026-03-11",
-        "amount": 0.61
-      },
-      {
-        "date": "2026-03-12",
         "amount": 1
       },
       {
+        "date": "2026-03-12",
+        "amount": 0.7
+      },
+      {
         "date": "2026-03-13",
-        "amount": 0.68
+        "amount": 1.21
       },
       {
         "date": "2026-03-14",
-        "amount": 1.25
+        "amount": 1.74
       },
       {
         "date": "2026-03-15",
-        "amount": 0.79
+        "amount": 1.81
       },
       {
         "date": "2026-03-16",
@@ -1712,35 +1712,35 @@
       },
       {
         "date": "2026-03-17",
-        "amount": 1.39
+        "amount": 1.23
       },
       {
         "date": "2026-03-18",
-        "amount": 1.48
+        "amount": 1.37
       },
       {
         "date": "2026-03-19",
-        "amount": 1.01
+        "amount": 0.97
       },
       {
         "date": "2026-03-20",
-        "amount": 0.61
+        "amount": 0.82
       },
       {
         "date": "2026-03-21",
-        "amount": 0.74
+        "amount": 1.54
       },
       {
         "date": "2026-03-22",
-        "amount": 1.32
+        "amount": 1.37
       },
       {
         "date": "2026-03-23",
-        "amount": 0.95
+        "amount": 0.76
       },
       {
         "date": "2026-03-24",
-        "amount": 1.26
+        "amount": 1.47
       }
     ]
   }
