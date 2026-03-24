@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-23T12:59:05.450Z",
+  "generatedAt": "2026-03-24T02:11:50.138Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
     "activeAutomations": 6,
-    "healthyAgents": 10,
+    "healthyAgents": 11,
     "totalAgents": 13,
     "ideasCount": 29,
     "avgHealthScore": 75
@@ -22,12 +22,12 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "03fcd8b4d822a1395247c3b8b5e6ff1461cbd7d8",
-        "message": "Drop pricing: Pro $7/mo ($5/mo annual), Team $19/mo ($14/mo annual)",
-        "date": "2026-03-22 11:17:29 -0500"
+        "hash": "0911c1f1d89b75ddeca7a3fc863f8c3a66b0fb26",
+        "message": "Add blog post: Time Management Tips That Actually Work for Teachers",
+        "date": "2026-03-23 08:08:16 -0500"
       },
       "gitStats": {
-        "totalCommits": 277
+        "totalCommits": 279
       },
       "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-03-22\n\n## Current State\n- Deployed and live at `lessondraft.com`\n- GitHub: `cascone26/LessonDraft`\n- Pricing: Free (15/mo) → Pro ($12/mo or $8/mo annual) → Team ($29/mo or $19/mo annual)\n- Regional PPP pricing for 25+ countries\n- Admin account: Jakoob's cobo.cas Clerk account\n- **AI generation routed through Claude Max subscription** via local proxy (no API credits needed)\n- **Product is feature-complete. The bottleneck is distribution, not code.**\n\n## What's Working\n- Trial signup flow: CTAs → signup → trial activation modal → Stripe checkout (7-da",
       "healthScore": 70
@@ -115,7 +115,7 @@
         "totalCommits": 5
       },
       "statusSummary": "# Scholarship System — STATUS\n\n**Created:** 2026-02-24\n**Updated:** 2026-03-16\n**Phase:** Auto-apply complete — manual action needed for remaining 20\n\n## Current Stats\n- **281 scholarships** tracked in SQLite DB\n- **59 applied** ($183K value)\n- **20 remaining actionable** ($109K value)\n- **191 skipped** (ineligible, duplicates, listing pages, $0 entries)\n- **11 expired**\n\n## What Happened Today (March 16)\n1. Ran full Bold.org scan — 51 applied, 46 ineligible (profile mismatch), 3 expired\n2. Cleaned 40 irrelevant $0 Fastweb entries, 8 duplicates, 21 un-skipped\n3. Found URLs for 11 scholarships ",
-      "healthScore": 70
+      "healthScore": 65
     },
     {
       "id": 6,
@@ -385,12 +385,12 @@
       "longestStreak": 0,
       "path": "~/projects/vinnie-treasure",
       "lastCommit": {
-        "hash": "6d4b55f9a8dc4717ba1cfc7f33f8d633271c20be",
-        "message": "Fix useLocalStorage setState-in-effect lint error",
-        "date": "2026-03-17 12:21:14 -0500"
+        "hash": "9307105e5308cb97bdddd36f40ca0d97cdc1d213",
+        "message": "Add 15 research entries (371-385) from March 2026 deep research session",
+        "date": "2026-03-23 08:31:11 -0500"
       },
       "gitStats": {
-        "totalCommits": 83
+        "totalCommits": 84
       },
       "statusSummary": "# Vinnie's Treasure Tracker\n\n## Overview\nResearch hub for brother Vinnie to find the Forrest Fenn Box from \"There's Treasure Inside\" by Jon Collins-Black.\n\n## Stack\n- Next.js + TypeScript + Tailwind\n- Vercel deployment (live at vinnie-treasure.vercel.app)\n\n## Current State (March 22, 2026 — Session 9)\n- [x] Full website with Dashboard, Poem Analyzer, Clue Database, Research Vault, Hunt Status, Book Encyclopedia, Map, Claude AI page, **Theory Compare page**\n- [x] **370 research entries** in data layer (was 340 at session start, +25 new from March 2026 blitz)\n- [x] Leading theory: Combined River",
       "healthScore": 70
@@ -403,7 +403,7 @@
       "schedule": "8am, 1:30pm, 6pm",
       "logPath": "/Users/scones/projects/lessondraft-social/logs/launchd_stdout.log",
       "loaded": true,
-      "pid": 76741,
+      "pid": 35718,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -417,7 +417,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [2 days] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-18T14:00:04.390Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (2 days)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [TOMORROW] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-19T14:00:01.678Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (TOMORROW)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-21T14:00:04.741Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-22T14:00:02.444Z] Check: no deadlines in next 3 days."
+      "recentLog": "** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [2 days] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-18T14:00:04.390Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (2 days)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\n\n** 1 SCHOLARSHIP DEADLINE(S) — Next 3 Day(s) **\n\n  [TOMORROW] Brian C Jensen — $1,000 (Mar 20)\n[2026-03-19T14:00:01.678Z] Alert: Brian C Jensen — $1,000 — due Mar 20 (TOMORROW)\n\n  Total potential: $1,000\n  Run the bot: cd ~/scholarships/bot && node bold-autofill.js\n\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-21T14:00:04.741Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-22T14:00:02.444Z] Check: no deadlines in next 3 days.\nNo unapplied deadlines in the next 3 day(s).\n[2026-03-23T14:00:05.848Z] Check: no deadlines in next 3 days."
     },
     {
       "label": "com.tradovate.bot",
@@ -448,8 +448,8 @@
       "logPath": "/Users/scones/projects/lead-scraper/logs/send.log",
       "loaded": true,
       "pid": null,
-      "lastExitStatus": 256,
-      "healthy": false,
+      "lastExitStatus": 0,
+      "healthy": true,
       "recentLog": "Sent! (19cecb6702f15ed8)\n  Waiting 56s before next...\n\n[22/25] Patriot Cleaning Systems <gary.smart@patriotcs.net>\n  Subject: Patriot Cleaning Systems — thought of you\n  Sent! (19cecb74c9fde5bb)\n  Waiting 43s before next...\n\n[23/25] Midwest Lawn & Garden <info@midwestlawnkc.com>\n  Subject: Midwest Lawn & Garden — thought of you\n  Sent! (19cecb7f834e22da)\n  Waiting 38s before next...\n\n[24/25] Music Lessons - Steve Uffman <stuffmn@gmail.com>\n  Subject: Quick question for Music Lessons - Steve Uffman\n  Sent! (19cecb88f6e8a04d)\n  Waiting 32s before next...\n\n[25/25] Club Z! In-Home Tutoring <jrichardson@clubztutoring.com>\n  Subject: Club Z! In-Home Tutoring — thought of you\n  Sent! (19cecb90e7513de1)\n\n--- Done ---\nSent: 25, Errors: 0\nLog saved to /Users/scones/projects/lead-scraper/db/email-log.json"
     },
     {
@@ -469,10 +469,10 @@
       "schedule": "9am daily",
       "logPath": "/Users/scones/tools/gsc/logs/launchd-stdout.log",
       "loaded": true,
-      "pid": null,
+      "pid": 35783,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Token expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n  Summary: 0 indexed, 0 blocked out of 10 checked\n\n--- Sitemap Status ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Rising Queries ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-03-22-1800.log"
+      "recentLog": "Token expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n\nToken expired. Re-run: node gsc.js auth\n\n  Summary: 0 indexed, 0 blocked out of 10 checked\n\n--- Sitemap Status ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Rising Queries ---\n\nToken expired. Re-run: node gsc.js auth\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-03-23-0900.log\n=== LessonDraft SEO Monitor — Mon Mar 23 21:11:26 CDT 2026 ===\n\n--- Site Health ---"
     },
     {
       "label": "com.lessondraft.weekly-health",
@@ -483,7 +483,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "\u001b[32m  PASS: https://lessondraft.com/lesson-plan → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/quiz → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/rubric → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/blog → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/how-it-works → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/for → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/guides → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/resources → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/free-tools → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/glossary → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/examples → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/printables → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/compare → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/feed.xml → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/sitemap.xml → 200\u001b[0m\n\n--- Structured Data ---\n\u001b[32m  PASS: Homepage has JSON-LD structured data\u001b[0m\n\u001b[32m  PASS: Homepage has WebSite schema\u001b[0m\n\u001b[32m  PASS: Homepage has Organization schema\u001b[0m\n\u001b[32m  PASS: Homepage has og:image meta tag\u001b[0m\n\u001b[32m  PASS: Homepage has canonical URL\u001b[0m\n\n\u001b[32mALL CHECKS PASSED\u001b[0m\nLog: /Users/scones/tools/gsc/logs/health-2026-03-09_1000.log"
+      "recentLog": "\u001b[32m  PASS: https://lessondraft.com/lesson-plan → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/quiz → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/rubric → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/blog → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/how-it-works → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/for → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/guides → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/resources → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/free-tools → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/glossary → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/examples → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/printables → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/compare → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/feed.xml → 200\u001b[0m\n\u001b[32m  PASS: https://lessondraft.com/sitemap.xml → 200\u001b[0m\n\n--- Structured Data ---\n\u001b[32m  PASS: Homepage has JSON-LD structured data\u001b[0m\n\u001b[32m  PASS: Homepage has WebSite schema\u001b[0m\n\u001b[32m  PASS: Homepage has Organization schema\u001b[0m\n\u001b[32m  PASS: Homepage has og:image meta tag\u001b[0m\n\u001b[32m  PASS: Homepage has canonical URL\u001b[0m\n\n\u001b[32mALL CHECKS PASSED\u001b[0m\nLog: /Users/scones/tools/gsc/logs/health-2026-03-23_1000.log"
     },
     {
       "label": "com.lessondraft.watchdog",
@@ -494,7 +494,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-03-21T16:00:06.579Z] Checking sitemap index coverage...\n[2026-03-21T16:00:06.582Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-21T16:01:58.877Z] Checking BuiltSimple pipeline...\n[2026-03-21T16:01:58.987Z] Checking GSC token...\n[2026-03-21T16:01:58.988Z] Checking Gmail token...\n[2026-03-21T16:01:58.989Z] Checking rank tracker...\n[2026-03-21T16:01:58.990Z] Checking SEO health logs...\n[2026-03-21T16:01:58.992Z] Found 6 issues: 1 auto-fixed, 2 for Claude, 0 for you, 3 warnings\n[2026-03-21T16:01:59.445Z] Email sent: [Watchdog ACTION NEEDED] 6 issues detected\n[2026-03-21T16:01:59.445Z] === Watchdog complete ===\n\n[2026-03-22T16:00:06.461Z] === Watchdog starting ===\n[2026-03-22T16:00:06.462Z] Checking LaunchAgents...\n[2026-03-22T16:00:06.532Z] Checking site health...\n[2026-03-22T16:00:08.255Z] Checking sitemap index coverage...\n[2026-03-22T16:00:08.259Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-22T16:02:00.734Z] Checking BuiltSimple pipeline...\n[2026-03-22T16:02:00.823Z] Checking GSC token...\n[2026-03-22T16:02:00.824Z] Checking Gmail token...\n[2026-03-22T16:02:00.824Z] Checking rank tracker...\n[2026-03-22T16:02:00.825Z] Checking SEO health logs...\n[2026-03-22T16:02:00.828Z] Found 6 issues: 1 auto-fixed, 2 for Claude, 0 for you, 3 warnings\n[2026-03-22T16:02:01.258Z] Email sent: [Watchdog ACTION NEEDED] 6 issues detected\n[2026-03-22T16:02:01.259Z] === Watchdog complete ==="
+      "recentLog": "[2026-03-22T16:00:08.255Z] Checking sitemap index coverage...\n[2026-03-22T16:00:08.259Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-22T16:02:00.734Z] Checking BuiltSimple pipeline...\n[2026-03-22T16:02:00.823Z] Checking GSC token...\n[2026-03-22T16:02:00.824Z] Checking Gmail token...\n[2026-03-22T16:02:00.824Z] Checking rank tracker...\n[2026-03-22T16:02:00.825Z] Checking SEO health logs...\n[2026-03-22T16:02:00.828Z] Found 6 issues: 1 auto-fixed, 2 for Claude, 0 for you, 3 warnings\n[2026-03-22T16:02:01.258Z] Email sent: [Watchdog ACTION NEEDED] 6 issues detected\n[2026-03-22T16:02:01.259Z] === Watchdog complete ===\n\n[2026-03-23T16:00:06.320Z] === Watchdog starting ===\n[2026-03-23T16:00:06.321Z] Checking LaunchAgents...\n[2026-03-23T16:00:06.394Z] Checking site health...\n[2026-03-23T16:00:07.543Z] Checking sitemap index coverage...\n[2026-03-23T16:00:07.547Z] FIX: Index rate is 0% (0/50). Running bulk IndexNow.\n[2026-03-23T16:02:01.624Z] Checking BuiltSimple pipeline...\n[2026-03-23T16:02:01.710Z] Checking GSC token...\n[2026-03-23T16:02:01.712Z] Checking Gmail token...\n[2026-03-23T16:02:01.713Z] Checking rank tracker...\n[2026-03-23T16:02:01.714Z] Checking SEO health logs...\n[2026-03-23T16:02:01.717Z] Found 4 issues: 1 auto-fixed, 1 for Claude, 0 for you, 2 warnings\n[2026-03-23T16:02:01.940Z] Email FAILED: invalid_grant\n[2026-03-23T16:02:01.940Z] === Watchdog complete ==="
     },
     {
       "label": "com.lessondraft.rank-tracker",
@@ -505,7 +505,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json\nFetching keyword data from Google Search Console...\n\n=== LessonDraft Rank Tracker — 2026-03-22 ===\n\n  Keyword                                   Pos     Chg  Clicks     Imp     CTR\n  -----------------------------------------------------------------------------\n  AI lesson plan generator                   --       -       0       0    0.0%\n  free lesson plan maker                     --       -       0       0    0.0%\n  lesson plan generator                      --       -       0       0    0.0%\n  AI teacher tools                           --       -       0       0    0.0%\n  rubric maker                               --       -       0       0    0.0%\n  report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json"
+      "recentLog": "report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json\nFetching keyword data from Google Search Console...\n\n=== LessonDraft Rank Tracker — 2026-03-23 ===\n\n  Keyword                                   Pos     Chg  Clicks     Imp     CTR\n  -----------------------------------------------------------------------------\n  AI lesson plan generator                   --       -       0       0    0.0%\n  free lesson plan maker                     --       -       0       0    0.0%\n  lesson plan generator                      --       -       0       0    0.0%\n  AI teacher tools                           --       -       0       0    0.0%\n  rubric maker                               --       -       0       0    0.0%\n  report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json"
     },
     {
       "label": "com.lessondraft.sitemap-health",
@@ -535,13 +535,14 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 76735,
+      "pid": 35812,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  24495 scholarships ($2565K) | 146 emails | 12 courses\nData changed, committing and pushing...\n[main 36df2f6] Update dashboard data 2026-03-22_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 71 insertions(+), 70 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Done.\nRegenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 10/13 agents\n  24495 scholarships ($2565K) | 146 emails | 12 courses\nData changed, committing and pushing...\n[main cad7625] Update dashboard data 2026-03-23_07:59\n Committer: Jacob Cascone <scones@Jacobs-MacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 6 insertions(+), 6 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     }
   ],
   "heatmap": {
+    "2026-03-23": 3,
     "2026-03-22": 1,
     "2026-03-20": 2,
     "2026-03-19": 13,
@@ -817,7 +818,7 @@
       "last_indexed_count": 0,
       "last_impressions": 0,
       "consecutive_blocked": 0,
-      "last_check": "2026-03-22T23:00:11Z"
+      "last_check": "2026-03-23T14:00:15Z"
     },
     "clicks": 0,
     "impressions": 0,
@@ -896,7 +897,7 @@
       }
     ],
     "graduationDate": "2027-04-18",
-    "daysUntilGrad": 391,
+    "daysUntilGrad": 390,
     "gpa": "3.87"
   },
   "ideas": [
@@ -1254,7 +1255,7 @@
   },
   "seoTools": {
     "rankTracker": {
-      "date": "2026-03-22",
+      "date": "2026-03-23",
       "keywords": {
         "AI lesson plan generator": {
           "position": null,
@@ -1367,7 +1368,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 189,
+    "commitsThisWeek": 112,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
@@ -1545,5 +1546,202 @@
       "sslExpiring": 0,
       "sslInvalid": 0
     }
+  },
+  "moneyTracker": {
+    "passiveServices": [
+      {
+        "name": "Honeygain",
+        "device": "Mac",
+        "status": "stopped",
+        "estMonthlyLow": 10,
+        "estMonthlyHigh": 20,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "native"
+      },
+      {
+        "name": "EarnApp",
+        "device": "Mac",
+        "status": "stopped",
+        "estMonthlyLow": 5,
+        "estMonthlyHigh": 10,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "native"
+      },
+      {
+        "name": "MystNodes",
+        "device": "Mac",
+        "status": "running",
+        "estMonthlyLow": 5,
+        "estMonthlyHigh": 20,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "docker"
+      },
+      {
+        "name": "MystNodes",
+        "device": "HP",
+        "status": "stopped",
+        "estMonthlyLow": 5,
+        "estMonthlyHigh": 20,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "docker"
+      },
+      {
+        "name": "Repocket",
+        "device": "Mac",
+        "status": "running",
+        "estMonthlyLow": 5,
+        "estMonthlyHigh": 10,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "docker"
+      },
+      {
+        "name": "Repocket",
+        "device": "HP",
+        "status": "stopped",
+        "estMonthlyLow": 5,
+        "estMonthlyHigh": 10,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "docker"
+      },
+      {
+        "name": "TraffMonetizer",
+        "device": "Mac",
+        "status": "running",
+        "estMonthlyLow": 2,
+        "estMonthlyHigh": 5,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "docker"
+      },
+      {
+        "name": "TraffMonetizer",
+        "device": "HP",
+        "status": "stopped",
+        "estMonthlyLow": 2,
+        "estMonthlyHigh": 5,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "docker"
+      },
+      {
+        "name": "Pawns/IPRoyal",
+        "device": "Mac",
+        "status": "running",
+        "estMonthlyLow": 5,
+        "estMonthlyHigh": 10,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "docker"
+      },
+      {
+        "name": "Pawns/IPRoyal",
+        "device": "HP",
+        "status": "stopped",
+        "estMonthlyLow": 5,
+        "estMonthlyHigh": 10,
+        "totalEarned": 0,
+        "lastCheck": "2026-03-24T02:11:33.982Z",
+        "containerType": "docker"
+      }
+    ],
+    "gumroad": {
+      "totalProducts": 0,
+      "productsThisWeek": 0,
+      "totalRevenue": 0,
+      "autoposterStatus": "stopped",
+      "nextScheduledRun": ""
+    },
+    "apify": {
+      "actorsPublished": 0,
+      "totalRuns": 0,
+      "storeRevenue": 0
+    },
+    "lessonDraft": {
+      "mrr": 0,
+      "subscribers": 0,
+      "trafficThisWeek": 0
+    },
+    "otherIncome": {
+      "tutoring": 0,
+      "jobs": [
+        {
+          "name": "Regina Caeli",
+          "monthly": 800
+        },
+        {
+          "name": "Visitation",
+          "monthly": 600
+        },
+        {
+          "name": "Main Event",
+          "monthly": 400
+        }
+      ],
+      "dealScout": 0
+    },
+    "dailyTrend": [
+      {
+        "date": "2026-03-11",
+        "amount": 0.61
+      },
+      {
+        "date": "2026-03-12",
+        "amount": 1
+      },
+      {
+        "date": "2026-03-13",
+        "amount": 0.68
+      },
+      {
+        "date": "2026-03-14",
+        "amount": 1.25
+      },
+      {
+        "date": "2026-03-15",
+        "amount": 0.79
+      },
+      {
+        "date": "2026-03-16",
+        "amount": 1.27
+      },
+      {
+        "date": "2026-03-17",
+        "amount": 1.39
+      },
+      {
+        "date": "2026-03-18",
+        "amount": 1.48
+      },
+      {
+        "date": "2026-03-19",
+        "amount": 1.01
+      },
+      {
+        "date": "2026-03-20",
+        "amount": 0.61
+      },
+      {
+        "date": "2026-03-21",
+        "amount": 0.74
+      },
+      {
+        "date": "2026-03-22",
+        "amount": 1.32
+      },
+      {
+        "date": "2026-03-23",
+        "amount": 0.95
+      },
+      {
+        "date": "2026-03-24",
+        "amount": 1.26
+      }
+    ]
   }
 }
