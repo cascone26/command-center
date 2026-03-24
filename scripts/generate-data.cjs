@@ -85,6 +85,59 @@ function getAgentLog(logPath, lines) {
   } catch { return null; }
 }
 
+function parsePlistSchedule(plistJson) {
+  try {
+    if (plistJson.StartCalendarInterval) {
+      const s = Array.isArray(plistJson.StartCalendarInterval)
+        ? plistJson.StartCalendarInterval
+        : [plistJson.StartCalendarInterval];
+      return s.map(t => {
+        const h = t.Hour !== undefined ? t.Hour : null;
+        const m = t.Minute !== undefined ? t.Minute : 0;
+        if (h === null) return "scheduled";
+        const ampm = h >= 12 ? "pm" : "am";
+        const hr = h % 12 || 12;
+        return `${hr}:${String(m).padStart(2, "0")}${ampm}`;
+      }).join(", ");
+    }
+    if (plistJson.StartInterval) {
+      const sec = plistJson.StartInterval;
+      if (sec < 120) return `every ${sec}s`;
+      if (sec < 3600) return `every ${Math.round(sec/60)}m`;
+      return `every ${Math.round(sec/3600)}h`;
+    }
+    if (plistJson.KeepAlive || plistJson.RunAtLoad) return "Always on";
+    return "on demand";
+  } catch { return "scheduled"; }
+}
+
+function labelToName(label) {
+  const parts = label.split(".");
+  const slug = parts.slice(2).join("-") || parts[parts.length - 1];
+  return slug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function discoverLaunchAgents() {
+  const laDir = `${HOME}/Library/LaunchAgents`;
+  const skip = ["com.apple.", "com.google."];
+  let files;
+  try {
+    files = fs.readdirSync(laDir).filter(f => f.endsWith(".plist") && !skip.some(s => f.startsWith(s)));
+  } catch { return []; }
+
+  return files.map(f => {
+    const label = f.replace(".plist", "");
+    let logPath = null;
+    let schedule = "scheduled";
+    try {
+      const json = JSON.parse(execSync(`plutil -convert json -o - "${laDir}/${f}" 2>/dev/null`, { encoding: "utf-8" }));
+      logPath = json.StandardOutPath || json.StandardErrorPath || null;
+      schedule = parsePlistSchedule(json);
+    } catch { /* use defaults */ }
+    return { label, name: labelToName(label), schedule, logPath };
+  });
+}
+
 function parseIdeas(content) {
   if (!content) return [];
   const ideas = [];
@@ -461,6 +514,185 @@ function getMonthlyCosts() {
   ];
 }
 
+function getMoneyTrackerData() {
+  const now = new Date().toISOString();
+
+  // ── Check local Docker containers (Mac) ──
+  function checkDockerContainer(name) {
+    try {
+      const result = execSync(`docker ps --filter "name=${name}" --format "{{.Status}}" 2>/dev/null`, { encoding: "utf-8" }).trim();
+      return result ? "running" : "stopped";
+    } catch { return "stopped"; }
+  }
+
+  // ── Check native process (Mac) ──
+  function checkProcess(name) {
+    try {
+      const result = execSync(`pgrep -f "${name}" 2>/dev/null`, { encoding: "utf-8" }).trim();
+      return result ? "running" : "stopped";
+    } catch { return "stopped"; }
+  }
+
+  // ── Check HP Docker containers via SSH ──
+  function checkHPDocker(name) {
+    try {
+      const result = execSync(
+        `ssh -o ConnectTimeout=3 -o StrictHostKeyChecking=no coboc@100.105.16.66 "docker ps --filter name=${name} --format \\"{{.Status}}\\"" 2>/dev/null`,
+        { encoding: "utf-8", timeout: 8000 }
+      ).trim();
+      return result ? "running" : "stopped";
+    } catch { return "stopped"; }
+  }
+
+  // Check all passive services
+  const passiveServices = [
+    {
+      name: "Honeygain",
+      device: "Mac",
+      status: checkProcess("honeygain"),
+      estMonthlyLow: 10, estMonthlyHigh: 20,
+      totalEarned: 0, lastCheck: now, containerType: "native",
+    },
+    {
+      name: "EarnApp",
+      device: "Mac",
+      status: checkProcess("earnapp"),
+      estMonthlyLow: 5, estMonthlyHigh: 10,
+      totalEarned: 0, lastCheck: now, containerType: "native",
+    },
+    {
+      name: "MystNodes",
+      device: "Mac",
+      status: checkDockerContainer("myst"),
+      estMonthlyLow: 5, estMonthlyHigh: 20,
+      totalEarned: 0, lastCheck: now, containerType: "docker",
+    },
+    {
+      name: "MystNodes",
+      device: "HP",
+      status: checkHPDocker("myst"),
+      estMonthlyLow: 5, estMonthlyHigh: 20,
+      totalEarned: 0, lastCheck: now, containerType: "docker",
+    },
+    {
+      name: "Repocket",
+      device: "Mac",
+      status: checkDockerContainer("repocket"),
+      estMonthlyLow: 5, estMonthlyHigh: 10,
+      totalEarned: 0, lastCheck: now, containerType: "docker",
+    },
+    {
+      name: "Repocket",
+      device: "HP",
+      status: checkHPDocker("repocket"),
+      estMonthlyLow: 5, estMonthlyHigh: 10,
+      totalEarned: 0, lastCheck: now, containerType: "docker",
+    },
+    {
+      name: "TraffMonetizer",
+      device: "Mac",
+      status: checkDockerContainer("traffmonetizer"),
+      estMonthlyLow: 2, estMonthlyHigh: 5,
+      totalEarned: 0, lastCheck: now, containerType: "docker",
+    },
+    {
+      name: "TraffMonetizer",
+      device: "HP",
+      status: checkHPDocker("traffmonetizer"),
+      estMonthlyLow: 2, estMonthlyHigh: 5,
+      totalEarned: 0, lastCheck: now, containerType: "docker",
+    },
+    {
+      name: "Pawns/IPRoyal",
+      device: "Mac",
+      status: checkDockerContainer("pawns"),
+      estMonthlyLow: 5, estMonthlyHigh: 10,
+      totalEarned: 0, lastCheck: now, containerType: "docker",
+    },
+    {
+      name: "Pawns/IPRoyal",
+      device: "HP",
+      status: checkHPDocker("pawns"),
+      estMonthlyLow: 5, estMonthlyHigh: 10,
+      totalEarned: 0, lastCheck: now, containerType: "docker",
+    },
+  ];
+
+  // ── Load persisted earnings from money-tracker.json ──
+  const earningsFile = path.join(HOME, "tools/money-tracker.json");
+  const earnings = readJSON(earningsFile);
+  if (earnings && earnings.services) {
+    for (const svc of passiveServices) {
+      const key = `${svc.name}-${svc.device}`;
+      if (earnings.services[key]) {
+        svc.totalEarned = earnings.services[key].totalEarned || 0;
+      }
+    }
+  }
+
+  // ── Gumroad ──
+  const gumroadData = readJSON(path.join(HOME, "projects/gumroad-autoposter/data/status.json"));
+  const gumroad = {
+    totalProducts: gumroadData?.totalProducts || 0,
+    productsThisWeek: gumroadData?.productsThisWeek || 0,
+    totalRevenue: gumroadData?.totalRevenue || 0,
+    autoposterStatus: "stopped",
+    nextScheduledRun: gumroadData?.nextRun || "",
+  };
+  // Check if gumroad autoposter LaunchAgent is running
+  const gumroadAgent = getLaunchAgentStatus("com.gumroad.autoposter");
+  if (gumroadAgent.loaded) gumroad.autoposterStatus = "running";
+
+  // ── Apify ──
+  const apifyData = readJSON(path.join(HOME, "tools/apify-stats.json"));
+  const apify = {
+    actorsPublished: apifyData?.actorsPublished || 0,
+    totalRuns: apifyData?.totalRuns || 0,
+    storeRevenue: apifyData?.storeRevenue || 0,
+  };
+
+  // ── LessonDraft ──
+  const ldData = readJSON(path.join(HOME, "tools/lessondraft-metrics.json"));
+  const lessonDraft = {
+    mrr: ldData?.mrr || 0,
+    subscribers: ldData?.subscribers || 0,
+    trafficThisWeek: ldData?.trafficThisWeek || 0,
+  };
+
+  // ── Other Income ──
+  const otherData = readJSON(path.join(HOME, "tools/other-income.json"));
+  const otherIncome = {
+    tutoring: otherData?.tutoring || 0,
+    jobs: otherData?.jobs || [
+      { name: "Regina Caeli", monthly: 800 },
+      { name: "Visitation", monthly: 600 },
+      { name: "Main Event", monthly: 400 },
+    ],
+    dealScout: otherData?.dealScout || 0,
+  };
+
+  // ── Daily Trend (generate from earnings log or use placeholders) ──
+  const trendFile = readJSON(path.join(HOME, "tools/money-trend.json"));
+  let dailyTrend = [];
+  if (trendFile && trendFile.days) {
+    dailyTrend = trendFile.days.slice(-14);
+  } else {
+    // Generate 14 days of placeholder data based on passive estimates
+    const runningCount = passiveServices.filter((s) => s.status === "running").length;
+    const dailyEst = runningCount * 0.25; // rough daily estimate per service
+    for (let i = 13; i >= 0; i--) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      const dateStr = d.toISOString().slice(0, 10);
+      // Add some variance
+      const variance = 0.5 + Math.random();
+      dailyTrend.push({ date: dateStr, amount: parseFloat((dailyEst * variance).toFixed(2)) });
+    }
+  }
+
+  return { passiveServices, gumroad, apify, lessonDraft, otherIncome, dailyTrend };
+}
+
 // ── Main ──
 const trackerData = readJSON(path.join(HOME, "tools/tracker/data.json"));
 const ideasContent = readFile(path.join(HOME, "ideas/IDEAS.md"));
@@ -475,21 +707,35 @@ const projects = (trackerData?.items || []).map((item) => {
   return p;
 });
 
-const agents = [
-  { label: "com.lessondraft.social", name: "LessonDraft Social", schedule: "8am, 1:30pm, 6pm", logPath: `${HOME}/projects/lessondraft-social/logs/launchd_stdout.log` },
-  { label: "com.jacobcascone.scholarship-alerts", name: "Scholarship Alerts", schedule: "9am daily", logPath: `${HOME}/scholarships/logs/alerts.log` },
-  { label: "com.tradovate.bot", name: "Tradovate Bot", schedule: "Always on", logPath: `${HOME}/projects/tradovate-mcp/logs/bot_stdout.log` },
-  { label: "com.atlas.recorder", name: "Atlas Recorder", schedule: "Always on", logPath: `/tmp/atlas-recorder.log` },
-  { label: "com.builtsimple.email-sender", name: "Email Sender", schedule: "9:03am", logPath: `${HOME}/projects/lead-scraper/logs/send.log` },
-  { label: "com.builtsimple.follow-up", name: "Follow-Up", schedule: "2:07pm", logPath: `${HOME}/projects/lead-scraper/logs/follow-up.log` },
-  { label: "com.lessondraft.gsc-check", name: "GSC Check", schedule: "9am daily", logPath: `${HOME}/tools/gsc/logs/launchd-stdout.log` },
-  { label: "com.lessondraft.weekly-health", name: "SEO Health", schedule: "Mon 10am", logPath: `${HOME}/tools/gsc/logs/launchd-health-stdout.log` },
-  { label: "com.lessondraft.watchdog", name: "Watchdog", schedule: "11am daily", logPath: `${HOME}/tools/watchdog.log` },
-  { label: "com.lessondraft.rank-tracker", name: "Rank Tracker", schedule: "8am daily", logPath: `${HOME}/tools/gsc/logs/rank-tracker.log` },
-  { label: "com.lessondraft.sitemap-health", name: "Sitemap Health", schedule: "Wed 10:30am", logPath: `${HOME}/tools/gsc/logs/sitemap-health.log` },
-  { label: "com.tracker.digest", name: "Tracker Digest", schedule: "7am daily", logPath: null },
-  { label: "com.commandcenter.update", name: "Dashboard Update", schedule: "7:30am, 7:30pm", logPath: `${HOME}/projects/command-center/logs/update.log` },
-];
+// Hardcoded overrides: custom names, schedules, and log paths for known agents
+const agentOverrides = {
+  "com.lessondraft.social":            { name: "LessonDraft Social",    schedule: "8am, 1:30pm, 6pm", logPath: `${HOME}/projects/lessondraft-social/logs/launchd_stdout.log` },
+  "com.jacobcascone.scholarship-alerts":{ name: "Scholarship Alerts",   schedule: "9am daily",         logPath: `${HOME}/scholarships/logs/alerts.log` },
+  "com.tradovate.bot":                 { name: "Tradovate Bot",         schedule: "Always on",         logPath: `${HOME}/projects/tradovate-mcp/logs/bot_stdout.log` },
+  "com.atlas.recorder":                { name: "Atlas Recorder",        schedule: "Always on",         logPath: `/tmp/atlas-recorder.log` },
+  "com.builtsimple.email-sender":      { name: "Email Sender",          schedule: "9:03am",            logPath: `${HOME}/projects/lead-scraper/logs/send.log` },
+  "com.builtsimple.follow-up":         { name: "Follow-Up",             schedule: "2:07pm",            logPath: `${HOME}/projects/lead-scraper/logs/follow-up.log` },
+  "com.lessondraft.gsc-check":         { name: "GSC Check",             schedule: "9am daily",         logPath: `${HOME}/tools/gsc/logs/launchd-stdout.log` },
+  "com.lessondraft.weekly-health":     { name: "SEO Health",            schedule: "Mon 10am",          logPath: `${HOME}/tools/gsc/logs/launchd-health-stdout.log` },
+  "com.lessondraft.watchdog":          { name: "Watchdog",              schedule: "11am daily",        logPath: `${HOME}/tools/watchdog.log` },
+  "com.lessondraft.rank-tracker":      { name: "Rank Tracker",          schedule: "8am daily",         logPath: `${HOME}/tools/gsc/logs/rank-tracker.log` },
+  "com.lessondraft.sitemap-health":    { name: "Sitemap Health",        schedule: "Wed 10:30am",       logPath: `${HOME}/tools/gsc/logs/sitemap-health.log` },
+  "com.tracker.digest":                { name: "Tracker Digest",        schedule: "7am daily",         logPath: null },
+  "com.commandcenter.update":          { name: "Dashboard Update",      schedule: "7:30am, 7:30pm",    logPath: `${HOME}/projects/command-center/logs/update.log` },
+  "com.bandwidth.smart":               { name: "Bandwidth Smart",        schedule: "every 30m",         logPath: null },
+  "com.cobo.council":                  { name: "Council Agent",          schedule: "Always on",         logPath: `${HOME}/cobo/logs/council.log` },
+  "com.cobo.daemon":                   { name: "COBO Daemon",            schedule: "Always on",         logPath: `${HOME}/cobo/logs/daemon.log` },
+  "com.cobo.mac-agent":                { name: "Mac Agent",              schedule: "Always on",         logPath: `${HOME}/cobo/logs/mac-agent.log` },
+  "com.cobo.ollama-watchdog":          { name: "Ollama Watchdog",        schedule: "every 5m",          logPath: `${HOME}/cobo/logs/ollama-watchdog.log` },
+  "com.lessondraft.claude-proxy":      { name: "Claude Proxy",           schedule: "Always on",         logPath: `${HOME}/projects/LessonDraft/logs/proxy.log` },
+  "com.lessondraft.proxy-watchdog":    { name: "Proxy Watchdog",         schedule: "every 60s",         logPath: `${HOME}/projects/LessonDraft/logs/proxy-watchdog.log` },
+  "com.lessondraft.seo-health":        { name: "SEO Health (LD)",        schedule: "7am daily",         logPath: `${HOME}/tools/gsc/logs/seo-health.log` },
+  "com.dealscout.plist":               { name: "Deal Scout",             schedule: "5x daily",          logPath: `${HOME}/projects/deal-scout/logs/scout.log` },
+};
+
+// Dynamically discover all LaunchAgents, merge with overrides
+const discovered = discoverLaunchAgents();
+const agents = discovered.map(a => ({ ...a, ...(agentOverrides[a.label] || {}) }));
 
 const agentStatuses = agents.map((agent) => ({
   ...agent,
@@ -510,6 +756,7 @@ const revenue = getRevenueStreams();
 const seoTools = getSEOToolsData();
 const weeklySummary = getWeeklySummary(heatmap, emailCampaign, scholarships);
 const projectHealth = readJSON(path.join(HOME, "tools/healthcheck/results.json"));
+const moneyTracker = getMoneyTrackerData();
 
 const activeProjects = projects.filter((p) => p.status === "active" && p.type === "project").length;
 const pausedProjects = projects.filter((p) => p.status === "paused").length;
@@ -536,6 +783,7 @@ const dashboard = {
   seoTools,
   weeklySummary,
   projectHealth,
+  moneyTracker,
 };
 
 const outPath = path.join(__dirname, "..", "src", "data", "dashboard-data.json");
@@ -543,3 +791,5 @@ fs.writeFileSync(outPath, JSON.stringify(dashboard, null, 2));
 console.log(`Dashboard data generated`);
 console.log(`  ${activeProjects} active | ${activeAutomations} automations | ${healthyAgents}/${agents.length} agents`);
 console.log(`  ${scholarships.totalCount} scholarships ($${(scholarships.totalPipeline/1000).toFixed(0)}K) | ${emailCampaign.sent} emails | ${school.completedCourses} courses`);
+const runningPassive = moneyTracker.passiveServices.filter(s => s.status === "running").length;
+console.log(`  ${runningPassive}/${moneyTracker.passiveServices.length} passive services running`);
