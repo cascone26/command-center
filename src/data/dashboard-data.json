@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-24T20:16:40.114Z",
+  "generatedAt": "2026-03-24T20:19:55.756Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
@@ -2076,7 +2076,7 @@
         "estMonthlyLow": 10,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "native"
       },
       {
@@ -2086,17 +2086,17 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "native"
       },
       {
         "name": "MystNodes",
         "device": "Mac",
-        "status": "running",
+        "status": "stopped",
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "docker"
       },
       {
@@ -2106,17 +2106,17 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "docker"
       },
       {
         "name": "Repocket",
         "device": "Mac",
-        "status": "running",
+        "status": "stopped",
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "docker"
       },
       {
@@ -2126,17 +2126,17 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "docker"
       },
       {
         "name": "TraffMonetizer",
         "device": "Mac",
-        "status": "running",
+        "status": "stopped",
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "docker"
       },
       {
@@ -2146,17 +2146,17 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "docker"
       },
       {
         "name": "Pawns/IPRoyal",
         "device": "Mac",
-        "status": "running",
+        "status": "stopped",
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "docker"
       },
       {
@@ -2166,7 +2166,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-03-24T20:16:38.296Z",
+        "lastCheck": "2026-03-24T20:19:53.899Z",
         "containerType": "docker"
       }
     ],
@@ -2208,59 +2208,59 @@
     "dailyTrend": [
       {
         "date": "2026-03-11",
-        "amount": 1.84
+        "amount": 0.15
       },
       {
         "date": "2026-03-12",
-        "amount": 1.23
+        "amount": 0.31
       },
       {
         "date": "2026-03-13",
-        "amount": 0.77
+        "amount": 0.34
       },
       {
         "date": "2026-03-14",
-        "amount": 1.3
+        "amount": 0.36
       },
       {
         "date": "2026-03-15",
-        "amount": 0.86
+        "amount": 0.13
       },
       {
         "date": "2026-03-16",
-        "amount": 0.73
+        "amount": 0.36
       },
       {
         "date": "2026-03-17",
-        "amount": 1.09
+        "amount": 0.25
       },
       {
         "date": "2026-03-18",
-        "amount": 1.25
+        "amount": 0.24
       },
       {
         "date": "2026-03-19",
-        "amount": 1.54
+        "amount": 0.17
       },
       {
         "date": "2026-03-20",
-        "amount": 1.06
+        "amount": 0.35
       },
       {
         "date": "2026-03-21",
-        "amount": 1.07
+        "amount": 0.17
       },
       {
         "date": "2026-03-22",
-        "amount": 1.21
+        "amount": 0.13
       },
       {
         "date": "2026-03-23",
-        "amount": 1.19
+        "amount": 0.29
       },
       {
         "date": "2026-03-24",
-        "amount": 0.75
+        "amount": 0.32
       }
     ]
   }
