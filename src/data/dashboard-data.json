@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-08T00:35:46.055Z",
+  "generatedAt": "2026-04-08T12:30:29.503Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
     "activeAutomations": 6,
-    "healthyAgents": 43,
+    "healthyAgents": 42,
     "totalAgents": 50,
     "ideasCount": 29,
     "avgHealthScore": 72
@@ -429,7 +429,7 @@
       "schedule": "6:00am, 2:00pm, 9:00pm",
       "logPath": "/Users/scones/projects/gumroad-autoposter/logs/launchagent-stdout.log",
       "loaded": true,
-      "pid": null,
+      "pid": 23167,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -441,9 +441,9 @@
       "logPath": "/Users/scones/projects/lead-scraper/logs/token-refresh.log",
       "loaded": true,
       "pid": null,
-      "lastExitStatus": 0,
-      "healthy": true,
-      "recentLog": "Testing with Gmail labels API...\nSuccess — 27 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-03-27T03:14:23.774Z\n\nTesting with Gmail labels API...\nSuccess — 27 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-03-27T04:14:24.784Z\n\nTesting with Gmail labels API...\nSuccess — 27 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-03-27T05:14:25.951Z\n\nTesting with Gmail labels API...\nSuccess — 27 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway."
+      "lastExitStatus": 256,
+      "healthy": false,
+      "recentLog": "Success — 27 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-03-27T03:14:23.774Z\n\nTesting with Gmail labels API...\nSuccess — 27 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-03-27T04:14:24.784Z\n\nTesting with Gmail labels API...\nSuccess — 27 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-03-27T05:14:25.951Z\n\nTesting with Gmail labels API...\nSuccess — 27 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in -2888m. Refreshing..."
     },
     {
       "label": "com.classpilot.gcu-scraper",
@@ -454,7 +454,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "- Topic 6 DQ 1 [Published]\n    - Topic 6 DQ 2 [Published]\n    - Clinical Field Experience D: Teach and Reflect [Published]\n    - Topic 6 Participation [Published]\n    - Topic 7 DQ 1 [Published]\n    - Topic 7 DQ 2 [Published]\n    - Benchmark - Mathematics Unit Plan [Published]\n    - Topic 7 Participation [Published]\n    - Topic 8 DQ 1 [Published]\n    - Topic 8 DQ 2 [Published]\n    - Clinical Field Experience Verification Form [Published]\n    - Topic 8 Participation [Published]\n\nFeed: /Users/scones/classpilot/course-feed.md\nJSON: /Users/scones/classpilot/course-feed.json\nGCU Scraper — full (headful)\nLoaded saved session.\nGCU Scraper — full (headful)\nLoaded saved session.\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo...\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo..."
+      "recentLog": "- Topic 6 Participation [Published]\n    - Topic 7 DQ 1 [Published]\n    - Topic 7 DQ 2 [Published]\n    - Benchmark - Mathematics Unit Plan [Published]\n    - Topic 7 Participation [Published]\n    - Topic 8 DQ 1 [Published]\n    - Topic 8 DQ 2 [Published]\n    - Clinical Field Experience Verification Form [Published]\n    - Topic 8 Participation [Published]\n\nFeed: /Users/scones/classpilot/course-feed.md\nJSON: /Users/scones/classpilot/course-feed.json\nGCU Scraper — full (headful)\nLoaded saved session.\nGCU Scraper — full (headful)\nLoaded saved session.\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo...\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo...\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo..."
     },
     {
       "label": "com.cobo.ai-gateway",
@@ -465,7 +465,7 @@
       "pid": 961,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-04-07T17:12:52.824Z] OAuth token refreshed proactively (was -1777m to expiry)\n[2026-04-07T17:28:59.187Z] OAuth token refreshed proactively (was -1793m to expiry)\n[2026-04-07T18:04:35.040Z] OAuth token refreshed proactively (was -1829m to expiry)\n[2026-04-07T18:13:51.000Z] OAuth token refreshed proactively (was -1838m to expiry)\n[2026-04-07T18:29:58.538Z] OAuth token refreshed proactively (was -1854m to expiry)\n[2026-04-07T19:02:15.369Z] OAuth token refreshed proactively (was -1886m to expiry)\n[2026-04-07T19:14:50.296Z] OAuth token refreshed proactively (was -1899m to expiry)\n[2026-04-07T19:30:27.108Z] OAuth token refreshed proactively (was -1915m to expiry)\n[2026-04-07T20:03:32.896Z] OAuth token refreshed proactively (was -1948m to expiry)\n[2026-04-07T20:15:49.813Z] OAuth token refreshed proactively (was -1960m to expiry)\n[2026-04-07T20:30:57.887Z] OAuth token refreshed proactively (was -1975m to expiry)\n[2026-04-07T21:03:39.720Z] OAuth token refreshed proactively (was -2008m to expiry)\n[2026-04-07T21:16:47.661Z] OAuth token refreshed proactively (was -2021m to expiry)\n[2026-04-07T21:27:01.942Z] OAuth token refreshed proactively (was -2031m to expiry)\n[2026-04-07T21:43:42.182Z] OAuth token refreshed proactively (was -2048m to expiry)\n[2026-04-07T21:50:58.182Z] OAuth token refreshed proactively (was -2055m to expiry)\n[2026-04-07T22:08:36.340Z] OAuth token refreshed proactively (was -2073m to expiry)\n[2026-04-07T22:17:47.412Z] OAuth token refreshed proactively (was -2082m to expiry)\n[2026-04-07T22:50:58.026Z] OAuth token refreshed proactively (was -2115m to expiry)\n[2026-04-07T23:08:47.946Z] OAuth token refreshed proactively (was -2133m to expiry)\n[2026-04-07T23:18:45.939Z] OAuth token refreshed proactively (was -2143m to expiry)\n[2026-04-07T23:35:01.227Z] OAuth token refreshed proactively (was -2159m to expiry)\n[2026-04-07T23:52:19.143Z] OAuth token refreshed proactively (was -2177m to expiry)\n[2026-04-08T00:19:37.825Z] OAuth token refreshed proactively (was -2204m to expiry)\n[2026-04-08T00:35:42.756Z] OAuth token refreshed proactively (was -2220m to expiry)"
+      "recentLog": "[2026-04-08T04:11:11.670Z] OAuth token refreshed proactively (was -2435m to expiry)\n[2026-04-08T04:23:31.762Z] OAuth token refreshed proactively (was -2448m to expiry)\n[2026-04-08T04:39:28.081Z] OAuth token refreshed proactively (was -2464m to expiry)\n[2026-04-08T05:13:32.534Z] OAuth token refreshed proactively (was -2498m to expiry)\n[2026-04-08T05:24:30.524Z] OAuth token refreshed proactively (was -2509m to expiry)\n[2026-04-08T05:42:22.197Z] OAuth token refreshed proactively (was -2527m to expiry)\n[2026-04-08T05:52:06.255Z] OAuth token refreshed proactively (was -2536m to expiry)\n[2026-04-08T06:24:33.358Z] OAuth token refreshed proactively (was -2569m to expiry)\n[2026-04-08T06:42:10.311Z] OAuth token refreshed proactively (was -2586m to expiry)\n[2026-04-08T07:16:31.072Z] OAuth token refreshed proactively (was -2621m to expiry)\n[2026-04-08T07:25:35.053Z] OAuth token refreshed proactively (was -2630m to expiry)\n[2026-04-08T07:42:57.883Z] OAuth token refreshed proactively (was -2647m to expiry)\n[2026-04-08T08:15:29.662Z] OAuth token refreshed proactively (was -2680m to expiry)\n[2026-04-08T08:26:33.627Z] OAuth token refreshed proactively (was -2691m to expiry)\n[2026-04-08T08:44:27.324Z] OAuth token refreshed proactively (was -2709m to expiry)\n[2026-04-08T09:19:24.877Z] OAuth token refreshed proactively (was -2744m to expiry)\n[2026-04-08T09:27:29.796Z] OAuth token refreshed proactively (was -2752m to expiry)\n[2026-04-08T09:44:08.561Z] OAuth token refreshed proactively (was -2768m to expiry)\n[2026-04-08T10:28:23.747Z] OAuth token refreshed proactively (was -2813m to expiry)\n[2026-04-08T10:44:32.731Z] OAuth token refreshed proactively (was -2829m to expiry)\n[2026-04-08T11:01:22.677Z] OAuth token refreshed proactively (was -2846m to expiry)\n[2026-04-08T11:18:45.991Z] OAuth token refreshed proactively (was -2863m to expiry)\n[2026-04-08T11:29:27.137Z] OAuth token refreshed proactively (was -2874m to expiry)\n[2026-04-08T12:02:18.729Z] OAuth token refreshed proactively (was -2907m to expiry)\n[2026-04-08T12:18:56.695Z] OAuth token refreshed proactively (was -2923m to expiry)"
     },
     {
       "label": "com.cobo.brain-iq-test",
@@ -473,7 +473,7 @@
       "schedule": "6:00am",
       "logPath": "/tmp/brain-iq-test.log",
       "loaded": true,
-      "pid": null,
+      "pid": 23166,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": "IQ Test #5 complete\n  2647.9s: Identify 3 visitors who read your latest blog post (use analytics to spot engagement). Email them wi\n  5588.4s: Offer a 60-second video demo showing one specific lesson saved with the tool. Teachers leave because\n  1737.9s: Test subject lines using \"you\" language (e.g., \"You have 120s to claim your free audit\") instead of \nIQ Test #6 complete\n  3685.2s: Target the top blog post with the highest engagement (e.g., \"How to Fix X in 5 Steps\"). Add a free, \n  3639.5s: Offer a 1-click lesson template for their current subject (e.g., \"Math: 5-min exit ticket\"). Teacher\n  5676.5s: Add {First Name} to subject line (e.g., \"John, your 2:00 PM growth report is ready\"). This personali"
@@ -509,7 +509,7 @@
       "pid": null,
       "lastExitStatus": 256,
       "healthy": false,
-      "recentLog": "[scout] Vercel lessondraft: all clear\n[scout] Vercel builtsimple: all clear\n[scout] Deal Scout: ran 12h ago (2026-03-29 17:02), ~152 leads in last log batch — ok\n[scout] council-state.md: last modified 2026-03-29 13:17 (16h ago) — ok\n[scout] Vercel lessondraft: all clear\n[scout] Vercel builtsimple: all clear\n[scout] Deal Scout: ran 17h ago (2026-04-05 17:06), ~144 leads in last log batch — ok\n[scout] CHALLENGES.md: open flag since 2026-03-24: Seat at Whispering Cave — unverified as specific feature, \n[scout] CHALLENGES.md: open flag since 2026-03-25: L23 \"mark\" vs \"begin\" — confirmation checkpoint, not start\n[scout] CHALLENGES.md: open flag since 2026-03-26: BuiltSimple Gmail OAuth refresh token revoked repeatedly —\n[scout] CHALLENGES.md: open flag since 2026-03-27: LessonDraft email_opens anon SELECT still open — check-ope\n[scout] Vercel lessondraft: all clear\n[scout] Vercel builtsimple: all clear\n[scout] CHALLENGES.md: open flag since 2026-03-24: Seat at Whispering Cave — unverified as specific feature, \n[scout] CHALLENGES.md: open flag since 2026-03-25: L23 \"mark\" vs \"begin\" — confirmation checkpoint, not start\n[scout] CHALLENGES.md: open flag since 2026-03-26: BuiltSimple Gmail OAuth refresh token revoked repeatedly —\n[scout] CHALLENGES.md: open flag since 2026-03-27: LessonDraft email_opens anon SELECT still open — check-ope"
+      "recentLog": "[scout] Vercel lessondraft: all clear\n[scout] Vercel builtsimple: all clear\n[scout] Deal Scout: ran 12h ago (2026-03-29 17:02), ~152 leads in last log batch — ok\n[scout] council-state.md: last modified 2026-03-29 13:17 (16h ago) — ok\n[scout] Vercel lessondraft: all clear\n[scout] Vercel builtsimple: all clear\n[scout] Deal Scout: ran 17h ago (2026-04-05 17:06), ~144 leads in last log batch — ok\n[scout] CHALLENGES.md: open flag since 2026-03-24: Seat at Whispering Cave — unverified as specific feature, \n[scout] CHALLENGES.md: open flag since 2026-03-25: L23 \"mark\" vs \"begin\" — confirmation checkpoint, not start\n[scout] CHALLENGES.md: open flag since 2026-03-26: BuiltSimple Gmail OAuth refresh token revoked repeatedly —\n[scout] CHALLENGES.md: open flag since 2026-03-27: LessonDraft email_opens anon SELECT still open — check-ope\n[scout] Vercel lessondraft: all clear\n[scout] Vercel builtsimple: all clear\n[scout] CHALLENGES.md: open flag since 2026-03-24: Seat at Whispering Cave — unverified as specific feature, \n[scout] CHALLENGES.md: open flag since 2026-03-25: L23 \"mark\" vs \"begin\" — confirmation checkpoint, not start\n[scout] CHALLENGES.md: open flag since 2026-03-26: BuiltSimple Gmail OAuth refresh token revoked repeatedly —\n[scout] CHALLENGES.md: open flag since 2026-03-27: LessonDraft email_opens anon SELECT still open — check-ope\n[scout] Vercel lessondraft: all clear\n[scout] Vercel builtsimple: all clear\n[scout] CHALLENGES.md: open flag since 2026-03-24: Seat at Whispering Cave — unverified as specific feature, \n[scout] CHALLENGES.md: open flag since 2026-03-25: L23 \"mark\" vs \"begin\" — confirmation checkpoint, not start\n[scout] CHALLENGES.md: open flag since 2026-03-26: BuiltSimple Gmail OAuth refresh token revoked repeatedly —\n[scout] CHALLENGES.md: open flag since 2026-03-27: LessonDraft email_opens anon SELECT still open — check-ope"
     },
     {
       "label": "com.cobo.council.overnight",
@@ -553,7 +553,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "## What Claude Rejected (learn from this)\nNo rejections in the pipeline.\n\n## Question Pool\n- 472 questions (433 self-generated)\n\n## Focus for Today\nBased on the highest-scored insights, Athena recommends focusing on:\nNo insights from the last 24 hours — check if brain cycles are running.\n\n[daily-reports] 2026-04-07T11:06:55Z Step 1 OK: Athena daily report generated\n[daily-reports] 2026-04-07T11:06:55Z Step 1 OK: Athena daily report generated\n[daily-reports] 2026-04-07T11:06:56Z Step 2: Overnight report\n[daily-reports] 2026-04-07T11:06:56Z Step 2: Overnight report\n[daily-reports] 2026-04-07T11:07:05Z Step 2 OK: Overnight report generated\n[daily-reports] 2026-04-07T11:07:05Z Step 2 OK: Overnight report generated\n[daily-reports] 2026-04-07T11:07:05Z Step 3: Morning briefing\n[daily-reports] 2026-04-07T11:07:05Z Step 3: Morning briefing\n[daily-reports] 2026-04-07T11:39:46Z Step 3 FAIL: Morning briefing — \n[daily-reports] 2026-04-07T11:39:46Z Step 3 FAIL: Morning briefing — \n[daily-reports] 2026-04-07T11:39:46Z Step 4: Skipped (weekly — Sunday only, today is day 2)\n[daily-reports] 2026-04-07T11:39:46Z Step 4: Skipped (weekly — Sunday only, today is day 2)\n[daily-reports] 2026-04-07T11:39:46Z === Daily reports finished ===\n[daily-reports] 2026-04-07T11:39:46Z === Daily reports finished ==="
+      "recentLog": "## What Claude Rejected (learn from this)\nNo rejections in the pipeline.\n\n## Question Pool\n- 472 questions (433 self-generated)\n\n## Focus for Today\nBased on the highest-scored insights, Athena recommends focusing on:\nNo insights from the last 24 hours — check if brain cycles are running.\n\n[daily-reports] 2026-04-08T11:01:19Z Step 1 OK: Athena daily report generated\n[daily-reports] 2026-04-08T11:01:19Z Step 1 OK: Athena daily report generated\n[daily-reports] 2026-04-08T11:01:19Z Step 2: Overnight report\n[daily-reports] 2026-04-08T11:01:19Z Step 2: Overnight report\n[daily-reports] 2026-04-08T11:01:21Z Step 2 OK: Overnight report generated\n[daily-reports] 2026-04-08T11:01:21Z Step 2 OK: Overnight report generated\n[daily-reports] 2026-04-08T11:01:21Z Step 3: Morning briefing\n[daily-reports] 2026-04-08T11:01:21Z Step 3: Morning briefing\n[daily-reports] 2026-04-08T11:02:43Z Step 3 OK: Morning briefing delivered\n[daily-reports] 2026-04-08T11:02:43Z Step 3 OK: Morning briefing delivered\n[daily-reports] 2026-04-08T11:02:43Z Step 4: Skipped (weekly — Sunday only, today is day 3)\n[daily-reports] 2026-04-08T11:02:43Z Step 4: Skipped (weekly — Sunday only, today is day 3)\n[daily-reports] 2026-04-08T11:02:43Z === Daily reports finished ===\n[daily-reports] 2026-04-08T11:02:43Z === Daily reports finished ==="
     },
     {
       "label": "com.cobo.daily-usage-report",
@@ -564,7 +564,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Report saved to /Users/scones/logs/daily-reports/2026-04-03.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-04-04.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-04-05.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-04-06.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available"
+      "recentLog": "Report saved to /Users/scones/logs/daily-reports/2026-04-04.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-04-05.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-04-06.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-04-07.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available"
     },
     {
       "label": "com.cobo.ecosystem",
@@ -608,7 +608,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Mon Apr  6 03:40:11 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found"
+      "recentLog": "Mon Apr  6 03:40:11 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nTue Apr  7 20:20:37 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found"
     },
     {
       "label": "com.cobo.log-rotation",
@@ -641,7 +641,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Mon Apr  6 02:01:10 CDT 2026: Running database backup...\nMon Apr  6 02:01:10 CDT 2026: Backup dir: /Users/scones/cobo/backups\nMon Apr  6 02:01:10 CDT 2026: OK: Backed up cobo.db (4595712 bytes) -> /Users/scones/cobo/backups/cobo-2026-04-06.db\nMon Apr  6 02:01:10 CDT 2026: OK: Backed up leads.db (2486272 bytes) -> /Users/scones/cobo/backups/leads-2026-04-06.db\nMon Apr  6 02:01:10 CDT 2026: 13 backup files retained\nMon Apr  6 02:01:10 CDT 2026: Cleaning old session data...\nMon Apr  6 02:01:10 CDT 2026: /Users/scones/cobo/scripts/cobo-nightly.sh: line 204: /opt/homebrew/bin/node: No such file or directory\nMon Apr  6 02:01:10 CDT 2026: === Nightly maintenance complete ===\nTue Apr  7 02:02:58 CDT 2026: === Nightly maintenance starting ===\nTue Apr  7 02:02:58 CDT 2026: Running nightly scan...\nTue Apr  7 02:02:59 CDT 2026: ISSUE: 3 generation route(s) missing profile injection: /Users/scones/projects/LessonDraft/app/api/generate-lesson-remix/route.ts /Users/scones/projects/LessonDraft/app/api/generate-tutoring-session/route.ts /Users/scones/projects/LessonDraft/app/api/generate-vertical-plan/route.ts \nTue Apr  7 02:02:59 CDT 2026: ALERT: email pipeline last ran 2026-04-06\nTue Apr  7 02:02:59 CDT 2026: ALERT: 10 bounces in last run\nTue Apr  7 02:02:59 CDT 2026: WARN: HP unreachable via SSH\nTue Apr  7 02:02:59 CDT 2026: Scan complete. Issues found: 3\nTue Apr  7 02:02:59 CDT 2026: Running memory consolidation...\nTue Apr  7 03:34:23 CDT 2026: Memory consolidation response: {\"status\":\"ok\",\"result\":{\"promoted\":271,\"archived\":0,\"deduplicated\":0,\"errors\":[]}}\nTue Apr  7 03:34:23 CDT 2026: Running database backup...\nTue Apr  7 03:34:23 CDT 2026: Backup dir: /Users/scones/cobo/backups\nTue Apr  7 03:34:23 CDT 2026: OK: Backed up cobo.db (4452352 bytes) -> /Users/scones/cobo/backups/cobo-2026-04-07.db\nTue Apr  7 03:34:23 CDT 2026: OK: Backed up leads.db (2486272 bytes) -> /Users/scones/cobo/backups/leads-2026-04-07.db\nTue Apr  7 03:34:23 CDT 2026: 15 backup files retained\nTue Apr  7 03:34:23 CDT 2026: Cleaning old session data...\nTue Apr  7 03:34:23 CDT 2026: /Users/scones/cobo/scripts/cobo-nightly.sh: line 204: /opt/homebrew/bin/node: No such file or directory\nTue Apr  7 03:34:23 CDT 2026: === Nightly maintenance complete ==="
+      "recentLog": "Tue Apr  7 03:34:23 CDT 2026: Running database backup...\nTue Apr  7 03:34:23 CDT 2026: Backup dir: /Users/scones/cobo/backups\nTue Apr  7 03:34:23 CDT 2026: OK: Backed up cobo.db (4452352 bytes) -> /Users/scones/cobo/backups/cobo-2026-04-07.db\nTue Apr  7 03:34:23 CDT 2026: OK: Backed up leads.db (2486272 bytes) -> /Users/scones/cobo/backups/leads-2026-04-07.db\nTue Apr  7 03:34:23 CDT 2026: 15 backup files retained\nTue Apr  7 03:34:23 CDT 2026: Cleaning old session data...\nTue Apr  7 03:34:23 CDT 2026: /Users/scones/cobo/scripts/cobo-nightly.sh: line 204: /opt/homebrew/bin/node: No such file or directory\nTue Apr  7 03:34:23 CDT 2026: === Nightly maintenance complete ===\nWed Apr  8 02:16:29 CDT 2026: === Nightly maintenance starting ===\nWed Apr  8 02:16:29 CDT 2026: Running nightly scan...\nWed Apr  8 02:16:30 CDT 2026: ISSUE: 3 generation route(s) missing profile injection: /Users/scones/projects/LessonDraft/app/api/generate-lesson-remix/route.ts /Users/scones/projects/LessonDraft/app/api/generate-tutoring-session/route.ts /Users/scones/projects/LessonDraft/app/api/generate-vertical-plan/route.ts \nWed Apr  8 02:16:30 CDT 2026: ALERT: email pipeline last ran 2026-04-07\nWed Apr  8 02:16:30 CDT 2026: ALERT: 105 bounces in last run\nWed Apr  8 02:16:30 CDT 2026: WARN: HP unreachable via SSH\nWed Apr  8 02:16:30 CDT 2026: Scan complete. Issues found: 3\nWed Apr  8 02:16:30 CDT 2026: Running memory consolidation...\nWed Apr  8 03:26:51 CDT 2026: Memory consolidation response: {\"status\":\"ok\",\"result\":{\"promoted\":241,\"archived\":0,\"deduplicated\":0,\"errors\":[]}}\nWed Apr  8 03:26:51 CDT 2026: Running database backup...\nWed Apr  8 03:26:51 CDT 2026: Backup dir: /Users/scones/cobo/backups\nWed Apr  8 03:26:51 CDT 2026: OK: Backed up cobo.db (4399104 bytes) -> /Users/scones/cobo/backups/cobo-2026-04-08.db\nWed Apr  8 03:26:51 CDT 2026: OK: Backed up leads.db (2486272 bytes) -> /Users/scones/cobo/backups/leads-2026-04-08.db\nWed Apr  8 03:26:51 CDT 2026: 17 backup files retained\nWed Apr  8 03:26:51 CDT 2026: Cleaning old session data...\nWed Apr  8 03:26:51 CDT 2026: /Users/scones/cobo/scripts/cobo-nightly.sh: line 204: /opt/homebrew/bin/node: No such file or directory\nWed Apr  8 03:26:51 CDT 2026: === Nightly maintenance complete ==="
     },
     {
       "label": "com.cobo.prevent-sleep",
@@ -674,7 +674,7 @@
       "pid": 951,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m215.8k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com"
+      "recentLog": "[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m96.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m96.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m216.2k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m216.2k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m216.2k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m216.2k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m216.2k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m216.2k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com\n[tamp] upstream error: ENOTFOUND getaddrinfo ENOTFOUND api.anthropic.com"
     },
     {
       "label": "com.cobo.usage-monitor",
@@ -707,7 +707,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Mon Apr  6 01:46:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 01:51:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 01:56:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:01:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:06:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:11:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:16:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:21:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:26:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:31:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:36:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:41:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:46:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:51:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:56:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 03:01:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 03:40:10 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 03:40:12 CDT 2026: COBO unresponsive, killing process\nMon Apr  6 07:45:02 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 14:52:08 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 20:58:10 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 20:58:20 CDT 2026: COBO unresponsive, killing process\nTue Apr  7 03:42:12 CDT 2026: Athena paused — skipping Ollama check\nTue Apr  7 11:29:51 CDT 2026: Athena paused — skipping Ollama check\nTue Apr  7 11:45:38 CDT 2026: COBO unresponsive, killing process"
+      "recentLog": "Mon Apr  6 01:56:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:01:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:06:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:11:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:16:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:21:20 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:26:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:31:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:36:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:41:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:46:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:51:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 02:56:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 03:01:25 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 03:40:10 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 03:40:12 CDT 2026: COBO unresponsive, killing process\nMon Apr  6 07:45:02 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 14:52:08 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 20:58:10 CDT 2026: Athena paused — skipping Ollama check\nMon Apr  6 20:58:20 CDT 2026: COBO unresponsive, killing process\nTue Apr  7 03:42:12 CDT 2026: Athena paused — skipping Ollama check\nTue Apr  7 11:29:51 CDT 2026: Athena paused — skipping Ollama check\nTue Apr  7 11:45:38 CDT 2026: COBO unresponsive, killing process\nTue Apr  7 21:21:33 CDT 2026: Athena paused — skipping Ollama check\nWed Apr  8 05:44:34 CDT 2026: Athena paused — skipping Ollama check"
     },
     {
       "label": "com.commandcenter.update",
@@ -715,10 +715,10 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 19120,
+      "pid": 24456,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Regenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 43/50 agents\n  24584 scholarships ($2785K) | 227 emails | 12 courses\n  1/10 passive services running\nData changed, committing and pushing...\n[main 70c9037] Update dashboard data 2026-04-07_07:56\n Committer: Jacob Cascone <scones@Jacobs-MacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 69 insertions(+), 82 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Regenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 43/50 agents\n  24584 scholarships ($2785K) | 227 emails | 12 courses\n  1/10 passive services running\nData changed, committing and pushing...\n[main f0c1d46] Update dashboard data 2026-04-07_19:35\n Committer: Jacob Cascone <scones@Jacobs-MacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 64 insertions(+), 57 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     },
     {
       "label": "com.dealscout.scheduler",
@@ -729,7 +729,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Tue Apr  7 08:08:53 CDT 2026: Deal Scout scheduler done\nTue Apr  7 09:02:08 CDT 2026: Deal Scout scheduler running (HHMM=0902)\nTue Apr  7 09:02:08 CDT 2026: No scheduled task for HHMM=0902\nTue Apr  7 09:02:08 CDT 2026: Deal Scout scheduler done\nTue Apr  7 11:11:50 CDT 2026: Deal Scout scheduler running (HHMM=1111)\nTue Apr  7 11:11:50 CDT 2026: No scheduled task for HHMM=1111\nTue Apr  7 11:11:50 CDT 2026: Deal Scout scheduler done\nTue Apr  7 12:02:46 CDT 2026: Deal Scout scheduler running (HHMM=1202)\nTue Apr  7 12:02:47 CDT 2026: No scheduled task for HHMM=1202\nTue Apr  7 12:02:47 CDT 2026: Deal Scout scheduler done\nTue Apr  7 13:04:35 CDT 2026: Deal Scout scheduler running (HHMM=1304)\nTue Apr  7 13:04:35 CDT 2026: No scheduled task for HHMM=1304\nTue Apr  7 13:04:35 CDT 2026: Deal Scout scheduler done\nTue Apr  7 14:02:14 CDT 2026: Deal Scout scheduler running (HHMM=1402)\nTue Apr  7 14:02:14 CDT 2026: No scheduled task for HHMM=1402\nTue Apr  7 14:02:14 CDT 2026: Deal Scout scheduler done\nTue Apr  7 17:08:33 CDT 2026: Deal Scout scheduler running (HHMM=1708)\nTue Apr  7 17:08:33 CDT 2026: No scheduled task for HHMM=1708\nTue Apr  7 17:08:33 CDT 2026: Deal Scout scheduler done\nTue Apr  7 17:34:15 CDT 2026: Deal Scout scheduler running (HHMM=1734)\nTue Apr  7 17:34:15 CDT 2026: No scheduled task for HHMM=1734\nTue Apr  7 17:34:15 CDT 2026: Deal Scout scheduler done\nTue Apr  7 18:35:00 CDT 2026: Deal Scout scheduler running (HHMM=1835)\nTue Apr  7 18:35:00 CDT 2026: No scheduled task for HHMM=1835\nTue Apr  7 18:35:00 CDT 2026: Deal Scout scheduler done"
+      "recentLog": "Tue Apr  7 11:11:50 CDT 2026: Deal Scout scheduler done\nTue Apr  7 12:02:46 CDT 2026: Deal Scout scheduler running (HHMM=1202)\nTue Apr  7 12:02:47 CDT 2026: No scheduled task for HHMM=1202\nTue Apr  7 12:02:47 CDT 2026: Deal Scout scheduler done\nTue Apr  7 13:04:35 CDT 2026: Deal Scout scheduler running (HHMM=1304)\nTue Apr  7 13:04:35 CDT 2026: No scheduled task for HHMM=1304\nTue Apr  7 13:04:35 CDT 2026: Deal Scout scheduler done\nTue Apr  7 14:02:14 CDT 2026: Deal Scout scheduler running (HHMM=1402)\nTue Apr  7 14:02:14 CDT 2026: No scheduled task for HHMM=1402\nTue Apr  7 14:02:14 CDT 2026: Deal Scout scheduler done\nTue Apr  7 17:08:33 CDT 2026: Deal Scout scheduler running (HHMM=1708)\nTue Apr  7 17:08:33 CDT 2026: No scheduled task for HHMM=1708\nTue Apr  7 17:08:33 CDT 2026: Deal Scout scheduler done\nTue Apr  7 17:34:15 CDT 2026: Deal Scout scheduler running (HHMM=1734)\nTue Apr  7 17:34:15 CDT 2026: No scheduled task for HHMM=1734\nTue Apr  7 17:34:15 CDT 2026: Deal Scout scheduler done\nTue Apr  7 18:35:00 CDT 2026: Deal Scout scheduler running (HHMM=1835)\nTue Apr  7 18:35:00 CDT 2026: No scheduled task for HHMM=1835\nTue Apr  7 18:35:00 CDT 2026: Deal Scout scheduler done\nWed Apr  8 06:44:31 CDT 2026: Deal Scout scheduler running (HHMM=0644)\nWed Apr  8 06:44:31 CDT 2026: No scheduled task for HHMM=0644\nWed Apr  8 06:44:31 CDT 2026: Deal Scout scheduler done\nWed Apr  8 07:18:53 CDT 2026: Deal Scout scheduler running (HHMM=0718)\nWed Apr  8 07:18:53 CDT 2026: No scheduled task for HHMM=0718\nWed Apr  8 07:18:53 CDT 2026: Deal Scout scheduler done"
     },
     {
       "label": "com.grace.daily-reminder",
@@ -792,10 +792,10 @@
       "schedule": "7:00am",
       "logPath": "/Users/scones/cobo/logs/lessondraft-morning.log",
       "loaded": true,
-      "pid": null,
+      "pid": 24248,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\n    at Module._load (node:internal/modules/cjs/loader:1234:25)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1548:12)\n    at require (node:internal/modules/helpers:152:16)\n    at [eval]:1:9\n    at runScriptInThisContext (node:internal/vm:219:10) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/Users/scones/projects/LessonDraft/[eval]' ]\n}\n\nNode.js v24.13.1\n[2026-04-07T12:56:49.572Z] Checking GSC token...\n[2026-04-07T12:56:49.573Z] Checking Gmail token...\n[2026-04-07T12:56:49.573Z] Checking rank tracker...\n[2026-04-07T12:56:49.575Z] Checking SEO health logs...\n[2026-04-07T12:56:49.577Z] Found 8 issues: 1 auto-fixed, 3 for Claude, 0 for you, 4 warnings\n[2026-04-07T12:56:50.284Z] Email FAILED: request to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n[2026-04-07T12:56:50.285Z] === Watchdog complete ===\n\nTue Apr  7 07:56:50 CDT 2026: Watchdog done\nTue Apr  7 07:56:50 CDT 2026: === LessonDraft morning checks complete ==="
+      "recentLog": "at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1548:12)\n    at require (node:internal/modules/helpers:152:16)\n    at [eval]:1:9\n    at runScriptInThisContext (node:internal/vm:219:10) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/Users/scones/projects/LessonDraft/[eval]' ]\n}\n\nNode.js v24.13.1\n[2026-04-07T12:56:49.572Z] Checking GSC token...\n[2026-04-07T12:56:49.573Z] Checking Gmail token...\n[2026-04-07T12:56:49.573Z] Checking rank tracker...\n[2026-04-07T12:56:49.575Z] Checking SEO health logs...\n[2026-04-07T12:56:49.577Z] Found 8 issues: 1 auto-fixed, 3 for Claude, 0 for you, 4 warnings\n[2026-04-07T12:56:50.284Z] Email FAILED: request to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n[2026-04-07T12:56:50.285Z] === Watchdog complete ===\n\nTue Apr  7 07:56:50 CDT 2026: Watchdog done\nTue Apr  7 07:56:50 CDT 2026: === LessonDraft morning checks complete ===\nWed Apr  8 07:02:17 CDT 2026: === LessonDraft morning checks starting ===\nWed Apr  8 07:02:17 CDT 2026: Triggering daily digest...\nWed Apr  8 07:02:17 CDT 2026: Daily digest done\nWed Apr  8 07:02:17 CDT 2026: Running SEO health check..."
     },
     {
       "label": "com.lessondraft.proxy-watchdog",
@@ -927,7 +927,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-04-02 02:09:57] THREAT DETECTED — see nightly-sweep.log\n[2026-04-03 02:08:21] THREAT DETECTED — see nightly-sweep.log\n[2026-04-04 06:54:57] THREAT DETECTED — see nightly-sweep.log\n[2026-04-05 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-06 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-07 02:02:58] THREAT DETECTED — see nightly-sweep.log"
+      "recentLog": "[2026-04-02 02:09:57] THREAT DETECTED — see nightly-sweep.log\n[2026-04-03 02:08:21] THREAT DETECTED — see nightly-sweep.log\n[2026-04-04 06:54:57] THREAT DETECTED — see nightly-sweep.log\n[2026-04-05 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-06 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-07 02:02:58] THREAT DETECTED — see nightly-sweep.log\n[2026-04-08 02:16:29] THREAT DETECTED — see nightly-sweep.log"
     },
     {
       "label": "com.vinnie.nightly-sweep",
@@ -938,7 +938,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-04-02 02:09:57] THREAT DETECTED — see nightly-sweep.log\n[2026-04-03 02:08:21] THREAT DETECTED — see nightly-sweep.log\n[2026-04-04 06:54:57] THREAT DETECTED — see nightly-sweep.log\n[2026-04-05 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-06 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-07 02:02:58] THREAT DETECTED — see nightly-sweep.log"
+      "recentLog": "[2026-04-02 02:09:57] THREAT DETECTED — see nightly-sweep.log\n[2026-04-03 02:08:21] THREAT DETECTED — see nightly-sweep.log\n[2026-04-04 06:54:57] THREAT DETECTED — see nightly-sweep.log\n[2026-04-05 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-06 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-07 02:02:58] THREAT DETECTED — see nightly-sweep.log\n[2026-04-08 02:16:29] THREAT DETECTED — see nightly-sweep.log"
     },
     {
       "label": "homebrew.mxcl.ollama",
@@ -949,7 +949,7 @@
       "pid": 948,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "time=2026-04-07T17:08:33.735-05:00 level=INFO source=server.go:1568 msg=\"aborting completion request due to client closing the connection\"\n[GIN] 2026/04/07 - 17:08:33 | 500 | 17.651879083s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/07 - 17:34:17 | 500 | 14.864096666s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/07 - 17:34:17 | 200 |    2.201875ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/07 - 17:34:17 | 200 |     263.916µs |       127.0.0.1 | HEAD     \"/\"\n[GIN] 2026/04/07 - 17:34:17 | 200 |      60.375µs |       127.0.0.1 | GET      \"/api/ps\"\n[GIN] 2026/04/07 - 17:50:57 | 500 |   3.47364375s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/07 - 18:08:44 | 500 |  4.933022084s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/07 - 18:35:03 | 200 |   27.337958ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/07 - 18:35:03 | 200 |    1.378459ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/07 - 18:35:03 | 200 |     859.459µs |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/07 - 18:35:03 | 200 |     393.875µs |       127.0.0.1 | HEAD     \"/\"\n[GIN] 2026/04/07 - 18:35:03 | 200 |      72.875µs |       127.0.0.1 | GET      \"/api/ps\"\n[GIN] 2026/04/07 - 18:52:16 | 500 | 16.931865458s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/07 - 18:52:17 | 200 |     18.3725ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/07 - 18:52:17 | 200 |    1.640709ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/07 - 19:09:00 | 500 |  4.142241333s |       127.0.0.1 | POST     \"/api/generate\"\ntime=2026-04-07T19:09:00.176-05:00 level=INFO source=server.go:1568 msg=\"aborting completion request due to client closing the connection\"\n[GIN] 2026/04/07 - 19:09:00 | 500 |  4.267644709s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/07 - 19:09:00 | 200 |    2.812334ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/07 - 19:19:37 | 500 |  4.786172291s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/07 - 19:35:42 | 500 | 16.754175875s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/07 - 19:35:43 | 200 |    2.209708ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/07 - 19:35:43 | 200 |     533.625µs |       127.0.0.1 | HEAD     \"/\"\n[GIN] 2026/04/07 - 19:35:43 | 200 |      90.875µs |       127.0.0.1 | GET      \"/api/ps\""
+      "recentLog": "[GIN] 2026/04/08 - 04:27:29 | 500 | 12.592972791s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/08 - 04:27:34 | 200 |    3.478292ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/08 - 04:44:05 | 500 |  5.590523875s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/08 - 04:44:05 | 200 |     699.791µs |       127.0.0.1 | HEAD     \"/\"\n[GIN] 2026/04/08 - 04:44:05 | 200 |     477.417µs |       127.0.0.1 | GET      \"/api/ps\"\n[GIN] 2026/04/08 - 04:59:20 | 500 |  5.200931708s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/08 - 05:15:58 | 500 | 22.811588792s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/08 - 05:44:33 | 500 | 13.998802666s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/08 - 05:44:33 | 200 |    2.186584ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/08 - 05:44:33 | 200 |     681.416µs |       127.0.0.1 | HEAD     \"/\"\n[GIN] 2026/04/08 - 05:44:33 | 200 |     150.709µs |       127.0.0.1 | GET      \"/api/ps\"\n[GIN] 2026/04/08 - 06:01:19 | 500 |  4.482082375s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/08 - 06:18:42 | 500 | 15.967142084s |       127.0.0.1 | POST     \"/api/generate\"\ntime=2026-04-08T06:44:34.204-05:00 level=INFO source=server.go:1568 msg=\"aborting completion request due to client closing the connection\"\n[GIN] 2026/04/08 - 06:44:34 | 500 | 16.159963417s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/08 - 06:44:34 | 200 |    2.114167ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/04/08 - 06:44:34 | 200 |     927.417µs |       127.0.0.1 | HEAD     \"/\"\n[GIN] 2026/04/08 - 06:44:34 | 200 |     159.416µs |       127.0.0.1 | GET      \"/api/ps\"\ntime=2026-04-08T07:02:17.805-05:00 level=INFO source=server.go:1568 msg=\"aborting completion request due to client closing the connection\"\n[GIN] 2026/04/08 - 07:02:17 | 500 |  2.808842458s |       127.0.0.1 | POST     \"/api/generate\"\ntime=2026-04-08T07:18:53.136-05:00 level=INFO source=server.go:1568 msg=\"aborting completion request due to client closing the connection\"\n[GIN] 2026/04/08 - 07:18:53 | 500 |  5.265634083s |       127.0.0.1 | POST     \"/api/generate\"\ntime=2026-04-08T07:30:18.029-05:00 level=INFO source=server.go:1568 msg=\"aborting completion request due to client closing the connection\"\n[GIN] 2026/04/08 - 07:30:18 | 500 |    2.8974125s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/04/08 - 07:30:18 | 200 |  111.527708ms |       127.0.0.1 | GET      \"/api/tags\""
     }
   ],
   "heatmap": {
@@ -1957,7 +1957,7 @@
         "estMonthlyLow": 10,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "native"
       },
       {
@@ -1967,7 +1967,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "native"
       },
       {
@@ -1977,7 +1977,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "docker"
       },
       {
@@ -1987,7 +1987,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "docker"
       },
       {
@@ -1997,7 +1997,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "docker"
       },
       {
@@ -2007,7 +2007,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "docker"
       },
       {
@@ -2017,7 +2017,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "docker"
       },
       {
@@ -2027,7 +2027,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "docker"
       },
       {
@@ -2037,7 +2037,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "docker"
       },
       {
@@ -2047,7 +2047,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-04-08T00:35:45.306Z",
+        "lastCheck": "2026-04-08T12:30:28.481Z",
         "containerType": "docker"
       }
     ],
@@ -2089,59 +2089,59 @@
     "dailyTrend": [
       {
         "date": "2026-03-26",
-        "amount": 0.17
+        "amount": 0.29
       },
       {
         "date": "2026-03-27",
-        "amount": 0.33
+        "amount": 0.27
       },
       {
         "date": "2026-03-28",
-        "amount": 0.25
+        "amount": 0.18
       },
       {
         "date": "2026-03-29",
-        "amount": 0.36
+        "amount": 0.31
       },
       {
         "date": "2026-03-30",
-        "amount": 0.16
+        "amount": 0.36
       },
       {
         "date": "2026-03-31",
-        "amount": 0.19
+        "amount": 0.17
       },
       {
         "date": "2026-04-01",
-        "amount": 0.36
-      },
-      {
-        "date": "2026-04-02",
-        "amount": 0.15
-      },
-      {
-        "date": "2026-04-03",
-        "amount": 0.24
-      },
-      {
-        "date": "2026-04-04",
-        "amount": 0.25
-      },
-      {
-        "date": "2026-04-05",
-        "amount": 0.36
-      },
-      {
-        "date": "2026-04-06",
-        "amount": 0.32
-      },
-      {
-        "date": "2026-04-07",
         "amount": 0.2
       },
       {
+        "date": "2026-04-02",
+        "amount": 0.28
+      },
+      {
+        "date": "2026-04-03",
+        "amount": 0.23
+      },
+      {
+        "date": "2026-04-04",
+        "amount": 0.36
+      },
+      {
+        "date": "2026-04-05",
+        "amount": 0.15
+      },
+      {
+        "date": "2026-04-06",
+        "amount": 0.28
+      },
+      {
+        "date": "2026-04-07",
+        "amount": 0.31
+      },
+      {
         "date": "2026-04-08",
-        "amount": 0.18
+        "amount": 0.15
       }
     ]
   }
