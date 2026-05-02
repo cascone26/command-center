@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-01T13:03:55.469Z",
+  "generatedAt": "2026-05-02T00:48:37.227Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
     "activeAutomations": 6,
-    "healthyAgents": 41,
+    "healthyAgents": 39,
     "totalAgents": 66,
     "ideasCount": 29,
     "avgHealthScore": 65
@@ -440,7 +440,7 @@
       "schedule": "6:00am, 2:00pm, 9:00pm",
       "logPath": "/Users/scones/projects/gumroad-autoposter/logs/launchagent-stdout.log",
       "loaded": true,
-      "pid": 53395,
+      "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": "Rate limited (attempt 1/4), waiting 60s before retry...\n  Rate limited (attempt 2/4), waiting 120s before retry...\n  Rate limited (attempt 3/4), waiting 240s before retry...\n  Rate limited (attempt 1/4), waiting 60s before retry...\n  Rate limited (attempt 2/4), waiting 120s before retry..."
@@ -452,9 +452,9 @@
       "logPath": "/Users/scones/projects/lead-scraper/logs/token-refresh.log",
       "loaded": true,
       "pid": null,
-      "lastExitStatus": 0,
-      "healthy": true,
-      "recentLog": "Testing with Gmail labels API...\nSuccess — 28 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-01T08:30:12.271Z\n\nTesting with Gmail labels API...\nSuccess — 28 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-01T09:30:12.767Z\n\nTesting with Gmail labels API...\nSuccess — 28 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken expires in -49m. Refreshing...\nToken refreshed. New expiry: 2026-05-01T11:19:20.548Z\n\nTesting with Gmail labels API...\nSuccess — 28 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway."
+      "lastExitStatus": 256,
+      "healthy": false,
+      "recentLog": "Testing with Gmail labels API...\nSuccess — 28 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-01T08:30:12.271Z\n\nTesting with Gmail labels API...\nSuccess — 28 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-01T09:30:12.767Z\n\nTesting with Gmail labels API...\nSuccess — 28 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken expires in -49m. Refreshing...\nToken refreshed. New expiry: 2026-05-01T11:19:20.548Z\n\nTesting with Gmail labels API...\nSuccess — 28 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in -765m. Refreshing..."
     },
     {
       "label": "com.classpilot.gcu-scraper",
@@ -465,7 +465,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Grades: 34\n  Announcements: 2\n  Errors: 0\n  ACTIVE:\n    - Topic 1 DQ 1 [Published]\n    - Topic 1 DQ 2 [Published]\n    - Topic 2 DQ 1 [Published]\n    - Topic 2 DQ 2 [Published]\n    - Topic 3 DQ 1 [Published]\n    - Topic 3 DQ 2 [Published]\n    - Topic 4 DQ 1 [Published]\n    - Topic 4 DQ 2 [Published]\n    - Topic 5 DQ 1 [Published]\n    - Topic 5 DQ 2 [Published]\n    - Topic 6 DQ 1 [Published]\n    - Topic 6 DQ 2 [Active]\n\nFeed: /Users/scones/classpilot/course-feed.md\nJSON: /Users/scones/classpilot/course-feed.json\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo...\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo..."
+      "recentLog": "ACTIVE:\n    - Topic 1 DQ 1 [Published]\n    - Topic 1 DQ 2 [Published]\n    - Topic 2 DQ 1 [Published]\n    - Topic 2 DQ 2 [Published]\n    - Topic 3 DQ 1 [Published]\n    - Topic 3 DQ 2 [Published]\n    - Topic 4 DQ 1 [Published]\n    - Topic 4 DQ 2 [Published]\n    - Topic 5 DQ 1 [Published]\n    - Topic 5 DQ 2 [Published]\n    - Topic 6 DQ 1 [Published]\n    - Topic 6 DQ 2 [Active]\n\nFeed: /Users/scones/classpilot/course-feed.md\nJSON: /Users/scones/classpilot/course-feed.json\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo...\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo...\nGCU Scraper — full (headful)\nLoaded saved session.\nNavigating to Halo..."
     },
     {
       "label": "com.cobo.ai-gateway",
@@ -484,10 +484,10 @@
       "schedule": "7:00am, 8:00am, 7:00am, 7:00am",
       "logPath": "/Users/scones/projects/amore-scout/logs/amore.log",
       "loaded": true,
-      "pid": 54071,
+      "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Scanning Facebook group members...\n  [FB Groups kccatholicyoungadults error] Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.facebook.com/groups/kccatholicyoungadults/\", waiting until \"domcontentloaded\"\n\n  [FB Groups KCCatholicSingles error] Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.facebook.com/groups/KCCatholicSingles/\", waiting until \"domcontentloaded\"\n\n  [FB Groups youngcatholicprofessionalskansascity error] Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.facebook.com/groups/youngcatholicprofessionalskansascity/\", waiting until \"domcontentloaded\"\n\n    0 Facebook group members found\n  Enriching Facebook profiles...\n    [FB Enrich] Resolving 4 FB profile names...\n    [FB Enrich] Resolved 0 names\n  Enriching Instagram profiles...\n    [IG Enrich] Visiting 7 profiles...\n    [IG Enrich] Enriched 0 profiles\n  Scanning CatholicMatch profiles...\n    [CM] Session expired — run: python3 session_setup.py catholicmatch\n  [Individual Finder] 13 people found | 4 warm leads | 7 new this week\n  13 people signals saved to digest\n[Fri May  1 07:09:58 CDT 2026] Scraping Amore events..."
+      "recentLog": "[FB kccatholicyoungadults error] Page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.facebook.com/kccatholicyoungadults/events\", waiting until \"domcontentloaded\"\n\n    0 Facebook event goers found\n  Scanning Facebook group members...\n  [FB Groups kccatholicyoungadults error] Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.facebook.com/groups/kccatholicyoungadults/\nCall log:\n  - navigating to \"https://www.facebook.com/groups/kccatholicyoungadults/\", waiting until \"domcontentloaded\"\n\n  [FB Groups KCCatholicSingles error] Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.facebook.com/groups/KCCatholicSingles/\", waiting until \"domcontentloaded\"\n\n  [FB Groups youngcatholicprofessionalskansascity error] Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.facebook.com/groups/youngcatholicprofessionalskansascity/\", waiting until \"domcontentloaded\"\n\n    0 Facebook group members found\n  Enriching Facebook profiles...\n  Enriching Instagram profiles...\n  Scanning CatholicMatch profiles...\n    [CM] Session expired — run: python3 session_setup.py catholicmatch\n  [Individual Finder] 0 people found | 0 warm leads | 0 new this week\n  0 people signals saved to digest"
     },
     {
       "label": "com.cobo.anthropic-guardian",
@@ -696,7 +696,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Thu Apr 30 14:27:31 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 14:57:31 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 15:28:17 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 17:08:30 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 18:07:56 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 18:37:57 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 19:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 19:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 20:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 20:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 21:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 21:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 22:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 22:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 23:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 23:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 00:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 00:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 01:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 01:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 02:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 02:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 03:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 05:15:57 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 05:45:57 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found"
+      "recentLog": "Thu Apr 30 14:57:31 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 15:28:17 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 17:08:30 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 18:07:56 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 18:37:57 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 19:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 19:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 20:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 20:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 21:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 21:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 22:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 22:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 23:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu Apr 30 23:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 00:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 00:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 01:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 01:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 02:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 02:56:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 03:26:50 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 05:15:57 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 05:45:57 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nFri May  1 17:31:17 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found"
     },
     {
       "label": "com.cobo.log-rotation",
@@ -762,7 +762,7 @@
       "pid": 989,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-05-01T10:45:03.165Z] [monitor] [dealnews] Checking...\n[2026-05-01T10:45:03.165Z] [monitor] [dealnews] 0 glitch item(s) found\n[2026-05-01T10:45:03.165Z] [monitor] [reddit/deals] Checking...\n[2026-05-01T10:45:03.165Z] [monitor] [reddit/deals] 0 glitch post(s) found\n[2026-05-01T10:45:03.165Z] [monitor] [reddit/extremedeals] Checking...\n[2026-05-01T10:45:03.165Z] [monitor] [camelcamelcamel] Checking...\n[2026-05-01T10:45:03.165Z] [monitor] === Run complete ===\n[2026-05-01T10:45:03.165Z] [monitor:err] [reddit/extremedeals] Error: Request failed with status code 404\n[2026-05-01T10:45:03.165Z] [monitor:err] [camelcamelcamel] Error: Request failed with status code 403\n[2026-05-01T10:45:03.166Z] [monitor] run finished OK\n[2026-05-01T11:00:00.783Z] Cron tick — starting monitor run\n[2026-05-01T11:00:00.787Z] Starting monitor run...\n[2026-05-01T11:00:05.108Z] [monitor] === Price Monitor run at 2026-05-01T11:00:01.082Z ===\n[2026-05-01T11:00:05.108Z] [monitor] [slickdeals] Checking...\n[2026-05-01T11:00:05.108Z] [monitor] [slickdeals] 1 glitch item(s) found\n[2026-05-01T11:00:05.108Z] [monitor] [dealnews] Checking...\n[2026-05-01T11:00:05.109Z] [monitor] [dealnews] 0 glitch item(s) found\n[2026-05-01T11:00:05.109Z] [monitor] [reddit/deals] Checking...\n[2026-05-01T11:00:05.109Z] [monitor] [reddit/deals] 0 glitch post(s) found\n[2026-05-01T11:00:05.109Z] [monitor] [reddit/extremedeals] Checking...\n[2026-05-01T11:00:05.109Z] [monitor] [camelcamelcamel] Checking...\n[2026-05-01T11:00:05.109Z] [monitor] === Run complete ===\n[2026-05-01T11:00:05.109Z] [monitor:err] [reddit/extremedeals] Error: Request failed with status code 404\n[2026-05-01T11:00:05.109Z] [monitor:err] [camelcamelcamel] Error: Request failed with status code 403\n[2026-05-01T11:00:05.109Z] [monitor] run finished OK"
+      "recentLog": "[2026-05-01T11:00:05.109Z] [monitor] [reddit/deals] Checking...\n[2026-05-01T11:00:05.109Z] [monitor] [reddit/deals] 0 glitch post(s) found\n[2026-05-01T11:00:05.109Z] [monitor] [reddit/extremedeals] Checking...\n[2026-05-01T11:00:05.109Z] [monitor] [camelcamelcamel] Checking...\n[2026-05-01T11:00:05.109Z] [monitor] === Run complete ===\n[2026-05-01T11:00:05.109Z] [monitor:err] [reddit/extremedeals] Error: Request failed with status code 404\n[2026-05-01T11:00:05.109Z] [monitor:err] [camelcamelcamel] Error: Request failed with status code 403\n[2026-05-01T11:00:05.109Z] [monitor] run finished OK\n[2026-05-01T23:30:00.358Z] Cron tick — starting monitor run\n[2026-05-01T23:30:00.361Z] Starting monitor run...\n[2026-05-02T00:03:21.027Z] [monitor] === Price Monitor run at 2026-05-01T23:30:00.648Z ===\n[2026-05-02T00:03:21.029Z] [monitor] [slickdeals] Checking...\n[2026-05-02T00:03:21.029Z] [monitor] [dealnews] Checking...\n[2026-05-02T00:03:21.029Z] [monitor] [reddit/deals] Checking...\n[2026-05-02T00:03:21.029Z] [monitor] [reddit/extremedeals] Checking...\n[2026-05-02T00:03:21.029Z] [monitor] [camelcamelcamel] Checking...\n[2026-05-02T00:03:21.029Z] [monitor] === Run complete ===\n[2026-05-02T00:03:21.030Z] [monitor:err] [slickdeals] Error: timeout of 15000ms exceeded\n[2026-05-02T00:03:21.030Z] [monitor:err] [dealnews] Error: timeout of 15000ms exceeded\n[2026-05-02T00:03:21.030Z] [monitor:err] [reddit/deals] Error: timeout of 15000ms exceeded\n[2026-05-02T00:03:21.030Z] [monitor:err] [reddit/extremedeals] Error: timeout of 15000ms exceeded\n[2026-05-02T00:03:21.030Z] [monitor:err] [camelcamelcamel] Error: timeout of 20000ms exceeded\n[2026-05-02T00:03:21.030Z] [monitor] run finished OK\n[2026-05-02T00:15:00.679Z] Cron tick — starting monitor run\n[2026-05-02T00:15:00.683Z] Starting monitor run..."
     },
     {
       "label": "com.cobo.tamp",
@@ -817,7 +817,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Fri May  1 05:02:29 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:07:29 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:07:29 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:12:29 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:12:29 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:17:29 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:17:29 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:22:29 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:22:29 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:27:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:27:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:32:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:32:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:37:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:37:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:42:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:42:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:47:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:47:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:52:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:52:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:57:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:57:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 06:02:31 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 06:02:31 CDT 2026: COBO unresponsive, killing process"
+      "recentLog": "Fri May  1 05:17:29 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:22:29 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:22:29 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:27:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:27:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:32:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:32:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:37:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:37:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:42:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:42:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:47:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:47:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:52:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:52:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 05:57:30 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 05:57:30 CDT 2026: COBO unresponsive, killing process\nFri May  1 06:02:31 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 06:02:31 CDT 2026: COBO unresponsive, killing process\nFri May  1 09:49:23 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 09:49:23 CDT 2026: COBO unresponsive, killing process\nFri May  1 15:11:09 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 15:11:09 CDT 2026: COBO unresponsive, killing process\nFri May  1 18:30:24 CDT 2026: Athena paused — skipping Ollama check\nFri May  1 18:30:25 CDT 2026: COBO unresponsive, killing process"
     },
     {
       "label": "com.commandcenter.update",
@@ -825,10 +825,10 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 54215,
+      "pid": 56876,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Regenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 41/66 agents\n  24775 scholarships ($2951K) | 370 emails | 12 courses\n  0/10 passive services running\nData changed, committing and pushing...\n[main f237580] Update dashboard data 2026-04-30_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 105 insertions(+), 117 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Regenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 41/66 agents\n  24775 scholarships ($2951K) | 370 emails | 12 courses\n  0/10 passive services running\nData changed, committing and pushing...\n[main 3cb9ccd] Update dashboard data 2026-05-01_08:03\n Committer: Jacob Cascone <scones@Jacobs-MacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 36 insertions(+), 36 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     },
     {
       "label": "com.dealscout.scheduler",
@@ -836,10 +836,10 @@
       "schedule": "7:00am, 5:30pm",
       "logPath": "/Users/scones/projects/deal-scout/logs/scheduler.log",
       "loaded": true,
-      "pid": null,
+      "pid": 56296,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Sun Apr 26 07:06:50 CDT 2026: Mac scheduler done\nSun Apr 26 17:30:03 CDT 2026: Mac scheduler running (HHMM=1730)\nSun Apr 26 17:30:03 CDT 2026: Running hardware browser + digest\nSun Apr 26 17:41:59 CDT 2026: Mac scheduler done\nTue Apr 28 07:00:06 CDT 2026: Mac scheduler running (HHMM=0700)\nTue Apr 28 07:00:06 CDT 2026: Running hardware browser + digest\nTue Apr 28 10:04:41 CDT 2026: Mac scheduler done\nTue Apr 28 17:30:01 CDT 2026: Mac scheduler running (HHMM=1730)\nTue Apr 28 17:30:01 CDT 2026: Running hardware browser + digest\nTue Apr 28 17:48:30 CDT 2026: Mac scheduler done\nWed Apr 29 07:06:03 CDT 2026: Mac scheduler running (HHMM=0706)\nWed Apr 29 07:06:03 CDT 2026: No Mac task for HHMM=0706\nWed Apr 29 07:06:03 CDT 2026: Mac scheduler done\nWed Apr 29 17:30:01 CDT 2026: Mac scheduler running (HHMM=1730)\nWed Apr 29 17:30:01 CDT 2026: Running hardware browser + digest\nWed Apr 29 18:11:52 CDT 2026: Mac scheduler done\nThu Apr 30 07:00:04 CDT 2026: Mac scheduler running (HHMM=0700)\nThu Apr 30 07:00:04 CDT 2026: Running hardware browser + digest\nThu Apr 30 07:17:14 CDT 2026: Mac scheduler done\nThu Apr 30 17:38:04 CDT 2026: Mac scheduler running (HHMM=1738)\nThu Apr 30 17:38:04 CDT 2026: No Mac task for HHMM=1738\nThu Apr 30 17:38:04 CDT 2026: Mac scheduler done\nFri May  1 07:09:58 CDT 2026: Mac scheduler running (HHMM=0709)\nFri May  1 07:09:58 CDT 2026: No Mac task for HHMM=0709\nFri May  1 07:09:58 CDT 2026: Mac scheduler done"
+      "recentLog": "Sun Apr 26 17:30:03 CDT 2026: Running hardware browser + digest\nSun Apr 26 17:41:59 CDT 2026: Mac scheduler done\nTue Apr 28 07:00:06 CDT 2026: Mac scheduler running (HHMM=0700)\nTue Apr 28 07:00:06 CDT 2026: Running hardware browser + digest\nTue Apr 28 10:04:41 CDT 2026: Mac scheduler done\nTue Apr 28 17:30:01 CDT 2026: Mac scheduler running (HHMM=1730)\nTue Apr 28 17:30:01 CDT 2026: Running hardware browser + digest\nTue Apr 28 17:48:30 CDT 2026: Mac scheduler done\nWed Apr 29 07:06:03 CDT 2026: Mac scheduler running (HHMM=0706)\nWed Apr 29 07:06:03 CDT 2026: No Mac task for HHMM=0706\nWed Apr 29 07:06:03 CDT 2026: Mac scheduler done\nWed Apr 29 17:30:01 CDT 2026: Mac scheduler running (HHMM=1730)\nWed Apr 29 17:30:01 CDT 2026: Running hardware browser + digest\nWed Apr 29 18:11:52 CDT 2026: Mac scheduler done\nThu Apr 30 07:00:04 CDT 2026: Mac scheduler running (HHMM=0700)\nThu Apr 30 07:00:04 CDT 2026: Running hardware browser + digest\nThu Apr 30 07:17:14 CDT 2026: Mac scheduler done\nThu Apr 30 17:38:04 CDT 2026: Mac scheduler running (HHMM=1738)\nThu Apr 30 17:38:04 CDT 2026: No Mac task for HHMM=1738\nThu Apr 30 17:38:04 CDT 2026: Mac scheduler done\nFri May  1 07:09:58 CDT 2026: Mac scheduler running (HHMM=0709)\nFri May  1 07:09:58 CDT 2026: No Mac task for HHMM=0709\nFri May  1 07:09:58 CDT 2026: Mac scheduler done\nFri May  1 17:30:53 CDT 2026: Mac scheduler running (HHMM=1730)\nFri May  1 17:30:53 CDT 2026: Running hardware browser + digest"
     },
     {
       "label": "com.grace.daily-reminder",
@@ -891,10 +891,10 @@
       "schedule": "9:00am, 6:00pm",
       "logPath": "/Users/scones/tools/gsc/logs/launchd-stdout.log",
       "loaded": true,
-      "pid": null,
+      "pid": 55030,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "--- Rising Queries ---\n\n=== Rising Queries (last 14d vs prev 14d) ===\n\n  +13 imp  \"lesson draft\" (20 -> 33 imp, 23 clicks)\n  +9 imp  \"free lesson plans\" (0 -> 9 imp, 0 clicks)\n  +8 imp  \"free ready-to-use lesson plans organized by subject and grade level\" (5 -> 13 imp, 0 clicks)\n  +7 imp  \"red ribbon week educational tools\" (3 -> 10 imp, 0 clicks)\n  +7 imp  \"red ribbon week theme educational tools\" (4 -> 11 imp, 0 clicks)\n  +5 imp  \"free lesson plan\" (0 -> 5 imp, 0 clicks)\n  +5 imp  \"national constitution day lesson plans\" (0 -> 5 imp, 0 clicks)\n  +4 imp  \"bloom's taxonomy verbs\" (0 -> 4 imp, 0 clicks)\n  +4 imp  \"lesson plans free\" (0 -> 4 imp, 0 clicks)\n  +4 imp  \"ngss alignment in science lesson plans\" (0 -> 4 imp, 0 clicks)\n  +3 imp  \"constitution assignments for high school\" (0 -> 3 imp, 0 clicks)\n  +3 imp  \"pacing timer\" (0 -> 3 imp, 0 clicks)\n  +2 imp  \"ai iep goal generator\" (0 -> 2 imp, 0 clicks)\n  +2 imp  \"bloom's taxonomy list of verbs\" (0 -> 2 imp, 0 clicks)\n  +2 imp  \"bloom's taxonomy,bloom's taxonomy activities,top 50\" (2 -> 4 imp, 0 clicks)\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-04-30-1800.log"
+      "recentLog": "--- Site Health ---\n  FAIL: Homepage returned 000\n  OK: No dev-browser-missing header\n  FAIL: sitemap.xml returned 000\n  WARN: feed.xml returned 000\n\n--- Search Performance ---\nrequest to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n\n--- Indexing Status ---\nrequest to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n\nrequest to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n\nrequest to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n\nrequest to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n\nrequest to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n\nrequest to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n\nrequest to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com"
     },
     {
       "label": "com.lessondraft.morning",
@@ -905,7 +905,7 @@
       "pid": 54068,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json\nThu Apr 30 07:00:26 CDT 2026: Rank tracker done\nThu Apr 30 07:00:26 CDT 2026: Running watchdog...\nfile:///Users/scones/tools/watchdog.js:13\nconst fs = require(\"fs\");\n           ^\n\nReferenceError: require is not defined in ES module scope, you can use import instead\nThis file is being treated as an ES module because it has a '.js' file extension and '/Users/scones/tools/package.json' contains \"type\": \"module\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.\n    at file:///Users/scones/tools/watchdog.js:13:12\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.13.1\nThu Apr 30 07:00:26 CDT 2026: Watchdog done\nThu Apr 30 07:00:26 CDT 2026: === LessonDraft morning checks complete ===\nFri May  1 07:09:58 CDT 2026: === LessonDraft morning checks starting ===\nFri May  1 07:09:58 CDT 2026: Triggering daily digest...\nFri May  1 07:25:32 CDT 2026: Daily digest done\nFri May  1 07:25:32 CDT 2026: Running SEO health check..."
+      "recentLog": "5. KEY PAGE DOWN: /quiz returned TIMEOUT\n  6. KEY PAGE DOWN: /rubric returned TIMEOUT\n  7. KEY PAGE DOWN: /blog returned TIMEOUT\n  8. KEY PAGE DOWN: /how-it-works returned TIMEOUT\n  9. KEY PAGE DOWN: /differentiation returned TIMEOUT\n  10. KEY PAGE DOWN: /iep-goals returned TIMEOUT\n  11. KEY PAGE DOWN: /dashboard returned TIMEOUT\n  12. CRITICAL: Sitemap returned 0 URLs\n  13. Could not fetch robots.txt\n  14. SSL check failed — site may be unreachable via HTTPS\n  15. 37 pages without metadata export\n\n  Completed in 5288086ms\n================================================================\n\nFri May  1 12:23:58 CDT 2026: SEO health check done\nFri May  1 12:23:58 CDT 2026: Running rank tracker...\nFetching keyword data from Google Search Console...\n  Error fetching \"AI lesson plan generator\": request to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n  Error fetching \"free lesson plan maker\": request to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n  Error fetching \"lesson plan generator\": request to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n  Error fetching \"AI teacher tools\": request to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n  Error fetching \"rubric maker\": request to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n  Error fetching \"report card comment generator\": request to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com\n  Error fetching \"IEP goal generator\": request to https://oauth2.googleapis.com/token failed, reason: getaddrinfo ENOTFOUND oauth2.googleapis.com"
     },
     {
       "label": "com.lessondraft.ngrok",
@@ -980,9 +980,9 @@
       "logPath": "/Users/scones/projects/lead-scraper/logs/realtor-pipeline.log",
       "loaded": true,
       "pid": null,
-      "lastExitStatus": 0,
-      "healthy": true,
-      "recentLog": "=== Send Realtor Emails ===\nSending to 8 real estate agents...\n  Sent to Austin Housh Real Estate LLC <info@drgmpls.com>\n  Sent to Homestead Road <info@homesteadroad.com>\n  Sent to ReRoot Group - Keller Williams Integrity Realty <shae@rerootgroup.com>\n  Sent to Northeast Real Estate Group <jim@northeastreg.com>\n  Sent to Home Avenue - Flat Fee & FSBO Realty <gregl@homeavenue.com>\n  Sent to Andrew Beitler, REALTOR | Minnesota My Home Real Estate Agent | National Realty Guild <andrew@mnmyhome.com>\n  Sent to Nokomis Real Estate Co <nate@nokomisreco.com>\n  Sent to Rize Realty <info@rizegrp.com>\n\nDone. Total sent to realtors: 174\n\n\n=== Follow-Up Realtors ===\nSending follow-ups to 3 realtors...\n  Sent follow-up to LoKation Real Estate <info@lokationre.com>\n  Sent follow-up to Sam Caudle - Living in Tampa Real Estate Team <sam@livingintampafl.com>\n  Sent follow-up to Great Western Realty Florida <info@gwrealty.com>\n\nDone. Total follow-ups sent: 121\n\n\nRealtor pipeline complete at 2026-04-30T14:19:44.920Z — 0 failures"
+      "lastExitStatus": 256,
+      "healthy": false,
+      "recentLog": "Done. Total follow-ups sent: 121\n\n\nRealtor pipeline complete at 2026-04-30T14:19:44.920Z — 0 failures\nRealtor pipeline started at 2026-05-01T14:17:54.320Z\n\n=== Scraping New City: Indianapolis, IN ===\n\nScraping: Indianapolis, IN\n\n\n=== Find Realtor Emails ===\nProcessing 50 realtor leads...\n\n\n=== Send Realtor Emails ===\nNo unsent realtor leads with emails. Run find-emails on realtor_leads first.\n\n\n=== Follow-Up Realtors ===\nSending follow-ups to 15 realtors...\n\n\nRealtor pipeline complete at 2026-05-01T16:07:08.302Z — 2 failures"
     },
     {
       "label": "com.ollama.local",
@@ -1001,10 +1001,10 @@
       "schedule": "8:00am",
       "logPath": "/Users/scones/scholarships/logs/autopilot.log",
       "loaded": true,
-      "pid": null,
+      "pid": 54727,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Appily No-Essay Scholarship — applied 49 days ago\n      Faith Based Colleges No Essay Scholarship — applied 49 days ago\n      Marcarelli Community Spirit Scholarship — applied 49 days ago\n      Bold Community Activist Scholarship — applied 49 days ago\n      100 Bold Points No-Essay Scholarship — applied 49 days ago\n      Love Island Fan Scholarship — applied 49 days ago\n      Sandy Jenkins Excellence in Early Childhood Education Scholarship — applied 49 days ago\n      No Essay Scholarship by Sallie — applied 49 days ago\n      Undergraduate Scholarships — applied 49 days ago\n      Scholarships For Minorities List — applied 49 days ago\n      Brian C Jensen — applied 48 days ago\n      Niche Monthly — applied 48 days ago\n      Brian C Jensen — applied 48 days ago\n      500 Bold Points No-Essay Scholarship — applied 45 days ago\n      300 Bold Points No-Essay Scholarship — applied 45 days ago\n\n\u001b[1m  UPCOMING — Next 30 days\u001b[0m\n    26d  $1,500   Ginny Biada Memorial Scholarship \u001b[32m[NO ESSAY]\u001b[0m\n\n\u001b[1m  ACTIONS\u001b[0m\n\u001b[36m    >> Run: ./run.sh go           (full autopilot — do everything)\u001b[0m\n\n\u001b[2m  ================================================================\u001b[0m\n\n  Autopilot complete in 553.3s"
+      "recentLog": "Appily No-Essay Scholarship — applied 51 days ago\n      Faith Based Colleges No Essay Scholarship — applied 51 days ago\n      Marcarelli Community Spirit Scholarship — applied 51 days ago\n      Bold Community Activist Scholarship — applied 51 days ago\n      100 Bold Points No-Essay Scholarship — applied 51 days ago\n      Love Island Fan Scholarship — applied 51 days ago\n      Sandy Jenkins Excellence in Early Childhood Education Scholarship — applied 51 days ago\n      No Essay Scholarship by Sallie — applied 51 days ago\n      Undergraduate Scholarships — applied 51 days ago\n      Scholarships For Minorities List — applied 51 days ago\n      Brian C Jensen — applied 50 days ago\n      Niche Monthly — applied 50 days ago\n      Brian C Jensen — applied 50 days ago\n      500 Bold Points No-Essay Scholarship — applied 47 days ago\n      300 Bold Points No-Essay Scholarship — applied 47 days ago\n\n\u001b[1m  UPCOMING — Next 30 days\u001b[0m\n    24d  $1,500   Ginny Biada Memorial Scholarship \u001b[32m[NO ESSAY]\u001b[0m\n\n\u001b[1m  ACTIONS\u001b[0m\n\u001b[36m    >> Run: ./run.sh go           (full autopilot — do everything)\u001b[0m\n\n\u001b[2m  ================================================================\u001b[0m\n\n  Autopilot complete in 40332.3s"
     },
     {
       "label": "com.scholarships.chrome-cdp",
@@ -1015,7 +1015,7 @@
       "pid": 982,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[53576:3395752:0501/060050.807938:VERBOSE1:chrome/updater/updater.cc:106] Crash reporting initialized.\n[53576:3395766:0501/060050.808334:VERBOSE1:chrome/updater/app/app_wakeall.cc:56] Launching `/Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake`\n[53580:3395770:0501/060050.819152:VERBOSE1:chrome/updater/updater.cc:432] Version: 148.0.7730.0, opt, ARM_64, command line: /Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2\n[53580:3395770:0501/060050.819450:VERBOSE1:chrome/updater/updater.cc:435] OS version: 26.3.1, arch: arm64, System uptime (seconds): 180942, parent pid: 53576\n[53580:3395770:0501/060050.822287:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS START event to the history log\n[53582:3395774:0501/060050.832686:VERBOSE1:chrome/updater/updater.cc:432] Version: 148.0.7730.0, opt, ARM_64, command line: /Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --crash-handler --database=/Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/Crashpad --url=https://clients2.google.com/cr/report --annotation=prod=Update4 --annotation=ver=148.0.7730.0 --handshake-fd=6 --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2\n[53582:3395774:0501/060050.832943:VERBOSE1:chrome/updater/updater.cc:435] OS version: 26.3.1, arch: arm64, System uptime (seconds): 180942, parent pid: 1\n[53582:3395774:0501/060050.835365:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS START event to the history log\n[53580:3395770:0501/060050.835934:VERBOSE1:chrome/updater/crash_reporter.cc:129] Crash handler launched and ready.\n[53580:3395770:0501/060050.836690:VERBOSE1:chrome/updater/crash_client.cc:108] Found 0 completed crash reports\n[53580:3395770:0501/060050.836796:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports\n[53580:3395770:0501/060050.836891:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/scones/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)\n[53580:3395770:0501/060050.836972:VERBOSE1:chrome/updater/updater.cc:106] Crash reporting initialized.\n[53580:3395770:0501/060050.837169:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:59] Run\n[53580:3395770:0501/060109.260399:VERBOSE1:chrome/updater/app/app.cc:53] Shutdown: 0\n[53580:3395770:0501/060109.261658:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS END event to the history log\n[53580:3395770:0501/060109.261728:VERBOSE1:chrome/updater/updater.cc:470] UpdaterMain (--wake) returned 0.\n[53576:3395766:0501/060109.415607:VERBOSE1:chrome/updater/app/app_wakeall.cc:66] `/Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` exited 0\n[53576:3395752:0501/060109.415967:VERBOSE1:chrome/updater/app/app.cc:53] Shutdown: 0\n[53576:3395752:0501/060109.417059:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS END event to the history log\n[53576:3395752:0501/060109.417141:VERBOSE1:chrome/updater/updater.cc:470] UpdaterMain (--wake-all) returned 0.\n[53582:3395774:0501/060119.306167:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS END event to the history log\n[53582:3395774:0501/060119.306505:VERBOSE1:chrome/updater/updater.cc:470] UpdaterMain (--crash-handler) returned 0.\n[53579:3395757:0501/060119.308424:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS END event to the history log\n[53579:3395757:0501/060119.308477:VERBOSE1:chrome/updater/updater.cc:470] UpdaterMain (--crash-handler) returned 0."
+      "recentLog": "[53576:3395766:0501/060050.808334:VERBOSE1:chrome/updater/app/app_wakeall.cc:56] Launching `/Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake`\n[53580:3395770:0501/060050.819152:VERBOSE1:chrome/updater/updater.cc:432] Version: 148.0.7730.0, opt, ARM_64, command line: /Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2\n[53580:3395770:0501/060050.819450:VERBOSE1:chrome/updater/updater.cc:435] OS version: 26.3.1, arch: arm64, System uptime (seconds): 180942, parent pid: 53576\n[53580:3395770:0501/060050.822287:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS START event to the history log\n[53582:3395774:0501/060050.832686:VERBOSE1:chrome/updater/updater.cc:432] Version: 148.0.7730.0, opt, ARM_64, command line: /Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --crash-handler --database=/Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/Crashpad --url=https://clients2.google.com/cr/report --annotation=prod=Update4 --annotation=ver=148.0.7730.0 --handshake-fd=6 --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2\n[53582:3395774:0501/060050.832943:VERBOSE1:chrome/updater/updater.cc:435] OS version: 26.3.1, arch: arm64, System uptime (seconds): 180942, parent pid: 1\n[53582:3395774:0501/060050.835365:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS START event to the history log\n[53580:3395770:0501/060050.835934:VERBOSE1:chrome/updater/crash_reporter.cc:129] Crash handler launched and ready.\n[53580:3395770:0501/060050.836690:VERBOSE1:chrome/updater/crash_client.cc:108] Found 0 completed crash reports\n[53580:3395770:0501/060050.836796:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports\n[53580:3395770:0501/060050.836891:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/scones/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)\n[53580:3395770:0501/060050.836972:VERBOSE1:chrome/updater/updater.cc:106] Crash reporting initialized.\n[53580:3395770:0501/060050.837169:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:59] Run\n[53580:3395770:0501/060109.260399:VERBOSE1:chrome/updater/app/app.cc:53] Shutdown: 0\n[53580:3395770:0501/060109.261658:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS END event to the history log\n[53580:3395770:0501/060109.261728:VERBOSE1:chrome/updater/updater.cc:470] UpdaterMain (--wake) returned 0.\n[53576:3395766:0501/060109.415607:VERBOSE1:chrome/updater/app/app_wakeall.cc:66] `/Users/scones/Library/Application Support/Google/GoogleUpdater/148.0.7730.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` exited 0\n[53576:3395752:0501/060109.415967:VERBOSE1:chrome/updater/app/app.cc:53] Shutdown: 0\n[53576:3395752:0501/060109.417059:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS END event to the history log\n[53576:3395752:0501/060109.417141:VERBOSE1:chrome/updater/updater.cc:470] UpdaterMain (--wake-all) returned 0.\n[53582:3395774:0501/060119.306167:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS END event to the history log\n[53582:3395774:0501/060119.306505:VERBOSE1:chrome/updater/updater.cc:470] UpdaterMain (--crash-handler) returned 0.\n[53579:3395757:0501/060119.308424:VERBOSE2:chrome/updater/event_history.cc:270] Emitted a UPDATER_PROCESS END event to the history log\n[53579:3395757:0501/060119.308477:VERBOSE1:chrome/updater/updater.cc:470] UpdaterMain (--crash-handler) returned 0.\nCreated TensorFlow Lite XNNPACK delegate for CPU."
     },
     {
       "label": "com.scholarships.morning",
@@ -1026,7 +1026,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Searching Gmail for scholarship results...\n  Gmail combined search error: spawnSync /bin/sh ETIMEDOUT\n  Found 0 potential result emails\n  No scholarship result emails found\n[2026-04-29 13:32:02] Step 1: win-check OK\n[2026-04-29 13:32:02] Step 2: Deadline alerts...\nNo unapplied deadlines in the next 3 day(s).\n[2026-04-29 13:32:03] Step 2: deadline-alerts OK\n[2026-04-29 13:32:03] Step 3: Monthly sweeps skipped (day 29, runs on 1st/15th)\n[2026-04-29 13:32:03] === Scholarship morning complete ===\n[2026-04-30 09:00:05] === Scholarship morning run ===\n[2026-04-30 09:00:05] Step 1: Checking wins...\n  --- Win/Loss Check Started ---\n  Looking back 3 days\n  98 applications pending results\n  Searching Gmail for scholarship results...\n  Gmail combined search error: spawnSync /bin/sh ETIMEDOUT\n  Found 0 potential result emails\n  No scholarship result emails found\n[2026-04-30 09:17:25] Step 1: win-check OK\n[2026-04-30 09:17:25] Step 2: Deadline alerts...\nNo unapplied deadlines in the next 3 day(s).\n[2026-04-30 09:17:25] Step 2: deadline-alerts OK\n[2026-04-30 09:17:25] Step 3: Monthly sweeps skipped (day 30, runs on 1st/15th)\n[2026-04-30 09:17:25] === Scholarship morning complete ==="
+      "recentLog": "Failed: 5\n    x SoFi $2,500/mo: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.sofi.com/apply/scholarship-entry/\", waiting until \"domcontentloaded\"\n\n    x Sallie Mae $2,000/mo: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.sallie.com/scholarships/no-essay\", waiting until \"domcontentloaded\"\n\n    x Niche $2,000/mo: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.niche.com/colleges/scholarships/no-essay-scholarship/\", waiting until \"domcontentloaded\"\n\n    x Fastweb Monthly Drawing: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.fastweb.com/college-scholarships/scholarships/193155-fastweb-s-2-026-scholarship-success-sweepstakes\", waiting until \"domcontentloaded\"\n\n    x Discover $5,000 Sweepstakes: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://discover.promo.eprize.com/discoversweeps25/\", waiting until \"domcontentloaded\"\n\n  Total value entered: $0\n  ================================================================\n[2026-05-01 14:26:34] Step 3: monthly-sweeps OK\n[2026-05-01 14:26:34] === Scholarship morning complete ==="
     },
     {
       "label": "com.scones.fb-just-listed",
@@ -1034,7 +1034,7 @@
       "schedule": "9:07am, 2:07pm, 7:07pm",
       "logPath": "/Users/scones/tmp/fb-just-listed-launchd.log",
       "loaded": true,
-      "pid": null,
+      "pid": 56771,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -1100,7 +1100,7 @@
       "schedule": "7:30am",
       "logPath": "/Users/scones/projects/vinnie-treasure/tools/output/launchagent-stdout.log",
       "loaded": true,
-      "pid": 54217,
+      "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": "[2026-04-07 02:02:58] THREAT DETECTED — see nightly-sweep.log\n[2026-04-08 02:16:29] THREAT DETECTED — see nightly-sweep.log\n[2026-04-09 02:04:40] THREAT DETECTED — see nightly-sweep.log\n[2026-04-10 02:00:00] THREAT DETECTED — see nightly-sweep.log\n[2026-04-11 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-04-12 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-04-13 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-04-14 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-04-15 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-16 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-17 02:10:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-18 02:00:01] THREAT DETECTED — see nightly-sweep.log\n[2026-04-19 13:40:34] THREAT DETECTED — see nightly-sweep.log\n[2026-04-20 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-21 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-22 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-23 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-04-24 03:15:34] THREAT DETECTED — see nightly-sweep.log\n[2026-04-25 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-04-26 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-27 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-28 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-29 02:01:39] THREAT DETECTED — see nightly-sweep.log\n[2026-04-30 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-01 02:00:04] THREAT DETECTED — see nightly-sweep.log"
@@ -1214,12 +1214,6 @@
       }
     },
     "upcoming": [
-      {
-        "name": "Joseph C. Lowe Memorial Scholarship",
-        "amount": 798,
-        "deadline": "2026-05-01",
-        "status": "applied"
-      },
       {
         "name": "Log in",
         "amount": 10,
@@ -1422,47 +1416,11 @@
       "consecutive_blocked": 0,
       "last_check": "2026-04-29T18:33:38Z"
     },
-    "clicks": 80,
-    "impressions": 3,
-    "ctr": "3.2%",
-    "position": "14.8",
-    "dailyData": [
-      {
-        "date": "2026-04-22",
-        "clicks": 1,
-        "impressions": 95
-      },
-      {
-        "date": "2026-04-23",
-        "clicks": 4,
-        "impressions": 67
-      },
-      {
-        "date": "2026-04-24",
-        "clicks": 2,
-        "impressions": 92
-      },
-      {
-        "date": "2026-04-25",
-        "clicks": 4,
-        "impressions": 96
-      },
-      {
-        "date": "2026-04-26",
-        "clicks": 2,
-        "impressions": 78
-      },
-      {
-        "date": "2026-04-27",
-        "clicks": 4,
-        "impressions": 98
-      },
-      {
-        "date": "2026-04-28",
-        "clicks": 2,
-        "impressions": 103
-      }
-    ],
+    "clicks": 0,
+    "impressions": 0,
+    "ctr": "0%",
+    "position": "0",
+    "dailyData": [],
     "healthStatus": "PASS"
   },
   "school": {
@@ -1535,7 +1493,7 @@
       }
     ],
     "graduationDate": "2027-04-18",
-    "daysUntilGrad": 352,
+    "daysUntilGrad": 351,
     "gpa": "3.87"
   },
   "ideas": [
@@ -2006,19 +1964,19 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 24,
+    "commitsThisWeek": 19,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
-      {
-        "name": "Joseph C. Lowe Memorial Scholarship",
-        "amount": 798,
-        "deadline": "2026-05-01",
-        "status": "applied"
-      },
       {
         "name": "Log in",
         "amount": 10,
         "deadline": "2026-05-03",
+        "status": "applied"
+      },
+      {
+        "name": "Jack D. McWilliams, Sr. Scholarship",
+        "amount": 1100,
+        "deadline": "2026-05-08",
         "status": "applied"
       }
     ]
@@ -2200,7 +2158,7 @@
         "estMonthlyLow": 10,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "native"
       },
       {
@@ -2210,7 +2168,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "native"
       },
       {
@@ -2220,7 +2178,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "docker"
       },
       {
@@ -2230,7 +2188,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "docker"
       },
       {
@@ -2240,7 +2198,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "docker"
       },
       {
@@ -2250,7 +2208,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "docker"
       },
       {
@@ -2260,7 +2218,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "docker"
       },
       {
@@ -2270,7 +2228,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "docker"
       },
       {
@@ -2280,7 +2238,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "docker"
       },
       {
@@ -2290,7 +2248,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-01T12:44:40.240Z",
+        "lastCheck": "2026-05-02T00:32:05.746Z",
         "containerType": "docker"
       }
     ],
@@ -2330,10 +2288,6 @@
       "dealScout": 0
     },
     "dailyTrend": [
-      {
-        "date": "2026-04-18",
-        "amount": 0
-      },
       {
         "date": "2026-04-19",
         "amount": 0
@@ -2384,6 +2338,10 @@
       },
       {
         "date": "2026-05-01",
+        "amount": 0
+      },
+      {
+        "date": "2026-05-02",
         "amount": 0
       }
     ]
