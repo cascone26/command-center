@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-21T00:44:30.141Z",
+  "generatedAt": "2026-05-21T12:30:20.783Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
     "activeAutomations": 6,
-    "healthyAgents": 50,
+    "healthyAgents": 51,
     "totalAgents": 76,
     "ideasCount": 29,
     "avgHealthScore": 65
@@ -22,14 +22,14 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "27180af5564e1e31226db9c9558282f874029870",
-        "message": "Add classroom management blog post for 2026-05-20",
-        "date": "2026-05-20 18:36:57 -0500"
+        "hash": "95e752fa2b7fc8c72197b51bd3a60339928b0fa3",
+        "message": "Add blog post: Differentiated Instruction: Practical Strategies That Actually Work in Real Classrooms",
+        "date": "2026-05-20 23:43:59 -0500"
       },
       "gitStats": {
-        "totalCommits": 1560
+        "totalCommits": 1566
       },
-      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-05-15 (SEO→tool handoff fixed across ALL families + 91 iep-goals 404s resurrected)\n\n## Recent Work (2026-05-15)\n- **Conversion leak found via PostHog:** 84% single-page bounce. SEO landers converted 4.3%, blog/home 0%, direct generator 48%. The May 10 fix only wired `/lesson-plans/*`; every other SEO family stripped grade/subject on the way to its tool.\n- **Fixed ~130 SEO pages** (`65e5d80`, `abc71a7`): report-card, grading-feedback, vertical-plan, differentiation, teach-me, rubric, quiz, unit-plan, sub-plans — tool CTAs now pass `?grade=&subject=(&",
+      "statusSummary": "# LessonDraft — Status\n\n## Last Updated\n2026-05-20 (PROD GENERATION OUTAGE fixed — proxy flapping root-caused + hardened)\n\n## Recent Work (2026-05-20)\n- **PROD OUTAGE: generation was DOWN.** `/api/health/generation` returned 503 \"Proxy returned 404\" — ngrok tunnel dead + claude-proxy not on :3456. App has NO provider fallback (`lib/claude.ts` proxy-only), so this = total generation outage for ~780 visitors/day.\n- **Root cause:** `com.lessondraft.claude-proxy` + `com.lessondraft.ngrok` LaunchAgents were UNLOADED. The only thing managing the proxy was `proxy-watchdog`, whose old script spawned `",
       "healthScore": 70
     },
     {
@@ -465,7 +465,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Testing with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-20T23:13:15.332Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-21T00:13:17.892Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-21T01:13:19.779Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH"
+      "recentLog": "Testing with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-21T10:59:55.742Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-21T11:59:56.595Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-05-21T12:59:57.271Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway."
     },
     {
       "label": "com.classpilot.gcu-scraper",
@@ -476,7 +476,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Assignments: 17\n  Grades: 34\n  Announcements: 2\n  Errors: 0\n  ACTIVE:\n    - Topic 1 DQ 1 [Published]\n    - Topic 1 DQ 2 [Published]\n    - Topic 2 DQ 1 [Published]\n    - Topic 2 DQ 2 [Published]\n    - Topic 3 DQ 1 [Published]\n    - Topic 3 DQ 2 [Published]\n    - Topic 4 DQ 1 [Published]\n    - Topic 4 DQ 2 [Published]\n    - Topic 5 DQ 1 [Published]\n    - Topic 5 DQ 2 [Published]\n    - Topic 6 DQ 1 [Published]\n    - Topic 6 DQ 2 [Published]\n    - Topic 7 DQ 1 [Published]\n    - Topic 7 DQ 2 [Published]\n    - Benchmark - The Church's Witness in Fallen Society Essay [Published]\n    - Topic 8 DQ 1 [Published]\n    - Topic 8 DQ 2 [Published]\n\nFeed: /Users/scones/classpilot/course-feed.md\nJSON: /Users/scones/classpilot/course-feed.json"
+      "recentLog": "Errors: 0\n  ACTIVE:\n    - Topic 1 DQ 2 [Active]\n    - Topic 1 Participation [Active]\n\nUnknown:\n  Assignments: 0\n  Grades: 0\n  Announcements: 0\n  Errors: 1\n\nUnknown:\n  Assignments: 0\n  Grades: 0\n  Announcements: 0\n  Errors: 1\n\nUnknown:\n  Assignments: 0\n  Grades: 0\n  Announcements: 0\n  Errors: 1\n\nFeed: /Users/scones/classpilot/course-feed.md\nJSON: /Users/scones/classpilot/course-feed.json"
     },
     {
       "label": "com.cobo.ai-gateway",
@@ -487,7 +487,7 @@
       "pid": 1010,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-05-20T23:09:55.258Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:09:56.058Z] Max Direct (OAuth API) stream failed: socket hang up\n[2026-05-20T23:09:56.125Z] Failing over (stream) to AWS Bedrock Claude Sonnet 4.6\n[2026-05-20T23:10:13.203Z] complex (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:10:13.431Z] complex (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:10:16.218Z] medium (stream) -> AWS Bedrock Claude Sonnet 4.6 (failover) OK\n[2026-05-20T23:10:21.112Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:10:21.479Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\nnohup: node: No such file or directory\n[2026-05-20T23:41:14.133Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:41:14.330Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:41:18.815Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:41:18.990Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:41:22.708Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:41:22.939Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:41:27.920Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-20T23:41:28.125Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T00:11:39.735Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T00:11:39.868Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T00:11:43.016Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T00:11:43.211Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T00:11:46.351Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T00:11:46.587Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T00:11:51.405Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T00:11:51.595Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)"
+      "recentLog": "[2026-05-21T09:37:05.445Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:07:32.415Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:07:32.540Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:07:39.447Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:07:39.639Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:37:44.882Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:37:45.217Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:37:55.926Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:37:56.025Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:38:20.983Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:38:21.089Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T10:44:06.199Z] OAuth token refreshed proactively (was 7m to expiry)\n[2026-05-21T10:49:06.228Z] OAuth token refreshed proactively (was 2m to expiry)\n[2026-05-21T11:08:22.704Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T11:08:22.850Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T11:08:33.658Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T11:08:33.786Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T11:39:52.097Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T11:39:52.210Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T11:39:59.642Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T11:40:00.004Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T11:40:21.112Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T11:40:21.274Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T12:10:59.522Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)\n[2026-05-21T12:10:59.639Z] medium (stream) -> Max Direct Sonnet OK (YOUR SUBSCRIPTION)"
     },
     {
       "label": "com.cobo.amore-scout",
@@ -649,7 +649,7 @@
       "schedule": "Always on",
       "logPath": "/Users/scones/cobo/logs/daemon.log",
       "loaded": true,
-      "pid": 75197,
+      "pid": 55802,
       "lastExitStatus": 9,
       "healthy": false,
       "recentLog": null
@@ -663,7 +663,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "## Focus for Today\nBased on the highest-scored insights, Athena recommends focusing on:\n- In the heart of New York City, Mrs\n- Based on current metrics, insights from previous thoughts about common barriers to sign-up:\n\n1) **Lack of Clear CTA:*...\n- To identify potential monetizable resources within COBO World State:\n\n1\n\n[daily-reports] 2026-05-20T11:00:01Z Step 1 OK: Athena daily report generated\n[daily-reports] 2026-05-20T11:00:01Z Step 1 OK: Athena daily report generated\n[daily-reports] 2026-05-20T11:00:01Z Step 2: Overnight report\n[daily-reports] 2026-05-20T11:00:01Z Step 2: Overnight report\n[daily-reports] 2026-05-20T11:00:28Z Step 2 OK: Overnight report generated\n[daily-reports] 2026-05-20T11:00:28Z Step 2 OK: Overnight report generated\n[daily-reports] 2026-05-20T11:00:28Z Step 3: Morning briefing\n[daily-reports] 2026-05-20T11:00:28Z Step 3: Morning briefing\n[daily-reports] 2026-05-20T11:00:44Z Step 3 OK: Morning briefing delivered\n[daily-reports] 2026-05-20T11:00:44Z Step 3 OK: Morning briefing delivered\n[daily-reports] 2026-05-20T11:00:44Z Step 4: Skipped (weekly — Sunday only, today is day 3)\n[daily-reports] 2026-05-20T11:00:44Z Step 4: Skipped (weekly — Sunday only, today is day 3)\n[daily-reports] 2026-05-20T11:00:44Z === Daily reports finished ===\n[daily-reports] 2026-05-20T11:00:44Z === Daily reports finished ==="
+      "recentLog": "Based on the highest-scored insights, Athena recommends focusing on:\n- Action:\n\n**Immediate Focus on Stripe Checkout Session Creation**\n\n1) **Identify the Issue:** LessonDraft is not gener...\n- To address the identified gaps in monitoring, here are additional key performance indicators (KPIs) to track:\n\n1\n- To address this issue, Athena recommends implementing a comprehensive strategy that combines scalable infrastructure ...\n\n[daily-reports] 2026-05-21T11:00:01Z Step 1 OK: Athena daily report generated\n[daily-reports] 2026-05-21T11:00:01Z Step 1 OK: Athena daily report generated\n[daily-reports] 2026-05-21T11:00:01Z Step 2: Overnight report\n[daily-reports] 2026-05-21T11:00:01Z Step 2: Overnight report\n[daily-reports] 2026-05-21T11:00:31Z Step 2 OK: Overnight report generated\n[daily-reports] 2026-05-21T11:00:31Z Step 2 OK: Overnight report generated\n[daily-reports] 2026-05-21T11:00:31Z Step 3: Morning briefing\n[daily-reports] 2026-05-21T11:00:31Z Step 3: Morning briefing\n[daily-reports] 2026-05-21T11:00:49Z Step 3 OK: Morning briefing delivered\n[daily-reports] 2026-05-21T11:00:49Z Step 3 OK: Morning briefing delivered\n[daily-reports] 2026-05-21T11:00:49Z Step 4: Skipped (weekly — Sunday only, today is day 4)\n[daily-reports] 2026-05-21T11:00:49Z Step 4: Skipped (weekly — Sunday only, today is day 4)\n[daily-reports] 2026-05-21T11:00:49Z === Daily reports finished ===\n[daily-reports] 2026-05-21T11:00:49Z === Daily reports finished ==="
     },
     {
       "label": "com.cobo.daily-usage-report",
@@ -674,7 +674,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Report saved to /Users/scones/logs/daily-reports/2026-05-16.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-05-17.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-05-18.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-05-19.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available"
+      "recentLog": "Report saved to /Users/scones/logs/daily-reports/2026-05-17.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-05-18.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-05-19.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available\n\nReport saved to /Users/scones/logs/daily-reports/2026-05-20.txt\nNotification sent.\n--- Tokscale ---\n/Users/scones/tools/daily-usage-report.sh: line 60: tokscale: command not found\ntokscale not available"
     },
     {
       "label": "com.cobo.ecosystem",
@@ -707,7 +707,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "claude_review: no pending drafts\n{\n  \"reviewed\": 0\n}\nWed May 20 16:47:35 CDT 2026: === Hourly maintenance complete ===\nWed May 20 17:47:35 CDT 2026: === Hourly maintenance starting ===\nWed May 20 17:47:35 CDT 2026: Running brain snapshot...\nSnapshot #901 saved — cycle 5960, quality None, finetune: kaggle_failed\nWed May 20 17:47:51 CDT 2026: Brain snapshot done\nWed May 20 17:47:51 CDT 2026: Running Claude review...\nclaude_review: no pending drafts\n{\n  \"reviewed\": 0\n}\nWed May 20 17:47:51 CDT 2026: === Hourly maintenance complete ===\nWed May 20 18:47:51 CDT 2026: === Hourly maintenance starting ===\nWed May 20 18:47:51 CDT 2026: Running brain snapshot...\nSnapshot #902 saved — cycle 5974, quality None, finetune: kaggle_failed\nWed May 20 18:47:57 CDT 2026: Brain snapshot done\nWed May 20 18:47:57 CDT 2026: Running Claude review...\nclaude_review: no pending drafts\n{\n  \"reviewed\": 0\n}\nWed May 20 18:47:57 CDT 2026: === Hourly maintenance complete ==="
+      "recentLog": "claude_review: no pending drafts\n{\n  \"reviewed\": 0\n}\nThu May 21 04:35:17 CDT 2026: === Hourly maintenance complete ===\nThu May 21 05:35:17 CDT 2026: === Hourly maintenance starting ===\nThu May 21 05:35:17 CDT 2026: Running brain snapshot...\nSnapshot #912 saved — cycle 6255, quality None, finetune: kaggle_failed\nThu May 21 05:35:23 CDT 2026: Brain snapshot done\nThu May 21 05:35:23 CDT 2026: Running Claude review...\nclaude_review: no pending drafts\n{\n  \"reviewed\": 0\n}\nThu May 21 05:35:23 CDT 2026: === Hourly maintenance complete ===\nThu May 21 06:35:23 CDT 2026: === Hourly maintenance starting ===\nThu May 21 06:35:23 CDT 2026: Running brain snapshot...\nSnapshot #913 saved — cycle 6285, quality None, finetune: kaggle_failed\nThu May 21 06:35:29 CDT 2026: Brain snapshot done\nThu May 21 06:35:29 CDT 2026: Running Claude review...\nclaude_review: no pending drafts\n{\n  \"reviewed\": 0\n}\nThu May 21 06:35:29 CDT 2026: === Hourly maintenance complete ==="
     },
     {
       "label": "com.cobo.jcb-alerts",
@@ -718,7 +718,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "r/canyonlands: 50 posts\n  r/utah: 50 posts\n  MW RSS: 3 posts\n  No new matches (checked 103 posts, 899 already seen)\n[2026-05-20T13:49:21.659103] JCB Scout done\n[2026-05-20T15:49:22.134954] JCB Scout starting\n  r/findingforrest: 0 posts\n  fetch error https://www.reddit.com/r/treasurehunt/new.json?limit=50: HTTP Error 403: Forbidden\n  r/treasurehunt: 0 posts\n  r/riddlesolving: 0 posts\n  r/canyonlands: 50 posts\n  r/utah: 50 posts\n  MW RSS: 3 posts\n  No new matches (checked 103 posts, 903 already seen)\n[2026-05-20T15:49:37.549306] JCB Scout done\n[2026-05-20T17:49:40.423224] JCB Scout starting\n  r/findingforrest: 0 posts\n  fetch error https://www.reddit.com/r/treasurehunt/new.json?limit=50: HTTP Error 403: Forbidden\n  r/treasurehunt: 0 posts\n  r/riddlesolving: 0 posts\n  r/canyonlands: 50 posts\n  r/utah: 50 posts\n  MW RSS: 3 posts\n  No new matches (checked 103 posts, 906 already seen)\n[2026-05-20T17:50:01.013685] JCB Scout done"
+      "recentLog": "r/canyonlands: 50 posts\n  r/utah: 50 posts\n  MW RSS: 3 posts\n  No new matches (checked 103 posts, 908 already seen)\n[2026-05-21T02:37:31.390460] JCB Scout done\n[2026-05-21T04:37:31.755403] JCB Scout starting\n  r/findingforrest: 0 posts\n  fetch error https://www.reddit.com/r/treasurehunt/new.json?limit=50: HTTP Error 403: Forbidden\n  r/treasurehunt: 0 posts\n  r/riddlesolving: 0 posts\n  r/canyonlands: 50 posts\n  r/utah: 50 posts\n  MW RSS: 3 posts\n  No new matches (checked 103 posts, 909 already seen)\n[2026-05-21T04:37:45.848528] JCB Scout done\n[2026-05-21T06:37:46.304616] JCB Scout starting\n  r/findingforrest: 0 posts\n  fetch error https://www.reddit.com/r/treasurehunt/new.json?limit=50: HTTP Error 403: Forbidden\n  r/treasurehunt: 0 posts\n  r/riddlesolving: 0 posts\n  r/canyonlands: 50 posts\n  r/utah: 50 posts\n  MW RSS: 3 posts\n  No new matches (checked 103 posts, 910 already seen)\n[2026-05-21T06:38:00.925770] JCB Scout done"
     },
     {
       "label": "com.cobo.kaggle-monitor",
@@ -729,7 +729,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Wed May 20 07:12:15 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 07:42:15 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 08:12:15 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 08:42:15 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 09:12:15 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 09:42:15 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 10:12:15 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 10:42:15 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 11:12:15 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 11:42:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 12:12:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 12:42:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 13:12:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 13:42:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 14:12:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 14:42:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 15:12:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 15:42:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 16:12:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 16:42:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 17:12:16 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 17:42:17 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 18:12:17 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 18:42:17 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 19:12:17 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found"
+      "recentLog": "Wed May 20 18:42:17 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 19:12:17 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 19:59:20 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 20:29:20 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 20:59:20 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 21:58:45 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 22:28:45 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 22:58:45 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 23:28:45 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nWed May 20 23:58:45 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 00:28:45 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 00:58:45 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 01:28:45 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 01:58:45 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 02:28:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 02:58:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 03:28:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 03:58:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 04:28:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 04:58:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 05:28:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 05:58:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 06:28:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 06:58:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found\nThu May 21 07:28:46 CDT 2026: Still running — /Users/scones/cobo/scripts/kaggle-monitor.sh: line 4: kaggle: command not found"
     },
     {
       "label": "com.cobo.log-rotation",
@@ -762,7 +762,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Tue May 19 02:00:10 CDT 2026: Running memory consolidation...\nTue May 19 02:00:38 CDT 2026: Memory consolidation response: {\"status\":\"ok\",\"result\":{\"promoted\":284,\"archived\":0,\"deduplicated\":0,\"errors\":[]}}\nTue May 19 02:00:38 CDT 2026: Running database backup...\nTue May 19 02:00:38 CDT 2026: Backup dir: /Users/scones/cobo/backups\nTue May 19 02:00:38 CDT 2026: OK: Backed up cobo.db (6512640 bytes) -> /Users/scones/cobo/backups/cobo-2026-05-19.db\nTue May 19 02:00:38 CDT 2026: OK: Backed up leads.db (3428352 bytes) -> /Users/scones/cobo/backups/leads-2026-05-19.db\nTue May 19 02:00:38 CDT 2026: 16 backup files retained\nTue May 19 02:00:38 CDT 2026: Cleaning old session data...\nTue May 19 02:00:38 CDT 2026: /Users/scones/cobo/scripts/cobo-nightly.sh: line 204: /opt/homebrew/bin/node: No such file or directory\nTue May 19 02:00:38 CDT 2026: === Nightly maintenance complete ===\nWed May 20 02:00:01 CDT 2026: === Nightly maintenance starting ===\nWed May 20 02:00:01 CDT 2026: Running nightly scan...\nWed May 20 02:00:01 CDT 2026: ISSUE: 3 generation route(s) missing profile injection: /Users/scones/projects/LessonDraft/app/api/generate-lesson-remix/route.ts /Users/scones/projects/LessonDraft/app/api/generate-tutoring-session/route.ts /Users/scones/projects/LessonDraft/app/api/generate-vertical-plan/route.ts \nWed May 20 02:00:06 CDT 2026: WARN: HP unreachable via SSH\nWed May 20 02:00:06 CDT 2026: Scan complete. Issues found: 1\nWed May 20 02:00:06 CDT 2026: Running memory consolidation...\nWed May 20 02:00:36 CDT 2026: Memory consolidation response: \nWed May 20 02:00:36 CDT 2026: Running database backup...\nWed May 20 02:00:36 CDT 2026: Backup dir: /Users/scones/cobo/backups\nWed May 20 02:00:36 CDT 2026: OK: Backed up cobo.db (6795264 bytes) -> /Users/scones/cobo/backups/cobo-2026-05-20.db\nWed May 20 02:00:36 CDT 2026: OK: Backed up leads.db (3457024 bytes) -> /Users/scones/cobo/backups/leads-2026-05-20.db\nWed May 20 02:00:36 CDT 2026: 16 backup files retained\nWed May 20 02:00:36 CDT 2026: Cleaning old session data...\nWed May 20 02:00:36 CDT 2026: /Users/scones/cobo/scripts/cobo-nightly.sh: line 204: /opt/homebrew/bin/node: No such file or directory\nWed May 20 02:00:36 CDT 2026: === Nightly maintenance complete ==="
+      "recentLog": "Wed May 20 02:00:06 CDT 2026: Running memory consolidation...\nWed May 20 02:00:36 CDT 2026: Memory consolidation response: \nWed May 20 02:00:36 CDT 2026: Running database backup...\nWed May 20 02:00:36 CDT 2026: Backup dir: /Users/scones/cobo/backups\nWed May 20 02:00:36 CDT 2026: OK: Backed up cobo.db (6795264 bytes) -> /Users/scones/cobo/backups/cobo-2026-05-20.db\nWed May 20 02:00:36 CDT 2026: OK: Backed up leads.db (3457024 bytes) -> /Users/scones/cobo/backups/leads-2026-05-20.db\nWed May 20 02:00:36 CDT 2026: 16 backup files retained\nWed May 20 02:00:36 CDT 2026: Cleaning old session data...\nWed May 20 02:00:36 CDT 2026: /Users/scones/cobo/scripts/cobo-nightly.sh: line 204: /opt/homebrew/bin/node: No such file or directory\nWed May 20 02:00:36 CDT 2026: === Nightly maintenance complete ===\nThu May 21 02:00:05 CDT 2026: === Nightly maintenance starting ===\nThu May 21 02:00:05 CDT 2026: Running nightly scan...\nThu May 21 02:00:05 CDT 2026: ISSUE: 3 generation route(s) missing profile injection: /Users/scones/projects/LessonDraft/app/api/generate-lesson-remix/route.ts /Users/scones/projects/LessonDraft/app/api/generate-tutoring-session/route.ts /Users/scones/projects/LessonDraft/app/api/generate-vertical-plan/route.ts \nThu May 21 02:00:10 CDT 2026: WARN: HP unreachable via SSH\nThu May 21 02:00:10 CDT 2026: Scan complete. Issues found: 1\nThu May 21 02:00:10 CDT 2026: Running memory consolidation...\nThu May 21 02:00:41 CDT 2026: Memory consolidation response: \nThu May 21 02:00:41 CDT 2026: Running database backup...\nThu May 21 02:00:41 CDT 2026: Backup dir: /Users/scones/cobo/backups\nThu May 21 02:00:41 CDT 2026: OK: Backed up cobo.db (7045120 bytes) -> /Users/scones/cobo/backups/cobo-2026-05-21.db\nThu May 21 02:00:41 CDT 2026: OK: Backed up leads.db (3485696 bytes) -> /Users/scones/cobo/backups/leads-2026-05-21.db\nThu May 21 02:00:41 CDT 2026: 16 backup files retained\nThu May 21 02:00:41 CDT 2026: Cleaning old session data...\nThu May 21 02:00:41 CDT 2026: /Users/scones/cobo/scripts/cobo-nightly.sh: line 204: /opt/homebrew/bin/node: No such file or directory\nThu May 21 02:00:41 CDT 2026: === Nightly maintenance complete ==="
     },
     {
       "label": "com.cobo.ollama-proxy",
@@ -806,7 +806,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-05-14T07:13:03.621137] === run start ===\n[2026-05-14T07:13:04.318654] found 6 listings on list page\n[2026-05-14T07:13:04.319445] === run end: 0 new total, 0 relevant ===\n[2026-05-15T07:13:04.759807] === run start ===\n[2026-05-15T07:13:05.199389] found 6 listings on list page\n[2026-05-15T07:13:05.199981] === run end: 0 new total, 0 relevant ===\n[2026-05-16T07:13:01.163463] === run start ===\n[2026-05-16T07:13:01.758919] found 6 listings on list page\n[2026-05-16T07:13:01.759733] === run end: 0 new total, 0 relevant ===\n[2026-05-17T07:13:05.228493] === run start ===\n[2026-05-17T07:13:05.543985] found 6 listings on list page\n[2026-05-17T07:13:05.544953] === run end: 0 new total, 0 relevant ===\n[2026-05-18T07:13:02.065853] === run start ===\n[2026-05-18T07:13:02.372969] found 6 listings on list page\n[2026-05-18T07:13:02.373881] === run end: 0 new total, 0 relevant ===\n[2026-05-19T07:13:05.099245] === run start ===\n[2026-05-19T07:13:05.604876] found 6 listings on list page\n[2026-05-19T07:13:05.605918] === run end: 0 new total, 0 relevant ===\n[2026-05-20T07:13:00.763672] === run start ===\n[2026-05-20T07:13:01.170121] found 6 listings on list page\n[2026-05-20T07:13:01.171103] === run end: 0 new total, 0 relevant ==="
+      "recentLog": "[2026-05-14T07:13:03.621137] === run start ===\n[2026-05-14T07:13:04.318654] found 6 listings on list page\n[2026-05-14T07:13:04.319445] === run end: 0 new total, 0 relevant ===\n[2026-05-15T07:13:04.759807] === run start ===\n[2026-05-15T07:13:05.199389] found 6 listings on list page\n[2026-05-15T07:13:05.199981] === run end: 0 new total, 0 relevant ===\n[2026-05-16T07:13:01.163463] === run start ===\n[2026-05-16T07:13:01.758919] found 6 listings on list page\n[2026-05-16T07:13:01.759733] === run end: 0 new total, 0 relevant ===\n[2026-05-17T07:13:05.228493] === run start ===\n[2026-05-17T07:13:05.543985] found 6 listings on list page\n[2026-05-17T07:13:05.544953] === run end: 0 new total, 0 relevant ===\n[2026-05-18T07:13:02.065853] === run start ===\n[2026-05-18T07:13:02.372969] found 6 listings on list page\n[2026-05-18T07:13:02.373881] === run end: 0 new total, 0 relevant ===\n[2026-05-19T07:13:05.099245] === run start ===\n[2026-05-19T07:13:05.604876] found 6 listings on list page\n[2026-05-19T07:13:05.605918] === run end: 0 new total, 0 relevant ===\n[2026-05-20T07:13:00.763672] === run start ===\n[2026-05-20T07:13:01.170121] found 6 listings on list page\n[2026-05-20T07:13:01.171103] === run end: 0 new total, 0 relevant ===\n[2026-05-21T07:13:05.692605] === run start ===\n[2026-05-21T07:13:06.229887] found 6 listings on list page\n[2026-05-21T07:13:06.230468] === run end: 0 new total, 0 relevant ==="
     },
     {
       "label": "com.cobo.tamp",
@@ -817,7 +817,7 @@
       "pid": 1002,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[tamp]   skip: too small (197 < 200)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m253.4k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m253.4k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: too small (113 < 200)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m254.4k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m254.4k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: too small (36 < 200)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m254.9k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m254.9k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m255.9k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m255.9k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m256.8k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m256.8k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m269.8k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m269.8k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] upstream error: ETIMEDOUT read ETIMEDOUT\n[tamp] upstream error: ETIMEDOUT read ETIMEDOUT\n[tamp] response stream error: ECONNRESET aborted\n[tamp] response stream error: ECONNRESET aborted\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m271.8k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m271.8k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m"
+      "recentLog": "[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m161.2k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m172.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m168.6k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m168.6k\u001b[0m \u001b[2m— passthrough\u001b[0m"
     },
     {
       "label": "com.cobo.usage-monitor",
@@ -839,7 +839,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "MODE: CONSERVATION (close to reset)\nConfig updated: {\n  \"cycle_interval\": null,\n  \"overnight_interval\": 3600,\n  \"max_daily_jobs\": 20,\n  \"default_budget\": 0.25,\n  \"maintenance_budget\": 0.15,\n  \"hp_routing_enabled\": true,\n  \"cycle_idle\": 1800,\n  \"cycle_productive\": 1800,\n  \"_comment\": \"null = use code defaults. Set a value to override. Managed by meta_optimizer.\",\n  \"_last_tuned\": \"2026-05-19T00:06:46.957422\",\n  \"_last_changes\": [\n    {\n      \"setting\": \"max_daily_jobs\",\n      \"old_value\": 15,\n      \"new_value\": 20,\n      \"reason\": \"Success rate is 100.0% and approaching daily limit. Allow more jobs.\"\n    }\n  ],\n  \"_efficiency_last_run\": \"2026-05-19T00:12:59.573528\",\n  \"_efficiency_fixes_applied\": [],\n  \"max_parallel_jobs\": 1\n}\n=== Done ==="
+      "recentLog": "MODE: CONSERVATION (close to reset)\nConfig updated: {\n  \"cycle_interval\": null,\n  \"overnight_interval\": 3600,\n  \"max_daily_jobs\": 25,\n  \"default_budget\": 0.25,\n  \"maintenance_budget\": 0.15,\n  \"hp_routing_enabled\": true,\n  \"cycle_idle\": 1800,\n  \"cycle_productive\": 1800,\n  \"_comment\": \"null = use code defaults. Set a value to override. Managed by meta_optimizer.\",\n  \"_last_tuned\": \"2026-05-20T00:06:31.471294\",\n  \"_last_changes\": [\n    {\n      \"setting\": \"max_daily_jobs\",\n      \"old_value\": 20,\n      \"new_value\": 25,\n      \"reason\": \"Success rate is 100.0% and approaching daily limit. Allow more jobs.\"\n    }\n  ],\n  \"_efficiency_last_run\": \"2026-05-20T00:13:45.409443\",\n  \"_efficiency_fixes_applied\": [],\n  \"max_parallel_jobs\": 1\n}\n=== Done ==="
     },
     {
       "label": "com.cobo.usage-watchdog",
@@ -861,7 +861,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Wed May 20 18:22:13 2026: bodies online=0/10 OFFLINE=['body-01(age=3468982s)', 'body-02(age=3468981s)', 'body-03(age=3468981s)', 'body-04(age=3468985s)', 'body-05(age=3444443s)', 'body-06(age=3412404s)', 'body-07(age=3468981s)', 'body-08(age=3468979s)', 'body-09(age=3468985s)', 'body-10(age=3468985s)']\nWed May 20 18:27:17 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 18:27:25 2026: bodies online=0/10 OFFLINE=['body-01(age=3469294s)', 'body-02(age=3469293s)', 'body-03(age=3469293s)', 'body-04(age=3469297s)', 'body-05(age=3444755s)', 'body-06(age=3412716s)', 'body-07(age=3469293s)', 'body-08(age=3469291s)', 'body-09(age=3469297s)', 'body-10(age=3469297s)']\nWed May 20 18:32:29 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 18:32:36 2026: bodies online=0/10 OFFLINE=['body-01(age=3469605s)', 'body-02(age=3469604s)', 'body-03(age=3469604s)', 'body-04(age=3469608s)', 'body-05(age=3445066s)', 'body-06(age=3413027s)', 'body-07(age=3469604s)', 'body-08(age=3469602s)', 'body-09(age=3469608s)', 'body-10(age=3469608s)']\nWed May 20 18:37:40 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 18:37:46 2026: bodies online=0/10 OFFLINE=['body-01(age=3469915s)', 'body-02(age=3469914s)', 'body-03(age=3469914s)', 'body-04(age=3469918s)', 'body-05(age=3445376s)', 'body-06(age=3413337s)', 'body-07(age=3469914s)', 'body-08(age=3469912s)', 'body-09(age=3469918s)', 'body-10(age=3469918s)']\nWed May 20 18:42:49 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 18:42:54 2026: bodies online=0/10 OFFLINE=['body-01(age=3470223s)', 'body-02(age=3470222s)', 'body-03(age=3470222s)', 'body-04(age=3470226s)', 'body-05(age=3445684s)', 'body-06(age=3413645s)', 'body-07(age=3470222s)', 'body-08(age=3470220s)', 'body-09(age=3470226s)', 'body-10(age=3470226s)']\nWed May 20 18:47:57 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 18:48:03 2026: bodies online=0/10 OFFLINE=['body-01(age=3470532s)', 'body-02(age=3470531s)', 'body-03(age=3470531s)', 'body-04(age=3470535s)', 'body-05(age=3445993s)', 'body-06(age=3413954s)', 'body-07(age=3470531s)', 'body-08(age=3470529s)', 'body-09(age=3470535s)', 'body-10(age=3470535s)']\nWed May 20 18:53:06 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 18:53:11 2026: bodies online=0/10 OFFLINE=['body-01(age=3470840s)', 'body-02(age=3470839s)', 'body-03(age=3470839s)', 'body-04(age=3470843s)', 'body-05(age=3446301s)', 'body-06(age=3414262s)', 'body-07(age=3470839s)', 'body-08(age=3470837s)', 'body-09(age=3470843s)', 'body-10(age=3470843s)']\nWed May 20 18:58:14 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 18:58:20 2026: bodies online=0/10 OFFLINE=['body-01(age=3471149s)', 'body-02(age=3471148s)', 'body-03(age=3471148s)', 'body-04(age=3471152s)', 'body-05(age=3446610s)', 'body-06(age=3414571s)', 'body-07(age=3471148s)', 'body-08(age=3471146s)', 'body-09(age=3471152s)', 'body-10(age=3471152s)']\nWed May 20 19:03:23 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 19:03:29 2026: bodies online=0/10 OFFLINE=['body-01(age=3471458s)', 'body-02(age=3471457s)', 'body-03(age=3471457s)', 'body-04(age=3471461s)', 'body-05(age=3446919s)', 'body-06(age=3414880s)', 'body-07(age=3471457s)', 'body-08(age=3471455s)', 'body-09(age=3471461s)', 'body-10(age=3471461s)']\nWed May 20 19:08:32 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 19:08:37 2026: bodies online=0/10 OFFLINE=['body-01(age=3471766s)', 'body-02(age=3471765s)', 'body-03(age=3471765s)', 'body-04(age=3471769s)', 'body-05(age=3447227s)', 'body-06(age=3415188s)', 'body-07(age=3471765s)', 'body-08(age=3471763s)', 'body-09(age=3471769s)', 'body-10(age=3471769s)']\nWed May 20 19:13:40 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 19:13:46 2026: bodies online=0/10 OFFLINE=['body-01(age=3472075s)', 'body-02(age=3472074s)', 'body-03(age=3472074s)', 'body-04(age=3472078s)', 'body-05(age=3447536s)', 'body-06(age=3415497s)', 'body-07(age=3472074s)', 'body-08(age=3472072s)', 'body-09(age=3472078s)', 'body-10(age=3472078s)']\nWed May 20 19:18:49 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 19:18:54 2026: bodies online=0/10 OFFLINE=['body-01(age=3472383s)', 'body-02(age=3472382s)', 'body-03(age=3472382s)', 'body-04(age=3472386s)', 'body-05(age=3447844s)', 'body-06(age=3415805s)', 'body-07(age=3472382s)', 'body-08(age=3472380s)', 'body-09(age=3472386s)', 'body-10(age=3472386s)']\nWed May 20 19:23:57 CDT 2026: HP Ollama DOWN — attempting restart\nWed May 20 19:24:03 2026: bodies online=0/10 OFFLINE=['body-01(age=3472692s)', 'body-02(age=3472691s)', 'body-03(age=3472691s)', 'body-04(age=3472695s)', 'body-05(age=3448153s)', 'body-06(age=3416114s)', 'body-07(age=3472691s)', 'body-08(age=3472689s)', 'body-09(age=3472695s)', 'body-10(age=3472695s)']"
+      "recentLog": "Thu May 21 06:24:41 2026: bodies online=0/10 OFFLINE=['body-01(age=3512330s)', 'body-02(age=3512329s)', 'body-03(age=3512329s)', 'body-04(age=3512333s)', 'body-05(age=3487791s)', 'body-06(age=3455752s)', 'body-07(age=3512329s)', 'body-08(age=3512327s)', 'body-09(age=3512333s)', 'body-10(age=3512333s)']\nThu May 21 06:29:45 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 06:29:50 2026: bodies online=0/10 OFFLINE=['body-01(age=3512639s)', 'body-02(age=3512638s)', 'body-03(age=3512638s)', 'body-04(age=3512642s)', 'body-05(age=3488100s)', 'body-06(age=3456061s)', 'body-07(age=3512638s)', 'body-08(age=3512636s)', 'body-09(age=3512642s)', 'body-10(age=3512642s)']\nThu May 21 06:34:53 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 06:34:59 2026: bodies online=0/10 OFFLINE=['body-01(age=3512948s)', 'body-02(age=3512947s)', 'body-03(age=3512947s)', 'body-04(age=3512951s)', 'body-05(age=3488409s)', 'body-06(age=3456370s)', 'body-07(age=3512947s)', 'body-08(age=3512945s)', 'body-09(age=3512951s)', 'body-10(age=3512951s)']\nThu May 21 06:40:02 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 06:40:07 2026: bodies online=0/10 OFFLINE=['body-01(age=3513256s)', 'body-02(age=3513255s)', 'body-03(age=3513255s)', 'body-04(age=3513259s)', 'body-05(age=3488717s)', 'body-06(age=3456678s)', 'body-07(age=3513255s)', 'body-08(age=3513253s)', 'body-09(age=3513259s)', 'body-10(age=3513259s)']\nThu May 21 06:45:08 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 06:45:09 2026: bodies online=0/10 OFFLINE=['body-01(age=3513558s)', 'body-02(age=3513557s)', 'body-03(age=3513557s)', 'body-04(age=3513561s)', 'body-05(age=3489019s)', 'body-06(age=3456980s)', 'body-07(age=3513557s)', 'body-08(age=3513555s)', 'body-09(age=3513561s)', 'body-10(age=3513561s)']\nThu May 21 06:50:12 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 06:50:17 2026: bodies online=0/10 OFFLINE=['body-01(age=3513866s)', 'body-02(age=3513865s)', 'body-03(age=3513865s)', 'body-04(age=3513869s)', 'body-05(age=3489327s)', 'body-06(age=3457288s)', 'body-07(age=3513865s)', 'body-08(age=3513863s)', 'body-09(age=3513869s)', 'body-10(age=3513869s)']\nThu May 21 06:55:21 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 06:55:26 2026: bodies online=0/10 OFFLINE=['body-01(age=3514175s)', 'body-02(age=3514174s)', 'body-03(age=3514174s)', 'body-04(age=3514178s)', 'body-05(age=3489636s)', 'body-06(age=3457597s)', 'body-07(age=3514174s)', 'body-08(age=3514172s)', 'body-09(age=3514178s)', 'body-10(age=3514178s)']\nThu May 21 07:00:29 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 07:00:36 2026: bodies online=0/10 OFFLINE=['body-01(age=3514485s)', 'body-02(age=3514484s)', 'body-03(age=3514484s)', 'body-04(age=3514488s)', 'body-05(age=3489946s)', 'body-06(age=3457907s)', 'body-07(age=3514484s)', 'body-08(age=3514482s)', 'body-09(age=3514488s)', 'body-10(age=3514488s)']\nThu May 21 07:05:39 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 07:05:48 2026: bodies online=0/10 OFFLINE=['body-01(age=3514797s)', 'body-02(age=3514796s)', 'body-03(age=3514796s)', 'body-04(age=3514800s)', 'body-05(age=3490258s)', 'body-06(age=3458219s)', 'body-07(age=3514796s)', 'body-08(age=3514794s)', 'body-09(age=3514800s)', 'body-10(age=3514800s)']\nThu May 21 07:10:52 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 07:10:57 2026: bodies online=0/10 OFFLINE=['body-01(age=3515106s)', 'body-02(age=3515105s)', 'body-03(age=3515105s)', 'body-04(age=3515109s)', 'body-05(age=3490567s)', 'body-06(age=3458528s)', 'body-07(age=3515105s)', 'body-08(age=3515103s)', 'body-09(age=3515109s)', 'body-10(age=3515109s)']\nThu May 21 07:16:00 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 07:16:06 2026: bodies online=0/10 OFFLINE=['body-01(age=3515415s)', 'body-02(age=3515414s)', 'body-03(age=3515414s)', 'body-04(age=3515418s)', 'body-05(age=3490876s)', 'body-06(age=3458837s)', 'body-07(age=3515414s)', 'body-08(age=3515412s)', 'body-09(age=3515418s)', 'body-10(age=3515418s)']\nThu May 21 07:21:09 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 07:21:14 2026: bodies online=0/10 OFFLINE=['body-01(age=3515723s)', 'body-02(age=3515722s)', 'body-03(age=3515722s)', 'body-04(age=3515726s)', 'body-05(age=3491184s)', 'body-06(age=3459145s)', 'body-07(age=3515722s)', 'body-08(age=3515720s)', 'body-09(age=3515726s)', 'body-10(age=3515726s)']\nThu May 21 07:26:17 CDT 2026: HP Ollama DOWN — attempting restart\nThu May 21 07:26:23 2026: bodies online=0/10 OFFLINE=['body-01(age=3516032s)', 'body-02(age=3516031s)', 'body-03(age=3516031s)', 'body-04(age=3516035s)', 'body-05(age=3491493s)', 'body-06(age=3459454s)', 'body-07(age=3516031s)', 'body-08(age=3516029s)', 'body-09(age=3516035s)', 'body-10(age=3516035s)']"
     },
     {
       "label": "com.commandcenter.update",
@@ -869,10 +869,10 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 74978,
+      "pid": 62657,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Regenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 51/76 agents\n  25559 scholarships ($5316K) | 513 emails | 12 courses\n  0/10 passive services running\nData changed, committing and pushing...\n[main 8d15fa4] Update dashboard data 2026-05-20_07:30\n Committer: Jacob Cascone <scones@MacBookPro.lan>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 48 insertions(+), 49 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Regenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 50/76 agents\n  25562 scholarships ($5320K) | 520 emails | 12 courses\n  0/10 passive services running\nData changed, committing and pushing...\n[main 5ffaa54] Update dashboard data 2026-05-20_19:44\n Committer: Jacob Cascone <scones@MacBookPro.lan>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 143 insertions(+), 141 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     },
     {
       "label": "com.dealscout.scheduler",
@@ -883,7 +883,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Sat May 16 17:38:22 CDT 2026: Mac scheduler done\nSun May 17 07:00:02 CDT 2026: Mac scheduler running (HHMM=0700)\nSun May 17 07:00:02 CDT 2026: Running hardware browser + digest\nSun May 17 07:07:46 CDT 2026: Mac scheduler done\nSun May 17 17:30:04 CDT 2026: Mac scheduler running (HHMM=1730)\nSun May 17 17:30:04 CDT 2026: Running hardware browser + digest\nSun May 17 17:38:19 CDT 2026: Mac scheduler done\nMon May 18 07:00:04 CDT 2026: Mac scheduler running (HHMM=0700)\nMon May 18 07:00:04 CDT 2026: Running hardware browser + digest\nMon May 18 07:05:42 CDT 2026: Mac scheduler done\nMon May 18 17:30:05 CDT 2026: Mac scheduler running (HHMM=1730)\nMon May 18 17:30:05 CDT 2026: Running hardware browser + digest\nMon May 18 17:44:46 CDT 2026: Mac scheduler done\nTue May 19 07:00:01 CDT 2026: Mac scheduler running (HHMM=0700)\nTue May 19 07:00:01 CDT 2026: Running hardware browser + digest\nTue May 19 07:08:39 CDT 2026: Mac scheduler done\nTue May 19 17:30:01 CDT 2026: Mac scheduler running (HHMM=1730)\nTue May 19 17:30:01 CDT 2026: Running hardware browser + digest\nTue May 19 17:42:42 CDT 2026: Mac scheduler done\nWed May 20 07:00:05 CDT 2026: Mac scheduler running (HHMM=0700)\nWed May 20 07:00:05 CDT 2026: Running hardware browser + digest\nWed May 20 07:09:08 CDT 2026: Mac scheduler done\nWed May 20 17:30:04 CDT 2026: Mac scheduler running (HHMM=1730)\nWed May 20 17:30:04 CDT 2026: Running hardware browser + digest\nWed May 20 17:47:08 CDT 2026: Mac scheduler done"
+      "recentLog": "Sun May 17 07:07:46 CDT 2026: Mac scheduler done\nSun May 17 17:30:04 CDT 2026: Mac scheduler running (HHMM=1730)\nSun May 17 17:30:04 CDT 2026: Running hardware browser + digest\nSun May 17 17:38:19 CDT 2026: Mac scheduler done\nMon May 18 07:00:04 CDT 2026: Mac scheduler running (HHMM=0700)\nMon May 18 07:00:04 CDT 2026: Running hardware browser + digest\nMon May 18 07:05:42 CDT 2026: Mac scheduler done\nMon May 18 17:30:05 CDT 2026: Mac scheduler running (HHMM=1730)\nMon May 18 17:30:05 CDT 2026: Running hardware browser + digest\nMon May 18 17:44:46 CDT 2026: Mac scheduler done\nTue May 19 07:00:01 CDT 2026: Mac scheduler running (HHMM=0700)\nTue May 19 07:00:01 CDT 2026: Running hardware browser + digest\nTue May 19 07:08:39 CDT 2026: Mac scheduler done\nTue May 19 17:30:01 CDT 2026: Mac scheduler running (HHMM=1730)\nTue May 19 17:30:01 CDT 2026: Running hardware browser + digest\nTue May 19 17:42:42 CDT 2026: Mac scheduler done\nWed May 20 07:00:05 CDT 2026: Mac scheduler running (HHMM=0700)\nWed May 20 07:00:05 CDT 2026: Running hardware browser + digest\nWed May 20 07:09:08 CDT 2026: Mac scheduler done\nWed May 20 17:30:04 CDT 2026: Mac scheduler running (HHMM=1730)\nWed May 20 17:30:04 CDT 2026: Running hardware browser + digest\nWed May 20 17:47:08 CDT 2026: Mac scheduler done\nThu May 21 07:00:01 CDT 2026: Mac scheduler running (HHMM=0700)\nThu May 21 07:00:01 CDT 2026: Running hardware browser + digest\nThu May 21 07:08:27 CDT 2026: Mac scheduler done"
     },
     {
       "label": "com.grace.daily-reminder",
@@ -956,9 +956,9 @@
       "name": "Claude Proxy",
       "schedule": "Always on",
       "logPath": "/Users/scones/projects/LessonDraft/logs/proxy.log",
-      "loaded": false,
-      "pid": null,
-      "lastExitStatus": null,
+      "loaded": true,
+      "pid": 57966,
+      "lastExitStatus": 15,
       "healthy": false,
       "recentLog": null
     },
@@ -1004,17 +1004,17 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "AI teacher tools                           --       -       0       0    0.0%\n  rubric maker                               --       -       0       0    0.0%\n  report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json\nWed May 20 07:00:29 CDT 2026: Rank tracker done\nWed May 20 07:00:29 CDT 2026: Running watchdog...\nfile:///Users/scones/tools/watchdog.js:13\nconst fs = require(\"fs\");\n           ^\n\nReferenceError: require is not defined in ES module scope, you can use import instead\nThis file is being treated as an ES module because it has a '.js' file extension and '/Users/scones/tools/package.json' contains \"type\": \"module\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.\n    at file:///Users/scones/tools/watchdog.js:13:12\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.13.1\nWed May 20 07:00:29 CDT 2026: Watchdog done\nWed May 20 07:00:29 CDT 2026: === LessonDraft morning checks complete ==="
+      "recentLog": "AI teacher tools                           --       -       0       0    0.0%\n  rubric maker                               --       -       0       0    0.0%\n  report card comment generator              --       -       0       0    0.0%\n  IEP goal generator                         --       -       0       0    0.0%\n  quiz generator for teachers                --       -       0       0    0.0%\n  lesson plan template                       --       -       0       0    0.0%\n  AI tools for teachers                      --       -       0       0    0.0%\n\nData saved to /Users/scones/tools/gsc/rank-history.json\nThu May 21 07:00:17 CDT 2026: Rank tracker done\nThu May 21 07:00:17 CDT 2026: Running watchdog...\nfile:///Users/scones/tools/watchdog.js:13\nconst fs = require(\"fs\");\n           ^\n\nReferenceError: require is not defined in ES module scope, you can use import instead\nThis file is being treated as an ES module because it has a '.js' file extension and '/Users/scones/tools/package.json' contains \"type\": \"module\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.\n    at file:///Users/scones/tools/watchdog.js:13:12\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.13.1\nThu May 21 07:00:17 CDT 2026: Watchdog done\nThu May 21 07:00:17 CDT 2026: === LessonDraft morning checks complete ==="
     },
     {
       "label": "com.lessondraft.ngrok",
       "name": "Ngrok",
       "schedule": "Always on",
       "logPath": "/Users/scones/projects/LessonDraft/proxy/ngrok-stdout.log",
-      "loaded": false,
-      "pid": null,
-      "lastExitStatus": null,
-      "healthy": false,
+      "loaded": true,
+      "pid": 57964,
+      "lastExitStatus": 0,
+      "healthy": true,
       "recentLog": ""
     },
     {
@@ -1056,7 +1056,7 @@
       "schedule": "8am, 1:30pm, 6pm",
       "logPath": "/Users/scones/projects/lessondraft-social/logs/launchd_stdout.log",
       "loaded": true,
-      "pid": null,
+      "pid": 59208,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -1070,7 +1070,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed.\n\n\n[2026-05-20T22:44:22.482Z] LessonDraft synthetic check\n[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed.\n\n\n[2026-05-20T23:44:25.343Z] LessonDraft synthetic check\n[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed."
+      "recentLog": "[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed.\n\n\n[2026-05-21T10:31:17.698Z] LessonDraft synthetic check\n[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed.\n\n\n[2026-05-21T11:31:18.350Z] LessonDraft synthetic check\n[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed."
     },
     {
       "label": "com.listingdraft.realtor-outreach",
@@ -1092,7 +1092,7 @@
       "pid": 439,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[GIN] 2026/05/20 - 19:25:38 | 200 | 18.490266417s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:25:58 | 200 |  38.54731325s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 200 |  54.00346525s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 404 |    1.696916ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 404 |     1.95425ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 404 |     964.666µs |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 404 |     948.667µs |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 404 |     897.042µs |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 404 |     870.834µs |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 404 |     836.709µs |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 404 |     883.125µs |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:26:13 | 404 |     988.792µs |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:43:55 | 200 |  1.608749959s |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/20 - 19:43:55 | 200 |  1.653861709s |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/20 - 19:43:59 | 200 |    83.04975ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/20 - 19:44:04 | 200 |  251.386166ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/20 - 19:44:04 | 200 |    3.738542ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/20 - 19:44:04 | 404 |    7.760041ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:44:04 | 200 |    2.553792ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/20 - 19:44:04 | 200 |       2.216ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/20 - 19:44:04 | 404 |    6.300583ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:44:04 | 200 |    6.104167ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/20 - 19:44:04 | 404 |    9.712125ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/20 - 19:44:04 | 200 |    2.920583ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/20 - 19:44:04 | 404 |   17.486625ms |       127.0.0.1 | POST     \"/api/generate\""
+      "recentLog": "[GIN] 2026/05/21 - 07:27:32 | 404 |    1.001041ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:27:32 | 404 |    1.138083ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:27:32 | 404 |      932.75µs |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:27:32 | 404 |    1.009125ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:28:32 | 200 |   15.357334ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/21 - 07:28:32 | 200 |     1.90175ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/21 - 07:28:32 | 404 |    3.275791ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:28:32 | 200 |    6.494834ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/21 - 07:28:32 | 200 |    4.429791ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/21 - 07:28:32 | 200 |    3.620458ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/21 - 07:28:49 | 200 |       3.924ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/21 - 07:28:49 | 200 |    3.903541ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/21 - 07:28:49 | 404 |    1.521416ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:28:49 | 404 |    1.134125ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:28:50 | 200 |  17.84608975s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:28:58 | 200 |    7.649583ms |       127.0.0.1 | GET      \"/api/tags\"\n[GIN] 2026/05/21 - 07:29:03 | 200 |   30.8638365s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:29:15 | 200 | 42.111593834s |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:29:15 | 404 |    3.672541ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:29:15 | 404 |    2.534916ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:29:15 | 404 |    2.059875ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:29:15 | 404 |      1.6045ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:29:15 | 404 |    2.517875ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:29:15 | 404 |    2.505583ms |       127.0.0.1 | POST     \"/api/generate\"\n[GIN] 2026/05/21 - 07:29:15 | 404 |     2.20475ms |       127.0.0.1 | POST     \"/api/generate\""
     },
     {
       "label": "com.scholarships.autopilot",
@@ -1210,10 +1210,10 @@
       "schedule": "7:30am",
       "logPath": "/Users/scones/projects/vinnie-treasure/tools/output/launchagent-stdout.log",
       "loaded": true,
-      "pid": null,
+      "pid": 62656,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-04-26 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-27 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-28 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-29 02:01:39] THREAT DETECTED — see nightly-sweep.log\n[2026-04-30 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-01 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-02 02:01:13] THREAT DETECTED — see nightly-sweep.log\n[2026-05-03 02:12:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-04 08:20:18] THREAT DETECTED — see nightly-sweep.log\n[2026-05-05 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-06 02:00:00] THREAT DETECTED — see nightly-sweep.log\n[2026-05-07 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-08 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-09 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-10 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-11 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-12 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-05-13 02:00:01] THREAT DETECTED — see nightly-sweep.log\n[2026-05-14 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-15 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-16 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-17 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-18 02:00:00] THREAT DETECTED — see nightly-sweep.log\n[2026-05-19 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-05-20 02:00:01] THREAT DETECTED — see nightly-sweep.log"
+      "recentLog": "[2026-04-27 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-28 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-29 02:01:39] THREAT DETECTED — see nightly-sweep.log\n[2026-04-30 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-01 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-02 02:01:13] THREAT DETECTED — see nightly-sweep.log\n[2026-05-03 02:12:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-04 08:20:18] THREAT DETECTED — see nightly-sweep.log\n[2026-05-05 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-06 02:00:00] THREAT DETECTED — see nightly-sweep.log\n[2026-05-07 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-08 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-09 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-10 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-11 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-12 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-05-13 02:00:01] THREAT DETECTED — see nightly-sweep.log\n[2026-05-14 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-15 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-16 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-17 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-18 02:00:00] THREAT DETECTED — see nightly-sweep.log\n[2026-05-19 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-05-20 02:00:01] THREAT DETECTED — see nightly-sweep.log\n[2026-05-21 02:00:05] THREAT DETECTED — see nightly-sweep.log"
     },
     {
       "label": "com.vinnie.nightly-sweep",
@@ -1224,7 +1224,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-04-26 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-27 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-28 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-29 02:01:39] THREAT DETECTED — see nightly-sweep.log\n[2026-04-30 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-01 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-02 02:01:13] THREAT DETECTED — see nightly-sweep.log\n[2026-05-03 02:12:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-04 08:20:18] THREAT DETECTED — see nightly-sweep.log\n[2026-05-05 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-06 02:00:00] THREAT DETECTED — see nightly-sweep.log\n[2026-05-07 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-08 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-09 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-10 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-11 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-12 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-05-13 02:00:01] THREAT DETECTED — see nightly-sweep.log\n[2026-05-14 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-15 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-16 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-17 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-18 02:00:00] THREAT DETECTED — see nightly-sweep.log\n[2026-05-19 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-05-20 02:00:01] THREAT DETECTED — see nightly-sweep.log"
+      "recentLog": "[2026-04-27 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-04-28 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-04-29 02:01:39] THREAT DETECTED — see nightly-sweep.log\n[2026-04-30 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-01 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-02 02:01:13] THREAT DETECTED — see nightly-sweep.log\n[2026-05-03 02:12:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-04 08:20:18] THREAT DETECTED — see nightly-sweep.log\n[2026-05-05 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-06 02:00:00] THREAT DETECTED — see nightly-sweep.log\n[2026-05-07 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-08 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-09 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-10 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-11 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-12 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-05-13 02:00:01] THREAT DETECTED — see nightly-sweep.log\n[2026-05-14 02:00:04] THREAT DETECTED — see nightly-sweep.log\n[2026-05-15 02:00:03] THREAT DETECTED — see nightly-sweep.log\n[2026-05-16 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-17 02:00:02] THREAT DETECTED — see nightly-sweep.log\n[2026-05-18 02:00:00] THREAT DETECTED — see nightly-sweep.log\n[2026-05-19 02:00:05] THREAT DETECTED — see nightly-sweep.log\n[2026-05-20 02:00:01] THREAT DETECTED — see nightly-sweep.log\n[2026-05-21 02:00:05] THREAT DETECTED — see nightly-sweep.log"
     },
     {
       "label": "homebrew.mxcl.ollama",
@@ -1239,7 +1239,7 @@
     }
   ],
   "heatmap": {
-    "2026-05-20": 24,
+    "2026-05-20": 30,
     "2026-05-19": 41,
     "2026-05-18": 42,
     "2026-05-17": 7,
@@ -1297,8 +1297,7 @@
     "2026-02-23": 31,
     "2026-02-22": 8,
     "2026-02-21": 4,
-    "2026-02-20": 11,
-    "2026-02-19": 7,
+    "2026-02-20": 7,
     "2026-04-18": 7,
     "2026-04-14": 10,
     "2026-04-12": 3,
@@ -1887,7 +1886,7 @@
   },
   "seoTools": {
     "rankTracker": {
-      "date": "2026-05-20",
+      "date": "2026-05-21",
       "keywords": {
         "AI lesson plan generator": {
           "position": null,
@@ -2000,7 +1999,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 153,
+    "commitsThisWeek": 159,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": [
       {
@@ -2194,7 +2193,7 @@
         "estMonthlyLow": 10,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "native"
       },
       {
@@ -2204,7 +2203,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "native"
       },
       {
@@ -2214,7 +2213,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "docker"
       },
       {
@@ -2224,7 +2223,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "docker"
       },
       {
@@ -2234,7 +2233,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "docker"
       },
       {
@@ -2244,7 +2243,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "docker"
       },
       {
@@ -2254,7 +2253,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "docker"
       },
       {
@@ -2264,7 +2263,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "docker"
       },
       {
@@ -2274,7 +2273,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "docker"
       },
       {
@@ -2284,7 +2283,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-05-21T00:44:09.825Z",
+        "lastCheck": "2026-05-21T12:30:07.298Z",
         "containerType": "docker"
       }
     ],
