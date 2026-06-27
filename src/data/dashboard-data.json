@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-26T12:30:11.517Z",
+  "generatedAt": "2026-06-27T00:30:11.699Z",
   "stats": {
     "activeProjects": 12,
     "pausedProjects": 2,
     "activeAutomations": 6,
-    "healthyAgents": 61,
+    "healthyAgents": 64,
     "totalAgents": 112,
     "ideasCount": 29,
     "avgHealthScore": 60
@@ -22,14 +22,14 @@
       "nextCheckIn": "2026-03-14",
       "notes": "Main product. Check SEO indexing, Stripe revenue, user signups, blog posts.",
       "lastCommit": {
-        "hash": "46b437f9754ad4faabb50b3a491cbfa200d47016",
-        "message": "Add bell-ringer tool, /answers AI-citation corpus, standards hub, back-to-school hub",
-        "date": "2026-06-24 16:11:50 -0500"
+        "hash": "8a8eb8356d17f6e19f17113530593cba770450c4",
+        "message": "docs: STATUS — autonomous conversion+SEO+reputation session (5 ships)",
+        "date": "2026-06-26 19:21:52 -0500"
       },
       "gitStats": {
-        "totalCommits": 1765
+        "totalCommits": 1784
       },
-      "statusSummary": "# LessonDraft — Status\n\n## 2026-06-24 — Funnel deep-dive session (Claude, manual)\nVerified revenue/funnel live (Stripe + Supabase events). **2 active paying subs**\n(Ayokunle Falomo / Post Oak School $7/mo organic 62 gens; Sandra Guerra / Easter\nSeals Houston $60/yr — first annual, converted off trial Jun 23). Both SpEd/\ninstitutional. Funnel (30d): 5,173 visitors → 108 gen_started → 96 completed → 59\nsignup_started; checkout converts 5/6 (leak is upstream intent, not the buy button).\nOrganic search is the engine (incl. ChatGPT 140 sessions); social/autoposters ~dead.\nTwo ships:\n- `8392002` fix",
+      "statusSummary": "# LessonDraft — Status\n\n## 2026-06-25 — check-in #38 — bell-ringer + /answers + hubs shipped; 06-24 closed clean; 06-25 quiet so far\n\n**One undocumented commit since last STATUS (`d957bbe`):**\n- **`46b437f`** — Add bell-ringer tool, `/answers` AI-citation corpus, standards hub, back-to-school hub. Four new free tools / content hubs; expands organic-search surface.\n\n**Live read (Supabase `jqeypwrmsgjsmggdgvgd`):**\n- **06-24 closed at 40 started / 3 completed / 0 error / 0 failed.** Last STATUS (#37) caught it mid-day at 38/1 — 2 more starts and 2 more completions landed after that write. Zero e",
       "healthScore": 70
     },
     {
@@ -65,12 +65,12 @@
       "nextCheckIn": "2026-03-13",
       "notes": "Monitor email sends, check replies, manual texting. 130 drafts ready.",
       "lastCommit": {
-        "hash": "744a9167708b50cc778669e8cfe2a78f2a540ac4",
-        "message": "realtor-pipeline: self-heal node_modules on Node upgrade (auto npm install preflight)",
-        "date": "2026-06-21 14:05:27 -0500"
+        "hash": "5dcd1c7db36c4685a989349d62f5d1565ca37f5f",
+        "message": "fix(deliverability): stop first-touching guessed role addresses",
+        "date": "2026-06-26 18:23:03 -0500"
       },
       "gitStats": {
-        "totalCommits": 14
+        "totalCommits": 15
       },
       "statusSummary": "# Lead Scraper — Status\n\n## 2026-05-18 — Realtor funnel fixes + revenue reality check\n- **CRITICAL:** ListingDraft has **0 paying subscribers** (verified live vs Stripe API).\n  Lifetime Stripe: 6 subs, all canceled; 1 charge ever ($12, ~Feb). No payments in ~3mo.\n  The realtor funnel converts at **0%** — more outreach volume ≠ revenue. See memory `revenue-truth-may18`.\n- Fixed: `verify-realtor-emails.js` added (nothing ever set `realtor_leads.email_verified=1`,\n  so first-touch sends were permanently starved → follow-ups only). Wired into\n  `realtor-pipeline.js` between find + send. Unlocked 3",
       "healthScore": 70
@@ -469,7 +469,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Testing with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-06-26T10:32:03.679Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-06-26T11:32:04.083Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-06-26T12:32:04.618Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway."
+      "recentLog": "Testing with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-06-26T22:32:09.505Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-06-26T23:32:10.041Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway.\nToken expires in 0m. Refreshing...\nToken refreshed. New expiry: 2026-06-27T00:32:10.779Z\n\nTesting with Gmail labels API...\nSuccess — 31 labels found.\nSample: CHAT, SENT, INBOX, IMPORTANT, TRASH\nToken still valid (30m left). Use --force to refresh anyway."
     },
     {
       "label": "com.classpilot.gcu-scraper",
@@ -568,7 +568,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "watch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\n[ntfy-suppressed] Athena noticed something: Service com.cobo.athena-hands-regression last exited with error code 1. Service com.cobo.athena-chat-regression last exited with error code 1. Service com.cobo.kpi-sweep last exited with error code 7.\nALERTED: Service com.cobo.athena-hands-regression last exited with error code 1. Service com.cobo.athena-chat-regression last exited with error code 1. Service com.cobo.kpi-sweep last exited with error code 7.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\n[ntfy-suppressed] Athena noticed something: Service com.cobo.athena-hands-regression last exited with error code 1. Service com.cobo.athena-chat-regression last exited with error code 1. Service com.cobo.kpi-sweep last exited with error code 7.\nALERTED: Service com.cobo.athena-hands-regression last exited with error code 1. Service com.cobo.athena-chat-regression last exited with error code 1. Service com.cobo.kpi-sweep last exited with error code 7.\n[ntfy-suppressed] Athena noticed something: Service com.cobo.decad-sync last exited with error code 1.\nALERTED: Service com.cobo.decad-sync last exited with error code 1.\nwatch: 4 issue(s), 0 new to alert.\nwatch: 4 issue(s), 0 new to alert."
+      "recentLog": "watch: 4 issue(s), 0 new to alert.\nwatch: 4 issue(s), 0 new to alert.\nwatch: 4 issue(s), 0 new to alert.\nwatch: 4 issue(s), 0 new to alert.\nwatch: 4 issue(s), 0 new to alert.\nwatch: 4 issue(s), 0 new to alert.\nwatch: 4 issue(s), 0 new to alert.\n[ntfy-suppressed] Athena noticed something: Service com.cobo.athena-hands-regression last exited with error code 1. Service com.cobo.athena-chat-regression last exited with error code 1. Service com.cobo.kpi-sweep last exited with error code 7.\nALERTED: Service com.cobo.athena-hands-regression last exited with error code 1. Service com.cobo.athena-chat-regression last exited with error code 1. Service com.cobo.kpi-sweep last exited with error code 7.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\n[ntfy-suppressed] Athena noticed something: Service com.cobo.athena-hands-regression last exited with error code 1. Service com.cobo.athena-chat-regression last exited with error code 1. Service com.cobo.kpi-sweep last exited with error code 7.\nALERTED: Service com.cobo.athena-hands-regression last exited with error code 1. Service com.cobo.athena-chat-regression last exited with error code 1. Service com.cobo.kpi-sweep last exited with error code 7.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert.\nwatch: 3 issue(s), 0 new to alert."
     },
     {
       "label": "com.cobo.backup-prune",
@@ -586,10 +586,10 @@
       "name": "Bb Recon",
       "schedule": "3:17am",
       "logPath": "/Users/scones/bugbounty/recon/agent.out.log",
-      "loaded": false,
+      "loaded": true,
       "pid": null,
-      "lastExitStatus": null,
-      "healthy": false,
+      "lastExitStatus": 0,
+      "healthy": true,
       "recentLog": ""
     },
     {
@@ -711,7 +711,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[sync-to-hp] Fri Jun 26 05:27:43 CDT 2026 done\n[sync-to-hp] Fri Jun 26 05:32:47 CDT 2026 done\n[sync-to-hp] Fri Jun 26 05:37:52 CDT 2026 done\n[sync-to-hp] Fri Jun 26 05:42:56 CDT 2026 done\n[sync-to-hp] Fri Jun 26 05:48:00 CDT 2026 done\n[sync-to-hp] Fri Jun 26 05:53:04 CDT 2026 done\n[sync-to-hp] Fri Jun 26 05:58:09 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:03:14 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:08:18 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:13:22 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:18:27 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:23:31 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:28:35 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:33:40 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:38:44 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:43:48 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:48:53 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:53:57 CDT 2026 done\n[sync-to-hp] Fri Jun 26 06:59:01 CDT 2026 done\n[sync-to-hp] Fri Jun 26 07:04:06 CDT 2026 done\n[sync-to-hp] Fri Jun 26 07:09:10 CDT 2026 done\n[sync-to-hp] Fri Jun 26 07:14:14 CDT 2026 done\n[sync-to-hp] Fri Jun 26 07:19:19 CDT 2026 done\n[sync-to-hp] Fri Jun 26 07:24:23 CDT 2026 done\n[sync-to-hp] Fri Jun 26 07:29:28 CDT 2026 done"
+      "recentLog": "[sync-to-hp] Fri Jun 26 17:23:25 CDT 2026 done\n[sync-to-hp] Fri Jun 26 17:28:31 CDT 2026 done\n[sync-to-hp] Fri Jun 26 17:33:36 CDT 2026 done\n[sync-to-hp] Fri Jun 26 17:38:41 CDT 2026 done\n[sync-to-hp] Fri Jun 26 17:43:46 CDT 2026 done\n[sync-to-hp] Fri Jun 26 17:48:53 CDT 2026 done\n[sync-to-hp] Fri Jun 26 17:53:58 CDT 2026 done\n[sync-to-hp] Fri Jun 26 17:59:04 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:04:09 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:09:14 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:14:19 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:19:24 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:24:29 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:29:34 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:34:39 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:39:44 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:44:48 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:49:53 CDT 2026 done\n[sync-to-hp] Fri Jun 26 18:54:58 CDT 2026 done\n[sync-to-hp] Fri Jun 26 19:00:03 CDT 2026 done\n[sync-to-hp] Fri Jun 26 19:05:08 CDT 2026 done\n[sync-to-hp] Fri Jun 26 19:10:12 CDT 2026 done\n[sync-to-hp] Fri Jun 26 19:15:17 CDT 2026 done\n[sync-to-hp] Fri Jun 26 19:20:22 CDT 2026 done\n[sync-to-hp] Fri Jun 26 19:25:27 CDT 2026 done"
     },
     {
       "label": "com.cobo.council-scout",
@@ -797,9 +797,9 @@
       "logPath": "/Users/scones/tools/logs/decad-sync.out",
       "loaded": true,
       "pid": null,
-      "lastExitStatus": 256,
-      "healthy": false,
-      "recentLog": "estate markdown ✓\nno source reachable — using existing local mirror (last: 2026-06-21 21:19:14  from=morty  md=6252)\nno source reachable — using existing local mirror (last: 2026-06-21 21:19:14  from=morty  md=6252)\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nno source reachable — using existing local mirror (last: 2026-06-22 21:19:04  from=morty  md=6253)\nno source reachable — using existing local mirror (last: 2026-06-22 21:19:04  from=morty  md=6253)\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nno source reachable — using existing local mirror (last: 2026-06-23 21:19:33  from=morty  md=6258)\nno source reachable — using existing local mirror (last: 2026-06-23 21:19:33  from=morty  md=6258)\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nno source reachable — using existing local mirror (last: 2026-06-24 21:20:07  from=morty  md=6548)\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nno source reachable — using existing local mirror (last: 2026-06-25 23:32:26  from=morty  md=6554)"
+      "lastExitStatus": 0,
+      "healthy": true,
+      "recentLog": "Morty docs ✓\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nno source reachable — using existing local mirror (last: 2026-06-22 21:19:04  from=morty  md=6253)\nno source reachable — using existing local mirror (last: 2026-06-22 21:19:04  from=morty  md=6253)\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nno source reachable — using existing local mirror (last: 2026-06-23 21:19:33  from=morty  md=6258)\nno source reachable — using existing local mirror (last: 2026-06-23 21:19:33  from=morty  md=6258)\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nno source reachable — using existing local mirror (last: 2026-06-24 21:20:07  from=morty  md=6548)\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nno source reachable — using existing local mirror (last: 2026-06-25 23:32:26  from=morty  md=6554)\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓\nsyncing from Morty (home-reachable fallback)…\n  Morty docs ✓"
     },
     {
       "label": "com.cobo.dream",
@@ -810,7 +810,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[2026-06-25 06:45:02] \n[2026-06-25 07:30:04] \n[2026-06-25 08:15:03] \n[2026-06-25 09:00:03] \n[2026-06-25 09:45:02] \n[2026-06-25 10:30:05] \n[2026-06-25 11:15:05] \n[2026-06-25 12:00:05] \n[2026-06-25 12:45:05] \n[2026-06-25 13:30:05] \n[2026-06-25 14:15:05] \n[2026-06-25 15:00:05] \n[2026-06-25 15:45:05] \n[2026-06-25 16:30:05] \n[2026-06-25 17:15:05] \n[2026-06-25 18:00:05] \n[2026-06-25 18:45:04] \n[2026-06-25 19:30:01] \n[2026-06-25 20:15:05] \n[2026-06-25 21:00:05] \n[2026-06-25 21:45:06] \n[2026-06-25 22:30:05] \n[2026-06-26 06:00:02] \n[2026-06-26 06:45:01] \n[2026-06-26 07:30:05]"
+      "recentLog": "[2026-06-25 18:45:04] \n[2026-06-25 19:30:01] \n[2026-06-25 20:15:05] \n[2026-06-25 21:00:05] \n[2026-06-25 21:45:06] \n[2026-06-25 22:30:05] \n[2026-06-26 06:00:02] \n[2026-06-26 06:45:01] \n[2026-06-26 07:30:05] \n[2026-06-26 08:15:05] \n[2026-06-26 09:00:05] \n[2026-06-26 09:45:06] \n[2026-06-26 10:30:05] \n[2026-06-26 11:15:05] \n[2026-06-26 12:00:05] \n[2026-06-26 12:45:05] \n[2026-06-26 13:30:05] \n[2026-06-26 14:15:05] \n[2026-06-26 15:00:05] \n[2026-06-26 15:45:01] \n[2026-06-26 16:30:01] \n[2026-06-26 17:15:05] \n[2026-06-26 18:00:05] \n[2026-06-26 18:45:06] \n[2026-06-26 19:30:05]"
     },
     {
       "label": "com.cobo.ecosystem",
@@ -832,7 +832,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[1/10] 4th Grade Math Test Prep BUNDLE: Multiplication, Division, Place Value & Fractions (160 Problems + Answer Keys)  ($12)\n    pdf=pack-b2-4th-grade-math-bundle.pdf cover=yes\n    ✗ FAILED: playwright_no_create_verified\n\n[1/10] 2nd Grade Math Test Prep BUNDLE: Regrouping, Money & Place Value (120 Problems + Answer Keys)  ($9)\n    pdf=pack-b1-2nd-grade-math-bundle.pdf cover=yes\n    ✗ FAILED: playwright_no_create_verified\n\n[1/10] 5th Grade Math Test Prep BUNDLE: Decimals, Fractions & Order of Operations (120 Problems + Answer Keys)  ($9)\n    pdf=pack-b3-5th-grade-math-bundle.pdf cover=yes\n    ✗ FAILED: playwright_no_create_verified\n\n[1/10] 5th Grade Summer Math Review Packet (6 Weeks, 60 Problems + Answer Key)  ($5)\n    pdf=pack-s3-5th-summer-math-review.pdf cover=yes\n    ✓ created id=GkmZ_AdzpJl1I4cRF0RU5A== url=https://cobocastle.gumroad.com/l/mjwuiu published=True\n\n[2/10] 2nd Grade Summer Math Review Packet (6 Weeks, 60 Problems + Answer Key)  ($5)\n    pdf=pack-s4-2nd-summer-math-review.pdf cover=yes\n    ✓ created id=9pH72u2ZBZ79FNUQ29OpYg== url=https://cobocastle.gumroad.com/l/nvcvsq published=True\n\n[3/10] 2nd Grade Math: Counting Money & Making Change (40 Problems + Answer Key)  ($4)\n    pdf=pack-36-2nd-math-money.pdf cover=yes\n    RATE LIMIT (10/day) reached — stopping.\n\n=== DONE: 2 created, 2 confirmed live. Results -> /Users/scones/projects/gumroad-autoposter/api-batch-results.json ==="
+      "recentLog": "[1/10] 5th Grade Math Test Prep BUNDLE: Decimals, Fractions & Order of Operations (120 Problems + Answer Keys)  ($9)\n    pdf=pack-b3-5th-grade-math-bundle.pdf cover=yes\n    ✗ FAILED: playwright_no_create_verified\n\n[1/10] 5th Grade Summer Math Review Packet (6 Weeks, 60 Problems + Answer Key)  ($5)\n    pdf=pack-s3-5th-summer-math-review.pdf cover=yes\n    ✓ created id=GkmZ_AdzpJl1I4cRF0RU5A== url=https://cobocastle.gumroad.com/l/mjwuiu published=True\n\n[2/10] 2nd Grade Summer Math Review Packet (6 Weeks, 60 Problems + Answer Key)  ($5)\n    pdf=pack-s4-2nd-summer-math-review.pdf cover=yes\n    ✓ created id=9pH72u2ZBZ79FNUQ29OpYg== url=https://cobocastle.gumroad.com/l/nvcvsq published=True\n\n[3/10] 2nd Grade Math: Counting Money & Making Change (40 Problems + Answer Key)  ($4)\n    pdf=pack-36-2nd-math-money.pdf cover=yes\n    RATE LIMIT (10/day) reached — stopping.\n\n=== DONE: 2 created, 2 confirmed live. Results -> /Users/scones/projects/gumroad-autoposter/api-batch-results.json ===\nUnuploaded distinct topics: 36 | publishing up to 10\n\n[1/10] 4th Grade Math Test Prep BUNDLE: Multiplication, Division, Place Value & Fractions (160 Problems + Answer Keys)  ($12)\n    pdf=pack-b2-4th-grade-math-bundle.pdf cover=yes\n    RATE LIMIT (10/day) reached — stopping.\n\n=== DONE: 0 created, 0 confirmed live. Results -> /Users/scones/projects/gumroad-autoposter/api-batch-results.json ==="
     },
     {
       "label": "com.cobo.health",
@@ -843,7 +843,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "2026-06-26 07:15:11: MISS #1 — code=000 time=0.000363s (phone would see nothing)\n2026-06-26 07:16:11: MISS #2 — code=000 time=0.000293s (phone would see nothing)\n2026-06-26 07:17:12: MISS #3 — code=000 time=0.000408s (phone would see nothing)\n2026-06-26 07:17:12: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 07:17:12: kickstart FAILED\n2026-06-26 07:18:12: MISS #1 — code=000 time=0.000308s (phone would see nothing)\n2026-06-26 07:19:12: MISS #2 — code=000 time=0.000270s (phone would see nothing)\n2026-06-26 07:20:12: MISS #3 — code=000 time=0.000356s (phone would see nothing)\n2026-06-26 07:20:12: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 07:20:12: kickstart FAILED\n2026-06-26 07:21:12: MISS #1 — code=000 time=0.000326s (phone would see nothing)\n2026-06-26 07:22:12: MISS #2 — code=000 time=0.000427s (phone would see nothing)\n2026-06-26 07:23:12: MISS #3 — code=000 time=0.000394s (phone would see nothing)\n2026-06-26 07:23:12: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 07:23:12: kickstart FAILED\n2026-06-26 07:24:12: MISS #1 — code=000 time=0.000343s (phone would see nothing)\n2026-06-26 07:25:12: MISS #2 — code=000 time=0.000389s (phone would see nothing)\n2026-06-26 07:26:12: MISS #3 — code=000 time=0.000342s (phone would see nothing)\n2026-06-26 07:26:12: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 07:26:12: kickstart FAILED\n2026-06-26 07:27:12: MISS #1 — code=000 time=0.000393s (phone would see nothing)\n2026-06-26 07:28:13: MISS #2 — code=000 time=0.000401s (phone would see nothing)\n2026-06-26 07:29:13: MISS #3 — code=000 time=0.000352s (phone would see nothing)\n2026-06-26 07:29:13: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 07:29:13: kickstart FAILED"
+      "recentLog": "2026-06-26 19:15:18: MISS #3 — code=000 time=0.000405s (phone would see nothing)\n2026-06-26 19:15:18: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 19:15:18: kickstart FAILED\n2026-06-26 19:16:18: MISS #1 — code=000 time=0.000336s (phone would see nothing)\n2026-06-26 19:17:18: MISS #2 — code=000 time=0.000314s (phone would see nothing)\n2026-06-26 19:18:18: MISS #3 — code=000 time=0.000409s (phone would see nothing)\n2026-06-26 19:18:18: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 19:18:18: kickstart FAILED\n2026-06-26 19:19:18: MISS #1 — code=000 time=0.000384s (phone would see nothing)\n2026-06-26 19:20:18: MISS #2 — code=000 time=0.000304s (phone would see nothing)\n2026-06-26 19:21:18: MISS #3 — code=000 time=0.000413s (phone would see nothing)\n2026-06-26 19:21:18: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 19:21:18: kickstart FAILED\n2026-06-26 19:22:18: MISS #1 — code=000 time=0.000301s (phone would see nothing)\n2026-06-26 19:23:18: MISS #2 — code=000 time=0.000419s (phone would see nothing)\n2026-06-26 19:24:18: MISS #3 — code=000 time=0.000370s (phone would see nothing)\n2026-06-26 19:24:18: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 19:24:18: kickstart FAILED\n2026-06-26 19:25:18: MISS #1 — code=000 time=0.000367s (phone would see nothing)\n2026-06-26 19:26:19: MISS #2 — code=000 time=0.000304s (phone would see nothing)\n2026-06-26 19:27:19: MISS #3 — code=000 time=0.000390s (phone would see nothing)\n2026-06-26 19:27:19: unresponsive 3x consecutive — graceful kickstart of com.cobo.daemon\n2026-06-26 19:27:19: kickstart FAILED\n2026-06-26 19:28:19: MISS #1 — code=000 time=0.000352s (phone would see nothing)\n2026-06-26 19:29:19: MISS #2 — code=000 time=0.000356s (phone would see nothing)"
     },
     {
       "label": "com.cobo.hourly",
@@ -997,7 +997,7 @@
       "pid": 6606,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1662.4k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1662.4k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: too small (62 < 200)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1670.3k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1670.3k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: too small (29 < 200)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1673.2k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1673.2k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m263.3k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m263.3k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m263.3k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m263.3k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m263.3k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m263.3k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] HEAD /\n[tamp] HEAD /\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m263.4k\u001b[0m \u001b[2m— passthrough\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m263.4k\u001b[0m \u001b[2m— passthrough\u001b[0m"
+      "recentLog": "[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1175.7k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1176.6k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1176.6k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1177.9k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1177.9k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1178.4k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1178.4k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: too small (172 < 200)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1179.6k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1179.6k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: too small (25 < 200)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1182.9k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1182.9k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1194.3k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1194.3k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1201.5k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1201.5k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp]   skip: text not compressible (whitespace savings < 10%)\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1210.0k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m\n[tamp] \u001b[36manthropic\u001b[0m /v1/messages?beta=true \u001b[2m1210.0k\u001b[0m \u001b[2m— 1 block, 1 skipped (not-compressible)\u001b[0m"
     },
     {
       "label": "com.cobo.usage-monitor",
@@ -1060,10 +1060,10 @@
       "schedule": "7:30am, 7:30pm",
       "logPath": "/Users/scones/projects/command-center/logs/update.log",
       "loaded": true,
-      "pid": 92409,
+      "pid": 5552,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Regenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 62/112 agents\n  25717 scholarships ($5506K) | 683 emails | 12 courses\n  0/10 passive services running\nData changed, committing and pushing...\n[main c4b0b86] Update dashboard data 2026-06-25_19:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 108 insertions(+), 121 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
+      "recentLog": "Regenerating dashboard data...\nDashboard data generated\n  12 active | 6 automations | 61/112 agents\n  25717 scholarships ($5506K) | 683 emails | 12 courses\n  0/10 passive services running\nData changed, committing and pushing...\n[main 696f389] Update dashboard data 2026-06-26_07:30\n Committer: Jacob Cascone <scones@MacBookPro.attlocal.net>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly. Run the\nfollowing command and follow the instructions in your editor to edit\nyour configuration file:\n\n    git config --global --edit\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 39 insertions(+), 40 deletions(-)\nDeploying to Vercel...\nDeployed: \nDone.\nRegenerating dashboard data..."
     },
     {
       "label": "com.dealscout.scheduler",
@@ -1074,7 +1074,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "Mon Jun 22 07:05:18 CDT 2026: Mac scheduler done\nMon Jun 22 17:30:05 CDT 2026: Mac scheduler running (HHMM=1730)\nMon Jun 22 17:30:05 CDT 2026: Running hardware browser + digest\nMon Jun 22 17:35:18 CDT 2026: Mac scheduler done\nTue Jun 23 07:00:00 CDT 2026: Mac scheduler running (HHMM=0700)\nTue Jun 23 07:00:00 CDT 2026: Running hardware browser + digest\nTue Jun 23 07:05:23 CDT 2026: Mac scheduler done\nTue Jun 23 17:30:05 CDT 2026: Mac scheduler running (HHMM=1730)\nTue Jun 23 17:30:05 CDT 2026: Running hardware browser + digest\nTue Jun 23 17:35:27 CDT 2026: Mac scheduler done\nWed Jun 24 07:00:05 CDT 2026: Mac scheduler running (HHMM=0700)\nWed Jun 24 07:00:05 CDT 2026: Running hardware browser + digest\nWed Jun 24 07:05:25 CDT 2026: Mac scheduler done\nWed Jun 24 17:30:00 CDT 2026: Mac scheduler running (HHMM=1730)\nWed Jun 24 17:30:00 CDT 2026: Running hardware browser + digest\nWed Jun 24 17:37:19 CDT 2026: Mac scheduler done\nThu Jun 25 07:00:01 CDT 2026: Mac scheduler running (HHMM=0700)\nThu Jun 25 07:00:01 CDT 2026: Running hardware browser + digest\nThu Jun 25 07:05:37 CDT 2026: Mac scheduler done\nThu Jun 25 17:30:05 CDT 2026: Mac scheduler running (HHMM=1730)\nThu Jun 25 17:30:05 CDT 2026: Running hardware browser + digest\nThu Jun 25 17:35:22 CDT 2026: Mac scheduler done\nFri Jun 26 07:00:05 CDT 2026: Mac scheduler running (HHMM=0700)\nFri Jun 26 07:00:05 CDT 2026: Running hardware browser + digest\nFri Jun 26 07:05:30 CDT 2026: Mac scheduler done"
+      "recentLog": "Mon Jun 22 17:35:18 CDT 2026: Mac scheduler done\nTue Jun 23 07:00:00 CDT 2026: Mac scheduler running (HHMM=0700)\nTue Jun 23 07:00:00 CDT 2026: Running hardware browser + digest\nTue Jun 23 07:05:23 CDT 2026: Mac scheduler done\nTue Jun 23 17:30:05 CDT 2026: Mac scheduler running (HHMM=1730)\nTue Jun 23 17:30:05 CDT 2026: Running hardware browser + digest\nTue Jun 23 17:35:27 CDT 2026: Mac scheduler done\nWed Jun 24 07:00:05 CDT 2026: Mac scheduler running (HHMM=0700)\nWed Jun 24 07:00:05 CDT 2026: Running hardware browser + digest\nWed Jun 24 07:05:25 CDT 2026: Mac scheduler done\nWed Jun 24 17:30:00 CDT 2026: Mac scheduler running (HHMM=1730)\nWed Jun 24 17:30:00 CDT 2026: Running hardware browser + digest\nWed Jun 24 17:37:19 CDT 2026: Mac scheduler done\nThu Jun 25 07:00:01 CDT 2026: Mac scheduler running (HHMM=0700)\nThu Jun 25 07:00:01 CDT 2026: Running hardware browser + digest\nThu Jun 25 07:05:37 CDT 2026: Mac scheduler done\nThu Jun 25 17:30:05 CDT 2026: Mac scheduler running (HHMM=1730)\nThu Jun 25 17:30:05 CDT 2026: Running hardware browser + digest\nThu Jun 25 17:35:22 CDT 2026: Mac scheduler done\nFri Jun 26 07:00:05 CDT 2026: Mac scheduler running (HHMM=0700)\nFri Jun 26 07:00:05 CDT 2026: Running hardware browser + digest\nFri Jun 26 07:05:30 CDT 2026: Mac scheduler done\nFri Jun 26 17:30:05 CDT 2026: Mac scheduler running (HHMM=1730)\nFri Jun 26 17:30:05 CDT 2026: Running hardware browser + digest\nFri Jun 26 17:35:33 CDT 2026: Mac scheduler done"
     },
     {
       "label": "com.forgemaster.bridge",
@@ -1291,7 +1291,7 @@
       "schedule": "Always on",
       "logPath": "/Users/scones/projects/LessonDraft/logs/proxy.log",
       "loaded": true,
-      "pid": 48685,
+      "pid": 82458,
       "lastExitStatus": 15,
       "healthy": false,
       "recentLog": null
@@ -1316,7 +1316,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "--- Rising Queries ---\n\n=== Rising Queries (last 14d vs prev 14d) ===\n\n  +46 imp  \"what are the 8 components of a lesson plan\" (0 -> 46 imp, 1 clicks)\n  +45 imp  \"components of a lesson plan\" (0 -> 45 imp, 0 clicks)\n  +30 imp  \"components of lesson plan\" (0 -> 30 imp, 1 clicks)\n  +30 imp  \"classroom technology planning\" (23 -> 53 imp, 0 clicks)\n  +23 imp  \"difference between unit plan and lesson plan\" (4 -> 27 imp, 1 clicks)\n  +21 imp  \"difference between lesson plan and unit plan\" (1 -> 22 imp, 0 clicks)\n  +18 imp  \"how do you use data to drive instruction\" (0 -> 18 imp, 0 clicks)\n  +18 imp  \"inquiry questions for social studies\" (1 -> 19 imp, 0 clicks)\n  +17 imp  \"how to use data to drive instruction\" (0 -> 17 imp, 0 clicks)\n  +15 imp  \"\"carpet to tables\" classroom transition\" (1 -> 16 imp, 0 clicks)\n  +15 imp  \"creating a lesson plan\" (0 -> 15 imp, 0 clicks)\n  +15 imp  \"free ready-to-use lesson plans organized by subject and grade level\" (3 -> 18 imp, 0 clicks)\n  +15 imp  \"high school english lessons\" (0 -> 15 imp, 0 clicks)\n  +15 imp  \"how to introduce specific objectives\" (0 -> 15 imp, 0 clicks)\n  +14 imp  \"classroom debate\" (0 -> 14 imp, 0 clicks)\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-06-25-1800.log"
+      "recentLog": "--- Rising Queries ---\n\n=== Rising Queries (last 14d vs prev 14d) ===\n\n  +52 imp  \"what are the 8 components of a lesson plan\" (0 -> 52 imp, 1 clicks)\n  +49 imp  \"components of a lesson plan\" (0 -> 49 imp, 0 clicks)\n  +38 imp  \"components of lesson plan\" (0 -> 38 imp, 1 clicks)\n  +27 imp  \"classroom technology planning\" (26 -> 53 imp, 0 clicks)\n  +20 imp  \"inquiry questions for social studies\" (1 -> 21 imp, 0 clicks)\n  +18 imp  \"how do you use data to drive instruction\" (0 -> 18 imp, 0 clicks)\n  +17 imp  \"component of lesson plan\" (0 -> 17 imp, 0 clicks)\n  +17 imp  \"how to use data to drive instruction\" (0 -> 17 imp, 0 clicks)\n  +16 imp  \"free ready-to-use lesson plans organized by subject and grade level\" (3 -> 19 imp, 0 clicks)\n  +15 imp  \"\"carpet to tables\" classroom transition\" (1 -> 16 imp, 0 clicks)\n  +15 imp  \"creating a lesson plan\" (0 -> 15 imp, 0 clicks)\n  +15 imp  \"difference between lesson plan and unit plan\" (4 -> 19 imp, 0 clicks)\n  +15 imp  \"high school english lessons\" (0 -> 15 imp, 0 clicks)\n  +15 imp  \"how to introduce specific objectives\" (0 -> 15 imp, 0 clicks)\n  +14 imp  \"how do you use data to drive instruction?\" (0 -> 14 imp, 0 clicks)\n\n--- Milestone Tracking ---\n\nMilestones: indexed=None | impression=None | click=None\nLog saved to /Users/scones/tools/gsc/logs/2026-06-26-1800.log"
     },
     {
       "label": "com.lessondraft.gum-crosspost",
@@ -1327,7 +1327,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "rendered /Users/scones/projects/lessondraft-social/gum_promo/_gum_lhvsxs.jpg\nFAIL TW lhvsxs _tweet None\nOK  FB lhvsxs post=1036792529511076_122114960043287387\nOK  IG lhvsxs media=18124669486647724\nOK  LI lhvsxs post=urn:li:share:7474889689095643137\n\n[2026-06-22T18:23:06.943336] batch=1 TW 0/1 FB 1/1 IG 1/1 LI 1/1 gated=0 progress=12/12\nrendered /Users/scones/projects/lessondraft-social/gum_promo/_gum_zqfzub.jpg\nFAIL TW zqfzub _tweet None\nOK  FB zqfzub post=1319195616510995\nOK  IG zqfzub media=18091533101371342\nOK  LI zqfzub post=urn:li:ugcPost:7475252189020704768\n\n[2026-06-23T18:23:34.106268] batch=1 TW 0/1 FB 1/1 IG 1/1 LI 1/1 gated=0 progress=12/12\nrendered /Users/scones/projects/lessondraft-social/gum_promo/_gum_kdbppr.jpg\nFAIL TW kdbppr _tweet None\nOK  FB kdbppr post=1980865496128829\nOK  IG kdbppr media=18089855153566147\nOK  LI kdbppr post=urn:li:ugcPost:7475614505431879680\n\n[2026-06-24T18:23:16.556695] batch=1 TW 0/1 FB 1/1 IG 1/1 LI 1/1 gated=0 progress=12/12\nrendered /Users/scones/projects/lessondraft-social/gum_promo/_gum_ovcht.jpg\nGATE-REJECT ovcht Time Blocking Planner — Printable Workbook\n\n[2026-06-25T18:22:11.564144] batch=1 TW 0/0 FB 0/0 IG 0/0 LI 0/0 gated=1 progress=12/12"
+      "recentLog": "OK  LI lhvsxs post=urn:li:share:7474889689095643137\n\n[2026-06-22T18:23:06.943336] batch=1 TW 0/1 FB 1/1 IG 1/1 LI 1/1 gated=0 progress=12/12\nrendered /Users/scones/projects/lessondraft-social/gum_promo/_gum_zqfzub.jpg\nFAIL TW zqfzub _tweet None\nOK  FB zqfzub post=1319195616510995\nOK  IG zqfzub media=18091533101371342\nOK  LI zqfzub post=urn:li:ugcPost:7475252189020704768\n\n[2026-06-23T18:23:34.106268] batch=1 TW 0/1 FB 1/1 IG 1/1 LI 1/1 gated=0 progress=12/12\nrendered /Users/scones/projects/lessondraft-social/gum_promo/_gum_kdbppr.jpg\nFAIL TW kdbppr _tweet None\nOK  FB kdbppr post=1980865496128829\nOK  IG kdbppr media=18089855153566147\nOK  LI kdbppr post=urn:li:ugcPost:7475614505431879680\n\n[2026-06-24T18:23:16.556695] batch=1 TW 0/1 FB 1/1 IG 1/1 LI 1/1 gated=0 progress=12/12\nrendered /Users/scones/projects/lessondraft-social/gum_promo/_gum_ovcht.jpg\nGATE-REJECT ovcht Time Blocking Planner — Printable Workbook\n\n[2026-06-25T18:22:11.564144] batch=1 TW 0/0 FB 0/0 IG 0/0 LI 0/0 gated=1 progress=12/12\nrendered /Users/scones/projects/lessondraft-social/gum_promo/_gum_ovcht.jpg\nGATE-REJECT ovcht Time Blocking Planner — Printable Workbook\n\n[2026-06-26T18:22:10.577951] batch=1 TW 0/0 FB 0/0 IG 0/0 LI 0/0 gated=1 progress=12/12"
     },
     {
       "label": "com.lessondraft.indexnow",
@@ -1357,7 +1357,7 @@
       "schedule": "Always on",
       "logPath": "/Users/scones/projects/LessonDraft/proxy/ngrok-stdout.log",
       "loaded": true,
-      "pid": 48683,
+      "pid": 82456,
       "lastExitStatus": 0,
       "healthy": true,
       "recentLog": ""
@@ -1437,7 +1437,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed.\n\n\n[2026-06-26T10:32:17.925Z] LessonDraft synthetic check\n[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed.\n\n\n[2026-06-26T11:32:19.567Z] LessonDraft synthetic check\n[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed."
+      "recentLog": "[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed.\n\n\n[2026-06-26T22:32:40.245Z] LessonDraft synthetic check\n[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed.\n\n\n[2026-06-26T23:32:42.734Z] LessonDraft synthetic check\n[OK] Homepage 200\n[OK] /api/usage not 500\n[OK] /pricing loads\n[OK] /blog loads\n[OK] /lesson page loads\nAll checks passed."
     },
     {
       "label": "com.lessondraft.watchdog",
@@ -1459,7 +1459,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "FAIL info@kentuckyrealty.net (role_address)\nOK   bryanwimsatt@metrorealtyky.com\n\nVerified OK: 2 | Failed: 202\nFail reasons: {\n  \"scrape_junk\": 2,\n  \"role_address\": 199,\n  \"no_mx_records (ENOTFOUND)\": 1\n}\nSendable-now pool (verified, unsent, unbounced): 2\n\n\n=== Send Realtor Emails ===\nSending to 2 real estate agents...\n  Sent to Metro Realty & Management Inc <bryanwimsatt@metrorealtyky.com>\n  Sent to Mayer Realtors <craig@mayerrealtors.com>\n\nDone. Total sent to realtors: 820\n\n\n=== Follow-Up Realtors ===\nNo realtors eligible for follow-up (sent 5+ days ago, no reply). Check back later.\n\n\nRealtor pipeline complete at 2026-06-25T14:17:18.550Z — 0 failures"
+      "recentLog": "OK   john.maranto@findbaltimoreareahomes.com\n\nVerified OK: 3 | Failed: 208\nFail reasons: {\n  \"scrape_junk\": 2,\n  \"role_address\": 205,\n  \"no_mx_records (ENOTFOUND)\": 1\n}\nSendable-now pool (verified, unsent, unbounced): 3\n\n\n=== Send Realtor Emails ===\nSending to 3 real estate agents...\n  Sent to The Maranto Team of Cummings and Company Realtors <john.maranto@findbaltimoreareahomes.com>\n  Sent to Your Home Group <megan@yourhomebaltimore.com>\n  Sent to Liz Ancel Real Estate <liz@lizancel.com>\n\nDone. Total sent to realtors: 823\n\n\n=== Follow-Up Realtors ===\nNo realtors eligible for follow-up (sent 5+ days ago, no reply). Check back later.\n\n\nRealtor pipeline complete at 2026-06-26T14:17:25.333Z — 0 failures"
     },
     {
       "label": "com.ollama.local",
@@ -1478,10 +1478,10 @@
       "schedule": "8:00am",
       "logPath": "/Users/scones/scholarships/logs/autopilot.log",
       "loaded": true,
-      "pid": null,
+      "pid": 97477,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "$5,000   EV ~$3000  $5,000 Christian College Scholarship Dra \u001b[32m[NO ESSAY]\u001b[0m\n\u001b[2m             fit: catholic/christian, education/teaching\u001b[0m\n    $5,000   EV ~$2475  National Education Association Aspiring  \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: education/teaching\u001b[0m\n    $5,000   EV ~$2475  Bold.org $5,000 Christian Student Schola \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: catholic/christian\u001b[0m\n    $4,000   EV ~$2400  Jacob Wise Memorial Scholarship          \u001b[32m[NO ESSAY]\u001b[0m\n\u001b[2m             fit: catholic/christian, education/teaching, merit/gpa, independent/need\u001b[0m\n    $15,000  EV ~$2363  Davis-Putter Scholarship Fund (Social Ju \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: independent/need\u001b[0m\n    $5,000   EV ~$2025  Greater Kansas City Community Foundation \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: kansas/kc-metro\u001b[0m\n    $5,000   EV ~$2025  Kansas NEA Foundation Grant              \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: kansas/kc-metro\u001b[0m\n    $3,000   EV ~$1800  Future Teachers Fellowship               \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: education/teaching, merit/gpa\u001b[0m\n\n\u001b[1m  ACTIONS\u001b[0m\n\u001b[32m    >> Run: ./run.sh go --apply   (auto-apply to 5 no-essay urgents)\u001b[0m\n\u001b[36m    >> Run: ./run.sh go --monthly (re-enter 6 monthly scholarships)\u001b[0m\n\u001b[36m    >> Run: ./run.sh go           (full autopilot — do everything)\u001b[0m\n\n\u001b[2m  ================================================================\u001b[0m\n\n  Autopilot complete in 82.9s"
+      "recentLog": "$5,000   EV ~$3000  $5,000 Christian College Scholarship Dra \u001b[32m[NO ESSAY]\u001b[0m\n\u001b[2m             fit: catholic/christian, education/teaching\u001b[0m\n    $5,000   EV ~$2475  National Education Association Aspiring  \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: education/teaching\u001b[0m\n    $5,000   EV ~$2475  Bold.org $5,000 Christian Student Schola \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: catholic/christian\u001b[0m\n    $4,000   EV ~$2400  Jacob Wise Memorial Scholarship          \u001b[32m[NO ESSAY]\u001b[0m\n\u001b[2m             fit: catholic/christian, education/teaching, merit/gpa, independent/need\u001b[0m\n    $15,000  EV ~$2363  Davis-Putter Scholarship Fund (Social Ju \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: independent/need\u001b[0m\n    $5,000   EV ~$2025  Greater Kansas City Community Foundation \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: kansas/kc-metro\u001b[0m\n    $5,000   EV ~$2025  Kansas NEA Foundation Grant              \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: kansas/kc-metro\u001b[0m\n    $3,000   EV ~$1800  Future Teachers Fellowship               \u001b[33m[ESSAY]\u001b[0m\n\u001b[2m             fit: education/teaching, merit/gpa\u001b[0m\n\n\u001b[1m  ACTIONS\u001b[0m\n\u001b[32m    >> Run: ./run.sh go --apply   (auto-apply to 5 no-essay urgents)\u001b[0m\n\u001b[36m    >> Run: ./run.sh go --monthly (re-enter 6 monthly scholarships)\u001b[0m\n\u001b[36m    >> Run: ./run.sh go           (full autopilot — do everything)\u001b[0m\n\n\u001b[2m  ================================================================\u001b[0m\n\n  Autopilot complete in 8.7s"
     },
     {
       "label": "com.scholarships.chrome-cdp",
@@ -1492,7 +1492,7 @@
       "pid": 69609,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "[57038:9601677:0626/033422.773557:VERBOSE1:chrome/updater/updater.cc:382] Available disk space in install directory (/Users/scones/Library/Application Support/Google/GoogleUpdater): 26833154048B (24.990GiB) / 245107195904B (228.274GiB)\n[57038:9601677:0626/033422.773574:VERBOSE1:chrome/updater/updater.cc:386] Available disk space in temporary directory (/var/folders/mh/fcv8zmqj3gj2ybjdvxhjkcdr0000gn/T/): 26833154048B (24.990GiB) / 245107195904B (228.274GiB)\n[57038:9601677:0626/033422.773639:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS START event to the history log\n[57040:9601681:0626/033422.783598:VERBOSE1:chrome/updater/updater.cc:374] Version: 150.0.7863.0, opt, ARM_64, command line: /Users/scones/Library/Application Support/Google/GoogleUpdater/150.0.7863.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --crash-handler --database=/Users/scones/Library/Application Support/Google/GoogleUpdater/150.0.7863.0/Crashpad --url=https://clients2.google.com/cr/report --annotation=prod=Update4 --annotation=ver=150.0.7863.0 --handshake-fd=6 --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2\n[57040:9601681:0626/033422.783840:VERBOSE1:chrome/updater/updater.cc:377] OS version: 26.5.0, arch: arm64, System uptime (seconds): 435851, parent pid: 1\n[57040:9601681:0626/033422.786106:VERBOSE1:chrome/updater/updater.cc:382] Available disk space in install directory (/Users/scones/Library/Application Support/Google/GoogleUpdater): 26833154048B (24.990GiB) / 245107195904B (228.274GiB)\n[57040:9601681:0626/033422.786120:VERBOSE1:chrome/updater/updater.cc:386] Available disk space in temporary directory (/var/folders/mh/fcv8zmqj3gj2ybjdvxhjkcdr0000gn/T/): 26833154048B (24.990GiB) / 245107195904B (228.274GiB)\n[57040:9601681:0626/033422.786190:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS START event to the history log\n[57038:9601677:0626/033422.786618:VERBOSE1:chrome/updater/crash_reporter.cc:124] Crash handler launched and ready.\n[57038:9601677:0626/033422.787333:VERBOSE1:chrome/updater/crash_client.cc:108] Found 0 completed crash reports\n[57038:9601677:0626/033422.787423:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports\n[57038:9601677:0626/033422.787497:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/scones/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)\n[57038:9601677:0626/033422.787561:VERBOSE1:chrome/updater/updater.cc:105] Crash reporting initialized.\n[57038:9601677:0626/033422.787722:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run\n[57038:9601677:0626/033440.839767:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0\n[57038:9601677:0626/033440.840605:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[57038:9601677:0626/033440.840653:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--wake) returned 0.\n[57035:9601673:0626/033441.009798:VERBOSE1:chrome/updater/app/app_wakeall.cc:68] `/Users/scones/Library/Application Support/Google/GoogleUpdater/150.0.7863.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` exited 0\n[57035:9601661:0626/033441.010223:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0\n[57035:9601661:0626/033441.011354:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[57035:9601661:0626/033441.011411:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--wake-all) returned 0.\n[57040:9601681:0626/033450.990113:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[57040:9601681:0626/033450.990192:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--crash-handler) returned 0.\n[57037:9601665:0626/033450.992036:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[57037:9601665:0626/033450.992193:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--crash-handler) returned 0."
+      "recentLog": "[94399:10416351:0626/183723.405270:VERBOSE1:chrome/updater/updater.cc:386] Available disk space in temporary directory (/var/folders/mh/fcv8zmqj3gj2ybjdvxhjkcdr0000gn/T/): 25238507520B (23.505GiB) / 245107195904B (228.274GiB)\n[94399:10416351:0626/183723.405326:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS START event to the history log\n[94405:10416363:0626/183723.413165:VERBOSE1:chrome/updater/updater.cc:374] Version: 150.0.7863.0, opt, ARM_64, command line: /Users/scones/Library/Application Support/Google/GoogleUpdater/150.0.7863.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --crash-handler --database=/Users/scones/Library/Application Support/Google/GoogleUpdater/150.0.7863.0/Crashpad --url=https://clients2.google.com/cr/report --annotation=prod=Update4 --annotation=ver=150.0.7863.0 --handshake-fd=6 --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2\n[94405:10416363:0626/183723.413353:VERBOSE1:chrome/updater/updater.cc:377] OS version: 26.5.0, arch: arm64, System uptime (seconds): 490033, parent pid: 1\n[94405:10416363:0626/183723.415513:VERBOSE1:chrome/updater/updater.cc:382] Available disk space in install directory (/Users/scones/Library/Application Support/Google/GoogleUpdater): 25238499328B (23.505GiB) / 245107195904B (228.274GiB)\n[94405:10416363:0626/183723.415527:VERBOSE1:chrome/updater/updater.cc:386] Available disk space in temporary directory (/var/folders/mh/fcv8zmqj3gj2ybjdvxhjkcdr0000gn/T/): 25238499328B (23.505GiB) / 245107195904B (228.274GiB)\n[94405:10416363:0626/183723.415589:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS START event to the history log\n[94399:10416351:0626/183723.415982:VERBOSE1:chrome/updater/crash_reporter.cc:124] Crash handler launched and ready.\n[94399:10416351:0626/183723.416605:VERBOSE1:chrome/updater/crash_client.cc:108] Found 0 completed crash reports\n[94399:10416351:0626/183723.416681:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports\n[94399:10416351:0626/183723.416748:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/scones/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)\n[94399:10416351:0626/183723.416802:VERBOSE1:chrome/updater/updater.cc:105] Crash reporting initialized.\n[94399:10416351:0626/183723.416978:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run\n[94399:10416351:0626/183741.536794:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0\n[94399:10416351:0626/183741.544078:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[94399:10416351:0626/183741.544093:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--wake) returned 0.\n[94392:10416347:0626/183741.753461:VERBOSE1:chrome/updater/app/app_wakeall.cc:68] `/Users/scones/Library/Application Support/Google/GoogleUpdater/150.0.7863.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` exited 0\n[94392:10416326:0626/183741.754751:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0\n[94392:10416326:0626/183741.755415:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[94392:10416326:0626/183741.755458:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--wake-all) returned 0.\n[94405:10416363:0626/183751.796868:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[94405:10416363:0626/183751.797220:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--crash-handler) returned 0.\n[94395:10416333:0626/183751.800547:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[94395:10416333:0626/183751.800602:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--crash-handler) returned 0.\nCreated TensorFlow Lite XNNPACK delegate for CPU."
     },
     {
       "label": "com.scholarships.morning",
@@ -1503,7 +1503,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "at Object.updateApplicationStatus (/Users/scones/scholarships/bot/lib/db.js:259:6)\n    at processResults (/Users/scones/scholarships/bot/check-wins.js:176:14)\n    at main (/Users/scones/scholarships/bot/check-wins.js:227:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n[2026-06-24 09:00:07] Step 1: win-check FAILED (exit 1)\n[2026-06-24 09:00:07] Step 2: Deadline alerts...\nNo unapplied deadlines in the next 3 day(s).\n[2026-06-24 09:00:07] Step 2: deadline-alerts OK\n[2026-06-24 09:00:07] Step 3: Monthly sweeps skipped (day 24, runs on 1st/15th)\n[2026-06-24 09:00:07] === Scholarship morning complete ===\n[2026-06-25 09:00:03] === Scholarship morning run ===\n[2026-06-25 09:00:03] Step 1: Checking wins...\n  --- Win/Loss Check Started ---\n  Looking back 3 days\n  213 applications pending results\n  Searching Gmail for scholarship results...\n  Filtered 1 marketing/promo emails\n  Found 0 potential result emails\n  No scholarship result emails found\n[2026-06-25 09:00:05] Step 1: win-check OK\n[2026-06-25 09:00:05] Step 2: Deadline alerts...\nNo unapplied deadlines in the next 3 day(s).\n[2026-06-25 09:00:05] Step 2: deadline-alerts OK\n[2026-06-25 09:00:05] Step 3: Monthly sweeps skipped (day 25, runs on 1st/15th)\n[2026-06-25 09:00:05] === Scholarship morning complete ==="
+      "recentLog": "Searching Gmail for scholarship results...\n  Filtered 1 marketing/promo emails\n  Found 0 potential result emails\n  No scholarship result emails found\n[2026-06-25 09:00:05] Step 1: win-check OK\n[2026-06-25 09:00:05] Step 2: Deadline alerts...\nNo unapplied deadlines in the next 3 day(s).\n[2026-06-25 09:00:05] Step 2: deadline-alerts OK\n[2026-06-25 09:00:05] Step 3: Monthly sweeps skipped (day 25, runs on 1st/15th)\n[2026-06-25 09:00:05] === Scholarship morning complete ===\n[2026-06-26 09:00:05] === Scholarship morning run ===\n[2026-06-26 09:00:05] Step 1: Checking wins...\n  --- Win/Loss Check Started ---\n  Looking back 3 days\n  213 applications pending results\n  Searching Gmail for scholarship results...\n  Filtered 1 marketing/promo emails\n  Found 0 potential result emails\n  No scholarship result emails found\n[2026-06-26 09:00:07] Step 1: win-check OK\n[2026-06-26 09:00:07] Step 2: Deadline alerts...\nNo unapplied deadlines in the next 3 day(s).\n[2026-06-26 09:00:07] Step 2: deadline-alerts OK\n[2026-06-26 09:00:07] Step 3: Monthly sweeps skipped (day 26, runs on 1st/15th)\n[2026-06-26 09:00:07] === Scholarship morning complete ==="
     },
     {
       "label": "com.scholarships.preflight",
@@ -1512,9 +1512,9 @@
       "logPath": "/Users/scones/scholarships/logs/preflight.log",
       "loaded": true,
       "pid": null,
-      "lastExitStatus": 256,
-      "healthy": false,
-      "recentLog": "[preflight 6/15/2026, 1:50:05 PM] OK — deps present, CDP up\n[preflight 6/16/2026, 7:54:59 AM] OK — deps present, CDP up\n[preflight 6/16/2026, 1:59:09 PM] OK — deps present, CDP up\n[preflight 6/17/2026, 7:50:05 AM] OK — deps present, CDP up\n[preflight 6/17/2026, 1:50:05 PM] OK — deps present, CDP up\n[preflight 6/18/2026, 7:50:01 AM] OK — deps present, CDP up\n[preflight 6/18/2026, 1:50:00 PM] OK — deps present, CDP up\n[preflight 6/19/2026, 7:50:00 AM] OK — deps present, CDP up\n[preflight 6/19/2026, 1:50:05 PM] OK — deps present, CDP up\n[preflight 6/20/2026, 7:50:01 AM] OK — deps present, CDP up\n[preflight 6/20/2026, 1:50:01 PM] OK — deps present, CDP up\n[preflight 6/21/2026, 7:50:01 AM] OK — deps present, CDP up\n[preflight 6/21/2026, 1:50:03 PM] OK — deps present, CDP up\n[preflight 6/22/2026, 7:50:04 AM] OK — deps present, CDP up\n[preflight 6/22/2026, 1:50:00 PM] OK — deps present, CDP up\n[preflight 6/23/2026, 7:50:04 AM] OK — deps present, CDP up\n[preflight 6/23/2026, 1:50:00 PM] OK — deps present, CDP up\n[preflight 6/24/2026, 7:50:03 AM] OK — deps present, CDP up\n[preflight 6/24/2026, 1:50:05 PM] OK — deps present, CDP up\n[preflight 6/25/2026, 7:50:01 AM] FAIL\nPipeline broken (1):\n• CDP Chrome :9222 DOWN — run: launchctl kickstart -k gui/$(id -u)/com.scholarships.chrome-cdp\n[preflight 6/25/2026, 1:50:05 PM] FAIL\nPipeline broken (1):\n• CDP Chrome :9222 DOWN — run: launchctl kickstart -k gui/$(id -u)/com.scholarships.chrome-cdp"
+      "lastExitStatus": 0,
+      "healthy": true,
+      "recentLog": "[preflight 6/16/2026, 1:59:09 PM] OK — deps present, CDP up\n[preflight 6/17/2026, 7:50:05 AM] OK — deps present, CDP up\n[preflight 6/17/2026, 1:50:05 PM] OK — deps present, CDP up\n[preflight 6/18/2026, 7:50:01 AM] OK — deps present, CDP up\n[preflight 6/18/2026, 1:50:00 PM] OK — deps present, CDP up\n[preflight 6/19/2026, 7:50:00 AM] OK — deps present, CDP up\n[preflight 6/19/2026, 1:50:05 PM] OK — deps present, CDP up\n[preflight 6/20/2026, 7:50:01 AM] OK — deps present, CDP up\n[preflight 6/20/2026, 1:50:01 PM] OK — deps present, CDP up\n[preflight 6/21/2026, 7:50:01 AM] OK — deps present, CDP up\n[preflight 6/21/2026, 1:50:03 PM] OK — deps present, CDP up\n[preflight 6/22/2026, 7:50:04 AM] OK — deps present, CDP up\n[preflight 6/22/2026, 1:50:00 PM] OK — deps present, CDP up\n[preflight 6/23/2026, 7:50:04 AM] OK — deps present, CDP up\n[preflight 6/23/2026, 1:50:00 PM] OK — deps present, CDP up\n[preflight 6/24/2026, 7:50:03 AM] OK — deps present, CDP up\n[preflight 6/24/2026, 1:50:05 PM] OK — deps present, CDP up\n[preflight 6/25/2026, 7:50:01 AM] FAIL\nPipeline broken (1):\n• CDP Chrome :9222 DOWN — run: launchctl kickstart -k gui/$(id -u)/com.scholarships.chrome-cdp\n[preflight 6/25/2026, 1:50:05 PM] FAIL\nPipeline broken (1):\n• CDP Chrome :9222 DOWN — run: launchctl kickstart -k gui/$(id -u)/com.scholarships.chrome-cdp\n[preflight 6/26/2026, 7:50:05 AM] OK — deps present, CDP up\n[preflight 6/26/2026, 1:50:05 PM] OK — deps present, CDP up"
     },
     {
       "label": "com.scones.fb-just-listed",
@@ -1558,7 +1558,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "OK  FB 16039911 post=1392661099350963\nOK  IG 16039911 media=18097251572233719\nOK  LI 16039911 post=urn:li:ugcPost:7475317894344765441\n\n[2026-06-23T22:44:39.010559] batch=1 TW 0/1 FB 1/1 IG 1/1 LI 1/1 gated=0 progress=60/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_mc_16040309.jpg\n[INFO platforms.twitter] Twitter authenticated as @cascone26\n[INFO platforms.facebook] Facebook authenticated, page: Jacob Cascone Web Design/LessonDraft\n[INFO platforms.instagram] Instagram Graph API ready: @lifelonglearningrules\n[INFO platforms.linkedin] LinkedIn authenticated as Jacob Cascone (urn:li:person:-bqQNeQf8P)\n/Users/scones/projects/lessondraft-social/tpt_promo/multichannel.py:331: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] {'DRY ' if DRY else ''}batch={len(batch)} \"\nGATE-REJECT 16040309 4th Grade ELA Test Prep | Reading Passages Part A \n\n[2026-06-24T20:53:07.583668] batch=1 TW 0/0 FB 0/0 IG 0/0 LI 0/0 gated=1 progress=60/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_mc_16040309.jpg\n[INFO platforms.twitter] Twitter authenticated as @cascone26\n[INFO platforms.facebook] Facebook authenticated, page: Jacob Cascone Web Design/LessonDraft\n[INFO platforms.instagram] Instagram Graph API ready: @lifelonglearningrules\n[INFO platforms.linkedin] LinkedIn authenticated as Jacob Cascone (urn:li:person:-bqQNeQf8P)\n/Users/scones/projects/lessondraft-social/tpt_promo/multichannel.py:331: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] {'DRY ' if DRY else ''}batch={len(batch)} \"\nGATE-REJECT 16040309 4th Grade ELA Test Prep | Reading Passages Part A \n\n[2026-06-25T23:21:09.365902] batch=1 TW 0/0 FB 0/0 IG 0/0 LI 0/0 gated=1 progress=60/76"
+      "recentLog": "/Users/scones/projects/lessondraft-social/tpt_promo/multichannel.py:331: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] {'DRY ' if DRY else ''}batch={len(batch)} \"\nGATE-REJECT 16040309 4th Grade ELA Test Prep | Reading Passages Part A \n\n[2026-06-24T20:53:07.583668] batch=1 TW 0/0 FB 0/0 IG 0/0 LI 0/0 gated=1 progress=60/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_mc_16040309.jpg\n[INFO platforms.twitter] Twitter authenticated as @cascone26\n[INFO platforms.facebook] Facebook authenticated, page: Jacob Cascone Web Design/LessonDraft\n[INFO platforms.instagram] Instagram Graph API ready: @lifelonglearningrules\n[INFO platforms.linkedin] LinkedIn authenticated as Jacob Cascone (urn:li:person:-bqQNeQf8P)\n/Users/scones/projects/lessondraft-social/tpt_promo/multichannel.py:331: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] {'DRY ' if DRY else ''}batch={len(batch)} \"\nGATE-REJECT 16040309 4th Grade ELA Test Prep | Reading Passages Part A \n\n[2026-06-25T23:21:09.365902] batch=1 TW 0/0 FB 0/0 IG 0/0 LI 0/0 gated=1 progress=60/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_mc_16040309.jpg\n[INFO platforms.twitter] Twitter authenticated as @cascone26\n[INFO platforms.facebook] Facebook authenticated, page: Jacob Cascone Web Design/LessonDraft\n[INFO platforms.instagram] Instagram Graph API ready: @lifelonglearningrules\n[INFO platforms.linkedin] LinkedIn authenticated as Jacob Cascone (urn:li:person:-bqQNeQf8P)\n/Users/scones/projects/lessondraft-social/tpt_promo/multichannel.py:331: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] {'DRY ' if DRY else ''}batch={len(batch)} \"\nGATE-REJECT 16040309 4th Grade ELA Test Prep | Reading Passages Part A \n\n[2026-06-27T00:09:09.658755] batch=1 TW 0/0 FB 0/0 IG 0/0 LI 0/0 gated=1 progress=60/76"
     },
     {
       "label": "com.tpt.promo",
@@ -1569,7 +1569,7 @@
       "pid": null,
       "lastExitStatus": 0,
       "healthy": true,
-      "recentLog": "GATE-REJECT 16527699 Grades 2-5 Math Test Prep MEGA BUNDLE | 10 Packs,  (skipped, not posted)\n\n[2026-06-22T15:18:38.463739] posted 4/5  catalog progress 61/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_16040309.jpg\n/Users/scones/projects/lessondraft-social/tpt_promo/run.py:104: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  log[p[\"id\"]] = datetime.datetime.utcnow().isoformat()\n/Users/scones/projects/lessondraft-social/tpt_promo/run.py:116: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] posted {posted}/{len(batch)}  catalog progress {len(log)}/{len(CATALOG)}\")\nOK 16040309 pin 644366659231430938 4th Grade ELA Test Prep | Reading Passages Part A \n\n[2026-06-23T16:24:04.578885] posted 1/1  catalog progress 61/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_16039911.jpg\n/Users/scones/projects/lessondraft-social/tpt_promo/run.py:104: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  log[p[\"id\"]] = datetime.datetime.utcnow().isoformat()\n/Users/scones/projects/lessondraft-social/tpt_promo/run.py:116: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] posted {posted}/{len(batch)}  catalog progress {len(log)}/{len(CATALOG)}\")\nOK 16039911 pin 644366659231446491 3rd Grade Math Word Problems | Addition Subtractio\n\n[2026-06-24T15:18:01.917221] posted 1/1  catalog progress 61/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_16040309.jpg\n/Users/scones/projects/lessondraft-social/tpt_promo/run.py:116: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] posted {posted}/{len(batch)}  catalog progress {len(log)}/{len(CATALOG)}\")\nGATE-REJECT 16040309 4th Grade ELA Test Prep | Reading Passages Part A  (skipped, not posted)\n\n[2026-06-25T19:37:09.204443] posted 0/1  catalog progress 61/76"
+      "recentLog": "/Users/scones/projects/lessondraft-social/tpt_promo/run.py:116: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] posted {posted}/{len(batch)}  catalog progress {len(log)}/{len(CATALOG)}\")\nOK 16040309 pin 644366659231430938 4th Grade ELA Test Prep | Reading Passages Part A \n\n[2026-06-23T16:24:04.578885] posted 1/1  catalog progress 61/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_16039911.jpg\n/Users/scones/projects/lessondraft-social/tpt_promo/run.py:104: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  log[p[\"id\"]] = datetime.datetime.utcnow().isoformat()\n/Users/scones/projects/lessondraft-social/tpt_promo/run.py:116: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] posted {posted}/{len(batch)}  catalog progress {len(log)}/{len(CATALOG)}\")\nOK 16039911 pin 644366659231446491 3rd Grade Math Word Problems | Addition Subtractio\n\n[2026-06-24T15:18:01.917221] posted 1/1  catalog progress 61/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_16040309.jpg\n/Users/scones/projects/lessondraft-social/tpt_promo/run.py:116: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] posted {posted}/{len(batch)}  catalog progress {len(log)}/{len(CATALOG)}\")\nGATE-REJECT 16040309 4th Grade ELA Test Prep | Reading Passages Part A  (skipped, not posted)\n\n[2026-06-25T19:37:09.204443] posted 0/1  catalog progress 61/76\nrendered /Users/scones/projects/lessondraft-social/tpt_promo/_16040309.jpg\n/Users/scones/projects/lessondraft-social/tpt_promo/run.py:116: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\n  print(f\"\\n[{datetime.datetime.utcnow().isoformat()}] posted {posted}/{len(batch)}  catalog progress {len(log)}/{len(CATALOG)}\")\nGATE-REJECT 16040309 4th Grade ELA Test Prep | Reading Passages Part A  (skipped, not posted)\n\n[2026-06-26T18:43:08.817534] posted 0/1  catalog progress 61/76"
     },
     {
       "label": "com.tracker.digest",
@@ -1639,6 +1639,8 @@
     }
   ],
   "heatmap": {
+    "2026-06-26": 10,
+    "2026-06-25": 10,
     "2026-06-24": 13,
     "2026-06-23": 18,
     "2026-06-22": 10,
@@ -1818,11 +1820,67 @@
   "emailCampaign": {
     "totalLeads": 6875,
     "withEmail": 1871,
-    "emailed": 683,
+    "emailed": 691,
     "followedUp": 444,
-    "sent": 683,
+    "sent": 691,
     "errors": 38,
     "recentSends": [
+      {
+        "id": 11409,
+        "name": "Daylight Donuts",
+        "email": "info@daylightdonuts.com",
+        "messageId": "19f0425c9e25e711",
+        "sentAt": "2026-06-26T13:36:53.383Z"
+      },
+      {
+        "id": 10223,
+        "name": "Long Barbeque Company",
+        "email": "info@longbbqcompany.com",
+        "messageId": "19f04254da79926d",
+        "sentAt": "2026-06-26T13:36:21.363Z"
+      },
+      {
+        "id": 9150,
+        "name": "Midwest Master Screen Printing",
+        "email": "adam@midwestmasterprint.com",
+        "messageId": "19f0424664d9f5fc",
+        "sentAt": "2026-06-26T13:35:22.453Z"
+      },
+      {
+        "id": 2083,
+        "name": "Burn Theory Fire Kitchen",
+        "email": "cheers@diametricbrewing.com",
+        "messageId": "19f0423b1bbefe35",
+        "sentAt": "2026-06-26T13:34:36.153Z"
+      },
+      {
+        "id": 810,
+        "name": "Star Nails and Spa",
+        "email": "admin@favesalon.com",
+        "messageId": "19f0422f6dc8aa3d",
+        "sentAt": "2026-06-26T13:33:48.174Z"
+      },
+      {
+        "id": 636,
+        "name": "Sharper Impressions Painting Co",
+        "email": "info@sharperimpressionspainting.com",
+        "messageId": "19f042248b91cc5b",
+        "sentAt": "2026-06-26T13:33:04.197Z"
+      },
+      {
+        "id": 236,
+        "name": "Ratcliffe Auto Spa Detailing & Ceramic Coatings",
+        "email": "info@ratcliffeautospa.com",
+        "messageId": "19f0421c78486bfa",
+        "sentAt": "2026-06-26T13:32:30.322Z"
+      },
+      {
+        "id": 214,
+        "name": "Ricks Reflections Mobile Detailing - Ceramic Coatings",
+        "email": "sales@ricksreflections.com",
+        "messageId": "19f04213f2c5f037",
+        "sentAt": "2026-06-26T13:31:55.668Z"
+      },
       {
         "id": 9291,
         "name": "Half Price Banners",
@@ -1836,62 +1894,6 @@
         "email": "info@ricksautoclinic.com",
         "messageId": "19efefe83bd5fdbd",
         "sentAt": "2026-06-25T13:35:53.658Z"
-      },
-      {
-        "id": 11909,
-        "name": "Integrity Roofing Siding Gutters & Windows",
-        "email": "info@integrityroofingllc.com",
-        "messageId": "19efefd9698b1bf8",
-        "sentAt": "2026-06-25T13:34:53.086Z"
-      },
-      {
-        "id": 9843,
-        "name": "Brazil Academy - Brazilian Jiu Jitsu School",
-        "email": "info@brazilacademyusa.com",
-        "messageId": "19efefcd40ec544c",
-        "sentAt": "2026-06-25T13:34:03.493Z"
-      },
-      {
-        "id": 6684,
-        "name": "Major Painting",
-        "email": "info@majorpaintingco.com",
-        "messageId": "19efefc0135b8d4a",
-        "sentAt": "2026-06-25T13:33:09.230Z"
-      },
-      {
-        "id": 1376,
-        "name": "Kids 'R' Kids Learning Academy of Blue Valley",
-        "email": "sarah@kidsrkidsbluevalley.com",
-        "messageId": "19efefb83001fa1a",
-        "sentAt": "2026-06-25T13:32:37.009Z"
-      },
-      {
-        "id": 245,
-        "name": "RejuvenAuto Detail & Ceramic Coatings",
-        "email": "jsellhorst@rejuvenauto.com",
-        "messageId": "19efefadf83d81dd",
-        "sentAt": "2026-06-25T13:31:54.846Z"
-      },
-      {
-        "id": 12337,
-        "name": "Todd's Tire",
-        "email": "webzai_idu7g@toddstiretonganoxie.com",
-        "messageId": "19ef9d9125d2048a",
-        "sentAt": "2026-06-24T13:36:53.871Z"
-      },
-      {
-        "id": 8218,
-        "name": "Pop’s Sweet Shop",
-        "email": "info@popsmainstreet.com",
-        "messageId": "19ef9d86beba0f9f",
-        "sentAt": "2026-06-24T13:36:10.682Z"
-      },
-      {
-        "id": 1345,
-        "name": "Guier Fence Co",
-        "email": "commercialsales@guierfence.com",
-        "messageId": "19ef9d783c102b3b",
-        "sentAt": "2026-06-24T13:35:11.567Z"
       }
     ]
   },
@@ -1905,10 +1907,10 @@
       "consecutive_blocked": 0,
       "last_check": "2026-06-16T18:07:12Z"
     },
-    "clicks": 556,
+    "clicks": 555,
     "impressions": 32,
     "ctr": "1.7%",
-    "position": "16.0",
+    "position": "16.1",
     "dailyData": [
       {
         "date": "2026-06-20",
@@ -1993,7 +1995,7 @@
       }
     ],
     "graduationDate": "2027-04-18",
-    "daysUntilGrad": 296,
+    "daysUntilGrad": 295,
     "gpa": "3.87"
   },
   "ideas": [
@@ -2335,7 +2337,7 @@
     }
   },
   "weeklySummary": {
-    "commitsThisWeek": 108,
+    "commitsThisWeek": 110,
     "emailsSentThisWeek": 10,
     "deadlinesThisWeek": []
   },
@@ -2516,7 +2518,7 @@
         "estMonthlyLow": 10,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "native"
       },
       {
@@ -2526,7 +2528,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "native"
       },
       {
@@ -2536,7 +2538,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "docker"
       },
       {
@@ -2546,7 +2548,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 20,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "docker"
       },
       {
@@ -2556,7 +2558,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "docker"
       },
       {
@@ -2566,7 +2568,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "docker"
       },
       {
@@ -2576,7 +2578,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "docker"
       },
       {
@@ -2586,7 +2588,7 @@
         "estMonthlyLow": 2,
         "estMonthlyHigh": 5,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "docker"
       },
       {
@@ -2596,7 +2598,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "docker"
       },
       {
@@ -2606,7 +2608,7 @@
         "estMonthlyLow": 5,
         "estMonthlyHigh": 10,
         "totalEarned": 0,
-        "lastCheck": "2026-06-26T12:30:08.955Z",
+        "lastCheck": "2026-06-27T00:30:08.770Z",
         "containerType": "docker"
       }
     ],
@@ -2646,10 +2648,6 @@
       "dealScout": 0
     },
     "dailyTrend": [
-      {
-        "date": "2026-06-13",
-        "amount": 0
-      },
       {
         "date": "2026-06-14",
         "amount": 0
@@ -2700,6 +2698,10 @@
       },
       {
         "date": "2026-06-26",
+        "amount": 0
+      },
+      {
+        "date": "2026-06-27",
         "amount": 0
       }
     ]
