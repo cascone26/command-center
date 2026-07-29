@@ -78,10 +78,22 @@ function getLaunchAgentStatus(label) {
   }
 }
 
+// Log tails get committed to a public repo — strip anything that looks like a
+// credential before it ever reaches the data file (found a leaked live Meta
+// access_token this way, 2026-07-29).
+function redactSecrets(text) {
+  return text
+    .replace(/([?&](?:access_token|token|api_key|apikey|key|secret|password|auth)=)[^&\s"'\\]+/gi, "$1[REDACTED]")
+    .replace(/(Authorization:\s*Bearer\s+)[A-Za-z0-9._\-]+/gi, "$1[REDACTED]")
+    .replace(/\bEAA[A-Za-z0-9]{20,}/g, "[REDACTED-META-TOKEN]")
+    .replace(/\bsk-[A-Za-z0-9_\-]{20,}/g, "[REDACTED-KEY]")
+    .replace(/\bghp_[A-Za-z0-9]{20,}/g, "[REDACTED-GH-TOKEN]");
+}
+
 function getAgentLog(logPath, lines) {
   try {
     const result = execSync(`tail -${lines || 25} "${logPath}" 2>/dev/null`, { encoding: "utf-8" });
-    return result.trim();
+    return redactSecrets(result.trim());
   } catch { return null; }
 }
 
